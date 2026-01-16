@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { Fathom } from '@/components/analytics/Fathom';
 import { SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants';
 
 const GA_MEASUREMENT_ID = 'G-VL6BZM6TGT';
@@ -111,6 +112,8 @@ export default function RootLayout({
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
+        {/* Fathom Analytics */}
+        <Fathom />
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1" suppressHydrationWarning>{children}</main>
