@@ -9,7 +9,6 @@ import {
   ShareButtons,
   AuthorCard,
   RelatedPosts,
-  NewsletterCTA,
 } from '@/components/blog';
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts } from '@/lib/blog-data';
 import { extractHeadings, slugify } from '@/lib/blog';
@@ -101,8 +100,6 @@ const mdxComponents = {
       </Link>
     );
   },
-  // Add the newsletter CTA as a component that can be used in MDX
-  NewsletterCTA: () => <NewsletterCTA />,
 };
 
 export default async function BlogPostPage({ params }: PageProps) {
@@ -233,14 +230,6 @@ export default async function BlogPostPage({ params }: PageProps) {
             <aside className="hidden lg:block">
               <div className="sticky top-24">
                 <TableOfContents items={headings} />
-
-                {/* Newsletter CTA in Sidebar */}
-                <div className="mt-6 p-4 rounded-xl bg-bg-secondary border border-border-subtle">
-                  <p className="text-sm font-medium text-foreground mb-2">
-                    Get hosting tips in your inbox
-                  </p>
-                  <NewsletterCTA variant="inline" />
-                </div>
               </div>
             </aside>
           </div>

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout';
-import { BlogHero, BlogCard, NewsletterCTA } from '@/components/blog';
+import { BlogHero, BlogCard } from '@/components/blog';
 import { getAllPosts, getFeaturedPosts } from '@/lib/blog-data';
 import { SITE_NAME } from '@/lib/constants';
 import { BLOG_CATEGORIES } from '@/types/blog';
@@ -38,11 +38,9 @@ export default async function BlogPage() {
               <h2 className="text-xl font-semibold text-foreground mb-2">
                 Our first articles are on the way
               </h2>
-              <p className="text-text-secondary mb-6">
+              <p className="text-text-secondary">
                 We&apos;re writing in-depth hosting guides, comparison articles, and industry insights.
-                Subscribe to get notified when we publish.
               </p>
-              <NewsletterCTA variant="inline" />
             </div>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -105,11 +103,6 @@ export default async function BlogPage() {
             ))}
           </div>
         )}
-
-        {/* Newsletter CTA */}
-        <div className="mt-16 max-w-2xl mx-auto">
-          <NewsletterCTA />
-        </div>
       </Container>
     </section>
   );
