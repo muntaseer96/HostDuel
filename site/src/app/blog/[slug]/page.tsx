@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import remarkGfm from 'remark-gfm';
 import { Container } from '@/components/layout';
 import {
   BlogMeta,
@@ -212,7 +213,15 @@ export default async function BlogPostPage({ params }: PageProps) {
             {/* Article Content */}
             <div className="min-w-0">
               <div className="prose prose-invert prose-lg max-w-none prose-headings:text-foreground prose-p:text-text-secondary prose-a:text-accent prose-strong:text-foreground prose-code:text-accent prose-code:bg-bg-elevated prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-pre:bg-bg-secondary prose-pre:border prose-pre:border-border-subtle prose-blockquote:border-accent prose-blockquote:text-text-secondary prose-li:text-text-secondary prose-img:rounded-xl">
-                <MDXRemote source={post.content} components={mdxComponents} />
+                <MDXRemote
+                  source={post.content}
+                  components={mdxComponents}
+                  options={{
+                    mdxOptions: {
+                      remarkPlugins: [remarkGfm],
+                    },
+                  }}
+                />
               </div>
 
               {/* Share Buttons */}
