@@ -1,0 +1,26 @@
+{
+  "name": "HostDuel",
+  "short_name": "HostDuel",
+  "description": "Compare web hosting providers across 355+ data points",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "1000x1000",
+      "type": "image/png"
+    }
+  ]
+}
