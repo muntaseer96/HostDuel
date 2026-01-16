@@ -58,6 +58,9 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  verification: {
+    google: 'qiMqUGVIZaQayYLGXbR9kjONYWWyqqQ86tNiMJk07SA',
+  },
   keywords: [
     'web hosting',
     'hosting comparison',
