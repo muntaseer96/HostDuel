@@ -70,13 +70,31 @@ export const metadata: Metadata = {
     'shared hosting',
   ],
   authors: [{ name: SITE_NAME }],
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
     siteName: SITE_NAME,
+    images: [
+      {
+        url: 'https://hostduel.com/logo.png',
+        width: 1000,
+        height: 1000,
+        alt: SITE_NAME,
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
+    images: ['https://hostduel.com/logo.png'],
   },
   robots: {
     index: true,
