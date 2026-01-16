@@ -1,0 +1,187 @@
+CLAUDE CODE PROMPT: HOSTING COMPARISON DATA COLLECTION
+=========================================================
+
+## PROJECT CONTEXT & LONG-TERM GOAL
+
+I am building a hosting comparison website that will help users find the best web hosting provider for their needs. The website will feature:
+
+1. A comprehensive searchable/filterable table comparing 50+ international hosting companies
+2. Niche data points that other comparison sites don't collect (renewal pricing, content policies, hidden fees, etc.)
+3. User reviews for trust-building
+4. Monetization through affiliate marketing once traffic is established
+
+The key differentiator is collecting NICHE information that people can't easily find elsewhere — this is our SEO strategy. We're targeting long-tail queries like "hosting with free staging environment under $15" or "which hosts allow adult content" that can be answered through our database.
+
+**The website will need:**
+- Fast searchable/filterable table (probably with JS filtering)
+- SEO-friendly individual pages for each hosting company
+- Comparison functionality (compare 2-3 hosts side by side)
+- Mobile responsive
+- Easy to update when hosting companies change pricing/features
+
+---
+
+## CURRENT TASK: DATA COLLECTION
+
+Right now, we are ONLY focused on collecting accurate data. Website development comes later.
+
+---
+
+## DATA SOURCE
+
+The CSV file with headers and company list is already in the project folder. Use it as reference for the column structure.
+
+---
+
+## DATA STORAGE
+
+**Do NOT just save as CSV.**
+
+Choose the most appropriate data format/structure for our end goal (a searchable, filterable comparison website). Consider:
+- JSON files (one per company, or one master file)
+- SQLite database
+- Structured markdown files
+- Or whatever format you think will work best for building the website later
+
+Explain your choice and set up the data structure accordingly.
+
+---
+
+## YOUR TASK
+
+**IMPORTANT: Do ONE company at a time. Do NOT proceed to the next company until I confirm.**
+
+**START WITH GODADDY ONLY.**
+
+### Process:
+
+### Step 1: Read the CSV file from the project folder to understand the column structure
+
+### Step 2: Set up the optimal data storage format for our website goal
+
+### Step 3: Research GoDaddy and fill all fields using this priority:
+1. **Official GoDaddy website** — check these pages:
+   - Main pricing page: https://www.godaddy.com/hosting/web-hosting
+   - Features/specs pages
+   - Terms of Service / Acceptable Use Policy
+   - Support/contact page
+   - Data center/infrastructure page
+   
+2. **Google search** for specific data points (e.g., "GoDaddy renewal pricing", "GoDaddy server locations", "GoDaddy inode limit")
+
+3. **Third-party sites** for ratings:
+   - Trustpilot
+   - G2
+   - BBB (Better Business Bureau)
+
+4. **Web hosting review sites** for cross-referencing technical specs
+
+### Step 4: Fill in the data following these formatting rules:
+
+**Data formatting standards:**
+- Yes/No fields: Use true/false (boolean) or "Yes"/"No" depending on your chosen format
+- Pricing: Numbers only, no currency symbols (assume USD)
+- Unlimited values: Use "Unlimited" or null with a flag, whatever fits your schema
+- Not available/not disclosed: Use null or "NOT_FOUND"
+- Multiple values: Use arrays if JSON, or semicolon-separated if flat format
+- Dates: Use YYYY-MM-DD format
+
+**Priority fields to find (these are our competitive advantage):**
+- Shared Hosting Monthly (Renewal) — not just promo price
+- Inode Limit
+- Money-Back Guarantee Exclusions
+- Account Suspension Policy
+- Suspension Warning Period
+- Adult Content Allowed
+- Gambling Sites Allowed
+- Cryptocurrency Sites Allowed
+- Hidden Fees Notes
+- Backup Restore Fee
+
+### Step 5: Save GoDaddy's data in your chosen format
+
+### Step 6: STOP and show me:
+1. What data format you chose and why
+2. Summary of what you found for GoDaddy
+3. Any fields that were NOT_FOUND
+
+Wait for my confirmation before proceeding to the next company.
+
+---
+
+## COLUMN REFERENCE (127 fields)
+
+**Basic Info:**
+Company Name, Website URL, Year Founded, Headquarters Country, Parent Company, Overall Rating, Data Last Updated, Notes
+
+**Pricing:**
+Shared Hosting Monthly (Promo), Shared Hosting Monthly (Renewal), VPS Monthly (Lowest), VPS Monthly (Renewal), Dedicated Monthly (Lowest), Dedicated Monthly (Renewal), WordPress Hosting Monthly (Promo), WordPress Hosting Monthly (Renewal), Cloud Hosting Monthly (Lowest), Free Domain Included, Free Domain Duration (Months), Domain Transfer Lock Period (Days), Setup Fee, Money-Back Guarantee (Days), Money-Back Exclusions, Accepted Payment Methods, Auto-Renewal Default
+
+**Technical Specs:**
+Storage (GB), Storage Type (SSD/NVMe/HDD), Bandwidth (GB/Unlimited), RAM (GB), CPU Cores, Inode Limit, Max Websites Allowed, Max Databases, Max Database Size (GB), Max File Upload Size (MB), PHP Versions Available, PHP Version Switching, Node.js Support, Node.js Versions, Python Support, Python Versions, Ruby Support, SSH Access, SSH Access Tier Required, Git Deployment, WP-CLI Access, Cron Jobs Allowed, Cron Job Minimum Interval, Staging Environment, Staging Included Tier
+
+**Server & Performance:**
+Server Locations, Server Location Options Count, Choose Server Location, CDN Included, CDN Provider, Uptime Guarantee (%), Uptime SLA Credit, DDoS Protection, DDoS Protection Level, Firewall Included, Malware Scanning, Malware Removal, Malware Removal Cost
+
+**Security & SSL:**
+Free SSL, SSL Provider, Wildcard SSL Available, Dedicated IP Available, Dedicated IP Cost Monthly, Two-Factor Authentication, Backup Frequency, Backup Retention (Days), Backup Restore Fee, On-Demand Backup
+
+**Compliance:**
+Downloadable Backups, GDPR Compliance Tools, PCI Compliance, HIPAA Compliance, SOC 2 Certified, Data Center Certifications
+
+**Support:**
+Support Channels, Live Chat Available, Live Chat Hours, Live Chat Avg Wait (Minutes), Phone Support Available, Phone Support Countries, Phone Support Hours, Ticket Support, Ticket Avg Response (Hours), Priority Support Available, Priority Support Cost, Support Language Options
+
+**Quality Scores:**
+Knowledge Base Quality (1-5), Community Forum Active
+
+**WordPress Features:**
+WordPress Optimized, WordPress Auto-Install, WordPress Auto-Updates, WordPress Staging, WooCommerce Optimized, LiteSpeed Cache, Object Caching, Object Cache Type, Managed WordPress Available
+
+**Migration:**
+Free Migration, Migration Websites Limit, Migration Service Quality (1-5), Migration Turnaround (Days), Paid Migration Cost
+
+**Control Panel:**
+cPanel Included, cPanel Alternative, Control Panel Name, Softaculous/Auto-Installer, Website Builder Included, Website Builder Name
+
+**Email:**
+Email Accounts Included, Email Account Limit, Individual Mailbox Size (GB), Webmail Access, Spam Filter, Email Forwarding
+
+**Policies & Overages:**
+Bandwidth Overage Policy, Bandwidth Overage Cost, Storage Overage Policy, Storage Overage Cost, Account Suspension Policy, Suspension Warning Period (Hours), Resource Abuse Definition, Hidden Fees Notes
+
+**Content Restrictions:**
+Adult Content Allowed, Gambling Sites Allowed, Cryptocurrency Sites Allowed, File Hosting Allowed, Proxy/VPN Allowed, Reseller Hosting Available, White-Label Available
+
+**Business:**
+API Access, Affiliate Program, Affiliate Commission Type, Affiliate Commission Amount
+
+**Reputation:**
+Trustpilot Rating, Trustpilot Reviews Count, G2 Rating, Better Business Bureau Rating
+
+**Editorial (SKIP THESE - requires human judgment):**
+Known Issues, Best For, Avoid If, Competitor Comparison Notes
+
+---
+
+## IMPORTANT NOTES
+
+1. **ONE COMPANY AT A TIME** — Complete GoDaddy, show me results, wait for confirmation
+2. **Choose smart data format** — Think about the website we'll build later
+3. **Accuracy over speed** — Verify data from multiple sources when possible
+4. **Promo vs Renewal pricing** — Dig into checkout flow or ToS for real renewal prices
+5. **Null/NOT_FOUND is acceptable** — If data isn't available, mark it rather than guessing
+6. **Update timestamp** — Set "Data Last Updated" to today's date
+7. **Skip editorial fields** — Leave empty: Overall Rating, Migration Service Quality, Knowledge Base Quality, Known Issues, Best For, Avoid If, Competitor Comparison Notes
+8. **Content policies** — Check Terms of Service / Acceptable Use Policy for adult, gambling, crypto policies
+
+---
+
+## START NOW
+
+1. Read the CSV to understand column structure
+2. Decide on and set up optimal data storage format (explain your choice)
+3. Research GoDaddy thoroughly
+4. Save GoDaddy data
+5. Show me summary + NOT_FOUND fields
+6. WAIT for my confirmation before next company

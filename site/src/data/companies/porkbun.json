@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Porkbun",
+    "websiteUrl": "https://porkbun.com",
+    "yearFounded": 2014,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (Top Level Design LLC)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": false,
+    "instantAccountActivation": true,
+    "hostingType": "domain-registrar",
+    "notes": "Founded 2014 in Portland, Oregon. Known for affordable domain registration with free WHOIS privacy. Over 1 million domains managed. Quirky pig branding. Recently expanded into web hosting. Trustpilot 4.8 excellent reputation. Transparent no-hidden-fees pricing."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 8.00,
+    "sharedHostingMonthlyRenewal": 8.00,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 10.00,
+    "wordpressHostingMonthlyRenewal": 10.00,
+    "cloudHostingMonthlyLowest": 10.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "30-day money-back guarantee on hosting",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal", "Apple Pay", "Google Pay"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": true,
+    "domainPrivacyCostYearly": 0
+  },
+  "technicalSpecs": {
+    "storageGb": 10,
+    "storageType": "SSD",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "Easy PHP hosting",
+    "gitDeployment": false,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": 20,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL",
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": false
+  },
+  "serverPerformance": {
+    "serverLocations": ["United States"],
+    "serverLocationOptionsCount": 1,
+    "chooseServerLocation": false,
+    "cdnIncluded": true,
+    "cdnProvider": "Built-in CDN",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": false,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "DDoS protection included",
+    "firewallIncluded": true,
+    "malwareScanning": false,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": true,
+    "brotliCompression": false
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (Cloud WordPress)",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Email", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "Business hours",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": false
+  },
+  "migration": {
+    "freeMigration": false,
+    "migrationWebsitesLimit": 0,
+    "migrationServiceQuality": null,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "AI Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": null,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered bandwidth (fair use)",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Storage limited by plan",
+    "accountSuspensionPolicy": "Violation of ToS; abuse",
+    "resourceAbuseDefinition": "Shared hosting fair use; website files only",
+    "hiddenFeesNotes": "FREE WHOIS privacy (major differentiator); Transparent pricing; No hidden fees at checkout; Affordable domain renewal; Cloud WordPress powered by Automattic WP Cloud; AI Website Builder included; No VPS/dedicated servers"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "Website hosting only; No file archives/personal storage"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Varies"
+  },
+  "reputation": {
+    "trustpilotRating": 4.8,
+    "trustpilotReviewsCount": 21320,
+    "g2Rating": 4.5,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "Hosting relatively new (domain registrar focus); No phone support; Veriff verification process issues for some; Limited server locations; No VPS/dedicated options; Some email/spam filtering issues reported; Interface could be cleaner",
+    "bestFor": "Domain registration with free WHOIS privacy; Budget-conscious WordPress hosting; Users wanting transparent pricing; Those needing affordable domains; Simple hosting needs",
+    "avoidIf": "Need phone support; Want enterprise hosting; Need multiple server locations; Require VPS/dedicated servers; Complex hosting requirements",
+    "competitorComparisonNotes": "FREE WHOIS privacy included (Namecheap charges extra); Trustpilot 4.8 excellent; 1M+ domains; Transparent pricing; Cloud WordPress via WP Cloud (Automattic); Quirky branding; Competes with Namecheap, Google Domains; Budget-friendly"
+  },
+  "ratings": {
+    "valueForMoney": 5.0,
+    "performance": 3.5,
+    "supportQuality": 3.5,
+    "security": 3.5,
+    "features": 3.0,
+    "easeOfUse": 4.0,
+    "transparency": 5.0,
+    "overallRating": 4.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 2,
+    "suitabilityAgency": 2,
+    "suitabilityDeveloper": 3,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 1
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 80.00,
+    "totalSecondYearCost": 96.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 7.33
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Domain registrar with FREE WHOIS privacy, transparent pricing, and affordable Cloud WordPress hosting",
+    "primaryCompetitors": ["Namecheap", "Google Domains", "Cloudflare Registrar"],
+    "bestAlternativeTo": "Namecheap",
+    "idealCustomerProfile": "Budget-conscious user wanting domain registration with free WHOIS privacy and optional simple WordPress hosting"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Canada", "United Kingdom", "Australia"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["porkbun.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Porkbun is excellent for domains with Trustpilot 4.8 (21K+ reviews). Hosting is newer but solid. Known for free WHOIS privacy and transparent pricing.",
+    "faqWhoOwnsThisHost": "Porkbun is owned by Top Level Design LLC, founded in 2014 in Portland, Oregon. Independent and privately held.",
+    "faqHowMuchDoesItCost": "Shared hosting $8/month ($80/year). Cloud WordPress $10/month. Domains at competitive prices with free WHOIS privacy.",
+    "faqIsItBeginnerFriendly": "Yes, straightforward interface though some find onboarding challenging. cPanel included on shared hosting.",
+    "faqDoesItIncludeEmail": "Yes, email hosting included with shared plans.",
+    "faqCanIHostWordPress": "Yes, Cloud WordPress hosting available powered by Automattic WP Cloud infrastructure.",
+    "faqWhatsTheUptime": "Porkbun offers 99.9% uptime target.",
+    "faqCanICancelAnytime": "Yes, 30-day money-back guarantee on hosting."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": true
+  }
+}

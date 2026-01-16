@@ -1,0 +1,263 @@
+{
+  "basicInfo": {
+    "companyName": "Kinsta",
+    "websiteUrl": "https://kinsta.com",
+    "yearFounded": 2013,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (privately held; founded by Mark Gavalda)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "managed-wordpress",
+    "notes": "Founded in 2013 by developer Mark Gavalda with goal of creating 'the best hosting platform in the world'. First managed WordPress host to use Google Cloud Platform (2016). Trusted by 120,000+ businesses. Named #1 Best WordPress Hosting by G2 for 2025. Also offers application and database hosting beyond WordPress."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 35.00,
+    "wordpressHostingMonthlyRenewal": 35.00,
+    "cloudHostingMonthlyLowest": 35.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "30-day money-back guarantee; Custom enterprise plans may have different terms",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 10,
+    "storageType": "SSD",
+    "bandwidthGb": null,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": true,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Iowa (US)", "South Carolina (US)", "Northern Virginia (US)", "Oregon (US)", "Los Angeles (US)", "Montreal (Canada)", "Sao Paulo (Brazil)", "Belgium", "London (UK)", "Netherlands", "Frankfurt (Germany)", "Zurich (Switzerland)", "Finland", "Warsaw (Poland)", "Taiwan", "Tokyo (Japan)", "Osaka (Japan)", "Seoul (South Korea)", "Hong Kong", "Singapore", "Jakarta (Indonesia)", "Mumbai (India)", "Sydney (Australia)", "Melbourne (Australia)", "Tel Aviv (Israel)", "Johannesburg (South Africa)"],
+    "serverLocationOptionsCount": 37,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Kinsta CDN (powered by Cloudflare Enterprise)",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise-level DDoS protection via Cloudflare",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Cloudflare SSL (wildcard included)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (automatic) + On-demand",
+    "backupRetentionDays": 14,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2 Type II", "ISO 27001"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with Business/Enterprise plans",
+    "supportLanguageOptions": ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": 2,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Redis",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "managedWordPress": {
+    "pricingModel": "visits",
+    "monthlyVisitLimit": 25000,
+    "visitOverageCost": 0.50,
+    "phpWorkerLimit": 2,
+    "pluginRestrictions": null,
+    "devEnvironmentIncluded": true,
+    "devEnvironmentName": "DevKinsta"
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": "Unlimited",
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": 1,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "MyKinsta (proprietary)",
+    "controlPanelName": "MyKinsta",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Visit-based OR bandwidth-based pricing (customer choice since Nov 2025); $0.50/GB server bandwidth OR $0.05/GB CDN bandwidth; $0.50 per 1,000 visits overage",
+    "bandwidthOverageCost": 0.50,
+    "storageOveragePolicy": "Disk space overage $2/GB/month (prorated daily)",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; excessive resource usage",
+    "resourceAbuseDefinition": "PHP workers exceeded; bandwidth/disk overage; malicious code",
+    "hiddenFeesNotes": "Premium pricing ($35+ minimum); No email hosting included; Overage charges for bandwidth/disk; No phone support; No dedicated IPs available; Visit-based pricing on some plans; First month free on select plans"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "WordPress-only hosting with strict content policies"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Recurring",
+    "affiliateCommissionAmount": "5-10% recurring commission for life of customer; 60-day cookie"
+  },
+  "reputation": {
+    "trustpilotRating": 4.8,
+    "trustpilotReviewsCount": 1049,
+    "g2Rating": 5.0,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "Premium pricing (starts $35/mo - expensive for small sites); No email hosting included; No phone support; No dedicated IPs; Strict content restrictions; No reseller/white-label options; WordPress-only (no general hosting); Overage charges can add up; Visit-based limits on some plans",
+    "bestFor": "WordPress sites needing premium performance; Agencies managing multiple WordPress sites; WooCommerce stores needing speed; Users wanting Google Cloud infrastructure; Sites needing 37 global data center options; Users who value developer-friendly features",
+    "avoidIf": "Budget-conscious users; Need email hosting included; Want phone support; Need dedicated IP addresses; Running non-WordPress applications; Small personal blog (overkill); Need general web hosting",
+    "competitorComparisonNotes": "#1 G2 WordPress hosting 2025; Perfect 5.0 G2 rating; 4.8 Trustpilot excellent; 37 data centers (most in industry); Google Cloud Platform infrastructure; Cloudflare Enterprise CDN included; No renewal markup; 2-minute average chat response; Free unlimited migrations; More expensive than WP Engine entry; MyKinsta dashboard highly praised"
+  },
+  "ratings": {
+    "valueForMoney": 3.0,
+    "performance": 5.0,
+    "supportQuality": 5.0,
+    "security": 5.0,
+    "features": 4.5,
+    "easeOfUse": 5.0,
+    "transparency": 4.0,
+    "overallRating": 4.5
+  },
+  "useCases": {
+    "suitabilityBlogger": 3,
+    "suitabilityEcommerce": 5,
+    "suitabilityAgency": 5,
+    "suitabilityDeveloper": 5,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 5
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 420.00,
+    "totalSecondYearCost": 420.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 35.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "#1 G2 WordPress host with Google Cloud Platform, 37 data centers, and Cloudflare Enterprise CDN",
+    "primaryCompetitors": ["WP Engine", "Flywheel", "Cloudways"],
+    "bestAlternativeTo": "WP Engine",
+    "idealCustomerProfile": "Business or agency needing premium managed WordPress with best-in-class performance and support"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Germany", "Australia", "Japan", "Singapore", "Brazil", "India"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP"],
+    "localSupportLanguages": ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Japanese"],
+    "dataSovereigntyCompliance": ["GDPR", "SOC 2"],
+    "regionalWebsites": ["kinsta.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Kinsta is the #1 rated WordPress host on G2 with a perfect 5.0 rating. They offer premium managed WordPress hosting on Google Cloud Platform with excellent performance and support. However, pricing starts at $35/month which is expensive for small sites.",
+    "faqWhoOwnsThisHost": "Kinsta is an independent company founded by developer Mark Gavalda in 2013. The company remains privately held with no outside investors or acquisitions.",
+    "faqHowMuchDoesItCost": "Kinsta managed WordPress hosting starts at $35/month for 1 site with 10GB storage. Multiple-site plans start at $70/month. Enterprise plans from $500/month. No renewal price increases.",
+    "faqIsItBeginnerFriendly": "Yes, Kinsta's MyKinsta dashboard is highly intuitive and praised for ease of use. 24/7 live chat support with 2-minute average response time helps beginners.",
+    "faqDoesItIncludeEmail": "No, Kinsta does not include email hosting. They recommend using third-party email services like Google Workspace or Zoho Mail.",
+    "faqCanIHostWordPress": "Yes, Kinsta is a WordPress-only hosting provider with optimized infrastructure, staging environments, automatic updates, and Redis caching.",
+    "faqWhatsTheUptime": "Kinsta guarantees 99.9% uptime backed by Google Cloud Platform's infrastructure with SLA credits for any downtime.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee. Monthly billing is available with no long-term contracts required."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

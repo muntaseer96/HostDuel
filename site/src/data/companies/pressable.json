@@ -1,0 +1,263 @@
+{
+  "basicInfo": {
+    "companyName": "Pressable",
+    "websiteUrl": "https://pressable.com",
+    "yearFounded": 2010,
+    "headquartersCountry": "United States",
+    "parentCompany": "Automattic (WordPress.com parent company)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "managed-wordpress",
+    "notes": "Founded 2010, acquired by Automattic in 2021. Part of the WordPress.com ecosystem. Owned by the same company that owns WordPress.com, WooCommerce, Jetpack, and Tumblr. Known for enterprise-grade managed WordPress hosting with Jetpack Security included."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 25.00,
+    "wordpressHostingMonthlyRenewal": 25.00,
+    "cloudHostingMonthlyLowest": 25.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Full refund within 30 days",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 20,
+    "storageType": "SSD",
+    "bandwidthGb": null,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["United States", "Europe", "Asia-Pacific"],
+    "serverLocationOptionsCount": 3,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Jetpack CDN (Automattic's global CDN)",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise DDoS protection",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewing)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 30,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with Premium plans",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": 4,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Redis",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "managedWordPress": {
+    "pricingModel": "visits",
+    "monthlyVisitLimit": 30000,
+    "visitOverageCost": 0.50,
+    "phpWorkerLimit": null,
+    "pluginRestrictions": null,
+    "devEnvironmentIncluded": false,
+    "devEnvironmentName": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": "Unlimited",
+    "migrationServiceQuality": "Expert white-glove migration",
+    "migrationTurnaroundDays": 1,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Pressable Dashboard",
+    "controlPanelName": "Pressable Dashboard",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited bandwidth on all plans; visit-based pricing $0.25-1.20 per 1,000 visits overage",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Upgrade required for additional storage",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment",
+    "resourceAbuseDefinition": "Excessive resource usage beyond plan limits",
+    "hiddenFeesNotes": "Jetpack Security ($239/year value) included free; No email hosting; Visit-based limits; 2 months free with annual billing; Automattic ecosystem integration; No phone support"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "WordPress-only hosting; Automattic ToS apply"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Varies by plan"
+  },
+  "reputation": {
+    "trustpilotRating": 4.8,
+    "trustpilotReviewsCount": 294,
+    "g2Rating": 4.8,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "Some users report slow admin interface; Integration with Automattic for Agencies can be confusing; No Redis caching; Limited to WordPress only; No phone support; Visit-based limits can be confusing",
+    "bestFor": "WordPress sites needing Automattic ecosystem integration; Agencies using Jetpack; Sites needing included Jetpack Security; Users wanting WordPress.com infrastructure; WooCommerce stores",
+    "avoidIf": "Need Redis caching; Prefer cPanel; Need phone support; Running non-WordPress sites; Budget-conscious",
+    "competitorComparisonNotes": "Owned by Automattic (WordPress.com parent); Jetpack Security included ($239 value); G2 4.8 and Trustpilot 4.8 excellent; 4-minute average support response; Part of WordPress ecosystem; Competes with Kinsta, WP Engine, Flywheel"
+  },
+  "ratings": {
+    "valueForMoney": 4.0,
+    "performance": 4.5,
+    "supportQuality": 4.5,
+    "security": 4.5,
+    "features": 4.0,
+    "easeOfUse": 4.5,
+    "transparency": 4.0,
+    "overallRating": 4.3
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 5,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 250.00,
+    "totalSecondYearCost": 300.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 22.92
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Automattic-owned managed WordPress with Jetpack Security included and WordPress.com infrastructure",
+    "primaryCompetitors": ["Kinsta", "WP Engine", "Flywheel"],
+    "bestAlternativeTo": "WP Engine",
+    "idealCustomerProfile": "WordPress site owner or agency wanting Automattic ecosystem integration with Jetpack Security included"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Canada", "Australia"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "SOC 2"],
+    "regionalWebsites": ["pressable.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Pressable is excellent for WordPress with G2 4.8 and Trustpilot 4.8 ratings. Owned by Automattic (WordPress.com parent), it includes Jetpack Security worth $239/year free.",
+    "faqWhoOwnsThisHost": "Pressable is owned by Automattic, the company behind WordPress.com, WooCommerce, Jetpack, and Tumblr. Acquired in 2021.",
+    "faqHowMuchDoesItCost": "Plans start at $25/month for 1 site with 30K visits and 20GB storage. Annual billing saves 2 months. Agency plans available up to $675/month.",
+    "faqIsItBeginnerFriendly": "Yes, the dashboard is intuitive and 24/7 support has ~4 minute response times. Jetpack integration simplifies management.",
+    "faqDoesItIncludeEmail": "No, Pressable does not include email hosting. Use third-party services like Google Workspace.",
+    "faqCanIHostWordPress": "Yes, Pressable is WordPress-only hosting with automatic updates, staging, and Jetpack Security included.",
+    "faqWhatsTheUptime": "Pressable guarantees 99.99% uptime with SLA credits for any downtime.",
+    "faqCanICancelAnytime": "Yes, 30-day money-back guarantee. Monthly billing available."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

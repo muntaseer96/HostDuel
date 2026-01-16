@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "HostArmada",
+    "websiteUrl": "https://hostarmada.com",
+    "yearFounded": 2019,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (privately held)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": false,
+    "instantAccountActivation": true,
+    "hostingType": "shared",
+    "notes": "Founded November 2019 in Wilmington, DE. Fast-growing independent web host. Cloud SSD infrastructure with 9 data centers globally. Known for excellent support (4.9 Trustpilot) and beginner-friendly approach. Free daily backups on all plans. Uses LiteSpeed web servers for performance."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.49,
+    "sharedHostingMonthlyRenewal": 9.95,
+    "vpsMonthlyLowest": 41.21,
+    "vpsMonthlyRenewal": 41.21,
+    "dedicatedMonthlyLowest": 149.00,
+    "dedicatedMonthlyRenewal": 149.00,
+    "wordpressHostingMonthlyPromo": 2.49,
+    "wordpressHostingMonthlyRenewal": 9.95,
+    "cloudHostingMonthlyLowest": 2.49,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 45,
+    "moneyBackExclusions": "Domain registration fees non-refundable",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal", "Cryptocurrency"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": true,
+    "domainPrivacyCostYearly": 0
+  },
+  "technicalSpecs": {
+    "storageGb": 15,
+    "storageType": "NVMe SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": 150000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": "0.35-1.0 (varies by plan)",
+    "maxFileUploadSizeMb": 256,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "Speed Reaper plan and above",
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Newark (US)", "Dallas (US)", "Fremont (US)", "Toronto (Canada)", "London (UK)", "Frankfurt (Germany)", "Mumbai (India)", "Singapore", "Sydney (Australia)"],
+    "serverLocationOptionsCount": 9,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "DDoS protection included on all plans",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewing)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 3.00,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 7,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2", "ISO 27001"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Phone", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": 2,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": true,
+    "objectCaching": true,
+    "objectCacheType": "Memcached",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": "Unlimited",
+    "migrationServiceQuality": "Expert migration team",
+    "migrationTurnaroundDays": 2,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": "Unlimited",
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited bandwidth; fair use policy applies",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Upgrade plan required",
+    "accountSuspensionPolicy": "Violation of ToS; excessive resource usage",
+    "resourceAbuseDefinition": "Inode limits; CPU/RAM abuse; malicious activity",
+    "hiddenFeesNotes": "Aggressive renewal pricing (300%+ increase); Free domain only for first year; 45-day refund is generous; LiteSpeed included is valuable; Daily backups free"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "Strict content policy; No adult, gambling, or high-resource file hosting"
+  },
+  "business": {
+    "apiAccess": false,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Up to $150 per sale"
+  },
+  "reputation": {
+    "trustpilotRating": 4.9,
+    "trustpilotReviewsCount": 1084,
+    "g2Rating": 4.8,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "Very high renewal prices (300%+ increase from promo); Founded 2019 so less track record than established hosts; No PCI/HIPAA compliance; Strict content policy may limit some uses",
+    "bestFor": "Beginners wanting excellent support; WordPress users wanting LiteSpeed performance; Small businesses needing reliable hosting; Users prioritizing support quality over price; Those wanting included daily backups",
+    "avoidIf": "Price-sensitive after first term; Need PCI/HIPAA compliance; Want to host adult/gambling content; Need longer track record",
+    "competitorComparisonNotes": "Exceptional Trustpilot (4.9) and G2 (4.8); LiteSpeed + NVMe performance; Founded 2019 but growing fast; 45-day money-back generous; Competes with SiteGround, A2 Hosting, ChemiCloud; Better support but higher renewal"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 4.5,
+    "supportQuality": 5.0,
+    "security": 4.0,
+    "features": 4.5,
+    "easeOfUse": 5.0,
+    "transparency": 3.5,
+    "overallRating": 4.3
+  },
+  "useCases": {
+    "suitabilityBlogger": 5,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 5,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 29.88,
+    "totalSecondYearCost": 119.40,
+    "renewalMarkupPercent": 299.60,
+    "effectiveMonthlyAverage": 6.22
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Exceptional support (4.9 Trustpilot) with LiteSpeed performance and free daily backups on cloud SSD infrastructure",
+    "primaryCompetitors": ["SiteGround", "A2 Hosting", "ChemiCloud", "FastComet"],
+    "bestAlternativeTo": "SiteGround",
+    "idealCustomerProfile": "Beginner or small business prioritizing excellent support and reliable WordPress hosting with LiteSpeed performance"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Canada", "Australia", "Germany", "India", "Singapore"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["hostarmada.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "HostArmada is excellent for beginners and WordPress users. Exceptional Trustpilot (4.9) and G2 (4.8) ratings. Founded 2019 but rapidly growing reputation.",
+    "faqWhoOwnsThisHost": "HostArmada is an independent, privately-held company founded in November 2019. Headquartered in Wilmington, Delaware.",
+    "faqHowMuchDoesItCost": "Starting at $2.49/month promo, renewing at $9.95/month. VPS from $41.21/month. 45-day money-back guarantee.",
+    "faqIsItBeginnerFriendly": "Yes, very beginner-friendly with excellent 24/7 support, cPanel, and one-click WordPress installation.",
+    "faqDoesItIncludeEmail": "Yes, unlimited email accounts with webmail access and spam filtering on all plans.",
+    "faqCanIHostWordPress": "Yes, WordPress-optimized hosting with LiteSpeed cache, staging, and auto-updates.",
+    "faqWhatsTheUptime": "99.9% uptime guarantee with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, 45-day money-back guarantee. Monthly billing available."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": true
+  }
+}

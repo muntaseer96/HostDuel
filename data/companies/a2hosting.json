@@ -1,0 +1,255 @@
+{
+  "basicInfo": {
+    "companyName": "A2 Hosting",
+    "websiteUrl": "https://www.a2hosting.com",
+    "yearFounded": 2001,
+    "headquartersCountry": "United States",
+    "parentCompany": "World Host Group / hosting.com (acquired January 2025; rebranded to hosting.com May 2025; investors include Oakley Capital, Barings, Bain Capital)",
+    "dataLastUpdated": "2026-01-13",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "shared",
+    "notes": "Founded in 2001 as Iniquinet in Ann Arbor, Michigan by Bryan Muthig. Renamed to A2 Hosting in 2003 (A2 refers to Ann Arbor). Acquired by World Host Group in January 2025 and rebranded to hosting.com in May 2025. Known for 'Turbo' servers claiming 20x faster speeds. Focus on speed and developer-friendly features. 4 data centers across 3 continents."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 1.99,
+    "sharedHostingMonthlyRenewal": 12.99,
+    "vpsMonthlyLowest": 2.99,
+    "vpsMonthlyRenewal": 2.99,
+    "dedicatedMonthlyLowest": 105.99,
+    "dedicatedMonthlyRenewal": 105.99,
+    "wordpressHostingMonthlyPromo": 1.99,
+    "wordpressHostingMonthlyRenewal": 12.99,
+    "cloudHostingMonthlyLowest": null,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "30-day full refund; Prorated refund for unused services available up to 90 days; Domain fees non-refundable; Setup fees non-refundable",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Skrill", "Bank Transfer", "Check"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": false,
+    "domainPrivacyCostYearly": 14.99
+  },
+  "technicalSpecs": {
+    "storageGb": 100,
+    "storageType": "SSD (NVMe on Turbo plans)",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": 5,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "Turbo plans and above",
+    "subdomainsLimit": 25,
+    "ftpAccountsLimit": 25,
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": false,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Ann Arbor, MI (US-East)", "Phoenix, AZ (US-West)", "Amsterdam (Netherlands)", "Singapore"],
+    "serverLocationOptionsCount": 4,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN (free)",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Reinforced DDoS Protection included",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 5.99,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (Turbo plans) / Weekly (basic plans)",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SSAE16"]
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7/365",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with Turbo plans",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": true,
+    "objectCaching": true,
+    "objectCacheType": "OPcache/Memcached",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 4,
+    "migrationTurnaroundDays": 3,
+    "paidMigrationCost": 25.00
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Site.pro Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": 25,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered within fair use; excessive use may require upgrade",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Must upgrade plan; inode limits apply",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; resource abuse",
+    "resourceAbuseDefinition": "Excessive resource usage; 25% CPU usage limit on shared; crypto mining; spam",
+    "hiddenFeesNotes": "Renewal prices significantly higher than promo (up to 6x); Free domain NOT included; $25 fee to change data center; Turbo plans significantly more expensive; Add-ons like backup, priority support extra on basic plans"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "gamblingNotes": "All gambling/lottery banned regardless of legality - strictest policy",
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "proxyVpnNotes": "Proxies and anonymizers of any kind explicitly banned per AUP",
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Tiered per sale",
+    "affiliateCommissionAmount": "$55 (1-10 sales), $75 (11-15), $100 (16-20), $125 (21+ sales); $5 second-tier; 90-day cookie"
+  },
+  "reputation": {
+    "trustpilotRating": 4.7,
+    "trustpilotReviewsCount": 5066,
+    "g2Rating": 4.3,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Significant renewal price increase (up to 6x promo price); Reports of declining support quality; No free domain included; $25 fee to change data center location; Uptime occasionally below guarantee (99.95% actual vs 99.9% promised); Some migration issues reported; Turbo servers only on higher-priced plans; Company acquired and rebranded to hosting.com in 2025",
+    "bestFor": "Speed-focused websites needing Turbo servers; Developers wanting SSH, Git, WP-CLI access; Users wanting multiple data center location options; WordPress sites needing LiteSpeed caching; Budget shared hosting with promo pricing; Reseller hosting with white-label options",
+    "avoidIf": "Budget-sensitive at renewal time; Need free domain included; Want guaranteed 99.9%+ uptime; Prefer all-inclusive pricing; Need PCI/HIPAA compliance; Want more than 4 data center locations",
+    "competitorComparisonNotes": "Turbo servers unique speed proposition vs competitors; cPanel included (unlike Hostinger); 4 data centers (fewer than most major competitors); A+ BBB rating (good); High Trustpilot (4.7) among best in industry; Renewal markup significant like Bluehost/Hostinger; LiteSpeed caching included (like Hostinger); Free migration but only 1 site; Now part of hosting.com/World Host Group"
+  },
+  "ratings": {
+    "valueForMoney": 3.0,
+    "performance": 4.5,
+    "supportQuality": 3.5,
+    "security": 3.5,
+    "features": 4.0,
+    "easeOfUse": 4.0,
+    "transparency": 3.0,
+    "overallRating": 3.6
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 23.88,
+    "totalSecondYearCost": 155.88,
+    "renewalMarkupPercent": 552.3,
+    "effectiveMonthlyAverage": 7.49
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Turbo servers with LiteSpeed caching claiming 20x faster speeds than standard hosting",
+    "primaryCompetitors": ["SiteGround", "Hostinger", "InMotion Hosting"],
+    "bestAlternativeTo": "SiteGround",
+    "idealCustomerProfile": "Speed-focused user who wants developer tools and doesn't mind renewal price increases"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Netherlands", "Singapore", "Germany", "United Kingdom"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP", "INR"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["a2hosting.com", "hosting.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "A2 Hosting is good for speed-focused websites with their Turbo servers and LiteSpeed caching. They have excellent Trustpilot ratings (4.7) and A+ BBB rating, but renewal prices are significantly higher than promo rates.",
+    "faqWhoOwnsThisHost": "A2 Hosting was acquired by World Host Group in January 2025 and rebranded to hosting.com in May 2025. The company is backed by Oakley Capital, Barings, and Bain Capital.",
+    "faqHowMuchDoesItCost": "A2 Hosting shared hosting starts at $1.99/month (promo) and renews at $12.99/month. Turbo plans start at $5.99/month promo. VPS starts at $2.99/month.",
+    "faqIsItBeginnerFriendly": "Yes, A2 Hosting offers cPanel, one-click installers, and 24/7 support. However, the best features are on Turbo plans which cost more.",
+    "faqDoesItIncludeEmail": "Yes, email accounts are included. The Startup plan includes 25 email accounts with webmail access and spam filtering.",
+    "faqCanIHostWordPress": "Yes, A2 Hosting offers optimized WordPress hosting with staging, auto-updates, and LiteSpeed caching on Turbo plans.",
+    "faqWhatsTheUptime": "A2 Hosting guarantees 99.9% uptime with 5% credit per hour of downtime. Actual uptime is reported around 99.95%.",
+    "faqCanICancelAnytime": "Yes, with a 30-day full money-back guarantee and prorated refunds up to 90 days. Monthly billing is available."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

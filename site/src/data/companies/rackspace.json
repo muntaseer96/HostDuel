@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Rackspace Technology",
+    "websiteUrl": "https://www.rackspace.com",
+    "yearFounded": 1998,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (publicly traded; owned by Apollo Global Management since 2016)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": false,
+    "instantAccountActivation": false,
+    "hostingType": "cloud-iaas",
+    "notes": "Founded 1998 in San Antonio, TX. Pioneer of managed cloud hosting. Known for 'Fanatical Support' brand. Went private in 2016 via Apollo Global Management acquisition for $4.3B. Re-IPO in 2020. Focuses on multi-cloud managed services for enterprises. 6,800+ employees globally."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": 199.00,
+    "dedicatedMonthlyRenewal": 199.00,
+    "wordpressHostingMonthlyPromo": null,
+    "wordpressHostingMonthlyRenewal": null,
+    "cloudHostingMonthlyLowest": null,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": null,
+    "moneyBackExclusions": "Enterprise contracts; no traditional refund policy",
+    "acceptedPaymentMethods": ["Credit Card", "Invoice", "Wire Transfer", "Enterprise Agreement"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": null,
+    "storageType": "SSD/HDD (varies by plan)",
+    "bandwidthGb": null,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": null,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": null,
+    "phpVersionSwitching": null,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All managed plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": null,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL, PostgreSQL, MSSQL, Oracle",
+    "redisAvailable": true,
+    "elasticsearchSupport": true,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Dallas (US)", "Chicago (US)", "Virginia (US)", "London (UK)", "Hong Kong", "Sydney (Australia)"],
+    "serverLocationOptionsCount": 6,
+    "chooseServerLocation": true,
+    "cdnIncluded": false,
+    "cdnProvider": "Akamai/CloudFlare (partner integrations)",
+    "uptimeGuaranteePercent": 100,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise DDoS mitigation included",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt / Custom certificates",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 7,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": true,
+    "dataCenterCertifications": ["SOC 1", "SOC 2 Type II", "SOC 3", "ISO 27001", "ISO 9001", "ISO 14001", "PCI DSS Level 1", "HIPAA", "HITRUST CSF", "FedRAMP", "FISMA", "NIST 800-53", "NIST 800-171", "ITAR", "FIPS 140-2"]
+  },
+  "support": {
+    "supportChannels": ["Phone", "Ticket", "Chat", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States", "United Kingdom", "Australia"],
+    "phoneSupportHours": "24/7/365",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included in managed plans; varies by SLA tier",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": true
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": false,
+    "wordpressAutoInstall": false,
+    "wordpressAutoUpdates": false,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": null,
+    "migrationServiceQuality": "Expert white-glove migration",
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Rackspace Customer Portal / MyRackspace",
+    "controlPanelName": "MyRackspace Portal",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": null,
+    "individualMailboxSizeGb": 25,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Varies by contract; typically metered",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Varies by contract",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment",
+    "resourceAbuseDefinition": "ToS violations; abuse; illegal content",
+    "hiddenFeesNotes": "Premium pricing for managed services; Support quality reported as declining post-outsourcing; Complex enterprise contracts; Best for large enterprises needing multi-cloud management"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": true,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "Enterprise-focused; strict AUP for managed services"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": false,
+    "affiliateCommissionType": null,
+    "affiliateCommissionAmount": null
+  },
+  "reputation": {
+    "trustpilotRating": 1.2,
+    "trustpilotReviewsCount": 286,
+    "g2Rating": 4.2,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Very poor Trustpilot rating (1.2) despite 'Fanatical Support' brand; Support quality reportedly declined after outsourcing; Expensive for what you get; Complex contracts; Slow response times reported; Not suitable for small businesses; Apollo acquisition led to cost-cutting",
+    "bestFor": "Large enterprises needing multi-cloud management; Organizations requiring managed services across AWS/Azure/GCP; Companies needing 24/7 expert support; Compliance-heavy industries",
+    "avoidIf": "Small business or startup; Need affordable hosting; Want simple self-service; Budget-conscious; Need quick support responses",
+    "competitorComparisonNotes": "Pioneer of managed hosting but struggling; G2 4.2 reflects enterprise satisfaction but Trustpilot 1.2 shows customer frustration; 'Fanatical Support' brand undermined by outsourcing; Expensive vs DIY cloud; Competes with Cloudways, managed AWS/Azure services"
+  },
+  "ratings": {
+    "valueForMoney": 2.0,
+    "performance": 4.0,
+    "supportQuality": 2.5,
+    "security": 4.5,
+    "features": 4.0,
+    "easeOfUse": 3.0,
+    "transparency": 2.0,
+    "overallRating": 3.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 1,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 3,
+    "suitabilityBeginner": 1,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 2388.00,
+    "totalSecondYearCost": 2388.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 199.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Multi-cloud managed services provider with 'Fanatical Support' across AWS, Azure, and GCP",
+    "primaryCompetitors": ["Cloudways", "AWS Managed Services", "Azure Managed"],
+    "bestAlternativeTo": "Self-managed multi-cloud",
+    "idealCustomerProfile": "Enterprise needing managed multi-cloud services with 24/7 support and compliance requirements"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Australia"],
+    "localCurrencyBilling": ["USD", "GBP", "AUD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI-DSS", "HIPAA", "SOC 2"],
+    "regionalWebsites": ["rackspace.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Rackspace was a pioneer in managed hosting but has struggled recently. G2 4.2 reflects some enterprise satisfaction, but Trustpilot 1.2 shows significant customer frustration with support quality decline.",
+    "faqWhoOwnsThisHost": "Rackspace Technology is owned by Apollo Global Management since 2016 ($4.3B acquisition). Re-IPO in 2020. Headquartered in San Antonio, TX.",
+    "faqHowMuchDoesItCost": "Enterprise pricing; dedicated servers from $199/month. Managed cloud services are custom quoted. Not budget-friendly.",
+    "faqIsItBeginnerFriendly": "No. Rackspace targets enterprises and is expensive. Better options exist for small businesses and beginners.",
+    "faqDoesItIncludeEmail": "Yes, Rackspace Email is available as a managed service with 25GB mailboxes.",
+    "faqCanIHostWordPress": "Not optimized for WordPress. Better to use Cloudways or other managed WordPress hosts.",
+    "faqWhatsTheUptime": "Rackspace offers 100% uptime SLA with service credits for downtime.",
+    "faqCanICancelAnytime": "Depends on contract terms. Enterprise agreements may have minimum commitments."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": true
+  }
+}

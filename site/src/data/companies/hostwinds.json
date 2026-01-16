@@ -1,0 +1,255 @@
+{
+  "basicInfo": {
+    "companyName": "Hostwinds",
+    "websiteUrl": "https://www.hostwinds.com",
+    "yearFounded": 2010,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (privately held; founded by Peter Holden; bootstrapped)",
+    "dataLastUpdated": "2026-01-13",
+    "greenHosting": null,
+    "instantAccountActivation": true,
+    "hostingType": "shared",
+    "notes": "Founded in 2010 by Peter Holden in Tulsa, Oklahoma. Now headquartered in Seattle, Washington. PC Magazine Editors' Choice for best hosting for 10 consecutive years. Focus on customer-centric hosting with 24/7 US-based support. Offers full range from shared hosting to dedicated servers. Known for transparent pricing and highly customizable VPS options."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 3.29,
+    "sharedHostingMonthlyRenewal": 4.99,
+    "vpsMonthlyLowest": 5.17,
+    "vpsMonthlyRenewal": 5.17,
+    "dedicatedMonthlyLowest": 70.00,
+    "dedicatedMonthlyRenewal": 70.00,
+    "wordpressHostingMonthlyPromo": 5.24,
+    "wordpressHostingMonthlyRenewal": 8.24,
+    "cloudHostingMonthlyLowest": 5.17,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 3,
+    "moneyBackExclusions": "3-day money-back guarantee only; Short refund window; Domain fees non-refundable",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Bitcoin", "Cryptocurrency"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": false,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": "Unlimited",
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": false,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Seattle, WA (US)", "Dallas, TX (US)", "Amsterdam (Netherlands)"],
+    "serverLocationOptionsCount": 3,
+    "chooseServerLocation": true,
+    "cdnIncluded": false,
+    "cdnProvider": null,
+    "uptimeGuaranteePercent": 99.9999,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise-level DDoS protection included",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": true,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 3.00,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Nightly (automated)",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Phone", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7/365",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with managed services",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": false,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": "Unlimited",
+    "migrationServiceQuality": 4,
+    "migrationTurnaroundDays": 3,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Weebly"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": "Unlimited",
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited within fair use; excessive use may require upgrade",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Unlimited within fair use; must upgrade for excessive use",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; resource abuse; illegal content",
+    "resourceAbuseDefinition": "Excessive CPU usage; spam; illegal activities in US jurisdiction",
+    "hiddenFeesNotes": "Transparent pricing with renewal rates visible upfront; Only 3-day money-back (very short); Free domain NOT included; Managed services cost extra; VPS highly customizable but add-ons increase price; No free CDN"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": true,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": true,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "adultContentNotes": "Adult content allowed if legal in US and user is over 18",
+    "gamblingNotes": "Gambling-related material explicitly not allowed"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale (tiered)",
+    "affiliateCommissionAmount": "$65 (1-6 sales), $85 (7-12), $100 (13-19), $135 (19+); $25 for unmanaged only; 60-day cookie; $100 minimum payout"
+  },
+  "reputation": {
+    "trustpilotRating": 2.9,
+    "trustpilotReviewsCount": 716,
+    "g2Rating": 4.8,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Only 3-day money-back guarantee (extremely short); Low Trustpilot rating (2.9) despite good G2 rating; No free domain included; No staging environment; Limited to 3 data center locations; No CDN included; Renewal prices higher than promo; Some users report billing issues",
+    "bestFor": "Developers wanting highly customizable VPS options; Users who value transparent upfront pricing; Adult content websites (rare among hosts); Businesses needing 24/7 US-based phone support; Users wanting both managed and unmanaged options; PC Magazine readers who trust their Editors' Choice",
+    "avoidIf": "Need longer money-back guarantee; Require many global server locations; Want included CDN; Need free domain; Prefer all-inclusive pricing; Concerned about mixed Trustpilot reviews; Want staging environments",
+    "competitorComparisonNotes": "99.9999% uptime guarantee (highest in industry); PC Magazine Editors' Choice 10 years; A+ BBB rating (good); Excellent G2 rating (4.8) but poor Trustpilot (2.9); Adult content allowed (rare feature); Transparent pricing (renewal visible upfront); Only 3-day refund (vs 30-45 days competitors); Monthly billing available; Crypto payments accepted"
+  },
+  "ratings": {
+    "valueForMoney": 4.0,
+    "performance": 4.0,
+    "supportQuality": 4.0,
+    "security": 3.5,
+    "features": 4.0,
+    "easeOfUse": 4.0,
+    "transparency": 4.5,
+    "overallRating": 4.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 3,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 5,
+    "suitabilityBeginner": 3,
+    "suitabilityEnterprise": 3
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 39.48,
+    "totalSecondYearCost": 59.88,
+    "renewalMarkupPercent": 51.7,
+    "effectiveMonthlyAverage": 4.14
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "99.9999% uptime guarantee with transparent pricing and adult content hosting allowed",
+    "primaryCompetitors": ["InMotion Hosting", "A2 Hosting", "Liquid Web"],
+    "bestAlternativeTo": "InMotion Hosting",
+    "idealCustomerProfile": "Developer wanting customizable VPS with transparent pricing and strong uptime guarantee"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Netherlands", "United Kingdom", "Canada"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["hostwinds.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Hostwinds is excellent for developers wanting customizable VPS options and has a 99.9999% uptime guarantee. PC Magazine Editors' Choice for 10 years. However, mixed reviews on Trustpilot (2.9) vs excellent G2 rating (4.8).",
+    "faqWhoOwnsThisHost": "Hostwinds is an independently owned, privately held company founded by Peter Holden in 2010. Originally founded in Tulsa, Oklahoma, now headquartered in Seattle, Washington.",
+    "faqHowMuchDoesItCost": "Hostwinds shared hosting starts at $3.29/month (renews at $4.99). Unmanaged VPS starts at $5.17/month. Dedicated servers from $70/month. Monthly billing available.",
+    "faqIsItBeginnerFriendly": "Moderately. Hostwinds offers cPanel, one-click installers, and 24/7 phone support, but the highly customizable nature of their services may overwhelm beginners.",
+    "faqDoesItIncludeEmail": "Yes, unlimited email accounts are included with shared hosting plans, with webmail access and spam filtering.",
+    "faqCanIHostWordPress": "Yes, Hostwinds offers optimized WordPress hosting with automatic installation and updates, though no staging environment is available.",
+    "faqWhatsTheUptime": "Hostwinds guarantees an industry-leading 99.9999% uptime backed by SLA credits for any downtime.",
+    "faqCanICancelAnytime": "Hostwinds offers only a 3-day money-back guarantee, which is much shorter than the industry standard of 30 days. Monthly billing is available, allowing flexible cancellation."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

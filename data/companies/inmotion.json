@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "InMotion Hosting",
+    "websiteUrl": "https://www.inmotionhosting.com",
+    "yearFounded": 2001,
+    "headquartersCountry": "United States",
+    "parentCompany": "Privately held (employee-owned, founded by Sunil Saxena and Todd Robinson)",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Founded in 2001, employee-owned company. Co-founders Sunil Saxena and Todd Robinson still lead the company. HQ in Virginia Beach, VA with offices in California. 267 employees across 5 continents. Serves 170,000+ customers. Owns and operates own servers in data centers in California, Virginia, Netherlands, and Singapore. Known for US-based support and 90-day money-back guarantee."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.62,
+    "sharedHostingMonthlyRenewal": 12.49,
+    "vpsMonthlyLowest": 29.99,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": 99.99,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 2.62,
+    "wordpressHostingMonthlyRenewal": 12.49,
+    "cloudHostingMonthlyLowest": 11.67,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 90,
+    "moneyBackExclusions": "Month-to-month VPS/Dedicated plans only get 30 days; Domain registrations non-refundable; SSL certificates non-refundable; Add-on services non-refundable",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 100,
+    "storageType": "NVMe SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": 50000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3", "8.4"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All shared hosting plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "WordPress hosting plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Los Angeles, CA (US)", "Ashburn, VA (US)", "Amsterdam (Netherlands)", "Singapore"],
+    "serverLocationOptionsCount": 4,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "InMotion CDN",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Advanced",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed every 3 months)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (higher plans), Manual (basic plans)",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Email/Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "9AM-9PM ET Monday-Friday (live chat/ticket 24/7)",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "NGINX proxy cache",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "BoldGrid Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": null,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited within fair use; excessive use may require upgrade",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Hard limits apply; must upgrade plan",
+    "accountSuspensionPolicy": "AUP violations may result in content deletion, suspension, or termination; InMotion reserves right to delete material deemed inappropriate",
+    "resourceAbuseDefinition": "Exceeding inode limits (50,000); storing non-website files; excessive CPU/memory usage affecting other users",
+    "hiddenFeesNotes": "Renewal prices ~5x higher than promo ($2.62 → $12.49); Domain renewal $19.99/yr after free year; Automated backups only on higher-priced plans; Phone support limited to business hours (live chat/ticket 24/7); Month-to-month VPS/Dedicated only get 30-day refund"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": false,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Tiered (based on product and volume)",
+    "affiliateCommissionAmount": "Tiered commission based on hosting product and sales volume; 90-day cookie duration"
+  },
+  "reputation": {
+    "trustpilotRating": 4.1,
+    "trustpilotReviewsCount": 2513,
+    "g2Rating": 4.1,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Renewal prices ~5x higher than promo ($2.62 → $12.49); Phone support limited to business hours (9AM-9PM ET M-F); Automated backups only on higher plans; Low inode limit (50,000) compared to competitors; 21% of Trustpilot reviews are 1-star; Domain renewal $19.99/yr is higher than competitors; Month-to-month VPS/dedicated only get 30-day refund",
+    "bestFor": "Business users needing US-based support; Users wanting 90-day money-back guarantee; WordPress users (optimized with staging); cPanel users; Users needing 4 global data center locations; Users wanting employee-owned company",
+    "avoidIf": "Budget-conscious at renewal time (5x markup); Need 24/7 phone support; Need low inode limits; Adult or adult-adjacent content; Need cheap monthly VPS plans",
+    "competitorComparisonNotes": "90-day money-back (longer than 30-45 day competitors); US-based support (unlike offshore competitors); 4 data centers including EU and Asia (better than HostGator's 2); Employee-owned like DreamHost; cPanel included (unlike Hostinger); Higher renewal markup than DreamHost (5x vs 2.7x); Lower Trustpilot (4.1) than SiteGround (4.8)/DreamHost (4.7); 99.99% uptime guarantee matches premium hosts; Staging included on WordPress plans"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 4.0,
+    "supportQuality": 4.5,
+    "security": 4.0,
+    "features": 4.0,
+    "easeOfUse": 4.0,
+    "transparency": 3.0,
+    "overallRating": 3.9
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 31.44,
+    "totalSecondYearCost": 149.88,
+    "renewalMarkupPercent": 376.7,
+    "effectiveMonthlyAverage": 7.56
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Employee-owned US host with 90-day money-back, US-based support, and 99.99% uptime",
+    "primaryCompetitors": ["DreamHost", "Bluehost", "A2 Hosting"],
+    "bestAlternativeTo": "GoDaddy",
+    "idealCustomerProfile": "US business wanting American support, long refund period, and BBB A+ rated company"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Netherlands", "Singapore"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI DSS"],
+    "regionalWebsites": ["inmotionhosting.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "InMotion is excellent for US businesses wanting American support and a BBB A+ rating, but has a 5x renewal markup and limited phone support hours.",
+    "faqWhoOwnsThisHost": "InMotion Hosting is employee-owned, founded in 2001 by Sunil Saxena and Todd Robinson who still lead the company.",
+    "faqHowMuchDoesItCost": "InMotion shared hosting starts at $2.62/month (promo) and renews at $12.49/month. First year costs approximately $31.",
+    "faqIsItBeginnerFriendly": "Yes, InMotion offers cPanel, US-based support, and good documentation. The 90-day money-back guarantee reduces risk for beginners.",
+    "faqDoesItIncludeEmail": "Yes, InMotion includes unlimited email accounts with shared hosting plans.",
+    "faqCanIHostWordPress": "Yes, InMotion offers WordPress hosting with staging, auto-updates, and BoldGrid website builder.",
+    "faqWhatsTheUptime": "InMotion guarantees 99.99% uptime, matching premium hosts, with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, with a 90-day money-back guarantee (longest in the industry). VPS/dedicated monthly plans only get 30 days."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

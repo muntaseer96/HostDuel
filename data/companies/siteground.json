@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "SiteGround",
+    "websiteUrl": "https://www.siteground.com",
+    "yearFounded": 2004,
+    "headquartersCountry": "Bulgaria",
+    "parentCompany": "SiteGround Capital (Cyprus-registered holding)",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Founded in 2004 in Sofia by university friends from American University in Bulgaria. CEO is Nikolay Todorov. 500+ employees. Powers 3M+ domains across 6 continents. Migrated entirely to Google Cloud infrastructure in 2020. Offices in Sofia, Plovdiv, Stara Zagora (Bulgaria), Madrid (Spain), and Alexandria, VA (US). Known for premium WordPress hosting and excellent support."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.99,
+    "sharedHostingMonthlyRenewal": 17.99,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 2.99,
+    "wordpressHostingMonthlyRenewal": 17.99,
+    "cloudHostingMonthlyLowest": 100.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Monthly subscriptions excluded; Cloud hosting only 14 days; Domains non-refundable (may be charged if waived initially); Third-party services non-refundable; SSL certificates non-refundable; Reseller hosting non-refundable; SiteGround Wallet balance non-refundable; TOS violators not eligible",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 10,
+    "storageType": "SSD (Google Cloud)",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": 200000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": 1,
+    "maxFileUploadSizeMb": 24,
+    "phpVersionsAvailable": ["8.0", "8.1", "8.2", "8.3", "8.4"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All shared hosting plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "GrowBig plan and above",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Ashburn, VA (US)", "Council Bluffs, IA (US)", "Dallas, TX (US)", "Los Angeles, CA (US)", "Eemshaven (Netherlands)", "London (UK)", "Frankfurt (Germany)", "Paris (France)", "Singapore", "Sydney (Australia)"],
+    "serverLocationOptionsCount": 10,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN (170+ edge locations via Google Cloud)",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Advanced (AI anti-bot, WAF, IDS/IPS)",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (Wildcard SSL when using SiteGround DNS)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 4.50,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 30,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["Google Cloud certified"]
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Ticket", "Knowledge Base", "AI Assistant"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States", "United Kingdom", "Australia", "Spain", "Italy"],
+    "phoneSupportHours": "24/7",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English", "Spanish", "Italian"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Memcached (SuperCacher)",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": 5,
+    "paidMigrationCost": 35.00
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Site Tools (proprietary)",
+    "controlPanelName": "Site Tools",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "SiteGround Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": null,
+    "individualMailboxSizeGb": 10,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered; no overage charges",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Must upgrade plan; inode limits enforced strictly",
+    "accountSuspensionPolicy": "Exceeding inode limits causes suspension; TOS violations lead to termination; abuse investigated promptly",
+    "resourceAbuseDefinition": "Exceeding inode limits (200K-600K depending on plan); excessive CPU usage; hosting prohibited content; using >80% inodes blocks git repo creation",
+    "hiddenFeesNotes": "Renewal 6x higher than promo ($2.99 → $17.99); No free domain included; Cloud hosting only 14-day refund; Monthly subscriptions excluded from money-back guarantee; On-demand backups only on GrowBig+; No traditional VPS offering; $35 per additional migration"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": true,
+    "cryptocurrencySitesAllowed": null,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": null
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Flat rate (tiered)",
+    "affiliateCommissionAmount": "$50-$100 per sale (1-5 sales: $50, 6-10: $75, 11-20: $100, 21+: custom); 60-day cookie; weekly PayPal payout; no minimum threshold; free to join"
+  },
+  "reputation": {
+    "trustpilotRating": 4.8,
+    "trustpilotReviewsCount": 26149,
+    "g2Rating": 4.4,
+    "betterBusinessBureauRating": "Not Accredited"
+  },
+  "editorial": {
+    "knownIssues": "Renewal prices 6x higher than promo ($2.99 → $17.99); No free domain included (most competitors include one); Strict inode limits can suspend accounts; Cloud hosting only 14-day refund; Monthly plans excluded from money-back guarantee; No traditional VPS offering; On-demand backups require GrowBig+; $35 fee for additional migrations; Entry-level StartUp plan limited (no staging, no on-demand backups)",
+    "bestFor": "WordPress users needing premium managed hosting; Users prioritizing excellent 24/7 support (phone/chat/ticket); Performance-focused sites (Google Cloud infrastructure); Developers needing staging/Git/SSH; International users (10 data center locations); Users wanting 30-day backup retention; Security-conscious users (AI anti-bot, WAF)",
+    "avoidIf": "Budget-conscious at renewal (6x markup); Need free domain included; Want traditional VPS hosting; Prefer cPanel over proprietary panels; Need cheap entry-level hosting; Sensitive to strict inode limits",
+    "competitorComparisonNotes": "Higher renewal than Hostinger ($17.99 vs $10.99) and Namecheap ($4.48); No free domain (Hostinger/Namecheap include one); Better support reputation than budget hosts; Google Cloud infrastructure unique; 30-day backup retention vs 7 days competitors; Stricter inode enforcement than competitors; No LiteSpeed (uses NGINX/Memcached SuperCacher); Staging included on GrowBig+ (similar to Hostinger Business+); Premium positioning vs budget competitors"
+  },
+  "ratings": {
+    "valueForMoney": 3.0,
+    "performance": 5.0,
+    "supportQuality": 5.0,
+    "security": 4.5,
+    "features": 4.0,
+    "easeOfUse": 4.0,
+    "transparency": 3.0,
+    "overallRating": 4.1
+  },
+  "useCases": {
+    "suitabilityBlogger": 5,
+    "suitabilityEcommerce": 5,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 3
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 35.88,
+    "totalSecondYearCost": 215.88,
+    "renewalMarkupPercent": 501.7,
+    "effectiveMonthlyAverage": 10.49
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Premium WordPress hosting on Google Cloud with industry-leading 24/7 support",
+    "primaryCompetitors": ["Bluehost", "Hostinger", "Cloudways"],
+    "bestAlternativeTo": "Bluehost",
+    "idealCustomerProfile": "WordPress site owner who prioritizes performance and support over price"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Germany", "Netherlands", "France", "Australia", "Singapore", "Spain", "Italy"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP", "AUD"],
+    "localSupportLanguages": ["English", "Spanish", "Italian"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["siteground.com", "siteground.es", "it.siteground.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "SiteGround is excellent for WordPress users who prioritize performance and support, but has the highest renewal markup (6x) and no free domain.",
+    "faqWhoOwnsThisHost": "SiteGround is owned by SiteGround Capital, a Cyprus-registered holding company. Founded in Bulgaria by university friends.",
+    "faqHowMuchDoesItCost": "SiteGround shared hosting starts at $2.99/month (promo) and renews at $17.99/month. First year costs approximately $36.",
+    "faqIsItBeginnerFriendly": "Yes, SiteGround's Site Tools panel is intuitive, though different from cPanel. Excellent 24/7 support helps beginners.",
+    "faqDoesItIncludeEmail": "Yes, SiteGround includes unlimited email accounts with 10GB per mailbox.",
+    "faqCanIHostWordPress": "Yes, SiteGround offers premium WordPress hosting with SuperCacher, staging, and auto-updates on Google Cloud infrastructure.",
+    "faqWhatsTheUptime": "SiteGround guarantees 99.9% uptime with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee for annual plans. Monthly subscriptions and cloud hosting are excluded."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "IONOS",
+    "websiteUrl": "https://www.ionos.com",
+    "yearFounded": 1988,
+    "headquartersCountry": "Germany",
+    "parentCompany": "United Internet AG",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Founded as 1&1 EDV-Marketing GmbH in 1988 by Ralph Dommermuth. Merged with ProfitBricks in 2018, rebranded to 1&1 IONOS. Became IONOS in Jan 2020. IPO on Feb 8, 2023 (included in SDAX Sept 2023). Europe's largest hosting provider with 6.5M+ customers in 18 markets. Dual HQ: Montabaur, Germany and Philadelphia, PA. 4,000+ employees worldwide. Over 90,000 servers in 10+ data centers."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 1.00,
+    "sharedHostingMonthlyRenewal": 12.00,
+    "vpsMonthlyLowest": 2.00,
+    "vpsMonthlyRenewal": 6.00,
+    "dedicatedMonthlyLowest": 70.00,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 1.00,
+    "wordpressHostingMonthlyRenewal": 6.00,
+    "cloudHostingMonthlyLowest": 5.00,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Setup fees non-refundable; Additional domains non-refundable; Items paid in advance non-refundable; Package switchers not eligible; TOS violators not eligible",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Direct Debit"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 10,
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["8.0", "8.1", "8.2", "8.3", "8.4"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All hosting plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Frankfurt (Germany)", "Berlin (Germany)", "Paris (France)", "London (UK)", "Worcester (UK)", "Logrono (Spain)", "Las Vegas, NV (US)", "Newark, NJ (US)", "Lenexa, KS (US)"],
+    "serverLocationOptionsCount": 9,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "IONOS CDN",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Advanced (SIEM, IDS/IPS)",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "DigiCert Wildcard SSL",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 6,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["ISO 27001"]
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Email (Personal Consultant)", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States", "Canada", "Germany", "Spain", "Italy", "France", "Mexico", "Australia", "United Kingdom"],
+    "phoneSupportHours": "24/7",
+    "ticketSupport": false,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": 0,
+    "supportLanguageOptions": ["English", "German", "Spanish", "French", "Italian"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": false,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "IONOS Caching Plugin",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": null,
+    "migrationServiceQuality": 4,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "IONOS Control Panel (proprietary)",
+    "controlPanelName": "IONOS Control Panel",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "IONOS MyWebsite"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": 1,
+    "individualMailboxSizeGb": 2,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited bandwidth; no throttling or overage charges",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Must upgrade plan; file limits apply per contract",
+    "accountSuspensionPolicy": "TOS violations lead to suspension; unpaid balances referred to collection (no credit impact)",
+    "resourceAbuseDefinition": "Exceeding file limits; hosting prohibited content; resource usage affecting other users",
+    "hiddenFeesNotes": "PHP Extended Support costs extra for older PHP versions; 2026 price adjustment announced; renewal prices significantly higher than promo; cPanel not available (proprietary panel only); some users report difficult cancellation process"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": null,
+    "fileHostingAllowed": null,
+    "proxyVpnAllowed": null,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Percentage",
+    "affiliateCommissionAmount": "Commission varies by product; 8 international markets available; free to join"
+  },
+  "reputation": {
+    "trustpilotRating": 4.7,
+    "trustpilotReviewsCount": 37965,
+    "g2Rating": 3.8,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "2026 price adjustment announced (increases); No cPanel (proprietary panel only); PHP CLI version differs from hosting environment via SSH; Difficult cancellation process reported; Auto-renewal complaints; Control panel feels outdated; No Node.js/Python on shared hosting; Limited developer flexibility compared to cPanel hosts",
+    "bestFor": "European businesses (largest EU host); Users wanting 24/7 phone support; Short 12-month contracts (vs 36-48 month competitors); Free Wildcard SSL included; VPS users ($2/mo entry); Users preferring established BBB A+ company; Geo-redundant infrastructure needs",
+    "avoidIf": "Need cPanel; Developers needing Node.js/Python; Adult or gambling content; Prefer transparent renewal pricing; Dislike proprietary control panels; Need caching/LiteSpeed performance",
+    "competitorComparisonNotes": "Cheapest VPS ($2/mo) vs Hostinger/Namecheap; 99.99% uptime (higher than 99.9% competitors); Phone support 24/7 (unlike Namecheap/Hostinger); DigiCert Wildcard SSL (better than Let's Encrypt); ISO 27001 certified; BBB A+ (unlike Namecheap D-); No LiteSpeed (Hostinger has it); Proprietary panel vs cPanel (Namecheap); Short 12-mo contracts vs 48-mo competitors"
+  },
+  "ratings": {
+    "valueForMoney": 4.0,
+    "performance": 4.5,
+    "supportQuality": 4.5,
+    "security": 4.5,
+    "features": 3.0,
+    "easeOfUse": 3.5,
+    "transparency": 3.0,
+    "overallRating": 4.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 3,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 2,
+    "suitabilityBeginner": 3,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 12.00,
+    "totalSecondYearCost": 144.00,
+    "renewalMarkupPercent": 1100.0,
+    "effectiveMonthlyAverage": 6.50
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Europe's largest host with 99.99% uptime, free Wildcard SSL, and $2/mo VPS entry",
+    "primaryCompetitors": ["GoDaddy", "OVH", "Hetzner"],
+    "bestAlternativeTo": "GoDaddy",
+    "idealCustomerProfile": "European business needing 24/7 phone support, compliance certifications, and geo-redundancy"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["Germany", "United Kingdom", "Spain", "France", "Italy", "United States", "Canada", "Mexico", "Austria"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP", "CAD", "MXN"],
+    "localSupportLanguages": ["English", "German", "Spanish", "French", "Italian"],
+    "dataSovereigntyCompliance": ["GDPR", "ISO 27001"],
+    "regionalWebsites": ["ionos.com", "ionos.de", "ionos.co.uk", "ionos.es", "ionos.fr", "ionos.it", "ionos.ca", "ionos.mx"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "IONOS is excellent for European businesses needing 24/7 phone support and compliance certifications, but has limited developer features.",
+    "faqWhoOwnsThisHost": "IONOS is owned by United Internet AG, a publicly traded German company. IONOS itself went public in February 2023.",
+    "faqHowMuchDoesItCost": "IONOS shared hosting starts at $1/month (promo) and renews at $12/month. First year costs approximately $12.",
+    "faqIsItBeginnerFriendly": "Moderately. IONOS has 24/7 phone support but uses a proprietary control panel that may feel dated compared to cPanel.",
+    "faqDoesItIncludeEmail": "Yes, IONOS includes 1 email account with 2GB storage on the basic plan.",
+    "faqCanIHostWordPress": "Yes, IONOS offers WordPress hosting with auto-install, auto-updates, and WooCommerce optimization.",
+    "faqWhatsTheUptime": "IONOS guarantees 99.99% uptime, one of the highest in the industry, with SLA credits.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee. Some users report difficult cancellation processes."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

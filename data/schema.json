@@ -1,0 +1,357 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Hosting Company Data",
+  "description": "Schema for web hosting company comparison data",
+  "type": "object",
+  "properties": {
+    "basicInfo": {
+      "type": "object",
+      "properties": {
+        "companyName": { "type": "string" },
+        "websiteUrl": { "type": "string", "format": "uri" },
+        "yearFounded": { "type": ["integer", "null"] },
+        "headquartersCountry": { "type": ["string", "null"] },
+        "parentCompany": { "type": ["string", "null"] },
+        "dataLastUpdated": { "type": "string", "format": "date" },
+        "notes": { "type": ["string", "null"] },
+        "greenHosting": { "type": ["boolean", "null"] },
+        "instantAccountActivation": { "type": ["boolean", "null"] },
+        "hostingType": {
+          "type": ["string", "null"],
+          "enum": ["shared", "managed-wordpress", "vps", "cloud-iaas", "dedicated", "website-builder", "ecommerce-platform", "jamstack", "paas", "domain-registrar", "cdn-security", null],
+          "description": "Primary hosting category - determines which fields are applicable"
+        }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "description": "All prices in USD, numbers only",
+      "properties": {
+        "sharedHostingMonthlyPromo": { "type": ["number", "null"] },
+        "sharedHostingMonthlyRenewal": { "type": ["number", "null"] },
+        "vpsMonthlyLowest": { "type": ["number", "null"] },
+        "vpsMonthlyRenewal": { "type": ["number", "null"] },
+        "dedicatedMonthlyLowest": { "type": ["number", "null"] },
+        "dedicatedMonthlyRenewal": { "type": ["number", "null"] },
+        "wordpressHostingMonthlyPromo": { "type": ["number", "null"] },
+        "wordpressHostingMonthlyRenewal": { "type": ["number", "null"] },
+        "cloudHostingMonthlyLowest": { "type": ["number", "null"] },
+        "freeDomainIncluded": { "type": ["boolean", "null"] },
+        "freeDomainDurationMonths": { "type": ["integer", "null"] },
+        "domainTransferLockPeriodDays": { "type": ["integer", "null"] },
+        "setupFee": { "type": ["number", "null"] },
+        "moneyBackGuaranteeDays": { "type": ["integer", "null"] },
+        "moneyBackExclusions": { "type": ["string", "null"] },
+        "acceptedPaymentMethods": { "type": ["array", "null"], "items": { "type": "string" } },
+        "autoRenewalDefault": { "type": ["boolean", "null"] },
+        "minimumContractMonths": { "type": ["integer", "null"] },
+        "monthlyBillingAvailable": { "type": ["boolean", "null"] },
+        "domainPrivacyIncluded": { "type": ["boolean", "null"] },
+        "domainPrivacyCostYearly": { "type": ["number", "null"] }
+      }
+    },
+    "technicalSpecs": {
+      "type": "object",
+      "properties": {
+        "storageGb": { "type": ["number", "string", "null"], "description": "Number or 'Unlimited'" },
+        "storageType": { "type": ["string", "null"], "enum": ["SSD", "NVMe", "HDD", null] },
+        "bandwidthGb": { "type": ["number", "string", "null"], "description": "Number or 'Unlimited'" },
+        "inodeLimit": { "type": ["integer", "string", "null"], "description": "Number or 'Unlimited'" },
+        "maxWebsitesAllowed": { "type": ["integer", "string", "null"], "description": "Number or 'Unlimited'" },
+        "maxDatabases": { "type": ["integer", "string", "null"], "description": "Number or 'Unlimited'" },
+        "maxDatabaseSizeGb": { "type": ["number", "null"] },
+        "maxFileUploadSizeMb": { "type": ["number", "null"] },
+        "phpVersionsAvailable": { "type": ["array", "null"], "items": { "type": "string" } },
+        "phpVersionSwitching": { "type": ["boolean", "null"] },
+        "nodejsSupport": { "type": ["boolean", "null"] },
+        "pythonSupport": { "type": ["boolean", "null"] },
+        "rubySupport": { "type": ["boolean", "null"] },
+        "sshAccess": { "type": ["boolean", "null"] },
+        "sshAccessTierRequired": { "type": ["string", "null"] },
+        "gitDeployment": { "type": ["boolean", "null"] },
+        "wpCliAccess": { "type": ["boolean", "null"] },
+        "cronJobsAllowed": { "type": ["boolean", "null"] },
+        "stagingEnvironment": { "type": ["boolean", "null"] },
+        "stagingIncludedTier": { "type": ["string", "null"] },
+        "subdomainsLimit": { "type": ["integer", "string", "null"], "description": "Number or 'Unlimited'" },
+        "ftpAccountsLimit": { "type": ["integer", "string", "null"], "description": "Number or 'Unlimited'" },
+        "databaseType": { "type": ["string", "null"] },
+        "redisAvailable": { "type": ["boolean", "null"] },
+        "elasticsearchSupport": { "type": ["boolean", "null"] },
+        "imageOptimization": { "type": ["boolean", "null"] }
+      }
+    },
+    "serverPerformance": {
+      "type": "object",
+      "properties": {
+        "serverLocations": { "type": ["array", "null"], "items": { "type": "string" } },
+        "serverLocationOptionsCount": { "type": ["integer", "null"] },
+        "chooseServerLocation": { "type": ["boolean", "null"] },
+        "cdnIncluded": { "type": ["boolean", "null"] },
+        "cdnProvider": { "type": ["string", "null"] },
+        "uptimeGuaranteePercent": { "type": ["number", "null"] },
+        "uptimeSlaCredit": { "type": ["boolean", "null"] },
+        "ddosProtection": { "type": ["boolean", "null"] },
+        "ddosProtectionLevel": { "type": ["string", "null"] },
+        "firewallIncluded": { "type": ["boolean", "null"] },
+        "malwareScanning": { "type": ["boolean", "null"] },
+        "malwareRemoval": { "type": ["boolean", "null"] },
+        "malwareRemovalCost": { "type": ["number", "null"] },
+        "http2Support": { "type": ["boolean", "null"] },
+        "brotliCompression": { "type": ["boolean", "null"] }
+      }
+    },
+    "securitySsl": {
+      "type": "object",
+      "properties": {
+        "freeSsl": { "type": ["boolean", "null"] },
+        "sslProvider": { "type": ["string", "null"] },
+        "wildcardSslAvailable": { "type": ["boolean", "null"] },
+        "dedicatedIpAvailable": { "type": ["boolean", "null"] },
+        "dedicatedIpCostMonthly": { "type": ["number", "null"] },
+        "twoFactorAuthentication": { "type": ["boolean", "null"] },
+        "backupFrequency": { "type": ["string", "null"] },
+        "backupRetentionDays": { "type": ["integer", "null"] },
+        "backupRestoreFee": { "type": ["number", "null"] },
+        "onDemandBackup": { "type": ["boolean", "null"] },
+        "downloadableBackups": { "type": ["boolean", "null"] }
+      }
+    },
+    "compliance": {
+      "type": "object",
+      "properties": {
+        "gdprComplianceTools": { "type": ["boolean", "null"] },
+        "pciCompliance": { "type": ["boolean", "null"] },
+        "hipaaCompliance": { "type": ["boolean", "null"] },
+        "dataCenterCertifications": { "type": ["array", "null"], "items": { "type": "string" } }
+      }
+    },
+    "support": {
+      "type": "object",
+      "properties": {
+        "supportChannels": { "type": ["array", "null"], "items": { "type": "string" } },
+        "liveChatAvailable": { "type": ["boolean", "null"] },
+        "liveChatHours": { "type": ["string", "null"] },
+        "phoneSupportAvailable": { "type": ["boolean", "null"] },
+        "phoneSupportCountries": { "type": ["array", "null"], "items": { "type": "string" } },
+        "phoneSupportHours": { "type": ["string", "null"] },
+        "ticketSupport": { "type": ["boolean", "null"] },
+        "prioritySupportAvailable": { "type": ["boolean", "null"] },
+        "prioritySupportCost": { "type": ["number", "null"] },
+        "supportLanguageOptions": { "type": ["array", "null"], "items": { "type": "string" } },
+        "knowledgeBaseQuality": { "type": ["integer", "null"], "description": "Editorial - skip" },
+        "communityForumActive": { "type": ["boolean", "null"] },
+        "averageSupportWaitMinutes": { "type": ["integer", "null"] },
+        "supportOutsourced": { "type": ["boolean", "null"] }
+      }
+    },
+    "wordpressFeatures": {
+      "type": "object",
+      "properties": {
+        "wordpressOptimized": { "type": ["boolean", "null"] },
+        "wordpressAutoInstall": { "type": ["boolean", "null"] },
+        "wordpressAutoUpdates": { "type": ["boolean", "null"] },
+        "wordpressStaging": { "type": ["boolean", "null"] },
+        "woocommerceOptimized": { "type": ["boolean", "null"] },
+        "litespeedCache": { "type": ["boolean", "null"] },
+        "objectCaching": { "type": ["boolean", "null"] },
+        "objectCacheType": { "type": ["string", "null"] },
+        "managedWordpressAvailable": { "type": ["boolean", "null"] },
+        "wpMultisiteSupport": { "type": ["boolean", "null"] }
+      }
+    },
+    "managedWordPress": {
+      "type": "object",
+      "description": "Managed WordPress-specific pricing and limits - only applicable for hostingType: managed-wordpress",
+      "properties": {
+        "pricingModel": { "type": ["string", "null"], "enum": ["visits", "bandwidth", "sites", "no-caps", null], "description": "How the host measures/limits usage" },
+        "monthlyVisitLimit": { "type": ["integer", "string", "null"], "description": "Monthly visit limit on base plan (number or 'Unlimited')" },
+        "visitOverageCost": { "type": ["number", "null"], "description": "Cost per 1,000 visitors over limit" },
+        "phpWorkerLimit": { "type": ["integer", "null"], "description": "Number of PHP workers on base plan" },
+        "pluginRestrictions": { "type": ["array", "null"], "items": { "type": "string" }, "description": "Banned or restricted plugins" },
+        "devEnvironmentIncluded": { "type": ["boolean", "null"], "description": "Local development tool included" },
+        "devEnvironmentName": { "type": ["string", "null"], "description": "Name of dev environment tool (DevKinsta, Local, etc.)" }
+      }
+    },
+    "migration": {
+      "type": "object",
+      "properties": {
+        "freeMigration": { "type": ["boolean", "null"] },
+        "migrationWebsitesLimit": { "type": ["integer", "null"] },
+        "migrationServiceQuality": { "type": ["integer", "null"], "description": "Editorial - skip" },
+        "migrationTurnaroundDays": { "type": ["integer", "null"] },
+        "paidMigrationCost": { "type": ["number", "null"] }
+      }
+    },
+    "controlPanel": {
+      "type": "object",
+      "properties": {
+        "cpanelIncluded": { "type": ["boolean", "null"] },
+        "cpanelAlternative": { "type": ["string", "null"] },
+        "controlPanelName": { "type": ["string", "null"] },
+        "softaculousAutoInstaller": { "type": ["boolean", "null"] },
+        "websiteBuilderIncluded": { "type": ["boolean", "null"] },
+        "websiteBuilderName": { "type": ["string", "null"] }
+      }
+    },
+    "email": {
+      "type": "object",
+      "properties": {
+        "emailAccountsIncluded": { "type": ["boolean", "null"] },
+        "emailAccountLimit": { "type": ["integer", "string", "null"], "description": "Number or 'Unlimited'" },
+        "individualMailboxSizeGb": { "type": ["number", "null"] },
+        "webmailAccess": { "type": ["boolean", "null"] },
+        "spamFilter": { "type": ["boolean", "null"] },
+        "emailForwarding": { "type": ["boolean", "null"] }
+      }
+    },
+    "policiesOverages": {
+      "type": "object",
+      "properties": {
+        "bandwidthOveragePolicy": { "type": ["string", "null"] },
+        "bandwidthOverageCost": { "type": ["number", "null"] },
+        "storageOveragePolicy": { "type": ["string", "null"] },
+        "accountSuspensionPolicy": { "type": ["string", "null"] },
+        "resourceAbuseDefinition": { "type": ["string", "null"] },
+        "hiddenFeesNotes": { "type": ["string", "null"] }
+      }
+    },
+    "contentRestrictions": {
+      "type": "object",
+      "properties": {
+        "adultContentAllowed": { "type": ["boolean", "null"] },
+        "gamblingSitesAllowed": { "type": ["boolean", "null"] },
+        "cryptocurrencySitesAllowed": { "type": ["boolean", "null"] },
+        "fileHostingAllowed": { "type": ["boolean", "null"] },
+        "proxyVpnAllowed": { "type": ["boolean", "null"] },
+        "resellerHostingAvailable": { "type": ["boolean", "null"] },
+        "whiteLabelAvailable": { "type": ["boolean", "null"] }
+      }
+    },
+    "business": {
+      "type": "object",
+      "properties": {
+        "apiAccess": { "type": ["boolean", "null"] },
+        "affiliateProgram": { "type": ["boolean", "null"] },
+        "affiliateCommissionType": { "type": ["string", "null"] },
+        "affiliateCommissionAmount": { "type": ["string", "null"] }
+      }
+    },
+    "reputation": {
+      "type": "object",
+      "properties": {
+        "trustpilotRating": { "type": ["number", "null"] },
+        "trustpilotReviewsCount": { "type": ["integer", "null"] },
+        "g2Rating": { "type": ["number", "null"] },
+        "betterBusinessBureauRating": { "type": ["string", "null"] }
+      }
+    },
+    "editorial": {
+      "type": "object",
+      "description": "Skip these fields - requires human judgment",
+      "properties": {
+        "knownIssues": { "type": ["string", "null"] },
+        "bestFor": { "type": ["string", "null"] },
+        "avoidIf": { "type": ["string", "null"] },
+        "competitorComparisonNotes": { "type": ["string", "null"] }
+      }
+    },
+    "ratings": {
+      "type": "object",
+      "description": "Editorial ratings (1-5 scale). overallRating is weighted average: valueForMoney 20%, performance 20%, supportQuality 15%, security 15%, features 10%, easeOfUse 10%, transparency 10%",
+      "properties": {
+        "valueForMoney": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Price vs features ratio, renewal fairness (20% weight)" },
+        "performance": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Speed, uptime, server infrastructure (20% weight)" },
+        "supportQuality": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Availability, responsiveness, expertise (15% weight)" },
+        "security": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "SSL, backups, malware protection, compliance (15% weight)" },
+        "features": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Technical capabilities, WordPress features, tools (10% weight)" },
+        "easeOfUse": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Control panel, setup process, migration (10% weight)" },
+        "transparency": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Clear pricing, honest policies, no hidden fees (10% weight)" },
+        "overallRating": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Weighted average of above ratings" }
+      }
+    },
+    "useCases": {
+      "type": "object",
+      "description": "Suitability ratings (1-5 scale) for different user types - targets long-tail SEO queries like 'best hosting for bloggers'",
+      "properties": {
+        "suitabilityBlogger": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Best for personal blogs, content sites" },
+        "suitabilityEcommerce": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Best for online stores, WooCommerce, Magento" },
+        "suitabilityAgency": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Best for agencies managing multiple client sites" },
+        "suitabilityDeveloper": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Best for developers needing SSH, Git, staging, CLI" },
+        "suitabilityBeginner": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Best for first-time website owners" },
+        "suitabilityEnterprise": { "type": ["number", "null"], "minimum": 1, "maximum": 5, "description": "Best for large businesses needing compliance, SLAs" }
+      }
+    },
+    "platformSupport": {
+      "type": "object",
+      "description": "CMS and framework support - targets long-tail SEO queries like 'best Drupal hosting'",
+      "properties": {
+        "drupalSupport": { "type": ["boolean", "null"], "description": "Official Drupal support/optimization" },
+        "joomlaSupport": { "type": ["boolean", "null"], "description": "Official Joomla support/optimization" },
+        "magentoSupport": { "type": ["boolean", "null"], "description": "Magento/Adobe Commerce support" },
+        "prestashopSupport": { "type": ["boolean", "null"], "description": "PrestaShop ecommerce support" },
+        "laravelSupport": { "type": ["boolean", "null"], "description": "Laravel PHP framework support" },
+        "djangoSupport": { "type": ["boolean", "null"], "description": "Django Python framework support" },
+        "nextjsSupport": { "type": ["boolean", "null"], "description": "Next.js/React framework support" },
+        "railsSupport": { "type": ["boolean", "null"], "description": "Ruby on Rails support" }
+      }
+    },
+    "pricingCalculated": {
+      "type": "object",
+      "description": "Calculated pricing fields for comparison - helps with 'cheapest hosting' and cost comparison queries",
+      "properties": {
+        "totalFirstYearCost": { "type": ["number", "null"], "description": "Actual first year cost including setup fees, based on lowest shared hosting plan (12-mo term)" },
+        "totalSecondYearCost": { "type": ["number", "null"], "description": "Second year cost at renewal rates" },
+        "renewalMarkupPercent": { "type": ["number", "null"], "description": "Percentage increase from promo to renewal price" },
+        "effectiveMonthlyAverage": { "type": ["number", "null"], "description": "Average monthly cost over 2 years" }
+      }
+    },
+    "comparisonData": {
+      "type": "object",
+      "description": "Comparison helper fields for head-to-head pages and featured snippets",
+      "properties": {
+        "uniqueSellingPoint": { "type": ["string", "null"], "description": "One sentence that makes this host unique" },
+        "primaryCompetitors": { "type": ["array", "null"], "items": { "type": "string" }, "description": "Top 3 direct competitors for comparison pages" },
+        "bestAlternativeTo": { "type": ["string", "null"], "description": "Which popular host this is the best alternative to" },
+        "idealCustomerProfile": { "type": ["string", "null"], "description": "One sentence describing the perfect customer" }
+      }
+    },
+    "regionalTargeting": {
+      "type": "object",
+      "description": "Geographic targeting for 'best hosting in [country]' queries",
+      "properties": {
+        "bestForCountries": { "type": ["array", "null"], "items": { "type": "string" }, "description": "Countries where this host excels (has local DC, support, pricing)" },
+        "localCurrencyBilling": { "type": ["array", "null"], "items": { "type": "string" }, "description": "Currencies accepted for billing (USD, EUR, GBP, etc.)" },
+        "localSupportLanguages": { "type": ["array", "null"], "items": { "type": "string" }, "description": "Languages available for support" },
+        "dataSovereigntyCompliance": { "type": ["array", "null"], "items": { "type": "string" }, "description": "Data residency compliance (GDPR, CCPA, etc.)" },
+        "regionalWebsites": { "type": ["array", "null"], "items": { "type": "string" }, "description": "Localized website URLs (hostinger.co.uk, etc.)" }
+      }
+    },
+    "faqContent": {
+      "type": "object",
+      "description": "Structured FAQ content for featured snippets and People Also Ask",
+      "properties": {
+        "faqIsThisHostGood": { "type": ["string", "null"], "description": "Answer to: Is [host] good for hosting?" },
+        "faqWhoOwnsThisHost": { "type": ["string", "null"], "description": "Answer to: Who owns [host]?" },
+        "faqHowMuchDoesItCost": { "type": ["string", "null"], "description": "Answer to: How much does [host] cost?" },
+        "faqIsItBeginnerFriendly": { "type": ["string", "null"], "description": "Answer to: Is [host] good for beginners?" },
+        "faqDoesItIncludeEmail": { "type": ["string", "null"], "description": "Answer to: Does [host] include free email?" },
+        "faqCanIHostWordPress": { "type": ["string", "null"], "description": "Answer to: Can I host WordPress on [host]?" },
+        "faqWhatsTheUptime": { "type": ["string", "null"], "description": "Answer to: What is [host]'s uptime guarantee?" },
+        "faqCanICancelAnytime": { "type": ["string", "null"], "description": "Answer to: Can I cancel [host] anytime?" }
+      }
+    },
+    "additionalPlatforms": {
+      "type": "object",
+      "description": "Additional platform/migration support for niche SEO queries",
+      "properties": {
+        "ghostSupport": { "type": ["boolean", "null"], "description": "Ghost CMS hosting support" },
+        "shopifyMigration": { "type": ["boolean", "null"], "description": "Can migrate from Shopify" },
+        "wixMigration": { "type": ["boolean", "null"], "description": "Can migrate from Wix" },
+        "squarespaceMigration": { "type": ["boolean", "null"], "description": "Can migrate from Squarespace" },
+        "webflowExport": { "type": ["boolean", "null"], "description": "Can host Webflow exports" },
+        "staticSiteSupport": { "type": ["boolean", "null"], "description": "Supports static site generators (Hugo, Jekyll, 11ty)" }
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "basicInfo": {
+    "companyName": "HostPapa",
+    "websiteUrl": "https://www.hostpapa.com",
+    "yearFounded": 2006,
+    "headquartersCountry": "Canada",
+    "parentCompany": "Independent (privately held; founded by Jamie Opalchuk; acquired CloudBlue from Ingram Micro in August 2025)",
+    "dataLastUpdated": "2026-01-13",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "shared",
+    "notes": "Founded in 2006 by Jamie Opalchuk in Burlington, Ontario, Canada. One of the first green web hosting companies, powered by 100% renewable energy through Green-e certified renewable energy certificates. Operates in 15+ countries including US, UK, Australia, Germany. Acquired CloudBlue from Ingram Micro in August 2025. Focus on small-to-medium businesses with multilingual support."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.95,
+    "sharedHostingMonthlyRenewal": 8.99,
+    "vpsMonthlyLowest": 19.99,
+    "vpsMonthlyRenewal": 19.99,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 2.95,
+    "wordpressHostingMonthlyRenewal": 8.99,
+    "cloudHostingMonthlyLowest": null,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "30-day full refund; Domain fees non-refundable; Add-on services may be excluded",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 12,
+    "monthlyBillingAvailable": false,
+    "domainPrivacyIncluded": true,
+    "domainPrivacyCostYearly": 0
+  },
+  "technicalSpecs": {
+    "storageGb": 100,
+    "storageType": "SSD",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 2,
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "Business Pro plan and above",
+    "gitDeployment": false,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Toronto (Canada)", "Los Angeles (US)", "Amsterdam (Netherlands)", "Buffalo, NY (US)", "Seattle (US)", "Atlanta (US)"],
+    "serverLocationOptionsCount": 6,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN (free)",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Standard DDoS protection included",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": true,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 4.99,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (automated)",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Ticket", "Knowledge Base", "Video Tutorials"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States", "Canada", "United Kingdom", "Australia", "Germany", "France", "Spain", "Mexico"],
+    "phoneSupportHours": "24/7/365",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English", "French", "German", "Spanish"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": false,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 4,
+    "migrationTurnaroundDays": 5,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "HostPapa Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": 100,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered within fair use; excessive use may require upgrade",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Must upgrade plan",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; resource abuse; prohibited content",
+    "resourceAbuseDefinition": "Excessive CPU/memory usage; spam; illegal activities",
+    "hiddenFeesNotes": "Renewal prices significantly higher than promo (up to 3x); Monthly billing not available; Domain privacy included free; Free website builder; 1 free migration included"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": null,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "adultContentNotes": "Explicitly prohibits adult material, pornography, and erotic content",
+    "gamblingNotes": "Prohibits gambling, casinos, gaming, sports betting, lottery regardless of legality"
+  },
+  "business": {
+    "apiAccess": false,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "$45-$200 per sale; 15% on some products; $100 minimum payout; PayPal or wire transfer"
+  },
+  "reputation": {
+    "trustpilotRating": 4.7,
+    "trustpilotReviewsCount": 2650,
+    "g2Rating": 4.2,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Renewal prices significantly higher than promo rates; No monthly billing (annual minimum); Limited advanced developer features; No staging environment; Lower-tier plans restrictive (1-2 sites only); SSH access only on higher tiers; No Node.js support; Limited server locations compared to competitors",
+    "bestFor": "Small businesses wanting green hosting; Beginners needing multilingual support; Users who value 24/7 phone support in multiple languages; Eco-conscious website owners; Canadian businesses wanting local hosting; SMBs needing website builder and cPanel combo",
+    "avoidIf": "Need monthly billing flexibility; Developer requiring SSH on basic plan; Want staging environments; Need Node.js support; Budget-sensitive at renewal time; Need many global server locations; Require PCI/HIPAA compliance",
+    "competitorComparisonNotes": "One of few genuinely green hosts (100% renewable energy); Strong Trustpilot (4.7) among best in industry; A+ BBB rating; Multilingual support in 4 languages (unlike English-only competitors); cPanel included; Renewal markup significant but less than Bluehost/Hostinger; Free domain privacy (unlike GoDaddy); Limited to 6 server locations vs competitors with 10+"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 3.5,
+    "supportQuality": 4.5,
+    "security": 3.5,
+    "features": 3.5,
+    "easeOfUse": 4.5,
+    "transparency": 3.5,
+    "overallRating": 3.8
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 2,
+    "suitabilityBeginner": 5,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 35.40,
+    "totalSecondYearCost": 107.88,
+    "renewalMarkupPercent": 204.7,
+    "effectiveMonthlyAverage": 5.97
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "100% green energy hosting with multilingual support in 4 languages and A+ BBB rating",
+    "primaryCompetitors": ["GreenGeeks", "A2 Hosting", "InMotion Hosting"],
+    "bestAlternativeTo": "GreenGeeks",
+    "idealCustomerProfile": "Eco-conscious small business owner wanting reliable support and beginner-friendly features"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["Canada", "United States", "United Kingdom", "Australia", "Germany", "France", "Spain", "Mexico"],
+    "localCurrencyBilling": ["USD", "CAD", "EUR", "GBP", "AUD"],
+    "localSupportLanguages": ["English", "French", "German", "Spanish"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["hostpapa.com", "hostpapa.ca", "hostpapa.co.uk", "hostpapa.com.au", "hostpapa.de", "hostpapa.es", "hostpapa.fr", "hostpapa.in", "hostpapa.mx"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "HostPapa is excellent for small businesses and beginners wanting green hosting with multilingual support. They have strong Trustpilot (4.7) and A+ BBB ratings, though renewal prices are higher than promo rates.",
+    "faqWhoOwnsThisHost": "HostPapa is a privately-owned Canadian company founded by Jamie Opalchuk in 2006. Headquartered in Burlington, Ontario. In August 2025, they acquired CloudBlue from Ingram Micro.",
+    "faqHowMuchDoesItCost": "HostPapa shared hosting starts at $2.95/month (promo) and renews at $8.99/month. VPS starts at $19.99/month. Annual billing minimum required.",
+    "faqIsItBeginnerFriendly": "Yes, HostPapa is very beginner-friendly with cPanel, website builder, one-click WordPress installation, and 24/7 multilingual support via phone, chat, and ticket.",
+    "faqDoesItIncludeEmail": "Yes, 100 email accounts included on the Starter plan with webmail access and spam filtering.",
+    "faqCanIHostWordPress": "Yes, HostPapa offers optimized WordPress hosting with automatic installation and updates, though no staging environment is available.",
+    "faqWhatsTheUptime": "HostPapa guarantees 99.9% uptime with SLA credits if uptime falls below this threshold.",
+    "faqCanICancelAnytime": "HostPapa offers a 30-day money-back guarantee. However, only annual billing is available (no monthly plans), so cancellation after 30 days means forfeiting remaining term payment."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": false,
+    "staticSiteSupport": true
+  }
+}

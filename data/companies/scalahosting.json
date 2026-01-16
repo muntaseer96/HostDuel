@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "ScalaHosting",
+    "websiteUrl": "https://www.scalahosting.com",
+    "yearFounded": 2007,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (privately held; founded in Bulgaria, HQ moved to Dallas, TX)",
+    "dataLastUpdated": "2026-01-13",
+    "greenHosting": null,
+    "instantAccountActivation": true,
+    "hostingType": "shared",
+    "notes": "Founded in 2007, originally in Bulgaria, now headquartered in Dallas, Texas. Known for proprietary SPanel control panel (free cPanel alternative) and SShield AI-powered security. Partners with AWS and DigitalOcean for cloud infrastructure. Over 700,000 websites hosted. Focus on managed VPS hosting with innovative technology solutions."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.95,
+    "sharedHostingMonthlyRenewal": 6.95,
+    "vpsMonthlyLowest": 20.00,
+    "vpsMonthlyRenewal": 20.00,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 2.95,
+    "wordpressHostingMonthlyRenewal": 6.95,
+    "cloudHostingMonthlyLowest": 20.00,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "30-day full refund; Domain fees non-refundable; VPS/cloud services eligible for prorated refund",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": true,
+    "domainPrivacyCostYearly": 0
+  },
+  "technicalSpecs": {
+    "storageGb": 50,
+    "storageType": "SSD",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All VPS plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "Managed VPS plans",
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": false,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Dallas, TX (US)", "New York, NY (US)", "Sofia (Bulgaria)", "Bangalore (India)", "London (UK)", "Frankfurt (Germany)", "Amsterdam (Netherlands)", "Singapore", "Sydney (Australia)", "Tokyo (Japan)", "Toronto (Canada)", "Sao Paulo (Brazil)"],
+    "serverLocationOptionsCount": 16,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Free CDN included",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Advanced DDoS protection on all plans",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 3.00,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (7-day retention on shared; 30-day on VPS)",
+    "backupRetentionDays": 7,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2 (via AWS)"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Phone", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7/365",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with managed VPS",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": true,
+    "objectCaching": true,
+    "objectCacheType": "Memcached/OPcache",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": "Unlimited",
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": 2,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "SPanel (proprietary, free)",
+    "controlPanelName": "SPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "SiteBuilder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": "Unlimited",
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered within fair use; excessive use may require upgrade",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Must upgrade plan",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; resource abuse",
+    "resourceAbuseDefinition": "Excessive CPU/memory usage; spam; illegal activities",
+    "hiddenFeesNotes": "SPanel included free (saves cPanel license cost); Free migrations; Domain privacy included; Renewal prices reasonable compared to competitors; VPS pricing consistent (no promo markup)"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": false,
+    "proxyVpnNotes": "Proxies explicitly banned per knowledge base",
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale (tiered)",
+    "affiliateCommissionAmount": "$50-$500 per sale based on performance; 60-day cookie; Monthly PayPal payments"
+  },
+  "reputation": {
+    "trustpilotRating": 4.9,
+    "trustpilotReviewsCount": 2137,
+    "g2Rating": 4.6,
+    "betterBusinessBureauRating": "NR (A+ claimed on third-party sites)"
+  },
+  "editorial": {
+    "knownIssues": "Smaller company compared to major hosts; SPanel learning curve for cPanel users; No dedicated servers offered; Some advanced features only on higher tiers; Limited phone support availability reported by some users",
+    "bestFor": "Users wanting cPanel alternative without license fees; Managed VPS hosting at affordable prices; WordPress users needing staging and optimization; Small businesses wanting reliable support; Users who value security features (SShield)",
+    "avoidIf": "Need dedicated server hosting; Prefer traditional cPanel interface; Need HIPAA/PCI compliance; Want largest provider brand recognition; Need extensive data center choices",
+    "competitorComparisonNotes": "SPanel unique value proposition (saves $15-45/mo cPanel costs); Exceptionally high Trustpilot rating (4.9); Free unlimited migrations (vs 1 site at A2/SiteGround); Managed VPS pricing competitive with unmanaged competitors; SShield security included free; AWS-backed infrastructure; A+ BBB rating shows good business practices"
+  },
+  "ratings": {
+    "valueForMoney": 4.5,
+    "performance": 4.0,
+    "supportQuality": 4.5,
+    "security": 4.5,
+    "features": 4.0,
+    "easeOfUse": 4.0,
+    "transparency": 4.5,
+    "overallRating": 4.3
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 3
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 35.40,
+    "totalSecondYearCost": 83.40,
+    "renewalMarkupPercent": 135.6,
+    "effectiveMonthlyAverage": 4.95
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Free SPanel control panel eliminating cPanel licensing costs plus SShield AI security",
+    "primaryCompetitors": ["SiteGround", "A2 Hosting", "InMotion Hosting"],
+    "bestAlternativeTo": "SiteGround",
+    "idealCustomerProfile": "User wanting managed VPS performance without cPanel licensing costs and strong security"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Germany", "India", "Bulgaria"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["scalahosting.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "ScalaHosting is excellent for managed VPS hosting with their proprietary SPanel (free cPanel alternative) and SShield security. They have an exceptional 4.9 Trustpilot rating and A+ BBB rating.",
+    "faqWhoOwnsThisHost": "ScalaHosting is independently owned and privately held. Founded in Bulgaria in 2007, the company is now headquartered in Dallas, Texas.",
+    "faqHowMuchDoesItCost": "ScalaHosting shared hosting starts at $2.95/month (renews at $6.95). Managed VPS starts at $20/month with no promo pricing games.",
+    "faqIsItBeginnerFriendly": "Yes, ScalaHosting offers a user-friendly SPanel interface, one-click WordPress installation, and 24/7 support. The free migrations make switching easy.",
+    "faqDoesItIncludeEmail": "Yes, unlimited email accounts are included with webmail access and spam filtering.",
+    "faqCanIHostWordPress": "Yes, ScalaHosting offers optimized WordPress hosting with staging environments, LiteSpeed caching, and automatic updates.",
+    "faqWhatsTheUptime": "ScalaHosting guarantees 99.9% uptime with SLA credits for any downtime below this threshold.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee for shared hosting and prorated refunds for VPS services."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "basicInfo": {
+    "companyName": "FastComet",
+    "websiteUrl": "https://www.fastcomet.com",
+    "yearFounded": 2013,
+    "headquartersCountry": "United States",
+    "parentCompany": "World Host Group (acquired April 2025; previously independent)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "shared",
+    "notes": "Founded in 2013 in San Francisco, now headquartered in Delaware following World Host Group acquisition in April 2025. Operates 12 data centers across Americas, Europe, Asia, and Australia. Known for excellent support and beginner-friendly interface. Same parent company as A2 Hosting and hosting.com."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 1.79,
+    "sharedHostingMonthlyRenewal": 8.95,
+    "vpsMonthlyLowest": 47.95,
+    "vpsMonthlyRenewal": 47.95,
+    "dedicatedMonthlyLowest": 139.00,
+    "dedicatedMonthlyRenewal": 139.00,
+    "wordpressHostingMonthlyPromo": 1.79,
+    "wordpressHostingMonthlyRenewal": 8.95,
+    "cloudHostingMonthlyLowest": 47.95,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 45,
+    "moneyBackExclusions": "45-day full refund; Domain fees non-refundable; Dedicated servers may have different terms",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": true,
+    "domainPrivacyCostYearly": 0
+  },
+  "technicalSpecs": {
+    "storageGb": 15,
+    "storageType": "SSD",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": 250000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans",
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": false,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Newark, NJ (US)", "Dallas, TX (US)", "Toronto (Canada)", "London (UK)", "Amsterdam (Netherlands)", "Frankfurt (Germany)", "Singapore", "Tokyo (Japan)", "Sydney (Australia)", "Mumbai (India)", "Sao Paulo (Brazil)", "Johannesburg (South Africa)"],
+    "serverLocationOptionsCount": 12,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN (free)",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "DDoS protection on all plans",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 2.95,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 30,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Phone", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7/365",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": 15,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Memcached",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 3,
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": 2,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": "Unlimited",
+    "individualMailboxSizeGb": 0.5,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered within fair use; excessive use may require upgrade",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Must upgrade plan",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; resource abuse",
+    "resourceAbuseDefinition": "Excessive CPU/memory usage; spam; illegal activities",
+    "hiddenFeesNotes": "Renewal prices ~30% higher than promo (reasonable vs industry); 45-day money-back (longer than most); Free domain privacy; Free migrations; Staging included on all plans; VPS pricing higher than competitors"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false
+  },
+  "business": {
+    "apiAccess": false,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "$50-$150 per sale; 90-day cookie"
+  },
+  "reputation": {
+    "trustpilotRating": 4.7,
+    "trustpilotReviewsCount": 3339,
+    "g2Rating": 4.5,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "Renewal prices higher than promo; VPS/dedicated pricing expensive; Some users report uptime below 99.9% guarantee; UI not beginner-friendly according to some; Storage limited on entry plan (15GB); Acquired by World Host Group in 2025",
+    "bestFor": "Users wanting excellent support and 45-day money-back; WordPress users needing staging on all plans; Users wanting 12 global data center options; Beginners wanting free migrations; Users who value included daily backups",
+    "avoidIf": "Budget-sensitive at renewal; Need cheap VPS hosting; Want LiteSpeed caching; Need PCI/HIPAA compliance; Want API access",
+    "competitorComparisonNotes": "45-day money-back (vs 30 days most competitors); Staging on all plans (vs higher tiers at others); 12 data centers (good coverage); Renewal markup ~30% (better than 200-500% at Bluehost/Hostinger); Trustpilot 4.7 excellent; cPanel included; Free migrations up to 3 sites; Same parent as A2 Hosting now"
+  },
+  "ratings": {
+    "valueForMoney": 4.0,
+    "performance": 4.0,
+    "supportQuality": 4.5,
+    "security": 4.0,
+    "features": 4.0,
+    "easeOfUse": 4.0,
+    "transparency": 4.0,
+    "overallRating": 4.1
+  },
+  "useCases": {
+    "suitabilityBlogger": 5,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 5,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 21.48,
+    "totalSecondYearCost": 107.40,
+    "renewalMarkupPercent": 400,
+    "effectiveMonthlyAverage": 5.37
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "45-day money-back guarantee with staging environments on all plans and 12 global data centers",
+    "primaryCompetitors": ["SiteGround", "A2 Hosting", "Hostinger"],
+    "bestAlternativeTo": "SiteGround",
+    "idealCustomerProfile": "Beginner or blogger wanting excellent support with staging and global data center options"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Germany", "Australia", "India", "Japan", "Brazil", "South Africa"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP", "AUD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["fastcomet.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "FastComet is excellent for beginners and bloggers wanting great support and features like staging on all plans. Excellent Trustpilot rating (4.7) and 45-day money-back guarantee, though renewal prices are higher than promo.",
+    "faqWhoOwnsThisHost": "FastComet was acquired by World Host Group in April 2025. Previously independent, it now shares ownership with A2 Hosting and hosting.com brands.",
+    "faqHowMuchDoesItCost": "FastComet shared hosting starts at $1.79/month (promo) and renews at $8.95/month. Cloud VPS starts at $47.95/month. Dedicated servers from $139/month.",
+    "faqIsItBeginnerFriendly": "Yes, FastComet offers cPanel, one-click WordPress installation, free migrations, and excellent 24/7 support. Staging is included on all plans.",
+    "faqDoesItIncludeEmail": "Yes, unlimited email accounts are included with webmail access and spam filtering.",
+    "faqCanIHostWordPress": "Yes, FastComet offers optimized WordPress hosting with staging environments, automatic updates, and Memcached caching.",
+    "faqWhatsTheUptime": "FastComet guarantees 99.9% uptime, though some reviews report actual uptime around 99.84%.",
+    "faqCanICancelAnytime": "Yes, with a generous 45-day money-back guarantee (longer than most hosts). Monthly billing is available."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

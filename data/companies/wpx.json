@@ -1,0 +1,263 @@
+{
+  "basicInfo": {
+    "companyName": "WPX Hosting",
+    "websiteUrl": "https://wpx.net",
+    "yearFounded": 2013,
+    "headquartersCountry": "Bulgaria",
+    "parentCompany": "Independent",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": false,
+    "instantAccountActivation": true,
+    "hostingType": "managed-wordpress",
+    "notes": "Founded 2013 in Sofia, Bulgaria by Terry Kyle and Georgi Petrov. Originally called Traffic Planet Hosting, rebranded to WPX in 2016. Known for 30-second average support response time. Custom XDN CDN with 41 endpoints. Trustpilot 5.0 stars (3,586 reviews). Uses LiteSpeed Server + LiteSpeed Cache + OpCache. Every Dog Matters nonprofit initiative for animal welfare."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 24.99,
+    "wordpressHostingMonthlyRenewal": 24.99,
+    "cloudHostingMonthlyLowest": 24.99,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Full refund within 30 days",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 15,
+    "storageType": "SSD",
+    "bandwidthGb": 200,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 5,
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": false,
+    "sshAccessTierRequired": null,
+    "gitDeployment": false,
+    "wpCliAccess": false,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MariaDB",
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Chicago (US)", "London (UK)", "Sydney (Australia)"],
+    "serverLocationOptionsCount": 3,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "WPX XDN (proprietary, 41 global edge locations)",
+    "uptimeGuaranteePercent": 99.95,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise DDoS protection",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt",
+    "wildcardSslAvailable": false,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 28,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": 0.5,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": true,
+    "objectCaching": true,
+    "objectCacheType": "LiteSpeed Cache + OpCache",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "managedWordPress": {
+    "pricingModel": "bandwidth",
+    "monthlyVisitLimit": "Unlimited",
+    "visitOverageCost": null,
+    "phpWorkerLimit": null,
+    "pluginRestrictions": null,
+    "devEnvironmentIncluded": false,
+    "devEnvironmentName": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": "Unlimited",
+    "migrationServiceQuality": "Expert white-glove migration",
+    "migrationTurnaroundDays": 1,
+    "paidMigrationCost": 100
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "WPX Custom Dashboard",
+    "controlPanelName": "WPX Dashboard",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": "Unlimited",
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Bandwidth-based pricing (NOT visitor-based); no visitor caps; no overage fees",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Upgrade to higher plan required",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment",
+    "resourceAbuseDefinition": "Excessive resource usage beyond plan limits",
+    "hiddenFeesNotes": "No renewal price hikes; No hidden fees; Bandwidth-based pricing (not visitor-based like competitors); Express migration $100; Custom XDN CDN included free; Free business email (50 mailboxes) included; WordPress-only; Limited to 3 data centers; No SSH access; Max 60GB storage on highest plan"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "WordPress-only hosting; Standard content policies apply"
+  },
+  "business": {
+    "apiAccess": false,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Varies by plan"
+  },
+  "reputation": {
+    "trustpilotRating": 5.0,
+    "trustpilotReviewsCount": 3586,
+    "g2Rating": 4.5,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "No SSH access; Limited to 3 data center locations; Low PHP workers on some plans; No Redis caching; Max 60GB storage even on Elite plan; No automated scaling; Not ideal for high-traffic spikes",
+    "bestFor": "WordPress bloggers and content sites; Speed-focused WordPress users; Sites needing 30-second support response; Users wanting no renewal price hikes; WooCommerce stores under 60GB",
+    "avoidIf": "Need SSH access; Need more than 60GB storage; Need global data center options; Running high-traffic news sites; Need Redis/advanced caching; Budget-conscious beginners",
+    "competitorComparisonNotes": "Trustpilot 5.0 with 3,586 reviews - exceptional rating; 30-second average support response; Custom XDN CDN with 41 endpoints; No renewal price increases; Competes with Kinsta, Rocket.net, Cloudways; Free unlimited email included unlike many managed WP hosts"
+  },
+  "ratings": {
+    "valueForMoney": 4.0,
+    "performance": 4.5,
+    "supportQuality": 5.0,
+    "security": 4.0,
+    "features": 3.5,
+    "easeOfUse": 4.5,
+    "transparency": 5.0,
+    "overallRating": 4.4
+  },
+  "useCases": {
+    "suitabilityBlogger": 5,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 2,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 249.99,
+    "totalSecondYearCost": 299.88,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 22.91
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "30-second average support response with Trustpilot 5.0 rating and no renewal price increases",
+    "primaryCompetitors": ["Kinsta", "Rocket.net", "Cloudways"],
+    "bestAlternativeTo": "Kinsta",
+    "idealCustomerProfile": "WordPress blogger or content creator wanting lightning-fast support and transparent pricing without renewal surprises"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Australia"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["wpx.net"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "WPX is excellent for WordPress with Trustpilot 5.0 (3,586 reviews). Known for 30-second average support response and custom XDN CDN with 41 global endpoints.",
+    "faqWhoOwnsThisHost": "WPX Hosting is an independent company founded in 2013 by Terry Kyle and Georgi Petrov in Sofia, Bulgaria. Originally called Traffic Planet Hosting.",
+    "faqHowMuchDoesItCost": "Business plan $24.99/month (5 sites, 15GB). Professional $49.99/month (15 sites, 30GB). Elite $99/month (35 sites, 60GB). Annual billing saves 2 months.",
+    "faqIsItBeginnerFriendly": "Yes, simple dashboard with 24/7 live chat and 30-second average response times. One-click WordPress install and free migrations.",
+    "faqDoesItIncludeEmail": "Yes, WPX includes unlimited free business email accounts with all plans - unlike many managed WordPress hosts.",
+    "faqCanIHostWordPress": "Yes, WPX is WordPress-only hosting with LiteSpeed, staging, automatic updates, and custom XDN CDN.",
+    "faqWhatsTheUptime": "WPX guarantees 99.95% uptime with SLA credits for any downtime.",
+    "faqCanICancelAnytime": "Yes, 30-day money-back guarantee. Monthly billing available with no long-term contracts."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

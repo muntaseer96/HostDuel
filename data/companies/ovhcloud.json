@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "OVHcloud",
+    "websiteUrl": "https://www.ovhcloud.com",
+    "yearFounded": 1999,
+    "headquartersCountry": "France",
+    "parentCompany": "Independent (publicly traded on Euronext Paris as OVH since Oct 2021; Klaba family majority stake)",
+    "dataLastUpdated": "2026-01-13",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "cloud-iaas",
+    "notes": "Founded in 1999 by Octave Klaba in Roubaix, France. Rebranded to OVHcloud in 2019. Europe's largest cloud provider with 44+ data centers across 10 countries. KKR and TowerBrook acquired minority stake for €250M in 2016. IPO on Euronext Paris in October 2021. Owns and operates its own data centers with water-cooling technology for sustainability. Major 2021 Strasbourg fire affected customers but recovery was managed."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 1.04,
+    "sharedHostingMonthlyRenewal": 1.04,
+    "vpsMonthlyLowest": 4.20,
+    "vpsMonthlyRenewal": 4.20,
+    "dedicatedMonthlyLowest": 55.99,
+    "dedicatedMonthlyRenewal": 55.99,
+    "wordpressHostingMonthlyPromo": 4.39,
+    "wordpressHostingMonthlyRenewal": 4.39,
+    "cloudHostingMonthlyLowest": 3.50,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 14,
+    "moneyBackExclusions": "14-day withdrawal right for EU private customers only; Custom services and domains excluded; Must not have opted out during order; VPS/dedicated servers typically non-refundable once delivered",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Bank Transfer", "Direct Debit (SEPA)"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": false,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 1,
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": 1,
+    "maxDatabaseSizeGb": 0.25,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": true,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Roubaix (France)", "Gravelines (France)", "Strasbourg (France)", "Paris (France)", "Frankfurt (Germany)", "Warsaw (Poland)", "London (UK)", "Milan (Italy)", "Beauharnois (Canada)", "Virginia (US)", "Oregon (US)", "Sydney (Australia)", "Singapore", "Mumbai (India)"],
+    "serverLocationOptionsCount": 44,
+    "chooseServerLocation": true,
+    "cdnIncluded": false,
+    "cdnProvider": null,
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Included on all services (L7 for web hosting)",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": true,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (unlimited free SSL)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (30-day retention for web hosting)",
+    "backupRetentionDays": 30,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["ISO 27001", "SOC 1 Type II", "SOC 2 Type II", "HDS (Health Data Hosting)", "SecNumCloud"]
+  },
+  "support": {
+    "supportChannels": ["Ticket", "Live Chat", "Phone", "Knowledge Base", "Community Forum", "API"],
+    "liveChatAvailable": true,
+    "liveChatHours": "Mon-Fri 8:00-17:00 (local time)",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["France", "Germany", "United States", "United Kingdom", "Canada", "Poland", "Spain", "Italy", "Portugal"],
+    "phoneSupportHours": "Business hours (24/7 for Premium/Business tiers)",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Premium Support starts at additional monthly fee",
+    "supportLanguageOptions": ["English", "French", "German", "Spanish", "Italian", "Polish", "Portuguese"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": false,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": false,
+    "migrationWebsitesLimit": 0,
+    "migrationServiceQuality": null,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "OVHcloud Control Panel (proprietary)",
+    "controlPanelName": "OVHcloud Control Panel",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": 2,
+    "individualMailboxSizeGb": 1,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited traffic (throttled in APAC regions after quota)",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Must upgrade plan; no automatic overages",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; abuse reports investigated",
+    "resourceAbuseDefinition": "Black Hat SEO; traffic exchange; port scanning; intrusion attempts; DDOS attacks",
+    "hiddenFeesNotes": "No typical renewal markup (prices stay consistent); cPanel/Plesk licenses extra on VPS; Premium support extra; CDN not included; No website builder included; Domain privacy not included"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": true,
+    "gamblingSitesAllowed": true,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": true,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": true,
+    "contentNotes": "European provider - notably more permissive than US-based competitors"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Percentage (tiered by product)",
+    "affiliateCommissionAmount": "VPS: 9% new / 6.4% existing; Dedicated: 12.8% new / 9.6% existing; Hosting: $7.25 flat; Other: 3.2%; 45-day cookie"
+  },
+  "reputation": {
+    "trustpilotRating": 3.8,
+    "trustpilotReviewsCount": 5747,
+    "g2Rating": 4.3,
+    "betterBusinessBureauRating": "A-"
+  },
+  "editorial": {
+    "knownIssues": "Support response times criticized (slow outside business hours); Complex interface reported by some users; 2021 Strasbourg data center fire destroyed customer data; UK Trustpilot rating only 1.2/5; Canada Trustpilot 1.6/5; No managed migration service; No staging environment on shared hosting; cPanel/Plesk discontinued for VPS (must bring your own license); Documentation can be hard to navigate",
+    "bestFor": "Budget-conscious developers and businesses; European customers needing EU data sovereignty; VPS and dedicated server users wanting consistent pricing; Infrastructure-as-a-service needs; Users wanting to avoid renewal price increases; Large-scale cloud deployments; Users comfortable with self-management",
+    "avoidIf": "Need hand-holding support; Require managed WordPress hosting; Want included website builder; Need staging environments; Prefer phone support 24/7; Want included CDN; Based in UK or Canada (poor regional ratings); Need included cPanel",
+    "competitorComparisonNotes": "Cheapest shared hosting ($1.04 vs competitors $1.99+); No renewal markup (unlike Bluehost/Hostinger); 44 data centers (more than most competitors); VPS from $4.20 competitive with Vultr/DigitalOcean; European data sovereignty advantage; No managed WordPress unlike Cloudways/Kinsta; Support worse than SiteGround but prices much lower; Own infrastructure unlike resellers"
+  },
+  "ratings": {
+    "valueForMoney": 4.5,
+    "performance": 4.0,
+    "supportQuality": 2.5,
+    "security": 4.0,
+    "features": 3.5,
+    "easeOfUse": 3.0,
+    "transparency": 4.5,
+    "overallRating": 3.7
+  },
+  "useCases": {
+    "suitabilityBlogger": 3,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 5,
+    "suitabilityBeginner": 2,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 12.48,
+    "totalSecondYearCost": 12.48,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 1.04
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Europe's largest cloud provider with no renewal price increases and own infrastructure",
+    "primaryCompetitors": ["Hetzner", "Contabo", "DigitalOcean"],
+    "bestAlternativeTo": "Hetzner",
+    "idealCustomerProfile": "Developer or business wanting affordable, consistent pricing with European data centers"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["France", "Germany", "Poland", "Canada", "United Kingdom", "Italy", "Spain"],
+    "localCurrencyBilling": ["EUR", "USD", "GBP", "CAD", "PLN", "AUD"],
+    "localSupportLanguages": ["English", "French", "German", "Spanish", "Italian", "Polish", "Portuguese"],
+    "dataSovereigntyCompliance": ["GDPR", "SecNumCloud", "HDS"],
+    "regionalWebsites": ["ovhcloud.com", "us.ovhcloud.com", "ovh.de", "ovh.pl", "ovh.it", "ovh.es"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "OVHcloud is excellent for developers and budget-conscious users who want consistent pricing without renewal markups, but support quality varies by region and is often criticized.",
+    "faqWhoOwnsThisHost": "OVHcloud is an independent French company founded by the Klaba family in 1999. It's publicly traded on Euronext Paris (IPO October 2021) with the Klaba family retaining majority ownership.",
+    "faqHowMuchDoesItCost": "OVHcloud web hosting starts at $1.04/month with no renewal increase. VPS starts at $4.20/month. Dedicated servers start around $55.99/month.",
+    "faqIsItBeginnerFriendly": "No, OVHcloud is better suited for technical users. The interface can be complex, support is limited, and there's no website builder or managed WordPress included.",
+    "faqDoesItIncludeEmail": "Yes, the Starter plan includes 2 email accounts with 1GB storage each. Higher plans include 10 to 1,000 email accounts.",
+    "faqCanIHostWordPress": "Yes, WordPress auto-install is available, but there's no managed WordPress hosting or staging environment. More technical setup required compared to WordPress-focused hosts.",
+    "faqWhatsTheUptime": "OVHcloud guarantees 99.9% uptime for most services with SLA credits available. Scale dedicated servers offer 99.99% uptime SLA.",
+    "faqCanICancelAnytime": "Yes, but refunds are limited. EU customers have a 14-day withdrawal right for eligible services. VPS and dedicated servers are typically non-refundable once delivered."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

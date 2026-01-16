@@ -1,0 +1,263 @@
+{
+  "basicInfo": {
+    "companyName": "Rocket.net",
+    "websiteUrl": "https://rocket.net",
+    "yearFounded": 2020,
+    "headquartersCountry": "United States",
+    "parentCompany": "Hosting.com (acquired)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": false,
+    "instantAccountActivation": true,
+    "hostingType": "managed-wordpress",
+    "notes": "Founded 2020. Grew to #167 on Inc's 2025 5000 list of America's fastest-growing private companies. Known for Cloudflare Enterprise CDN included free on all plans. Acquired by Hosting.com conglomerate. Focus on speed and simplicity for WordPress."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 30.00,
+    "wordpressHostingMonthlyRenewal": 30.00,
+    "cloudHostingMonthlyLowest": 30.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Full refund within 30 days; $1 first month trial available",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 10,
+    "storageType": "SSD",
+    "bandwidthGb": 50,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["North America", "Europe", "Asia-Pacific", "South America", "Africa"],
+    "serverLocationOptionsCount": 275,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare Enterprise CDN (275+ edge locations; ~$200+/mo value included free)",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise DDoS protection via Cloudflare",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Cloudflare SSL",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 14,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with higher plans",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": 2,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Redis + Object Cache Pro + Relay",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "managedWordPress": {
+    "pricingModel": "visits",
+    "monthlyVisitLimit": 250000,
+    "visitOverageCost": 1.00,
+    "phpWorkerLimit": null,
+    "pluginRestrictions": null,
+    "devEnvironmentIncluded": false,
+    "devEnvironmentName": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": "Expert white-glove migration",
+    "migrationTurnaroundDays": 1,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Rocket.net Dashboard",
+    "controlPanelName": "Rocket.net Dashboard",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Bandwidth overage $0.08/GB; Disk overage $2/GB",
+    "bandwidthOverageCost": 0.08,
+    "storageOveragePolicy": "Disk space overage $2/GB",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment",
+    "resourceAbuseDefinition": "Excessive resource usage beyond plan limits",
+    "hiddenFeesNotes": "Cloudflare Enterprise CDN (~$6,000 value) included free; $1 first month trial; 2 months free annual; No email hosting; Overages: $1/1k visits, $0.08/GB bandwidth, $2/GB storage; WP Rocket plugin bundled free ($59 value); WordPress-only; Higher visitor limits than competitors (250k starter vs 25k Kinsta)"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "WordPress-only hosting; Strict content policies"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Varies by plan"
+  },
+  "reputation": {
+    "trustpilotRating": 4.9,
+    "trustpilotReviewsCount": 234,
+    "g2Rating": 4.5,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "Acquired by Hosting.com (concerns about changes); No phone support; WordPress-only; No email hosting; Some SSL cert issues reported; Bandwidth/disk overages can add up",
+    "bestFor": "WordPress sites needing blazing fast performance; Sites needing Cloudflare Enterprise CDN; Users wanting sub-100ms TTFB globally; WooCommerce stores; Speed-focused businesses",
+    "avoidIf": "Need phone support; Running non-WordPress sites; Concerned about acquisition; Need email hosting included; Budget-conscious",
+    "competitorComparisonNotes": "Cloudflare Enterprise CDN (~$6,000/year value) included FREE; Trustpilot 4.9 excellent; Inc 5000 #167 fastest growing; TTFB under 100ms globally; $1 first month trial; Competes with Kinsta, WP Engine; Acquired by Hosting.com"
+  },
+  "ratings": {
+    "valueForMoney": 4.0,
+    "performance": 5.0,
+    "supportQuality": 4.5,
+    "security": 4.5,
+    "features": 4.0,
+    "easeOfUse": 4.5,
+    "transparency": 3.5,
+    "overallRating": 4.3
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 5,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 360.00,
+    "totalSecondYearCost": 360.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 30.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Cloudflare Enterprise CDN (~$6,000 value) included free with sub-100ms global TTFB",
+    "primaryCompetitors": ["Kinsta", "WP Engine", "Flywheel"],
+    "bestAlternativeTo": "Kinsta",
+    "idealCustomerProfile": "WordPress site owner prioritizing speed and global performance with Cloudflare Enterprise benefits"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Canada", "Australia", "Germany"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "SOC 2"],
+    "regionalWebsites": ["rocket.net"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Rocket.net is excellent for WordPress with Trustpilot 4.9 rating. Known for including Cloudflare Enterprise CDN (~$6,000 value) free and sub-100ms global TTFB.",
+    "faqWhoOwnsThisHost": "Rocket.net was founded in 2020 and has been acquired by Hosting.com. Made Inc 5000 #167 fastest growing companies.",
+    "faqHowMuchDoesItCost": "Plans start at $30/month. $1 first month trial available. 2 months free with annual billing. Expert plan $200/month.",
+    "faqIsItBeginnerFriendly": "Yes, simple dashboard with 24/7 support and ~2 minute response times. Set-it-and-forget-it simplicity.",
+    "faqDoesItIncludeEmail": "No, Rocket.net does not include email hosting. Use third-party services.",
+    "faqCanIHostWordPress": "Yes, Rocket.net is WordPress-only hosting with staging, auto-updates, and Redis caching.",
+    "faqWhatsTheUptime": "Rocket.net guarantees 99.99% uptime with enterprise infrastructure.",
+    "faqCanICancelAnytime": "Yes, 30-day money-back guarantee. Monthly billing available."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

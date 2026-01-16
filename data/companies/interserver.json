@@ -1,0 +1,253 @@
+{
+  "basicInfo": {
+    "companyName": "InterServer",
+    "websiteUrl": "https://www.interserver.net",
+    "yearFounded": 1999,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (privately held; employee-owned; founded by Mike Lavrik and John Quaglieri)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": null,
+    "instantAccountActivation": true,
+    "hostingType": "shared",
+    "notes": "Founded in 1999 in Secaucus, New Jersey by Mike Lavrik and John Quaglieri. Both founders remain active in operations. Owns and operates its own data centers in New Jersey and Los Angeles. Hosts over 2 million websites for 250,000+ customers. Known for price-lock guarantee - no renewal price increases."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.50,
+    "sharedHostingMonthlyRenewal": 2.50,
+    "vpsMonthlyLowest": 6.00,
+    "vpsMonthlyRenewal": 6.00,
+    "dedicatedMonthlyLowest": 80.00,
+    "dedicatedMonthlyRenewal": 80.00,
+    "wordpressHostingMonthlyPromo": 2.50,
+    "wordpressHostingMonthlyRenewal": 2.50,
+    "cloudHostingMonthlyLowest": 6.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "30-day money-back guarantee on shared hosting; Dedicated servers may have different terms",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Cryptocurrency", "Check"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": false,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": "Unlimited",
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": 250000,
+    "maxWebsitesAllowed": "Unlimited",
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": "Unlimited",
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": false,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Secaucus, NJ (US-East)", "Los Angeles, CA (US-West)"],
+    "serverLocationOptionsCount": 2,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN (free integration)",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "DDoS protection included on all plans",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Weekly",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Ticket", "Email", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7/365",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": true
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": false,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 4,
+    "migrationTurnaroundDays": 3,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": "DirectAdmin also available",
+    "controlPanelName": "cPanel/DirectAdmin",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "SitePad"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": "Unlimited",
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited within fair use; excessive use reviewed",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Unlimited within fair use",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; resource abuse",
+    "resourceAbuseDefinition": "Excessive CPU/memory usage; spam; illegal activities",
+    "hiddenFeesNotes": "Price-lock guarantee - pay same price forever (no renewal increases); Free domain NOT included; Only 2 data center locations; Support outsourcing reported by some users"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Recurring",
+    "affiliateCommissionAmount": "$100 per sale or recurring commission; 120-day cookie"
+  },
+  "reputation": {
+    "trustpilotRating": 4.4,
+    "trustpilotReviewsCount": 2304,
+    "g2Rating": 4.0,
+    "betterBusinessBureauRating": "NR (Not Accredited)"
+  },
+  "editorial": {
+    "knownIssues": "Only 2 data center locations; Support outsourcing reported; No staging environment; No managed WordPress; Limited advanced features compared to competitors; Interface feels dated to some users",
+    "bestFor": "Budget-conscious users who hate renewal price increases; Long-term hosting customers wanting price stability; Users needing unlimited websites on shared hosting; Small businesses wanting cPanel at low cost; Users who value price-lock guarantee",
+    "avoidIf": "Need multiple global data center locations; Want managed WordPress features; Need staging environments; Prefer modern control panel UI; Require PCI/HIPAA compliance",
+    "competitorComparisonNotes": "Price-lock guarantee unique (vs all competitors with renewal markups); $2.50 flat rate competitive with promo pricing but MUCH better at renewal; cPanel included unlike Hostinger; Only 2 locations vs 10+ at most competitors; Trustpilot 4.4 above average; Own data centers (not reseller); Unlimited everything on shared hosting"
+  },
+  "ratings": {
+    "valueForMoney": 5.0,
+    "performance": 3.5,
+    "supportQuality": 3.5,
+    "security": 3.5,
+    "features": 3.5,
+    "easeOfUse": 4.0,
+    "transparency": 5.0,
+    "overallRating": 4.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 3,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 30.00,
+    "totalSecondYearCost": 30.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 2.50
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Price-lock guarantee with $2.50/month forever - no renewal price increases",
+    "primaryCompetitors": ["Hostinger", "Namecheap", "DreamHost"],
+    "bestAlternativeTo": "Hostinger",
+    "idealCustomerProfile": "Budget-conscious user who wants predictable long-term hosting costs without renewal surprises"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["interserver.net"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "InterServer is excellent for budget-conscious users who want price stability. Their price-lock guarantee means you pay $2.50/month forever with no renewal increases. Good Trustpilot rating (4.4) but limited data center locations.",
+    "faqWhoOwnsThisHost": "InterServer is independently owned by its founders Mike Lavrik and John Quaglieri, who started the company in 1999. It remains employee-owned with no outside investors.",
+    "faqHowMuchDoesItCost": "InterServer shared hosting is $2.50/month with price-lock guarantee (same price at renewal). VPS starts at $6/month. Dedicated servers from $80/month.",
+    "faqIsItBeginnerFriendly": "Yes, InterServer offers cPanel, one-click installers, and 24/7 support. The unlimited everything approach makes it simple for beginners.",
+    "faqDoesItIncludeEmail": "Yes, unlimited email accounts are included with webmail access and spam filtering.",
+    "faqCanIHostWordPress": "Yes, WordPress auto-install is available with one-click installation. However, there's no managed WordPress or staging environment.",
+    "faqWhatsTheUptime": "InterServer guarantees 99.9% uptime for hardware, network, and infrastructure.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee on shared hosting. Monthly billing is available with no long-term contracts required."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

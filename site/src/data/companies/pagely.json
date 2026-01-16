@@ -1,0 +1,263 @@
+{
+  "basicInfo": {
+    "companyName": "Pagely",
+    "websiteUrl": "https://pagely.com",
+    "yearFounded": 2006,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (GoDaddy acquired in 2023)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": false,
+    "hostingType": "managed-wordpress",
+    "notes": "Founded 2006, the ORIGINAL managed WordPress hosting provider. Acquired by GoDaddy in December 2023. Built on Amazon AWS infrastructure. Serves enterprise clients including Disney, Verizon, NGINX. Focus on B2B, enterprise, and public sector markets. PressARMOR security suite. NO pageview billing - CEO considers it 'predatory and anti-consumer'. 99.9999% uptime since May 2014."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": 299.00,
+    "vpsMonthlyRenewal": 299.00,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 299.00,
+    "wordpressHostingMonthlyRenewal": 299.00,
+    "cloudHostingMonthlyLowest": 299.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Full refund within 30 days; Enterprise contracts may vary",
+    "acceptedPaymentMethods": ["Credit Card", "Invoice", "Wire Transfer"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": null,
+    "storageType": "SSD",
+    "bandwidthGb": null,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": true,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["US-East", "US-West", "EU-West", "Asia-Pacific"],
+    "serverLocationOptionsCount": 20,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "PressCDN (proprietary)",
+    "uptimeGuaranteePercent": 99.9999,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise DDoS protection via AWS",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt / Custom certificates",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 5.00,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 30,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": true,
+    "dataCenterCertifications": ["SOC 2 Type II", "ISO 27001", "PCI DSS", "HIPAA", "FedRAMP"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Phone", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7/365",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with all plans (Tierless Support)",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Redis/Varnish",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "managedWordPress": {
+    "pricingModel": "no-caps",
+    "monthlyVisitLimit": "Unlimited",
+    "visitOverageCost": 0,
+    "phpWorkerLimit": null,
+    "pluginRestrictions": null,
+    "devEnvironmentIncluded": false,
+    "devEnvironmentName": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": "Unlimited",
+    "migrationServiceQuality": "Expert white-glove migration",
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Atomic (proprietary)",
+    "controlPanelName": "Atomic",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "NO pageview/visit caps - a la carte expansion only; CEO calls pageview billing 'predatory'",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "A la carte pricing - no overage fees, just add resources as needed",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment",
+    "resourceAbuseDefinition": "Excessive resource usage beyond plan limits",
+    "hiddenFeesNotes": "Enterprise pricing ($299+ minimum); PressARMOR security suite; Tierless support (no tiers); AWS infrastructure; Acquired by GoDaddy Dec 2023; No email hosting; Custom enterprise contracts"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "Enterprise WordPress hosting; Strict AUP for enterprise clients"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": false,
+    "affiliateCommissionType": null,
+    "affiliateCommissionAmount": null
+  },
+  "reputation": {
+    "trustpilotRating": 4.0,
+    "trustpilotReviewsCount": 15,
+    "g2Rating": 4.0,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Very expensive ($299+ minimum); Limited reviews; Acquired by GoDaddy (concerns); Enterprise-focused not for small sites; No money-back guarantee clarity; Complex onboarding",
+    "bestFor": "Enterprise WordPress sites; Fortune 500 companies; HIPAA/PCI compliant sites; Government/public sector; High-traffic sites needing AWS; Sites needing SOC 2/FedRAMP",
+    "avoidIf": "Small business or startup; Budget-conscious; Need affordable hosting; Personal blog; Prefer simpler self-service",
+    "competitorComparisonNotes": "ORIGINAL managed WordPress host (2006); Acquired by GoDaddy Dec 2023; AWS infrastructure; PressARMOR security; 100% uptime guarantee; HIPAA/PCI/FedRAMP compliant; Enterprise clients Disney, Verizon; Very expensive; Low review volume"
+  },
+  "ratings": {
+    "valueForMoney": 2.5,
+    "performance": 5.0,
+    "supportQuality": 5.0,
+    "security": 5.0,
+    "features": 4.5,
+    "easeOfUse": 3.5,
+    "transparency": 3.0,
+    "overallRating": 4.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 1,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 1,
+    "suitabilityEnterprise": 5
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 3588.00,
+    "totalSecondYearCost": 3588.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 299.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Original managed WordPress host (2006) with AWS infrastructure, HIPAA/PCI/FedRAMP compliance for enterprise",
+    "primaryCompetitors": ["WP Engine", "Kinsta", "WordPress VIP"],
+    "bestAlternativeTo": "WordPress VIP",
+    "idealCustomerProfile": "Enterprise or government organization needing HIPAA/PCI compliant managed WordPress on AWS with 24/7 expert support"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Germany", "Australia"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI-DSS", "HIPAA", "SOC 2", "FedRAMP"],
+    "regionalWebsites": ["pagely.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Pagely is the original managed WordPress host (2006), excellent for enterprise. Hosts Disney, Verizon. G2 4.0 and Trustpilot 4.0. Very expensive ($299+/mo minimum).",
+    "faqWhoOwnsThisHost": "Pagely was founded in 2006 and acquired by GoDaddy in December 2023. Originally the first managed WordPress hosting provider.",
+    "faqHowMuchDoesItCost": "Business plans start at $299/month. High Availability from $1,249/month. Enterprise from $2,500/month. Custom contracts available.",
+    "faqIsItBeginnerFriendly": "No. Pagely targets enterprise and is very expensive. Better options exist for beginners and small businesses.",
+    "faqDoesItIncludeEmail": "No, Pagely does not include email hosting. Use third-party enterprise email services.",
+    "faqCanIHostWordPress": "Yes, Pagely is WordPress-only with managed updates, PressARMOR security, and AWS infrastructure.",
+    "faqWhatsTheUptime": "Pagely guarantees 100% uptime with hosting credits for any downtime.",
+    "faqCanICancelAnytime": "Depends on contract. 30-day money-back for standard plans; enterprise contracts vary."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "Bluehost",
+    "websiteUrl": "https://www.bluehost.com",
+    "yearFounded": 2003,
+    "headquartersCountry": "United States",
+    "parentCompany": "Newfold Digital (formerly Endurance International Group, acquired 2010)",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Founded in 2003, officially recommended by WordPress.org since 2005. Acquired by Endurance International Group (EIG) in 2010. EIG rebranded to Newfold Digital in Feb 2021. Headquarters in Orem, Utah. Part of Bluehost Group serving 13M+ customers globally. Portfolio includes HostGator, Yoast SEO, YITH Commerce. Expanded to 11 global data centers in Oct 2025."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.95,
+    "sharedHostingMonthlyRenewal": 9.99,
+    "vpsMonthlyLowest": 46.99,
+    "vpsMonthlyRenewal": 65.99,
+    "dedicatedMonthlyLowest": 141.19,
+    "dedicatedMonthlyRenewal": 188.79,
+    "wordpressHostingMonthlyPromo": 2.95,
+    "wordpressHostingMonthlyRenewal": 9.99,
+    "cloudHostingMonthlyLowest": 29.99,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Cloud hosting excluded; Monthly term plans excluded; Domains non-refundable ($15.99 deducted if free domain used); Premium domains non-refundable; Setup fees excluded; Most add-on products excluded; Renewals only refundable within 30 days",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 10,
+    "storageType": "SSD",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": 200000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": 20,
+    "maxDatabaseSizeGb": 5,
+    "maxFileUploadSizeMb": 50,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3", "8.4"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All shared hosting plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All WordPress hosting plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Provo, UT (US)", "Orem, UT (US)", "Frankfurt (Germany)", "Mumbai (India)", "Sao Paulo (Brazil)", "Paris (France)", "Sydney (Australia)", "London (UK)", "Madrid (Spain)", "Hong Kong (China)", "Shanghai (China)"],
+    "serverLocationOptionsCount": 11,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Basic (SiteLock WAF available as paid add-on)",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed every 90 days)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (CodeGuard on higher plans)",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Knowledge Base", "Webinars", "Blog", "Academy"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7",
+    "ticketSupport": false,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 4,
+    "migrationTurnaroundDays": 4,
+    "paidMigrationCost": 149.99
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Bluehost Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": 5,
+    "individualMailboxSizeGb": 0.1,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered within fair use; excessive use may require upgrade",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Must upgrade plan; inode limits apply (200K soft, 1M TOS violation)",
+    "accountSuspensionPolicy": "AUP violations may result in suspension or termination; 48 hours to respond to abuse team before suspension",
+    "resourceAbuseDefinition": "Exceeding 200,000 inodes (soft limit); exceeding 1,000,000 files (TOS violation); more than 5GB per database; CPU/memory abuse affecting other users",
+    "hiddenFeesNotes": "Renewal prices 2-3x higher than promo; $15.99 deducted from refund if free domain used; $99.95 redemption fee for expired domains; $30 reactivation fee for expired hosting; SiteLock/CodeGuard security add-ons extra; Professional Email $14.99+/yr extra; Basic plan limited to 100MB email storage; Aggressive upselling reported"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": null,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": false
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Flat rate (tiered)",
+    "affiliateCommissionAmount": "$65 per sale base; up to $125/sale for high performers; 30-day cookie; $100 minimum first payout; via Impact.com"
+  },
+  "reputation": {
+    "trustpilotRating": 4.6,
+    "trustpilotReviewsCount": 27784,
+    "g2Rating": 3.4,
+    "betterBusinessBureauRating": "Not Accredited"
+  },
+  "editorial": {
+    "knownIssues": "Renewal prices 2-3x higher than promo ($2.95 → $9.99); Aggressive upselling on add-ons; Limited 100MB email on Basic plan; No Node.js on shared hosting; 4,000+ negative reviews cite cancellation/billing issues; VPS pricing significantly higher than competitors; G2 rating only 3.4/5; Not BBB accredited; Some Reddit reports of downtime issues; $99.95 domain redemption fee",
+    "bestFor": "WordPress beginners (officially recommended by WordPress.org); Users wanting phone support 24/7; Users who need cPanel; Staging environment included; Free Cloudflare CDN; Global audience (11 data centers Oct 2025); High affiliate payouts ($65-125/sale)",
+    "avoidIf": "Budget-conscious at renewal time; Need Node.js on shared hosting; Adult or gambling content; Require large email storage; Dislike aggressive upselling; Need cheap VPS (competitors much cheaper); Enterprise compliance requirements",
+    "competitorComparisonNotes": "WordPress.org official recommendation (unique); Higher promo than Hostinger ($2.95 vs $1.99) but cheaper renewal; Phone support 24/7 (unlike Namecheap/Hostinger); cPanel included (unlike Hostinger hPanel); No LiteSpeed (Hostinger has it); More expensive VPS ($46.99 vs $2 IONOS, $4.99 Hostinger); 11 data centers matches Hostinger; Staging included on all WP plans (unlike Namecheap); Trustpilot 4.6 matches GoDaddy/Hostinger/IONOS tier"
+  },
+  "ratings": {
+    "valueForMoney": 3.0,
+    "performance": 4.0,
+    "supportQuality": 3.5,
+    "security": 3.0,
+    "features": 3.5,
+    "easeOfUse": 4.0,
+    "transparency": 2.5,
+    "overallRating": 3.4
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 3,
+    "suitabilityBeginner": 5,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 35.40,
+    "totalSecondYearCost": 119.88,
+    "renewalMarkupPercent": 238.6,
+    "effectiveMonthlyAverage": 6.47
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Only host officially recommended by WordPress.org with staging on all WP plans",
+    "primaryCompetitors": ["HostGator", "SiteGround", "Hostinger"],
+    "bestAlternativeTo": "HostGator",
+    "idealCustomerProfile": "WordPress beginner wanting official endorsement and phone support"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "India", "United Kingdom", "Brazil", "Australia"],
+    "localCurrencyBilling": ["USD", "INR", "GBP"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["bluehost.com", "bluehost.in"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Bluehost is good for WordPress beginners due to official WordPress.org recommendation, but has aggressive upselling and higher renewal prices.",
+    "faqWhoOwnsThisHost": "Bluehost is owned by Newfold Digital (formerly Endurance International Group), which also owns HostGator.",
+    "faqHowMuchDoesItCost": "Bluehost shared hosting starts at $2.95/month (promo) and renews at $9.99/month. First year costs approximately $35.",
+    "faqIsItBeginnerFriendly": "Yes, Bluehost is very beginner-friendly with WordPress.org endorsement, cPanel, and 24/7 phone support.",
+    "faqDoesItIncludeEmail": "Yes, but the Basic plan only includes 5 accounts with 100MB storage each. Higher plans offer unlimited.",
+    "faqCanIHostWordPress": "Yes, Bluehost is officially recommended by WordPress.org with auto-install, staging, and WooCommerce optimization.",
+    "faqWhatsTheUptime": "Bluehost guarantees 99.99% uptime with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee. $15.99 is deducted if you used the free domain."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

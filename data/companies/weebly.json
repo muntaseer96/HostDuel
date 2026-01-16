@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Weebly",
+    "websiteUrl": "https://www.weebly.com",
+    "yearFounded": 2006,
+    "headquartersCountry": "United States",
+    "parentCompany": "Square (acquired 2018 for $365M)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": false,
+    "instantAccountActivation": true,
+    "hostingType": "website-builder",
+    "notes": "Founded 2006 in San Francisco. Acquired by Square in 2018 for $365M. Development has largely stalled since acquisition as Square focuses on Square Online. Still offers free plan with e-commerce. Known for simplicity but templates/features now outdated."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 5.00,
+    "sharedHostingMonthlyRenewal": 5.00,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": null,
+    "wordpressHostingMonthlyRenewal": null,
+    "cloudHostingMonthlyLowest": 5.00,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "30-day money-back guarantee on first purchase",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": false,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 0.5,
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": 10,
+    "phpVersionsAvailable": null,
+    "phpVersionSwitching": false,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": false,
+    "sshAccessTierRequired": null,
+    "gitDeployment": false,
+    "wpCliAccess": false,
+    "cronJobsAllowed": false,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": false
+  },
+  "serverPerformance": {
+    "serverLocations": ["Global CDN"],
+    "serverLocationOptionsCount": null,
+    "chooseServerLocation": false,
+    "cdnIncluded": true,
+    "cdnProvider": "Weebly CDN",
+    "uptimeGuaranteePercent": null,
+    "uptimeSlaCredit": false,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Basic DDoS protection",
+    "firewallIncluded": true,
+    "malwareScanning": false,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": true,
+    "brotliCompression": false
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Weebly SSL (HTTPS)",
+    "wildcardSslAvailable": false,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": null,
+    "backupRetentionDays": null,
+    "backupRestoreFee": null,
+    "onDemandBackup": false,
+    "downloadableBackups": false
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Email", "Phone", "Knowledge Base", "Community Forum"],
+    "liveChatAvailable": true,
+    "liveChatHours": "Business hours",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "Business hours",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Priority support with Performance plan",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 3,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": false,
+    "wordpressAutoInstall": false,
+    "wordpressAutoUpdates": false,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": false
+  },
+  "migration": {
+    "freeMigration": false,
+    "migrationWebsitesLimit": 0,
+    "migrationServiceQuality": null,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Weebly Editor",
+    "controlPanelName": "Weebly Editor",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Weebly Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited bandwidth included",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Limited by plan; upgrade for more",
+    "accountSuspensionPolicy": "Violation of ToS",
+    "resourceAbuseDefinition": "ToS violations; illegal content",
+    "hiddenFeesNotes": "Generous free plan with e-commerce; Very affordable paid plans; Free domain first year; Square acquired 2018; Development stalled; Outdated templates; Square/Weebly inventory sync issues; Square Online is now focus"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "Proprietary platform owned by Square; No WordPress"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Varies"
+  },
+  "reputation": {
+    "trustpilotRating": 1.5,
+    "trustpilotReviewsCount": 650,
+    "g2Rating": 4.1,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Very poor Trustpilot (1.5); Development stalled since Square acquisition (2018); Outdated templates; Square/Weebly inventory sync confusion; Editor broken for some users in 2025; Support declining; Square prioritizing Square Online over Weebly",
+    "bestFor": "Quick simple websites; Users wanting free e-commerce plan; Budget-conscious users; Very basic business sites; Those who prioritize simplicity over features",
+    "avoidIf": "Need modern templates; Want active development; Expect good support; Need advanced features; Building for scale; Concerned about platform future",
+    "competitorComparisonNotes": "Owned by Square (2018); G2 4.1 decent but Trustpilot 1.5 poor; Free plan includes e-commerce (unique); Very affordable; Development stalled; Outdated vs Wix/Squarespace; Phone support on free plan (unique); Platform future uncertain"
+  },
+  "ratings": {
+    "valueForMoney": 4.0,
+    "performance": 3.0,
+    "supportQuality": 2.5,
+    "security": 3.5,
+    "features": 2.5,
+    "easeOfUse": 4.5,
+    "transparency": 3.0,
+    "overallRating": 3.2
+  },
+  "useCases": {
+    "suitabilityBlogger": 3,
+    "suitabilityEcommerce": 2,
+    "suitabilityAgency": 1,
+    "suitabilityDeveloper": 1,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 1
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 60.00,
+    "totalSecondYearCost": 60.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 5.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Free plan with e-commerce and phone support - most generous free tier among website builders",
+    "primaryCompetitors": ["Wix", "Squarespace", "Square Online"],
+    "bestAlternativeTo": "Wix (budget option)",
+    "idealCustomerProfile": "Budget-conscious user wanting quick simple website with optional e-commerce at minimal cost"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Canada", "United Kingdom", "Australia"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI-DSS"],
+    "regionalWebsites": ["weebly.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Weebly is declining. G2 4.1 but Trustpilot 1.5 poor. Best free plan but development stalled since Square acquisition. Consider alternatives.",
+    "faqWhoOwnsThisHost": "Weebly is owned by Square (acquired in 2018 for $365M). Square has shifted focus to Square Online.",
+    "faqHowMuchDoesItCost": "Free plan available. Paid plans from $5-38/month. 30-day money-back guarantee. Very affordable.",
+    "faqIsItBeginnerFriendly": "Yes, very easy to use but templates are outdated. Simplest website builder available.",
+    "faqDoesItIncludeEmail": "No, professional email is extra via Google Workspace or other providers.",
+    "faqCanIHostWordPress": "No, Weebly is a proprietary platform. You cannot install WordPress.",
+    "faqWhatsTheUptime": "Weebly doesn't publish specific uptime guarantees.",
+    "faqCanICancelAnytime": "Yes, 30-day money-back guarantee on first purchase."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

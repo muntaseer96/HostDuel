@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Shopify",
+    "websiteUrl": "https://www.shopify.com",
+    "yearFounded": 2006,
+    "headquartersCountry": "Canada",
+    "parentCompany": "Independent (publicly traded NYSE: SHOP)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "ecommerce-platform",
+    "notes": "Founded 2006 in Ottawa, Canada by Tobias Lutke. Started as a snowboard equipment store, built platform to sell online. Now powers 4.7M+ stores globally. Market leader in hosted e-commerce. Acquired Deliverr, 6 River Systems. Known for Shop Pay, Shopify Payments."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": null,
+    "wordpressHostingMonthlyRenewal": null,
+    "cloudHostingMonthlyLowest": 39.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 0,
+    "moneyBackExclusions": "NO REFUNDS - Shopify subscription charges are non-refundable; 3-day free trial + $1/mo for 3 months promo",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal", "Shopify Payments"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": true,
+    "domainPrivacyCostYearly": 0
+  },
+  "technicalSpecs": {
+    "storageGb": "Unlimited",
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": null,
+    "phpVersionSwitching": false,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": false,
+    "sshAccessTierRequired": null,
+    "gitDeployment": false,
+    "wpCliAccess": false,
+    "cronJobsAllowed": false,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Global CDN (Cloudflare)"],
+    "serverLocationOptionsCount": null,
+    "chooseServerLocation": false,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": false,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise DDoS via Cloudflare",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Shopify SSL (256-bit)",
+    "wildcardSslAvailable": false,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Automatic",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": false,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["PCI DSS Level 1", "SOC 2 Type II"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Phone", "Email", "Knowledge Base", "Community Forum"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["Global"],
+    "phoneSupportHours": "24/7",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Priority support with Shopify Plus",
+    "supportLanguageOptions": ["English", "French", "German", "Spanish", "Portuguese", "Italian", "Japanese"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": true
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": false,
+    "wordpressAutoInstall": false,
+    "wordpressAutoUpdates": false,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": false
+  },
+  "migration": {
+    "freeMigration": false,
+    "migrationWebsitesLimit": 0,
+    "migrationServiceQuality": null,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Shopify Admin",
+    "controlPanelName": "Shopify Admin",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Shopify Online Store Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited bandwidth included",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Unlimited storage included",
+    "accountSuspensionPolicy": "Violation of ToS; payment issues",
+    "resourceAbuseDefinition": "ToS violations; fraud; illegal products",
+    "hiddenFeesNotes": "Transaction fees 0.5-2% (unless Shopify Payments); Credit card fees 2.4-2.9% + $0.30; Apps $5-100+/mo extra; Premium themes $150-380; Domain $10-20/yr; Email via third party; No free trial credit card needed (3 days)"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": false,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "E-commerce only; Strict prohibited products list; No digital-only products on Starter"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Varies by merchant referral"
+  },
+  "reputation": {
+    "trustpilotRating": 1.3,
+    "trustpilotReviewsCount": 4000,
+    "g2Rating": 4.4,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Very poor Trustpilot (1.3) due to support and billing issues; Transaction fees unless using Shopify Payments; Apps add significant cost; Support quality declined (outsourced); Payment holds and disputes; Account security recovery issues; 86% of Trustpilot reviews 1-star",
+    "bestFor": "E-commerce stores needing all-in-one solution; Dropshipping businesses; Multi-channel sellers; Businesses wanting Shop Pay; Stores needing POS integration; Scalable e-commerce",
+    "avoidIf": "Need WordPress; Want to avoid transaction fees; Budget-conscious (fees add up); Need granular control; Concerned about support quality; Need advanced customization",
+    "competitorComparisonNotes": "Market leader in hosted e-commerce; 4.7M+ stores; G2 4.4 but Trustpilot 1.3 reflects support issues; 25% off annual billing; Transaction fees controversial; Shop Pay ecosystem; Competes with BigCommerce, WooCommerce; Tooltester 2025 Best Ecommerce"
+  },
+  "ratings": {
+    "valueForMoney": 3.0,
+    "performance": 4.5,
+    "supportQuality": 2.5,
+    "security": 4.5,
+    "features": 5.0,
+    "easeOfUse": 4.5,
+    "transparency": 2.5,
+    "overallRating": 3.7
+  },
+  "useCases": {
+    "suitabilityBlogger": 1,
+    "suitabilityEcommerce": 5,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 3,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 348.00,
+    "totalSecondYearCost": 468.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 34.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Market-leading hosted e-commerce platform powering 4.7M+ stores with Shop Pay and multi-channel selling",
+    "primaryCompetitors": ["BigCommerce", "WooCommerce", "Wix Stores"],
+    "bestAlternativeTo": "WooCommerce",
+    "idealCustomerProfile": "E-commerce business wanting all-in-one hosted solution with Shop Pay, POS, and multi-channel capabilities"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Canada", "United Kingdom", "Australia", "Germany", "France", "Japan"],
+    "localCurrencyBilling": ["USD", "CAD", "EUR", "GBP", "AUD", "JPY"],
+    "localSupportLanguages": ["English", "French", "German", "Spanish", "Portuguese", "Italian", "Japanese"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI-DSS"],
+    "regionalWebsites": ["shopify.com", "shopify.ca", "shopify.co.uk", "shopify.com.au"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Shopify is the market leader in hosted e-commerce with G2 4.4. However, Trustpilot 1.3 reflects significant customer support and billing frustrations.",
+    "faqWhoOwnsThisHost": "Shopify is an independent, publicly traded company (NYSE: SHOP) founded in 2006 in Ottawa, Canada by Tobias Lutke.",
+    "faqHowMuchDoesItCost": "Basic $39/month ($29 annual), Grow $105/month ($79 annual), Advanced $399/month ($299 annual). Plus from $2,000/month enterprise.",
+    "faqIsItBeginnerFriendly": "Yes, very beginner-friendly with intuitive admin. 3-day free trial without credit card.",
+    "faqDoesItIncludeEmail": "No, professional email requires third-party (Google Workspace etc). Email forwarding available.",
+    "faqCanIHostWordPress": "No, Shopify is a proprietary platform. Cannot install WordPress. Use WooCommerce for WordPress e-commerce.",
+    "faqWhatsTheUptime": "Shopify guarantees 99.99% uptime with enterprise-grade infrastructure.",
+    "faqCanICancelAnytime": "Yes, cancel anytime. No refunds but 3-day free trial to test."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "basicInfo": {
+    "companyName": "Cloudways",
+    "websiteUrl": "https://www.cloudways.com",
+    "yearFounded": 2011,
+    "headquartersCountry": "Malta",
+    "parentCompany": "DigitalOcean (acquired September 2022 for $350M)",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": true,
+    "hostingType": "vps",
+    "notes": "Managed cloud hosting platform founded in Malta, acquired by DigitalOcean in September 2022 for $350 million. Acts as an intermediary that manages cloud infrastructure from AWS, Google Cloud, DigitalOcean, Linode, and Vultr. 280+ employees at time of acquisition. Now serves 124,000+ customers paying over $50/month. Known for pay-as-you-go pricing and excellent support with 90-second average response time."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": null,
+    "wordpressHostingMonthlyRenewal": null,
+    "cloudHostingMonthlyLowest": 14.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 0,
+    "moneyBackExclusions": "No money-back guarantee; pay-as-you-go model means you only pay for resources used; unused prepaid funds can be refunded within 3 months of adding funds",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 25,
+    "storageType": "SSD",
+    "bandwidthGb": 1000,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": "Unlimited",
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans",
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": true,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["US (Multiple)", "Canada", "UK", "Germany", "Netherlands", "France", "Singapore", "Australia", "Japan", "India", "Brazil"],
+    "serverLocationOptionsCount": 65,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare Enterprise CDN",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Bot Protection and Firewall via Cloudflare",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Hourly to Daily (configurable: 1h, 3h, 6h, 12h, daily)",
+    "backupRetentionDays": 14,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2", "ISO 27001"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Knowledge Base", "Phone (Premium add-on)", "Slack (Premium add-on)"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "Premium Support add-on only",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": 2,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Redis/Memcached",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": 2,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Cloudways Platform (proprietary)",
+    "controlPanelName": "Cloudways Platform",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": null,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Pay-as-you-go; bandwidth included varies by plan (1TB base); overage charged at provider rates",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Pay-as-you-go; can upgrade server size or add block storage",
+    "accountSuspensionPolicy": "Account suspended for TOS violations; servers still billed until deleted; fraud prevention enforcement active",
+    "resourceAbuseDefinition": "Illegal activities; adult content; copyright violations; resource misuse affecting other users",
+    "hiddenFeesNotes": "No traditional promo-to-renewal markup (pay-as-you-go); Email hosting not included (must use third-party like Rackspace at $1/user/mo); DNS hosting is add-on; Backup storage charged at $0.033/GB; Premium Support is paid add-on; No domain registration; Charged in arrears for previous month usage"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": false,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": true,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Recurring",
+    "affiliateCommissionAmount": "Up to $125 per referral or lifetime 7% recurring; 90-day cookie"
+  },
+  "reputation": {
+    "trustpilotRating": 4.6,
+    "trustpilotReviewsCount": 3600,
+    "g2Rating": 4.7,
+    "betterBusinessBureauRating": "N/A (Malta-based, no US BBB listing)"
+  },
+  "editorial": {
+    "knownIssues": "Email hosting not included (requires third-party add-on at extra cost); No domain registration; Backup storage charged separately at $0.033/GB; DNS hosting is paid add-on; Premium Support with phone/Slack costs extra; Pay-as-you-go billing can be confusing; Charged in arrears for previous month; Some users report billing issues and being charged after cancellation; No cPanel (proprietary panel); Post-DigitalOcean acquisition some users report declining support quality",
+    "bestFor": "Developers and agencies needing managed cloud hosting; WordPress/WooCommerce sites needing scalable performance; Users wanting flexibility across AWS, GCP, DO, Vultr, Linode; Teams needing staging environments and Git deployment; Growing businesses that need to scale quickly; Users who want cloud power without server management",
+    "avoidIf": "Need email hosting included; Want traditional shared hosting pricing; Prefer cPanel; Need domain registration; Budget-conscious with predictable monthly costs; New to web hosting (steeper learning curve)",
+    "competitorComparisonNotes": "Pay-as-you-go vs fixed pricing (unlike Hostinger/SiteGround); Managed cloud layer on top of AWS/GCP/DO/Vultr/Linode (unique model); No email included (unlike traditional hosts); Higher price point but more flexible scaling; 65+ data centers via cloud providers (more than most); Cloudflare Enterprise CDN included; Acquired by DigitalOcean 2022; Trustpilot 4.6 and G2 4.7 among highest in industry"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 5.0,
+    "supportQuality": 4.5,
+    "security": 4.5,
+    "features": 4.5,
+    "easeOfUse": 3.5,
+    "transparency": 4.0,
+    "overallRating": 4.2
+  },
+  "useCases": {
+    "suitabilityBlogger": 3,
+    "suitabilityEcommerce": 5,
+    "suitabilityAgency": 5,
+    "suitabilityDeveloper": 5,
+    "suitabilityBeginner": 2,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 168.00,
+    "totalSecondYearCost": 168.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 14.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Managed cloud hosting across 5 providers (AWS, GCP, DO, Vultr, Linode) with pay-as-you-go flexibility",
+    "primaryCompetitors": ["Kinsta", "WP Engine", "Flywheel"],
+    "bestAlternativeTo": "WP Engine",
+    "idealCustomerProfile": "Developer or agency wanting managed cloud power without server administration complexity"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Germany", "Singapore", "Australia"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "SOC 2"],
+    "regionalWebsites": ["cloudways.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Cloudways is excellent for developers and agencies needing managed cloud hosting with flexibility across AWS, Google Cloud, DigitalOcean, Vultr, and Linode, but lacks email hosting and traditional cPanel.",
+    "faqWhoOwnsThisHost": "Cloudways was acquired by DigitalOcean in September 2022 for $350 million. Originally founded in Malta in 2011.",
+    "faqHowMuchDoesItCost": "Cloudways uses pay-as-you-go pricing starting at $14/month for DigitalOcean and $11/month for Vultr. No promo-to-renewal markup.",
+    "faqIsItBeginnerFriendly": "Cloudways has a learning curve and is better suited for developers. Beginners may find traditional shared hosting easier.",
+    "faqDoesItIncludeEmail": "No, Cloudways does not include email hosting. You need third-party email like Rackspace ($1/user/month) or Gmail.",
+    "faqCanIHostWordPress": "Yes, Cloudways offers optimized WordPress hosting with staging, auto-updates, Redis caching, and Cloudflare Enterprise CDN.",
+    "faqWhatsTheUptime": "Cloudways guarantees 99.99% uptime with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, Cloudways is pay-as-you-go with no contracts. You're billed monthly in arrears for usage. There's a 3-day free trial."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

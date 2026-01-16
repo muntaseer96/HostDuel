@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "GreenGeeks",
+    "websiteUrl": "https://www.greengeeks.com",
+    "yearFounded": 2008,
+    "headquartersCountry": "United States",
+    "parentCompany": "Private (founded by Trey Gardner)",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": true,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Founded in 2008 by Trey Gardner (CEO). Industry's leading eco-friendly web hosting provider. Puts 3x the energy consumed back into the grid as renewable energy via Bonneville Environmental Foundation. EPA Green Power Partner since 2009. Hosts 600,000+ websites. Up to 200 employees across 4 continents. HQ in Wilmington, Delaware with operations in Los Angeles, California."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.95,
+    "sharedHostingMonthlyRenewal": 12.95,
+    "vpsMonthlyLowest": 39.95,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 2.95,
+    "wordpressHostingMonthlyRenewal": 12.95,
+    "cloudHostingMonthlyLowest": null,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Domain registrations non-refundable; SSL certificates non-refundable; Migration services non-refundable; Must cancel 5+ days before renewal date",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 50,
+    "storageType": "SSD RAID-10",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": 150000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3", "8.4"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All shared hosting plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "Pro plan and above",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Phoenix, AZ (US)", "Chicago, IL (US)", "Toronto (Canada)", "Montreal (Canada)", "Amsterdam (Netherlands)", "Singapore"],
+    "serverLocationOptionsCount": 6,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "LiteSpeed + AI firewall protection",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (AlphaSSL free on Premium plan)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Nightly",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 25.00,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Email/Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States", "Canada"],
+    "phoneSupportHours": "9AM-12AM EST daily",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": true,
+    "objectCaching": true,
+    "objectCacheType": "LSCache",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": 1,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": 50,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered within fair use; no overage fees charged",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Hard limits apply; must upgrade plan",
+    "accountSuspensionPolicy": "Fair use policy violations may result in suspension; resource abuse affecting other users prohibited",
+    "resourceAbuseDefinition": "Exceeding inode limits (150K-500K depending on plan); excessive resource usage affecting other users on shared server",
+    "hiddenFeesNotes": "Renewal prices ~4x higher than promo ($2.95 → $12.95); $25 fee for manual backup restores (1 free per month); On-demand backups only on Pro/Premium plans; Dedicated IP only free on Premium plan; Auto-renewal complaints common; Phone support not 24/7 (9AM-12AM EST)"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": null,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": null,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Flat rate",
+    "affiliateCommissionAmount": "Up to $100 per referral; 30-day cookie"
+  },
+  "reputation": {
+    "trustpilotRating": 4.6,
+    "trustpilotReviewsCount": 1400,
+    "g2Rating": 3.8,
+    "betterBusinessBureauRating": "Not Accredited"
+  },
+  "editorial": {
+    "knownIssues": "Renewal prices ~4x higher than promo ($2.95 → $12.95); No dedicated server hosting; Phone support not 24/7 (closes at midnight EST); $25 backup restore fee after 1 free monthly; On-demand backups only on Pro/Premium; Auto-renewal complaints on BBB; Not BBB Accredited; English-only support; No cloud hosting option",
+    "bestFor": "Eco-conscious users (3x renewable energy offset); WordPress users needing LiteSpeed; Users wanting cPanel; International users (6 data center locations including Canada); Users who value green hosting credentials; WooCommerce stores (LiteSpeed optimized)",
+    "avoidIf": "Need dedicated servers; Need 24/7 phone support; Budget-conscious at renewal time (4x markup); Need enterprise compliance; Non-English speakers; Need cloud hosting",
+    "competitorComparisonNotes": "Unique 3x renewable energy offset (EPA certified since 2009); LiteSpeed included (like Hostinger, unlike SiteGround); 6 data center locations (more than HostGator, fewer than Hostinger); cPanel included (unlike Hostinger hPanel); Similar renewal markup to competitors (4x vs 4-6x); MariaDB instead of MySQL; Lower Trustpilot review count than competitors; Nightly backups standard (better than HostGator weekly); Not BBB Accredited (like Namecheap D-)"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 4.0,
+    "supportQuality": 4.0,
+    "security": 4.0,
+    "features": 4.0,
+    "easeOfUse": 4.0,
+    "transparency": 3.5,
+    "overallRating": 3.9
+  },
+  "useCases": {
+    "suitabilityBlogger": 5,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 35.40,
+    "totalSecondYearCost": 155.40,
+    "renewalMarkupPercent": 339.0,
+    "effectiveMonthlyAverage": 7.95
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Industry's greenest host putting 3x energy back as renewable, with LiteSpeed and cPanel",
+    "primaryCompetitors": ["Hostinger", "SiteGround", "A2 Hosting"],
+    "bestAlternativeTo": "Hostinger",
+    "idealCustomerProfile": "Eco-conscious blogger or small business wanting green credentials with modern performance"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Canada", "Netherlands", "Singapore"],
+    "localCurrencyBilling": ["USD", "CAD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["greengeeks.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "GreenGeeks is excellent for eco-conscious users wanting green hosting with LiteSpeed performance, but has no dedicated servers and limited phone support hours.",
+    "faqWhoOwnsThisHost": "GreenGeeks is privately owned, founded in 2008 by Trey Gardner (CEO). EPA Green Power Partner since 2009.",
+    "faqHowMuchDoesItCost": "GreenGeeks shared hosting starts at $2.95/month (promo) and renews at $12.95/month. First year costs approximately $35.",
+    "faqIsItBeginnerFriendly": "Yes, GreenGeeks offers cPanel, free migration, and good support, making it beginner-friendly with eco-friendly appeal.",
+    "faqDoesItIncludeEmail": "Yes, GreenGeeks includes 50 email accounts with shared hosting plans.",
+    "faqCanIHostWordPress": "Yes, GreenGeeks offers optimized WordPress hosting with LiteSpeed cache, staging (Pro+), and nightly backups.",
+    "faqWhatsTheUptime": "GreenGeeks guarantees 99.9% uptime with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee. Domains, SSL certificates, and migration services are non-refundable."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

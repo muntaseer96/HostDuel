@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "Hostinger",
+    "websiteUrl": "https://www.hostinger.com",
+    "yearFounded": 2004,
+    "headquartersCountry": "Lithuania",
+    "parentCompany": "Employee-owned (ConHostinger acquired 31% stake in 2021)",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Founded in 2004 as Hosting Media, rebranded to Hostinger in 2011. Headquarters in Kaunas/Vilnius, Lithuania. Employee-owned company with ~1,000 employees. Parent of Hosting24, Zyro, Niagahoster, and 000webhost. Offices in Lithuania, Indonesia (Yogyakarta), and Brazil (Florianopolis). Private equity firm ConHostinger acquired ~31% controlling stake in 2021."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 1.99,
+    "sharedHostingMonthlyRenewal": 10.99,
+    "vpsMonthlyLowest": 4.99,
+    "vpsMonthlyRenewal": 8.49,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 1.99,
+    "wordpressHostingMonthlyRenewal": 10.99,
+    "cloudHostingMonthlyLowest": 6.99,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 4.99,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Domains non-refundable; Setup fees non-refundable; Redemption fees non-refundable; Third-party services non-refundable",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Google Pay", "Apple Pay", "Cryptocurrency"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 50,
+    "storageType": "NVMe SSD",
+    "bandwidthGb": 100,
+    "inodeLimit": 200000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": 2,
+    "maxDatabaseSizeGb": 3,
+    "maxFileUploadSizeMb": 1024,
+    "phpVersionsAvailable": ["7.3", "7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": true,
+    "rubySupport": false,
+    "sshAccess": false,
+    "sshAccessTierRequired": "Premium plan and above",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "Business plan and above",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Dallas, TX (US)", "Boston, MA (US)", "Sao Paulo (Brazil)", "London (UK)", "Amsterdam (Netherlands)", "Frankfurt (Germany)", "Vilnius (Lithuania)", "Singapore", "Mumbai (India)", "Jakarta (Indonesia)", "France"],
+    "serverLocationOptionsCount": 11,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Hostinger CDN + Cloudflare (Website Builder)",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Advanced",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-configured)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Weekly (basic), Daily (premium/business)",
+    "backupRetentionDays": 7,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["Tier-3"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Email", "Knowledge Base", "Tutorials"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": false,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": 0,
+    "supportLanguageOptions": ["English", "Spanish", "Portuguese", "French", "Indonesian", "Lithuanian"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": true,
+    "objectCaching": true,
+    "objectCacheType": "ObjectCache",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": null,
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": 2,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "hPanel (proprietary)",
+    "controlPanelName": "hPanel",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Hostinger Website Builder (AI-powered)"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": 2,
+    "individualMailboxSizeGb": 1,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Throttling or upgrade required",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Must upgrade plan",
+    "accountSuspensionPolicy": "Abuse detection leads to immediate suspension; phishing/malware results in account termination",
+    "resourceAbuseDefinition": "Exceeding inode limits; excessive CPU/memory usage; hosting prohibited content; cryptocurrency mining",
+    "hiddenFeesNotes": "Setup fee $4.99 on monthly plans; Email accounts limited to 2 free (1 year only) as of Dec 2025; Renewal prices 5-6x higher than promo; No Node.js on shared hosting; SSH requires Premium+ plan; Priority support only on Cloud plans"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": true,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": false,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Percentage (tiered)",
+    "affiliateCommissionAmount": "40-60% commission; 30-day cookie; $100 min payout (PayPal), $500 (bank); no commission on 1-month plans or renewals"
+  },
+  "reputation": {
+    "trustpilotRating": 4.7,
+    "trustpilotReviewsCount": 60398,
+    "g2Rating": 4.4,
+    "betterBusinessBureauRating": "N/A (Not in BBB service area)"
+  },
+  "editorial": {
+    "knownIssues": "Renewal prices 5-6x higher than promo ($1.99 → $10.99); No phone support; SSH only on Premium+ plans; No Node.js on shared hosting; Email accounts reduced to 2 free (Dec 2025); Sitejabber rating only 2.7/5; Some suspension/abuse department complaints; TTFB can spike to 1.3s during peak hours",
+    "bestFor": "Budget beginners; WordPress sites needing LiteSpeed; Users wanting free unlimited migrations; International users (11 data center locations); AI website builder users; Adult content sites (within legal limits)",
+    "avoidIf": "Need phone support; Need Node.js on shared hosting; Enterprise compliance (no SOC2/HIPAA); Budget-conscious at renewal time; Need many email accounts; Prefer cPanel over proprietary panels",
+    "competitorComparisonNotes": "Cheapest promo pricing vs GoDaddy/Namecheap; LiteSpeed included (GoDaddy/Namecheap don't have); Better uptime (99.9%+) than budget competitors; More data centers (11) than Namecheap (4); No cPanel (uses hPanel); Higher renewal markup than Namecheap; Free unlimited migrations beats both competitors"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 4.5,
+    "supportQuality": 3.5,
+    "security": 3.5,
+    "features": 4.0,
+    "easeOfUse": 4.5,
+    "transparency": 3.0,
+    "overallRating": 3.8
+  },
+  "useCases": {
+    "suitabilityBlogger": 5,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 2,
+    "suitabilityDeveloper": 3,
+    "suitabilityBeginner": 5,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 28.87,
+    "totalSecondYearCost": 131.88,
+    "renewalMarkupPercent": 452.3,
+    "effectiveMonthlyAverage": 6.70
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Cheapest premium hosting with LiteSpeed, 11 data centers, and AI website builder",
+    "primaryCompetitors": ["Namecheap", "Bluehost", "SiteGround"],
+    "bestAlternativeTo": "Bluehost",
+    "idealCustomerProfile": "Budget beginner wanting modern performance features without technical complexity"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Brazil", "Indonesia", "India", "Germany", "France", "Lithuania", "Singapore"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP", "BRL", "IDR", "INR"],
+    "localSupportLanguages": ["English", "Spanish", "Portuguese", "French", "Indonesian", "Lithuanian"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["hostinger.com", "hostinger.co.uk", "hostinger.com.br", "hostinger.co.id", "hostinger.in", "hostinger.de", "hostinger.fr"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Hostinger is excellent for beginners and bloggers wanting cheap, fast hosting with LiteSpeed, but renewal prices are 5-6x higher.",
+    "faqWhoOwnsThisHost": "Hostinger is employee-owned, headquartered in Lithuania. ConHostinger acquired a 31% controlling stake in 2021.",
+    "faqHowMuchDoesItCost": "Hostinger shared hosting starts at $1.99/month (promo) and renews at $10.99/month. First year costs approximately $29 including setup fee.",
+    "faqIsItBeginnerFriendly": "Yes, Hostinger's hPanel is very intuitive with an AI website builder, making it one of the most beginner-friendly hosts.",
+    "faqDoesItIncludeEmail": "Yes, but limited to 2 free email accounts (1 year only as of December 2025).",
+    "faqCanIHostWordPress": "Yes, Hostinger offers optimized WordPress hosting with LiteSpeed cache, staging, and auto-updates.",
+    "faqWhatsTheUptime": "Hostinger guarantees 99.9% uptime with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee. Domains and setup fees are non-refundable."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

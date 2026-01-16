@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Liquid Web",
+    "websiteUrl": "https://www.liquidweb.com",
+    "yearFounded": 1997,
+    "headquartersCountry": "United States",
+    "parentCompany": "CloudOne Digital (acquired by One Equity Partners in April 2023; previously Madison Dearborn Partners)",
+    "dataLastUpdated": "2026-01-13",
+    "greenHosting": null,
+    "instantAccountActivation": true,
+    "hostingType": "vps",
+    "notes": "Founded in 1997 in Lansing, Michigan. Acquired by One Equity Partners in April 2023 to form CloudOne Digital. Family of brands includes Liquid Web, Nexcess, StellarWP, and Modern Tribe. Operates 10+ global data centers with 500,000+ sites under management. Known for 'Heroic Support' with 59-second response time guarantee. Focus on managed hosting for businesses, agencies, and enterprises. No shared hosting offered - VPS/dedicated/cloud only."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": 3.50,
+    "vpsMonthlyRenewal": 3.50,
+    "dedicatedMonthlyLowest": 149.25,
+    "dedicatedMonthlyRenewal": 149.25,
+    "wordpressHostingMonthlyPromo": 13.30,
+    "wordpressHostingMonthlyRenewal": 19.00,
+    "cloudHostingMonthlyLowest": 33.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "30-day guarantee for managed VPS and managed cloud server hosting only; Domain fees non-refundable; Custom configurations may have exclusions",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Bank Transfer", "Check"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 40,
+    "storageType": "SSD",
+    "bandwidthGb": 5000,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": "Unlimited",
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans (root access available)",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "Managed WordPress/WooCommerce plans",
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": true,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Lansing, MI (US-Central)", "Phoenix, AZ (US-West)", "Amsterdam (Netherlands)", "San Jose, CA (US)", "Ashburn, VA (US-East)", "Sydney (Australia)", "London (UK)"],
+    "serverLocationOptionsCount": 10,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare Enterprise CDN (on managed WordPress/WooCommerce)",
+    "uptimeGuaranteePercent": 100,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Multi-level DDoS protection included",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 0,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (30-day retention)",
+    "backupRetentionDays": 30,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": true,
+    "dataCenterCertifications": ["SOC 2 Type II", "HIPAA", "PCI-DSS"]
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7/365 (59-second response guarantee)",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with Fully Managed plans",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": 1,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Redis",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": "Unlimited",
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": 1,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": "InterWorx, Plesk also available",
+    "controlPanelName": "cPanel/InterWorx/Plesk (choice)",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": "Unlimited",
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "5TB included on entry VPS; overage billed or upgrade required",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Upgrade to higher tier or add storage",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; abuse reports",
+    "resourceAbuseDefinition": "Excessive resource usage; illegal activities; spam; network abuse",
+    "hiddenFeesNotes": "Premium pricing but one price includes most features; No shared hosting available; cPanel/Plesk included on managed plans; 1000% SLA credit for downtime; Windows VPS significantly more expensive; Some add-ons like advanced firewall extra"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": "legal_only",
+    "cryptocurrencySitesAllowed": true,
+    "gamblingNotes": "Illegal gambling banned per AUP; legal gambling may be permitted",
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": null,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Percentage of MRR",
+    "affiliateCommissionAmount": "300% per Liquid Web sale; 400% per Nexcess sale; up to $7,000 per sale; 90-day cookie; via Impact"
+  },
+  "reputation": {
+    "trustpilotRating": 4.2,
+    "trustpilotReviewsCount": 2637,
+    "g2Rating": 4.3,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Premium pricing (significantly higher than budget hosts); No shared hosting option; Windows VPS much more expensive than Linux; Some users report billing confusion especially with Nexcess; Support quality reportedly declined after CloudOne acquisition per some reviews; Complex pricing structure with many tiers; Limited international data centers compared to hyperscalers",
+    "bestFor": "Businesses and agencies needing managed hosting with premium support; Mission-critical websites requiring 100% uptime SLA; WooCommerce stores needing optimized ecommerce hosting; Users willing to pay premium for Heroic Support; HIPAA-compliant healthcare applications; Enterprise clients needing dedicated infrastructure",
+    "avoidIf": "Budget-conscious users; Need shared hosting; Beginners who don't need managed services; Simple personal blogs; Price-sensitive projects; Need many international locations",
+    "competitorComparisonNotes": "Premium pricing ($33+ managed VPS vs $4-5 competitors); 100% uptime SLA with 1000% credit (industry-leading); 59-second support response (faster than most); Heroic Support highly rated but expensive; Owns Nexcess for managed WordPress/WooCommerce; A+ BBB rating (excellent); Free unlimited migrations; cPanel/Plesk included unlike cloud-only competitors; HIPAA compliant (rare feature)"
+  },
+  "ratings": {
+    "valueForMoney": 3.0,
+    "performance": 5.0,
+    "supportQuality": 5.0,
+    "security": 5.0,
+    "features": 4.5,
+    "easeOfUse": 4.0,
+    "transparency": 3.5,
+    "overallRating": 4.3
+  },
+  "useCases": {
+    "suitabilityBlogger": 2,
+    "suitabilityEcommerce": 5,
+    "suitabilityAgency": 5,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 2,
+    "suitabilityEnterprise": 5
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 396.00,
+    "totalSecondYearCost": 396.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 33.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "100% uptime SLA with 1000% credit and 59-second Heroic Support response guarantee",
+    "primaryCompetitors": ["WP Engine", "Kinsta", "Cloudways"],
+    "bestAlternativeTo": "WP Engine",
+    "idealCustomerProfile": "Business or agency needing premium managed hosting with industry-leading support SLA"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Netherlands", "Australia"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "HIPAA", "PCI-DSS", "SOC 2"],
+    "regionalWebsites": ["liquidweb.com", "nexcess.net"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Liquid Web is excellent for businesses needing premium managed hosting with industry-leading support. They offer 100% uptime SLA with 1000% credit and 59-second support response guarantee, but pricing is significantly higher than budget alternatives.",
+    "faqWhoOwnsThisHost": "Liquid Web is owned by CloudOne Digital, formed when One Equity Partners acquired Liquid Web in April 2023. The Liquid Web family includes Nexcess, StellarWP, and Modern Tribe.",
+    "faqHowMuchDoesItCost": "Liquid Web managed VPS starts at $33/month. Self-managed VPS starts at $3.50/month. Dedicated servers start at $149.25/month. Managed WordPress (via Nexcess) starts around $13.30/month promo.",
+    "faqIsItBeginnerFriendly": "Liquid Web is more suited for businesses and experienced users. While their Heroic Support is excellent, the premium pricing and advanced features are overkill for simple beginner sites.",
+    "faqDoesItIncludeEmail": "Yes, email hosting is included with cPanel-based plans. Webmail access, spam filtering, and email forwarding are available.",
+    "faqCanIHostWordPress": "Yes, Liquid Web (via Nexcess) offers highly optimized managed WordPress and WooCommerce hosting with staging, auto-updates, CDN, and image optimization included.",
+    "faqWhatsTheUptime": "Liquid Web guarantees 100% network uptime backed by a 1000% SLA - meaning 10x credit for any downtime. They maintained 99.9992% actual uptime in 2021.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee for managed VPS and cloud hosting. Monthly billing is available with no long-term contracts required."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

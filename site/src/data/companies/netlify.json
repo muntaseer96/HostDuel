@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Netlify",
+    "websiteUrl": "https://www.netlify.com",
+    "yearFounded": 2014,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (VC-backed)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": false,
+    "instantAccountActivation": true,
+    "hostingType": "jamstack",
+    "notes": "Founded 2014 in San Francisco by Mathias Biilmann and Christian Bach. Pioneers of JAMstack architecture. Raised $211M total. Acquired Gatsby and Stackbit. Hosts annual Jamstack Conf. Formerly known as MakerLoop. Remote-first company. Invented the term 'JAMstack'. Known for deploy previews and Git-based workflow."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": null,
+    "wordpressHostingMonthlyRenewal": null,
+    "cloudHostingMonthlyLowest": 0,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 0,
+    "moneyBackExclusions": "No refunds; Free tier available",
+    "acceptedPaymentMethods": ["Credit Card"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": null,
+    "storageType": null,
+    "bandwidthGb": null,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": "Unlimited",
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": null,
+    "phpVersionSwitching": false,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": false,
+    "sshAccessTierRequired": null,
+    "gitDeployment": true,
+    "wpCliAccess": false,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans (Deploy previews)",
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Global CDN"],
+    "serverLocationOptionsCount": null,
+    "chooseServerLocation": false,
+    "cdnIncluded": true,
+    "cdnProvider": "Netlify Edge (Global CDN)",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise DDoS protection",
+    "firewallIncluded": true,
+    "malwareScanning": false,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (automatic)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": null,
+    "backupRetentionDays": null,
+    "backupRestoreFee": null,
+    "onDemandBackup": false,
+    "downloadableBackups": false
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2 Type 2"]
+  },
+  "support": {
+    "supportChannels": ["Email", "Ticket", "Knowledge Base", "Community Forum"],
+    "liveChatAvailable": false,
+    "liveChatHours": null,
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Enterprise plan (24/7 dedicated)",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": false,
+    "wordpressAutoInstall": false,
+    "wordpressAutoUpdates": false,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": false
+  },
+  "migration": {
+    "freeMigration": false,
+    "migrationWebsitesLimit": 0,
+    "migrationServiceQuality": null,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Netlify Dashboard",
+    "controlPanelName": "Netlify Dashboard",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Credit-based system; Free: 300 credits/mo; Personal: 1,000; Pro: 3,000; Bandwidth costs 10 credits/GB",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Credit-based usage",
+    "accountSuspensionPolicy": "ToS violations; non-payment",
+    "resourceAbuseDefinition": "Excessive resource usage; abuse; ToS violations",
+    "hiddenFeesNotes": "Credit-based pricing complex; Free 300 credits/mo; Personal $9/mo; Pro $20/member/mo; Enterprise ~$30K/yr for WAF; Build minutes and bandwidth consume credits; Serverless functions extra; Forms cost credits; Can be expensive at scale"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "JAMstack and static sites focus; Standard content policies"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": false,
+    "affiliateCommissionType": null,
+    "affiliateCommissionAmount": null
+  },
+  "reputation": {
+    "trustpilotRating": 2.8,
+    "trustpilotReviewsCount": 27,
+    "g2Rating": 4.5,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "Credit-based pricing confusing; Enterprise pricing expensive ($30K+ for WAF); No live chat support; Limited backend functionality; Documentation can be confusing; Free tier limitations; Build minute limits can be restrictive",
+    "bestFor": "Static sites and JAMstack; Gatsby/Hugo/Jekyll sites; Frontend developers; Marketing sites; Content-heavy blogs; Teams wanting deploy previews; Git-based workflows",
+    "avoidIf": "Need WordPress hosting; Running complex backends; Budget-conscious at scale; Need live chat support; Want simple predictable pricing; Need traditional hosting features",
+    "competitorComparisonNotes": "Invented JAMstack term; G2 4.5 good, Trustpilot 2.8 average; Acquired Gatsby; Deploy previews pioneer; Credit-based pricing unique but complex; Competes with Vercel, Cloudflare Pages; Good for static sites; Annual Jamstack Conf host"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 4.5,
+    "supportQuality": 3.0,
+    "security": 4.0,
+    "features": 4.5,
+    "easeOfUse": 4.5,
+    "transparency": 3.0,
+    "overallRating": 3.9
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 5,
+    "suitabilityBeginner": 3,
+    "suitabilityEnterprise": 3
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": true,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 0,
+    "totalSecondYearCost": 108.00,
+    "renewalMarkupPercent": null,
+    "effectiveMonthlyAverage": 4.50
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Pioneers of JAMstack with deploy previews and acquired Gatsby for best-in-class static site hosting",
+    "primaryCompetitors": ["Vercel", "Cloudflare Pages", "GitHub Pages"],
+    "bestAlternativeTo": "Vercel",
+    "idealCustomerProfile": "Frontend developer or team building static sites, Gatsby, or JAMstack applications wanting deploy previews and Git-based workflow"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Germany", "Canada"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "SOC 2"],
+    "regionalWebsites": ["netlify.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Netlify is excellent for JAMstack and static sites with G2 4.5 rating. Pioneers of JAMstack, acquired Gatsby. Trustpilot 2.8 reflects pricing complexity frustrations.",
+    "faqWhoOwnsThisHost": "Netlify is an independent VC-backed company founded in 2014 by Mathias Biilmann and Christian Bach. Raised $211M. Headquartered in San Francisco.",
+    "faqHowMuchDoesItCost": "Free tier (300 credits/mo). Personal $9/mo. Pro $20/member/mo. Enterprise custom (~$30K/yr for advanced features). Credit-based usage billing.",
+    "faqIsItBeginnerFriendly": "Easy for developers familiar with Git. Drag-and-drop deployment available. Not ideal for non-technical users or WordPress sites.",
+    "faqDoesItIncludeEmail": "No, Netlify does not include email hosting. Use third-party email services.",
+    "faqCanIHostWordPress": "No, Netlify is designed for JAMstack and static sites. Not suitable for traditional WordPress. Can use headless WordPress with Netlify.",
+    "faqWhatsTheUptime": "Netlify guarantees 99.99% uptime for Enterprise plans with SLA.",
+    "faqCanICancelAnytime": "Yes, no long-term contracts. Free tier available. Monthly billing on paid plans."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

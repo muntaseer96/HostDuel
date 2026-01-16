@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "TMDHosting",
+    "websiteUrl": "https://www.tmdhosting.com",
+    "yearFounded": 2007,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (privately held)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "shared",
+    "notes": "Founded 2007 in Orlando, Florida. Independently owned. Data centers across 3 continents (North America, Europe, Asia). Known for solid performance and helpful support. Offers shared, VPS, dedicated, and WordPress hosting. Uses SSD storage and free CDN."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.95,
+    "sharedHostingMonthlyRenewal": 7.95,
+    "vpsMonthlyLowest": 19.97,
+    "vpsMonthlyRenewal": 29.95,
+    "dedicatedMonthlyLowest": 79.97,
+    "dedicatedMonthlyRenewal": 119.95,
+    "wordpressHostingMonthlyPromo": 2.95,
+    "wordpressHostingMonthlyRenewal": 7.95,
+    "cloudHostingMonthlyLowest": 2.95,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 60,
+    "moneyBackExclusions": "Domain registration fees non-refundable",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": true,
+    "domainPrivacyCostYearly": 0
+  },
+  "technicalSpecs": {
+    "storageGb": "Unlimited",
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": 250000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": 128,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "Business plans and above",
+    "subdomainsLimit": "Unlimited",
+    "ftpAccountsLimit": "Unlimited",
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Phoenix (US)", "Chicago (US)", "Amsterdam (Netherlands)", "London (UK)", "Singapore", "Sydney (Australia)", "Tokyo (Japan)"],
+    "serverLocationOptionsCount": 7,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "DDoS protection included",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewing)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 2.50,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 14,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2", "ISO 27001"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Phone", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": 5,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Memcached",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": "Unlimited",
+    "migrationServiceQuality": "Expert migration team",
+    "migrationTurnaroundDays": 2,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Starter Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": "Unlimited",
+    "individualMailboxSizeGb": 0.25,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited bandwidth; fair use policy",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Fair use; upgrade may be required",
+    "accountSuspensionPolicy": "Violation of ToS; excessive resource usage",
+    "resourceAbuseDefinition": "Inode limits; CPU abuse; malicious activity",
+    "hiddenFeesNotes": "60-day money-back is generous; Renewal pricing higher; Solid but not leading in any area; Green hosting; Some reported issues with cloud hosting migration and cancellation policies"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "Strict content policy; Adult and gambling prohibited"
+  },
+  "business": {
+    "apiAccess": false,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Up to $150 per sale"
+  },
+  "reputation": {
+    "trustpilotRating": 4.5,
+    "trustpilotReviewsCount": 1532,
+    "g2Rating": 4.3,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Renewal pricing significantly higher; No LiteSpeed (uses Nginx/Apache); Some cloud hosting migration issues reported; Cancellation/refund concerns noted; Doesn't lead in any specific area",
+    "bestFor": "Users wanting solid all-around hosting; WordPress users needing reliable performance; Those wanting 60-day money-back guarantee; Users preferring green hosting; Small businesses wanting good support",
+    "avoidIf": "Want LiteSpeed performance; Need enterprise compliance; Price-sensitive after first term; Had issues with cloud hosting transition",
+    "competitorComparisonNotes": "Good Trustpilot (4.5) and G2 (4.3) - solid reputation; BBB A+ rating; 60-day refund generous; Underrated but not leading; Founded 2007 - good track record; Competes with HostArmada, A2 Hosting, FastComet"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 4.0,
+    "supportQuality": 4.5,
+    "security": 4.0,
+    "features": 4.0,
+    "easeOfUse": 4.5,
+    "transparency": 3.5,
+    "overallRating": 4.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 35.40,
+    "totalSecondYearCost": 95.40,
+    "renewalMarkupPercent": 169.49,
+    "effectiveMonthlyAverage": 5.45
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Solid all-around hosting with 60-day money-back guarantee, green hosting, and BBB A+ rating",
+    "primaryCompetitors": ["HostArmada", "A2 Hosting", "FastComet", "SiteGround"],
+    "bestAlternativeTo": "A2 Hosting",
+    "idealCustomerProfile": "User wanting reliable, solid hosting without extremes - good performance, support, and features across the board"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Australia", "Singapore", "Japan", "Netherlands"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["tmdhosting.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "TMDHosting is a solid, reliable host. Trustpilot 4.5, G2 4.3, and BBB A+ show consistent quality. Not the best at any one thing, but good across the board.",
+    "faqWhoOwnsThisHost": "TMDHosting is an independent, privately-held company founded in 2007 in Orlando, Florida.",
+    "faqHowMuchDoesItCost": "Shared from $2.95/month promo, renewing at $7.95/month. 60-day money-back guarantee.",
+    "faqIsItBeginnerFriendly": "Yes, beginner-friendly with cPanel, Softaculous, and 24/7 support.",
+    "faqDoesItIncludeEmail": "Yes, unlimited email accounts with webmail and spam filtering.",
+    "faqCanIHostWordPress": "Yes, WordPress-optimized hosting with staging and auto-updates.",
+    "faqWhatsTheUptime": "99.99% uptime guarantee with SLA credits.",
+    "faqCanICancelAnytime": "Yes, 60-day money-back guarantee. Monthly billing available."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": true
+  }
+}

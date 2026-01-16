@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "HostGator",
+    "websiteUrl": "https://www.hostgator.com",
+    "yearFounded": 2002,
+    "headquartersCountry": "United States",
+    "parentCompany": "Newfold Digital (formerly Endurance International Group)",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Founded in 2002 in a dorm room. Acquired by Endurance International Group (EIG) in June 2012. EIG merged with Web.com to form Newfold Digital in 2021. Hosts over 2 million domains. Sister company to Bluehost under Newfold Digital umbrella. Corporate office in Houston, Texas. Data centers in Provo, Utah and Houston, Texas."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.75,
+    "sharedHostingMonthlyRenewal": 11.95,
+    "vpsMonthlyLowest": 34.99,
+    "vpsMonthlyRenewal": 53.99,
+    "dedicatedMonthlyLowest": 91.00,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 7.95,
+    "wordpressHostingMonthlyRenewal": 12.95,
+    "cloudHostingMonthlyLowest": 4.95,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 45,
+    "moneyBackExclusions": "Dedicated servers excluded (30 days only); Domain registrations non-refundable ($17.99 fee if free domain used and cancelled within first year); SSL certificates non-refundable; SiteLock and CodeGuard non-refundable; Administrative fees non-refundable; PayPal and credit card payments only",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": null,
+    "storageType": "SSD (Unmetered)",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": 100000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": 5,
+    "maxFileUploadSizeMb": 50,
+    "phpVersionsAvailable": ["7.2", "7.3", "7.4", "8.0", "8.1", "8.2"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All shared hosting plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Provo, UT (US)", "Houston, TX (US)"],
+    "serverLocationOptionsCount": 2,
+    "chooseServerLocation": false,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN (optional activation)",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Network-level flood protection",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Positive SSL (Sectigo) - $10K warranty",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Weekly (if account <20GB and <100K inodes)",
+    "backupRetentionDays": 7,
+    "backupRestoreFee": null,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["Tier 3"]
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Email", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English", "Spanish", "Portuguese"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": false,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": false,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 3,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": 149.99
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Gator Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": null,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered within fair use; must stay within typical personal/small business range",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Unmetered within fair use; exceeding 100K inodes removes from weekly backups; 200K+ inodes violates AUP",
+    "accountSuspensionPolicy": "AUP violations may result in suspension or termination without notice; 100K+ inodes excluded from backups; 200K+ inodes flagged for review/suspension",
+    "resourceAbuseDefinition": "Exceeding 100,000 inodes (soft limit); exceeding 200,000 inodes (AUP violation); 5GB per single database; 10GB total database usage; storing non-web files; bitcoin mining",
+    "hiddenFeesNotes": "Renewal prices triple from promo; $17.99 domain fee if free domain used and cancelled within 1 year; Daily backups require CodeGuard add-on; Malware removal requires SiteLock add-on; Weekly backups only if <20GB and <100K inodes; Cannot choose server location; Aggressive upselling tactics reported"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": false,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Flat rate (tiered)",
+    "affiliateCommissionAmount": "$50-$125 per sale depending on volume; 60-day cookie; via Impact Radius"
+  },
+  "reputation": {
+    "trustpilotRating": 4.5,
+    "trustpilotReviewsCount": 16176,
+    "g2Rating": 3.8,
+    "betterBusinessBureauRating": "Not Accredited"
+  },
+  "editorial": {
+    "knownIssues": "Renewal prices triple from promo rates; Only 2 US data centers (no international options); Cannot choose server location; Weekly backups only (and only if account <20GB/<100K inodes); Daily backups and malware removal require paid add-ons; Aggressive upselling tactics widely reported; Post-EIG acquisition complaints about declining service quality; Average support wait times (15 min calls); No staging environment on shared hosting; Reddit complaints about predatory billing practices",
+    "bestFor": "Budget beginners (45-day money-back); Users needing 24/7 phone support; cPanel users; US-based websites (2 US data centers); Users wanting longer money-back guarantee than competitors; VPS users needing managed cPanel/WHM",
+    "avoidIf": "Need international server locations; Budget-conscious at renewal time (triples); Need daily backups included; Need staging environment; Sensitive to aggressive upselling; Need malware removal included; Want more than 1 backup copy retained",
+    "competitorComparisonNotes": "Same parent (Newfold) as Bluehost; 45-day money-back vs 30 days most competitors; Only 2 data centers vs 10-11 at SiteGround/Hostinger; No staging (Hostinger/SiteGround have it); Weekly backups with conditions vs daily at SiteGround; $149.99 migration vs $35 SiteGround; cPanel included (unlike Hostinger hPanel); Lower Trustpilot (4.5) than SiteGround (4.8); VPS cheaper than Bluehost ($34.99 vs $46.99)"
+  },
+  "ratings": {
+    "valueForMoney": 3.0,
+    "performance": 3.0,
+    "supportQuality": 4.0,
+    "security": 3.0,
+    "features": 3.0,
+    "easeOfUse": 3.5,
+    "transparency": 2.0,
+    "overallRating": 3.1
+  },
+  "useCases": {
+    "suitabilityBlogger": 3,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 2,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": false,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 33.00,
+    "totalSecondYearCost": 143.40,
+    "renewalMarkupPercent": 334.5,
+    "effectiveMonthlyAverage": 7.35
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Budget cPanel hosting with 45-day money-back guarantee and 24/7 phone support",
+    "primaryCompetitors": ["Bluehost", "GoDaddy", "A2 Hosting"],
+    "bestAlternativeTo": "Bluehost",
+    "idealCustomerProfile": "Budget beginner wanting cPanel and phone support with extended refund period"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Brazil", "India"],
+    "localCurrencyBilling": ["USD", "BRL"],
+    "localSupportLanguages": ["English", "Spanish", "Portuguese"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["hostgator.com", "hostgator.com.br", "hostgator.in"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "HostGator is decent for budget beginners wanting cPanel and phone support, but has aggressive upselling, limited features, and only US data centers.",
+    "faqWhoOwnsThisHost": "HostGator is owned by Newfold Digital (formerly Endurance International Group), the same company that owns Bluehost.",
+    "faqHowMuchDoesItCost": "HostGator shared hosting starts at $2.75/month (promo) and renews at $11.95/month. First year costs approximately $33.",
+    "faqIsItBeginnerFriendly": "Yes, HostGator offers cPanel and 24/7 phone support, making it beginner-friendly despite aggressive upselling.",
+    "faqDoesItIncludeEmail": "Yes, HostGator includes unlimited email accounts with shared hosting plans.",
+    "faqCanIHostWordPress": "Yes, HostGator offers WordPress hosting with auto-install and auto-updates, but no staging environment on shared plans.",
+    "faqWhatsTheUptime": "HostGator guarantees 99.9% uptime with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, with a 45-day money-back guarantee (longer than most competitors). $17.99 deducted if free domain was used."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

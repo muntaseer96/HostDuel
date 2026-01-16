@@ -1,0 +1,263 @@
+{
+  "basicInfo": {
+    "companyName": "WordPress.com",
+    "websiteUrl": "https://wordpress.com",
+    "yearFounded": 2005,
+    "headquartersCountry": "United States",
+    "parentCompany": "Automattic",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "managed-wordpress",
+    "notes": "Launched 2005 by Automattic (Matt Mullenweg). The official hosted WordPress platform by the creators of WordPress. Powers 160M+ websites. Part of Automattic ecosystem with Pressable, WooCommerce, Jetpack, Tumblr. Automated datacenter failover for 100% uptime. Edge caching CDN included. Same company that maintains WordPress.org open source project."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 4.00,
+    "wordpressHostingMonthlyRenewal": 4.00,
+    "cloudHostingMonthlyLowest": 4.00,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 14,
+    "moneyBackExclusions": "14-day refund policy for annual plans; Domain registration fees non-refundable",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal", "Apple Pay", "Google Pay"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": true,
+    "domainPrivacyCostYearly": 0
+  },
+  "technicalSpecs": {
+    "storageGb": 6,
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": null,
+    "phpVersionSwitching": false,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "Business plan and higher",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": false,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "Business plan and higher",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL",
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Global (Automattic infrastructure)"],
+    "serverLocationOptionsCount": null,
+    "chooseServerLocation": false,
+    "cdnIncluded": true,
+    "cdnProvider": "Automattic CDN (28+ data centers across 6 continents)",
+    "uptimeGuaranteePercent": 99.999,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise DDoS protection",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "WordPress.com SSL",
+    "wildcardSslAvailable": false,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Real-time",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2", "PCI DSS"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Email", "Knowledge Base", "Community Forum"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with Business plan and higher",
+    "supportLanguageOptions": ["English", "Spanish", "French", "German", "Portuguese", "Japanese"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Edge caching",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": false
+  },
+  "managedWordPress": {
+    "pricingModel": "no-caps",
+    "monthlyVisitLimit": "Unlimited",
+    "visitOverageCost": 0,
+    "phpWorkerLimit": null,
+    "pluginRestrictions": ["Plugin installation requires Business plan or higher"],
+    "devEnvironmentIncluded": false,
+    "devEnvironmentName": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": "Guided migration tools",
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "WordPress.com Dashboard",
+    "controlPanelName": "WordPress.com Dashboard",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "WordPress Block Editor (Gutenberg)"
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "No overages. No metering. No surprises. Unrestricted bandwidth on all paid plans.",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Upgrade to higher plan required",
+    "accountSuspensionPolicy": "Violation of ToS; illegal content",
+    "resourceAbuseDefinition": "ToS violations; malware; spam",
+    "hiddenFeesNotes": "Free plan available with ads; Personal $4/mo annual; Premium $8/mo; Business $25/mo; Commerce $45/mo; No price increases on same plan; Plugin/theme installation requires Business+ plan; Email hosting not included; Domain privacy free"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "WordPress-only platform; Strict content policies; Free plan shows ads"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Varies"
+  },
+  "reputation": {
+    "trustpilotRating": 2.0,
+    "trustpilotReviewsCount": 3932,
+    "g2Rating": 4.4,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Plugin/theme installation locked to Business+ plans ($25+/mo); No email hosting included; Free plan shows WordPress ads; Limited customization on lower tiers; Can't access PHP directly; Mixed Trustpilot reviews (2.0); Pricing perceived as expensive for features",
+    "bestFor": "Beginners wanting official WordPress experience; Bloggers and content creators; Users wanting hassle-free managed WordPress; Sites needing 100% uptime guarantee; Automattic ecosystem integration",
+    "avoidIf": "Need full WordPress control on budget; Want to install custom plugins cheaply; Need email hosting included; Prefer cPanel access; Budget-conscious and need plugins; Running WooCommerce (Commerce plan expensive)",
+    "competitorComparisonNotes": "Official WordPress hosting by Automattic; 160M+ websites; G2 4.4 but Trustpilot 2.0 mixed; 100% uptime with datacenter failover; Edge caching CDN; Same company as Pressable; Competes with Bluehost, SiteGround, Pressable; Plugin access requires expensive Business plan"
+  },
+  "ratings": {
+    "valueForMoney": 3.0,
+    "performance": 5.0,
+    "supportQuality": 4.0,
+    "security": 4.5,
+    "features": 3.5,
+    "easeOfUse": 5.0,
+    "transparency": 3.5,
+    "overallRating": 4.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 5,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 2,
+    "suitabilityDeveloper": 3,
+    "suitabilityBeginner": 5,
+    "suitabilityEnterprise": 3
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 48.00,
+    "totalSecondYearCost": 48.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 4.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Official WordPress hosting by Automattic with 100% uptime guarantee and edge caching CDN",
+    "primaryCompetitors": ["Bluehost", "SiteGround", "Pressable"],
+    "bestAlternativeTo": "Bluehost",
+    "idealCustomerProfile": "Beginner blogger or content creator wanting the official hassle-free WordPress experience with maximum uptime"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Canada", "Australia", "Germany"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP", "AUD", "CAD"],
+    "localSupportLanguages": ["English", "Spanish", "French", "German", "Portuguese", "Japanese"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI-DSS"],
+    "regionalWebsites": ["wordpress.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "WordPress.com is the official WordPress hosting by Automattic with G2 4.4 rating. Powers 160M+ websites with 100% uptime guarantee. Trustpilot 2.0 reflects frustration with pricing tiers.",
+    "faqWhoOwnsThisHost": "WordPress.com is owned by Automattic, founded by Matt Mullenweg (WordPress co-creator). Same company owns Pressable, WooCommerce, Jetpack, and Tumblr.",
+    "faqHowMuchDoesItCost": "Free plan available. Personal $4/mo, Premium $8/mo, Business $25/mo, Commerce $45/mo (annual). Business+ required for plugin installation.",
+    "faqIsItBeginnerFriendly": "Extremely beginner-friendly with the official WordPress experience. Block editor (Gutenberg) makes site building easy. No technical knowledge required.",
+    "faqDoesItIncludeEmail": "No, WordPress.com does not include email hosting. Email forwarding available. Recommends Google Workspace or Titan Mail separately.",
+    "faqCanIHostWordPress": "Yes, this IS official WordPress hosting. Pre-installed and managed. Custom plugins/themes require Business plan ($25/mo) or higher.",
+    "faqWhatsTheUptime": "WordPress.com guarantees 99.999% uptime with automated datacenter failover and multi-region replication.",
+    "faqCanICancelAnytime": "Yes, 14-day refund policy for annual plans. Monthly billing available. Domain registration fees are non-refundable."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

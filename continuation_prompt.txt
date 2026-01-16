@@ -1,0 +1,49 @@
+# Hosting Comparison Data Collection - Continuation          
+                                                               
+  ## Project Overview                                          
+  I'm building a hosting comparison website. We're collecting  
+  comprehensive data for 50+ hosting companies stored in JSON  
+  format.                                                      
+                                                               
+  ## File Structure                                            
+  - `/Users/muntaseerrahman/Downloads/TOOLS/hosting-comparison-
+  tool/data/index.json` - Company manifest (completed + pending
+   list)                                                       
+  - `/Users/muntaseerrahman/Downloads/TOOLS/hosting-comparison-
+  tool/data/schema.json` - 124-field schema definition         
+  - `/Users/muntaseerrahman/Downloads/TOOLS/hosting-comparison-
+  tool/data/companies/` - Individual company JSON files        
+                                                               
+  ## Completed Companies (5)                                   
+  1. GoDaddy                                                   
+  2. Namecheap                                                 
+  3. Hostinger                                                 
+  4. IONOS                                                     
+  5. Bluehost                                                  
+                                                               
+  ## Requirements                                              
+  1. **One company at a time** - Complete one, show fill rate, 
+  wait for "proceed" before next                               
+  2. **Target 85%+ fill rate** - Use `null` only for genuinely 
+  unfindable data                                              
+  3. **Priority "niche" fields**: renewal pricing, inode       
+  limits, money-back exclusions, content policies              
+  (adult/gambling), hidden fees, suspension policies           
+  4. **Editorial fields required**: Fill `knownIssues`,        
+  `bestFor`, `avoidIf`, `competitorComparisonNotes` based on   
+  objective data found                                         
+  5. **Data sources**: Official websites, web searches,        
+  Trustpilot/G2/BBB for ratings                                
+                                                               
+  ## To Continue                                               
+  1. Read `index.json` to see the pending companies list       
+  2. Read one existing company file (e.g., `hostinger.json`) to
+   see the data format                                         
+  3. Research the next pending company (SiteGround is next)    
+  4. Create the JSON file following the exact schema           
+  5. Update `index.json` (add to companies array, remove from  
+  pendingCompanies)                                            
+  6. Report fill rate and key findings                         
+                                                               
+  Start by reading the index.json and proceed with the next    
+  company.                            

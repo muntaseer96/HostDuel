@@ -1,0 +1,263 @@
+{
+  "basicInfo": {
+    "companyName": "Nexcess",
+    "websiteUrl": "https://www.nexcess.net",
+    "yearFounded": 2000,
+    "headquartersCountry": "United States",
+    "parentCompany": "Liquid Web (acquired 2019; merging as one brand)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": false,
+    "instantAccountActivation": true,
+    "hostingType": "managed-wordpress",
+    "notes": "Founded 2000, acquired by Liquid Web in 2019. Brands merging as one. Specializes in managed WordPress, WooCommerce, and Magento hosting. Owns 3 private data centers with 25,000+ servers. Known for e-commerce expertise. Offers auto-scaling and premium performance."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 21.00,
+    "wordpressHostingMonthlyRenewal": 21.00,
+    "cloudHostingMonthlyLowest": 21.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Full refund within 30 days",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 15,
+    "storageType": "SSD",
+    "bandwidthGb": 2000,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL/MariaDB",
+    "redisAvailable": true,
+    "elasticsearchSupport": true,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["US-Central (Phoenix)", "US-West (Los Angeles)", "EU-Central (Amsterdam)"],
+    "serverLocationOptionsCount": 3,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Nexcess CDN (22 global edge locations)",
+    "uptimeGuaranteePercent": 100,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Enterprise DDoS protection included",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewing)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 30,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": true,
+    "dataCenterCertifications": ["SOC 2", "ISO 27001", "PCI DSS", "HIPAA"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Phone", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States"],
+    "phoneSupportHours": "24/7/365",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Included with all plans",
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": 1,
+    "supportOutsourced": true
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Redis",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "managedWordPress": {
+    "pricingModel": "no-caps",
+    "monthlyVisitLimit": "Unlimited",
+    "visitOverageCost": 0,
+    "phpWorkerLimit": null,
+    "pluginRestrictions": null,
+    "devEnvironmentIncluded": false,
+    "devEnvironmentName": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": "Expert white-glove migration",
+    "migrationTurnaroundDays": 1,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Nexcess Portal",
+    "controlPanelName": "Nexcess Portal",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "No overage fees, traffic caps, or metered pageviews - unlimited bandwidth included",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "No overage fees - storage included in plan",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment",
+    "resourceAbuseDefinition": "Excessive resource usage beyond plan limits",
+    "hiddenFeesNotes": "NO OVERAGE FEES - major differentiator vs Kinsta/WP Engine; No traffic caps or metered pageviews; CDN overage $0.10/GB after 250GB free; No email hosting (use third-party); Support outsourced post-acquisition; 75% off first 3 months promotional"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "E-commerce focused; Strict AUP"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Up to $200 per sale"
+  },
+  "reputation": {
+    "trustpilotRating": 4.0,
+    "trustpilotReviewsCount": 2635,
+    "g2Rating": 4.3,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Support quality declined after Liquid Web acquisition (outsourced); Hidden fees reported (unexpected charges); Premium pricing may be high for some; No email hosting; Limited to 3 data center regions; Magento hosting specialty but complex",
+    "bestFor": "WooCommerce stores needing managed hosting; Magento e-commerce sites; WordPress sites requiring auto-scaling; Businesses needing PCI/HIPAA compliance; Users wanting 100% uptime guarantee",
+    "avoidIf": "Budget-conscious; Need many data center locations; Prefer cPanel; Need email hosting included; Concerned about post-acquisition support quality",
+    "competitorComparisonNotes": "NO OVERAGE FEES - unlike Kinsta ($0.50/1k visits) and WP Engine ($1-2/1k visits); E-commerce specialty; Merged with Liquid Web; 100% uptime guarantee; PCI/HIPAA compliant; Magento expertise unique; G2 4.3, Trustpilot 4.0"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 4.5,
+    "supportQuality": 3.5,
+    "security": 5.0,
+    "features": 4.5,
+    "easeOfUse": 4.0,
+    "transparency": 3.0,
+    "overallRating": 4.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 3,
+    "suitabilityEcommerce": 5,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 2,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": false,
+    "magentoSupport": true,
+    "prestashopSupport": false,
+    "laravelSupport": true,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 252.00,
+    "totalSecondYearCost": 252.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 21.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "E-commerce expertise with managed WooCommerce and Magento hosting, 100% uptime SLA, and PCI/HIPAA compliance",
+    "primaryCompetitors": ["Kinsta", "WP Engine", "Cloudways", "Liquid Web"],
+    "bestAlternativeTo": "WP Engine",
+    "idealCustomerProfile": "E-commerce business needing managed WooCommerce or Magento hosting with auto-scaling and enterprise compliance"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Netherlands", "United Kingdom", "Germany"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI-DSS", "HIPAA", "SOC 2"],
+    "regionalWebsites": ["nexcess.net"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Nexcess excels for e-commerce with WooCommerce and Magento expertise. G2 4.3 and Trustpilot 4.0. Support quality concerns post-acquisition.",
+    "faqWhoOwnsThisHost": "Nexcess was acquired by Liquid Web in 2019. Both brands are merging. Originally founded in 2000.",
+    "faqHowMuchDoesItCost": "Managed WordPress from $21/month. 75% off first 3 months promotional. WooCommerce and Magento plans higher.",
+    "faqIsItBeginnerFriendly": "Moderately. Custom portal (no cPanel). Best for users with e-commerce experience.",
+    "faqDoesItIncludeEmail": "No email hosting included. Use third-party like Google Workspace.",
+    "faqCanIHostWordPress": "Yes, managed WordPress and WooCommerce optimized hosting with staging, auto-scaling, and Redis caching.",
+    "faqWhatsTheUptime": "100% uptime guarantee with credits for any downtime.",
+    "faqCanICancelAnytime": "Yes, 30-day money-back guarantee. Monthly billing available."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

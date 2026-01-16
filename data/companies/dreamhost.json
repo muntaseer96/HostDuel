@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "DreamHost",
+    "websiteUrl": "https://www.dreamhost.com",
+    "yearFounded": 1996,
+    "headquartersCountry": "United States",
+    "parentCompany": "New Dream Network, LLC (employee-owned)",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Founded in 1996 by Dallas Bethune, Josh Jones, Michael Rodriguez, and Sage Weil - undergraduate students at Harvey Mudd College. Employee-owned company. Hosts 1M+ domains, supports 400K+ customers. 285 employees across 6 continents. Co-CEOs are original founders (Kashuba and Rodriguez). HQ in Brea, California. Known for privacy advocacy and open-source support."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 2.95,
+    "sharedHostingMonthlyRenewal": 7.99,
+    "vpsMonthlyLowest": 10.00,
+    "vpsMonthlyRenewal": 24.99,
+    "dedicatedMonthlyLowest": 165.00,
+    "dedicatedMonthlyRenewal": 199.00,
+    "wordpressHostingMonthlyPromo": 2.95,
+    "wordpressHostingMonthlyRenewal": 10.99,
+    "cloudHostingMonthlyLowest": 4.50,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 97,
+    "moneyBackExclusions": "Only applies to shared hosting with credit card payment; DreamPress has 30-day guarantee; Domain registrations non-refundable; SSL certificates non-refundable; Add-on services non-refundable; Updated to 30 days as of July 2025",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Check"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 50,
+    "storageType": "NVMe SSD",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": null,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["8.1", "8.2", "8.3", "8.4"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All hosting plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "DreamPress plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Ashburn, VA (US)", "Hillsboro, OR (US)", "Netherlands (EU)"],
+    "serverLocationOptionsCount": 3,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare CDN",
+    "uptimeGuaranteePercent": 100,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Basic",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (automatic, not guaranteed accessible)",
+    "backupRetentionDays": 30,
+    "backupRestoreFee": null,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Phone (callback)", "Email/Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States", "Canada"],
+    "phoneSupportHours": "Callback system (not 24/7 direct)",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English", "Spanish"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Built-in caching (DreamPress)",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": null,
+    "migrationServiceQuality": 4,
+    "migrationTurnaroundDays": 3,
+    "paidMigrationCost": 99.00
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "DreamHost Panel (proprietary)",
+    "controlPanelName": "DreamHost Panel",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "DreamHost Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": null,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered; no overage charges",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Must upgrade plan or purchase additional storage",
+    "accountSuspensionPolicy": "AUP violations result in suspension or termination; content illegal in USA prohibited",
+    "resourceAbuseDefinition": "Illegal content; CSAM; copyright violations; TGP/adult galleries on shared hosting",
+    "hiddenFeesNotes": "Email only free for 3 months on Shared Starter (then $1.67/mo per mailbox); PHP Extended Support costs $5/mo for PHP 8.0 and older; DreamShield security is paid extra; Hack recovery is paid extra; Money-back reduced from 97 to 30 days (July 2025); No cPanel (custom panel only)"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": true,
+    "gamblingSitesAllowed": null,
+    "cryptocurrencySitesAllowed": false,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": false
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Flat rate (tiered)",
+    "affiliateCommissionAmount": "Up to $300 per referral; 97-day holding period; monthly bank transfer payout; no earning limits; top earners made $20K+ last year"
+  },
+  "reputation": {
+    "trustpilotRating": 4.7,
+    "trustpilotReviewsCount": 7738,
+    "g2Rating": 4.0,
+    "betterBusinessBureauRating": "Not Accredited"
+  },
+  "editorial": {
+    "knownIssues": "No cPanel (custom panel takes adjustment); Email not included on Shared Starter (only free 3 months); PHP Extended Support costs $5/mo extra; DreamShield security and hack recovery are paid extras; Money-back guarantee reduced from 97 to 30 days (July 2025); Phone support is callback only (not direct dial); Automatic backups exist but not guaranteed accessible; Only 3 data center locations",
+    "bestFor": "Privacy-conscious users (employee-owned, privacy advocacy); WordPress users (DreamPress managed hosting); Users wanting long money-back period; Developers (SSH, Git, multiple languages); Users wanting 100% uptime guarantee; Open-source advocates; US-based websites (2 US + 1 EU data center)",
+    "avoidIf": "Need cPanel; Need included email on basic plan; Need more global data center options; Prefer direct phone support; Need enterprise compliance (no SOC2/HIPAA); Budget-conscious long-term (VPS renewal 150% markup)",
+    "competitorComparisonNotes": "97-day money-back (industry-leading, but reduced to 30 in July 2025); 100% uptime guarantee vs 99.9% competitors; Employee-owned vs private equity (Newfold) competitors; Custom panel vs cPanel (Namecheap/HostGator have cPanel); Email not included on starter (unlike Hostinger/Namecheap); Only 3 data centers vs 10+ at SiteGround/Hostinger; $99 migration vs $149.99 HostGator; DreamPress managed WP well-regarded; Higher Trustpilot (4.7) than HostGator (4.5)"
+  },
+  "ratings": {
+    "valueForMoney": 4.0,
+    "performance": 4.0,
+    "supportQuality": 3.5,
+    "security": 3.5,
+    "features": 4.0,
+    "easeOfUse": 3.5,
+    "transparency": 4.0,
+    "overallRating": 3.8
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 3,
+    "suitabilityDeveloper": 5,
+    "suitabilityBeginner": 3,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 35.40,
+    "totalSecondYearCost": 95.88,
+    "renewalMarkupPercent": 170.8,
+    "effectiveMonthlyAverage": 5.47
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Employee-owned privacy advocate with 100% uptime guarantee and full developer tools",
+    "primaryCompetitors": ["Bluehost", "InMotion", "A2 Hosting"],
+    "bestAlternativeTo": "Bluehost",
+    "idealCustomerProfile": "Privacy-conscious developer or WordPress enthusiast wanting ethical hosting"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Canada", "Netherlands"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English", "Spanish"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["dreamhost.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "DreamHost is excellent for privacy-conscious users and developers, with 100% uptime guarantee and ethical ownership, but has a custom panel instead of cPanel.",
+    "faqWhoOwnsThisHost": "DreamHost is employee-owned (New Dream Network, LLC), founded by college students in 1996. Known for privacy advocacy.",
+    "faqHowMuchDoesItCost": "DreamHost shared hosting starts at $2.95/month (promo) and renews at $7.99/month. First year costs approximately $35.",
+    "faqIsItBeginnerFriendly": "Moderately. DreamHost has good support and documentation, but the custom control panel takes adjustment from cPanel users.",
+    "faqDoesItIncludeEmail": "Not on the basic Shared Starter plan (only free for 3 months). Higher plans include email.",
+    "faqCanIHostWordPress": "Yes, DreamHost offers DreamPress managed WordPress hosting with staging, caching, and excellent performance.",
+    "faqWhatsTheUptime": "DreamHost guarantees 100% uptime, the highest in the industry, with SLA credits for any downtime.",
+    "faqCanICancelAnytime": "Yes, with a 97-day money-back guarantee (reduced to 30 days as of July 2025). Only applies to shared hosting with credit card."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

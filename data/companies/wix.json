@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Wix",
+    "websiteUrl": "https://www.wix.com",
+    "yearFounded": 2006,
+    "headquartersCountry": "Israel",
+    "parentCompany": "Independent (publicly traded NASDAQ: WIX)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": false,
+    "instantAccountActivation": true,
+    "hostingType": "website-builder",
+    "notes": "Founded 2006 in Tel Aviv. 230+ million users worldwide. #2 website builder on G2. Known for drag-and-drop editor and 2,600+ templates. 15+ AI tools including AI website builder. Acquired DeviantArt, SparkHire, and others. Price increase Feb 2026 announced."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 17.00,
+    "sharedHostingMonthlyRenewal": 17.00,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": null,
+    "wordpressHostingMonthlyRenewal": null,
+    "cloudHostingMonthlyLowest": 17.00,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 14,
+    "moneyBackExclusions": "14-day money-back guarantee on premium plans",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": false,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 2,
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": null,
+    "phpVersionSwitching": false,
+    "nodejsSupport": true,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": false,
+    "sshAccessTierRequired": null,
+    "gitDeployment": false,
+    "wpCliAccess": false,
+    "cronJobsAllowed": false,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "Wix Data Collections",
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Global CDN"],
+    "serverLocationOptionsCount": null,
+    "chooseServerLocation": false,
+    "cdnIncluded": true,
+    "cdnProvider": "Wix CDN",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": false,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Standard DDoS protection",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Wix SSL",
+    "wildcardSslAvailable": false,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Automatic (Site History)",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": false
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2", "ISO 27001"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Phone", "Knowledge Base", "Community Forum"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States", "United Kingdom", "Global"],
+    "phoneSupportHours": "24/7 (callback system)",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "VIP support with Business Elite",
+    "supportLanguageOptions": ["English", "French", "German", "Spanish", "Portuguese", "Italian", "Japanese", "Korean", "Chinese"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": false,
+    "wordpressAutoInstall": false,
+    "wordpressAutoUpdates": false,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": false
+  },
+  "migration": {
+    "freeMigration": false,
+    "migrationWebsitesLimit": 0,
+    "migrationServiceQuality": null,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Wix Editor",
+    "controlPanelName": "Wix Editor",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Wix Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited bandwidth included",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Limited by plan; upgrade for more",
+    "accountSuspensionPolicy": "Violation of ToS",
+    "resourceAbuseDefinition": "ToS violations; illegal content",
+    "hiddenFeesNotes": "Free plan available with ads; Free domain first year ($17/yr renewal); Email $6/mo extra; Transaction fees 2.9% + $0.30; App costs $3-20/mo; Can't switch templates after publishing; Price increase Feb 2026; 10% discount with TAKE10 code"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "Proprietary platform; No WordPress; 230M+ users"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "$100+ per premium sale"
+  },
+  "reputation": {
+    "trustpilotRating": 3.5,
+    "trustpilotReviewsCount": 26216,
+    "g2Rating": 4.4,
+    "betterBusinessBureauRating": "A"
+  },
+  "editorial": {
+    "knownIssues": "Can't switch templates after publishing; Storage limited on lower plans; Mobile/SEO pain points; Price increases without notice; Less scalable than Shopify/WordPress; Transaction fees add up; Proprietary lock-in; SEO multilingual URL slug delays",
+    "bestFor": "Small businesses wanting easy website; Portfolios and personal sites; Beginners with no coding; Service businesses; Users wanting AI website builder; Those prioritizing design variety",
+    "avoidIf": "Need WordPress; Want code-level control; Need scalable e-commerce; Concerned about lock-in; Need advanced SEO features; Budget-conscious (fees add up)",
+    "competitorComparisonNotes": "#2 website builder on G2; 230M+ users; 2,600+ templates; 15+ AI tools; G2 4.4 good; Trustpilot 3.5 mixed; Best for beginners; Can't switch templates; Competes with Squarespace, Weebly; Top-rated 2025 Website Builder Expert"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 3.5,
+    "supportQuality": 3.5,
+    "security": 4.0,
+    "features": 4.5,
+    "easeOfUse": 5.0,
+    "transparency": 3.0,
+    "overallRating": 3.8
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 2,
+    "suitabilityDeveloper": 2,
+    "suitabilityBeginner": 5,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 204.00,
+    "totalSecondYearCost": 204.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 17.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "#2 website builder with 230M+ users, 2,600+ templates, and 15+ AI tools for easy website creation",
+    "primaryCompetitors": ["Squarespace", "Weebly", "WordPress.com"],
+    "bestAlternativeTo": "Squarespace",
+    "idealCustomerProfile": "Beginner or small business wanting to quickly create a professional website without coding"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Germany", "France", "Brazil", "Israel"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP", "BRL", "ILS"],
+    "localSupportLanguages": ["English", "French", "German", "Spanish", "Portuguese", "Italian", "Japanese", "Korean", "Chinese"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI-DSS"],
+    "regionalWebsites": ["wix.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Wix is the #2 website builder with G2 4.4 and 230M+ users. Great for beginners. Trustpilot 3.5 mixed reviews reflect pricing and template lock-in concerns.",
+    "faqWhoOwnsThisHost": "Wix is an independent, publicly traded company (NASDAQ: WIX) founded in 2006 in Tel Aviv, Israel.",
+    "faqHowMuchDoesItCost": "Plans from $17/month (Light) to $159/month (Business Elite). Free plan available with ads. 14-day money-back guarantee.",
+    "faqIsItBeginnerFriendly": "Yes, very beginner-friendly. Drag-and-drop editor with AI website builder. No coding required.",
+    "faqDoesItIncludeEmail": "No, professional email is $6/month extra. Free plan includes Wix-branded email forwarding.",
+    "faqCanIHostWordPress": "No, Wix is a proprietary platform. You cannot install WordPress.",
+    "faqWhatsTheUptime": "Wix generally offers reliable uptime but doesn't publish specific guarantees.",
+    "faqCanICancelAnytime": "Yes, 14-day money-back guarantee on premium plans."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

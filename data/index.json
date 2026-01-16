@@ -1,0 +1,459 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-14",
+    "totalCompanies": 56,
+    "dataSchema": "./schema.json"
+  },
+  "companies": [
+    {
+      "id": "godaddy",
+      "name": "GoDaddy",
+      "file": "./companies/godaddy.json",
+      "websiteUrl": "https://www.godaddy.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "namecheap",
+      "name": "Namecheap",
+      "file": "./companies/namecheap.json",
+      "websiteUrl": "https://www.namecheap.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "file": "./companies/hostinger.json",
+      "websiteUrl": "https://www.hostinger.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "ionos",
+      "name": "IONOS",
+      "file": "./companies/ionos.json",
+      "websiteUrl": "https://www.ionos.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "bluehost",
+      "name": "Bluehost",
+      "file": "./companies/bluehost.json",
+      "websiteUrl": "https://www.bluehost.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "siteground",
+      "name": "SiteGround",
+      "file": "./companies/siteground.json",
+      "websiteUrl": "https://www.siteground.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "hostgator",
+      "name": "HostGator",
+      "file": "./companies/hostgator.json",
+      "websiteUrl": "https://www.hostgator.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "dreamhost",
+      "name": "DreamHost",
+      "file": "./companies/dreamhost.json",
+      "websiteUrl": "https://www.dreamhost.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "inmotion",
+      "name": "InMotion Hosting",
+      "file": "./companies/inmotion.json",
+      "websiteUrl": "https://www.inmotionhosting.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "greengeeks",
+      "name": "GreenGeeks",
+      "file": "./companies/greengeeks.json",
+      "websiteUrl": "https://www.greengeeks.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-12"
+    },
+    {
+      "id": "cloudways",
+      "name": "Cloudways",
+      "file": "./companies/cloudways.json",
+      "websiteUrl": "https://www.cloudways.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "ovhcloud",
+      "name": "OVHcloud",
+      "file": "./companies/ovhcloud.json",
+      "websiteUrl": "https://www.ovhcloud.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "vultr",
+      "name": "Vultr",
+      "file": "./companies/vultr.json",
+      "websiteUrl": "https://www.vultr.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "file": "./companies/digitalocean.json",
+      "websiteUrl": "https://www.digitalocean.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "linode",
+      "name": "Linode (Akamai)",
+      "file": "./companies/linode.json",
+      "websiteUrl": "https://www.linode.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "liquidweb",
+      "name": "Liquid Web",
+      "file": "./companies/liquidweb.json",
+      "websiteUrl": "https://www.liquidweb.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "a2hosting",
+      "name": "A2 Hosting",
+      "file": "./companies/a2hosting.json",
+      "websiteUrl": "https://www.a2hosting.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "scalahosting",
+      "name": "ScalaHosting",
+      "file": "./companies/scalahosting.json",
+      "websiteUrl": "https://www.scalahosting.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "hostpapa",
+      "name": "HostPapa",
+      "file": "./companies/hostpapa.json",
+      "websiteUrl": "https://www.hostpapa.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "hostwinds",
+      "name": "Hostwinds",
+      "file": "./companies/hostwinds.json",
+      "websiteUrl": "https://www.hostwinds.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-13"
+    },
+    {
+      "id": "interserver",
+      "name": "InterServer",
+      "file": "./companies/interserver.json",
+      "websiteUrl": "https://www.interserver.net",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "fastcomet",
+      "name": "FastComet",
+      "file": "./companies/fastcomet.json",
+      "websiteUrl": "https://www.fastcomet.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "hetzner",
+      "name": "Hetzner",
+      "file": "./companies/hetzner.json",
+      "websiteUrl": "https://www.hetzner.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "contabo",
+      "name": "Contabo",
+      "file": "./companies/contabo.json",
+      "websiteUrl": "https://contabo.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "kinsta",
+      "name": "Kinsta",
+      "file": "./companies/kinsta.json",
+      "websiteUrl": "https://kinsta.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "wpengine",
+      "name": "WP Engine",
+      "file": "./companies/wpengine.json",
+      "websiteUrl": "https://wpengine.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "flywheel",
+      "name": "Flywheel",
+      "file": "./companies/flywheel.json",
+      "websiteUrl": "https://getflywheel.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "file": "./companies/cloudflare.json",
+      "websiteUrl": "https://www.cloudflare.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "aws",
+      "name": "Amazon Web Services (AWS)",
+      "file": "./companies/aws.json",
+      "websiteUrl": "https://aws.amazon.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "gcp",
+      "name": "Google Cloud Platform (GCP)",
+      "file": "./companies/gcp.json",
+      "websiteUrl": "https://cloud.google.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "file": "./companies/azure.json",
+      "websiteUrl": "https://azure.microsoft.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "rackspace",
+      "name": "Rackspace Technology",
+      "file": "./companies/rackspace.json",
+      "websiteUrl": "https://www.rackspace.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "alibabacloud",
+      "name": "Alibaba Cloud",
+      "file": "./companies/alibabacloud.json",
+      "websiteUrl": "https://www.alibabacloud.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "kamatera",
+      "name": "Kamatera",
+      "file": "./companies/kamatera.json",
+      "websiteUrl": "https://www.kamatera.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "hostarmada",
+      "name": "HostArmada",
+      "file": "./companies/hostarmada.json",
+      "websiteUrl": "https://hostarmada.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "chemicloud",
+      "name": "ChemiCloud",
+      "file": "./companies/chemicloud.json",
+      "websiteUrl": "https://chemicloud.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "verpex",
+      "name": "Verpex",
+      "file": "./companies/verpex.json",
+      "websiteUrl": "https://verpex.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "accuwebhosting",
+      "name": "AccuWeb Hosting",
+      "file": "./companies/accuwebhosting.json",
+      "websiteUrl": "https://www.accuwebhosting.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "tmdhosting",
+      "name": "TMDHosting",
+      "file": "./companies/tmdhosting.json",
+      "websiteUrl": "https://www.tmdhosting.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "nexcess",
+      "name": "Nexcess",
+      "file": "./companies/nexcess.json",
+      "websiteUrl": "https://www.nexcess.net",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "pressable",
+      "name": "Pressable",
+      "file": "./companies/pressable.json",
+      "websiteUrl": "https://pressable.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "rocketnet",
+      "name": "Rocket.net",
+      "file": "./companies/rocketnet.json",
+      "websiteUrl": "https://rocket.net",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "pagely",
+      "name": "Pagely",
+      "file": "./companies/pagely.json",
+      "websiteUrl": "https://pagely.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "pantheon",
+      "name": "Pantheon",
+      "file": "./companies/pantheon.json",
+      "websiteUrl": "https://pantheon.io",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "squarespace",
+      "name": "Squarespace",
+      "file": "./companies/squarespace.json",
+      "websiteUrl": "https://www.squarespace.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "wix",
+      "name": "Wix",
+      "file": "./companies/wix.json",
+      "websiteUrl": "https://www.wix.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "weebly",
+      "name": "Weebly",
+      "file": "./companies/weebly.json",
+      "websiteUrl": "https://www.weebly.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "file": "./companies/shopify.json",
+      "websiteUrl": "https://www.shopify.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "bigcommerce",
+      "name": "BigCommerce",
+      "file": "./companies/bigcommerce.json",
+      "websiteUrl": "https://www.bigcommerce.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "porkbun",
+      "name": "Porkbun",
+      "file": "./companies/porkbun.json",
+      "websiteUrl": "https://porkbun.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "wpx",
+      "name": "WPX Hosting",
+      "file": "./companies/wpx.json",
+      "websiteUrl": "https://wpx.net",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "wordpresscom",
+      "name": "WordPress.com",
+      "file": "./companies/wordpresscom.json",
+      "websiteUrl": "https://wordpress.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "file": "./companies/vercel.json",
+      "websiteUrl": "https://vercel.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "file": "./companies/netlify.json",
+      "websiteUrl": "https://www.netlify.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "10web",
+      "name": "10Web",
+      "file": "./companies/10web.json",
+      "websiteUrl": "https://10web.io",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    },
+    {
+      "id": "render",
+      "name": "Render",
+      "file": "./companies/render.json",
+      "websiteUrl": "https://render.com",
+      "status": "complete",
+      "lastUpdated": "2026-01-14"
+    }
+  ],
+  "pendingCompanies": []
+}

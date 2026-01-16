@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Squarespace",
+    "websiteUrl": "https://www.squarespace.com",
+    "yearFounded": 2003,
+    "headquartersCountry": "United States",
+    "parentCompany": "Independent (publicly traded NYSE: SQSP)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "website-builder",
+    "notes": "Founded 2003 by Anthony Casalena in a dorm room at University of Maryland. Went public in 2021. Known for beautiful design-focused templates. Website builder + hosting platform. Acquired Tock (restaurant reservations) and Acuity Scheduling. Popular with creatives, small businesses, portfolios."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 16.00,
+    "sharedHostingMonthlyRenewal": 16.00,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": null,
+    "wordpressHostingMonthlyRenewal": null,
+    "cloudHostingMonthlyLowest": 16.00,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 14,
+    "moneyBackExclusions": "14-day free trial; No refunds after purchase",
+    "acceptedPaymentMethods": ["Credit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": true,
+    "domainPrivacyCostYearly": 0
+  },
+  "technicalSpecs": {
+    "storageGb": "Unlimited",
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": null,
+    "phpVersionSwitching": false,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": false,
+    "sshAccessTierRequired": null,
+    "gitDeployment": false,
+    "wpCliAccess": false,
+    "cronJobsAllowed": false,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["Global CDN"],
+    "serverLocationOptionsCount": null,
+    "chooseServerLocation": false,
+    "cdnIncluded": true,
+    "cdnProvider": "Squarespace CDN",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": false,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Standard DDoS protection",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Squarespace SSL",
+    "wildcardSslAvailable": false,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Automatic",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": false,
+    "downloadableBackups": false
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Email", "Knowledge Base", "Community Forum"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English", "French", "German", "Spanish", "Portuguese", "Italian"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": false,
+    "wordpressAutoInstall": false,
+    "wordpressAutoUpdates": false,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": false
+  },
+  "migration": {
+    "freeMigration": false,
+    "migrationWebsitesLimit": 0,
+    "migrationServiceQuality": null,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Squarespace Editor",
+    "controlPanelName": "Squarespace Editor",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Squarespace Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unlimited bandwidth included",
+    "bandwidthOverageCost": 0,
+    "storageOveragePolicy": "Unlimited storage included",
+    "accountSuspensionPolicy": "Violation of ToS",
+    "resourceAbuseDefinition": "ToS violations; illegal content",
+    "hiddenFeesNotes": "Free domain first year ($10-20/year renewal); Email marketing starts $5/mo; Transaction fees on Basic plan (2%); Extensions can add $0-75/mo; No WordPress support; Domain transfer issues reported"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": false,
+    "whiteLabelAvailable": false,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "Proprietary platform; No WordPress; Design-focused"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "Varies by program"
+  },
+  "reputation": {
+    "trustpilotRating": 1.2,
+    "trustpilotReviewsCount": 2103,
+    "g2Rating": 4.4,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "Very poor Trustpilot (1.2) despite G2 4.4; Customer support complaints; Domain transfer process criticized as predatory; 2% transaction fee on Basic plan; No WordPress; Can't switch templates after publishing; Limited customization vs code-based solutions; Support quality declining",
+    "bestFor": "Portfolio and creative sites; Small businesses wanting beautiful design; Photographers and artists; Restaurants (Tock integration); Service businesses (Acuity Scheduling); Users prioritizing aesthetics over customization",
+    "avoidIf": "Need WordPress; Want code-level control; Need advanced e-commerce; Prefer traditional hosting; Concerned about domain transfer; Budget e-commerce (transaction fees)",
+    "competitorComparisonNotes": "Design-focused builder; G2 4.4 good but Trustpilot 1.2 reflects support issues; Beautiful templates; Can't switch templates after launch; 2% transaction fee on Basic; Competes with Wix, Weebly; Not traditional hosting"
+  },
+  "ratings": {
+    "valueForMoney": 3.5,
+    "performance": 4.0,
+    "supportQuality": 2.5,
+    "security": 4.0,
+    "features": 3.5,
+    "easeOfUse": 4.5,
+    "transparency": 3.0,
+    "overallRating": 3.5
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 2,
+    "suitabilityDeveloper": 1,
+    "suitabilityBeginner": 5,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 192.00,
+    "totalSecondYearCost": 192.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 16.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Design-focused website builder with beautiful templates, integrated scheduling, and all-in-one simplicity",
+    "primaryCompetitors": ["Wix", "Weebly", "WordPress.com"],
+    "bestAlternativeTo": "Wix",
+    "idealCustomerProfile": "Creative professional or small business owner wanting a beautiful, polished website without coding"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Canada", "Australia", "Germany"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP", "AUD", "CAD"],
+    "localSupportLanguages": ["English", "French", "German", "Spanish", "Portuguese", "Italian"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI-DSS"],
+    "regionalWebsites": ["squarespace.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Squarespace is excellent for design-focused sites. G2 4.4 but Trustpilot 1.2 reflects customer support issues. Best for portfolios and creative businesses.",
+    "faqWhoOwnsThisHost": "Squarespace is an independent, publicly traded company (NYSE: SQSP) founded in 2003 by Anthony Casalena.",
+    "faqHowMuchDoesItCost": "Plans from $16/month (Basic) to $99/month (Advanced) billed annually. Monthly billing 36% more. 14-day free trial.",
+    "faqIsItBeginnerFriendly": "Yes, very beginner-friendly with drag-and-drop editor and beautiful templates. No coding required.",
+    "faqDoesItIncludeEmail": "No, email is separate (Google Workspace integration). Email marketing starts at $5/month.",
+    "faqCanIHostWordPress": "No, Squarespace is a proprietary platform. You cannot install WordPress.",
+    "faqWhatsTheUptime": "Squarespace does not publish specific uptime guarantees but generally offers reliable service.",
+    "faqCanICancelAnytime": "14-day free trial. No refunds after purchase. Annual plans may have terms."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": false
+  }
+}

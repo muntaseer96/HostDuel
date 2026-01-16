@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "GoDaddy",
+    "websiteUrl": "https://www.godaddy.com",
+    "yearFounded": 1997,
+    "headquartersCountry": "United States",
+    "parentCompany": null,
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Publicly traded (NYSE: GDDY) since 2015. Originally named Jomax Technologies, rebranded to GoDaddy in 1999. Major shareholders include KKR, Silver Lake Partners, and Technology Crossover Ventures. Current CEO is Aman Bhutani (since 2019). Headquarters relocated from Scottsdale to Tempe, AZ in April 2021. FTC order in January 2025 regarding security practices. DEDICATED SERVERS: Discontinued as of 2024-2025 (support agents confirm it's being worked on for future reintroduction)."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 5.99,
+    "sharedHostingMonthlyRenewal": 9.99,
+    "vpsMonthlyLowest": 6.00,
+    "vpsMonthlyRenewal": 14.99,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 5.99,
+    "wordpressHostingMonthlyRenewal": 14.99,
+    "cloudHostingMonthlyLowest": null,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Domains (5-day window only, non-refundable after); Monthly plans (48-hour window only); Free domain cost deducted from refund; Premium domains non-refundable; Domain backorders non-refundable if applied to auction; Web design services have cancellation fees (30-70%); No refunds after account closure; Products in subscription cannot be individually refunded",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Google Pay", "Apple Pay"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 100,
+    "storageType": "SSD",
+    "bandwidthGb": "Unlimited",
+    "inodeLimit": 250000,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": 10,
+    "maxDatabaseSizeGb": 1,
+    "maxFileUploadSizeMb": 128,
+    "phpVersionsAvailable": ["8.2", "8.3", "8.4"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All cPanel plans",
+    "gitDeployment": false,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "Managed WordPress Deluxe and above",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Phoenix, AZ (US)", "Ashburn, VA (US)", "Los Angeles (US)", "Chicago (US)", "Amsterdam (Netherlands)", "Singapore", "France", "Germany", "United Kingdom"],
+    "serverLocationOptionsCount": 9,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Cloudflare",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Basic",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 192.00,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "AutoSSL (Let's Encrypt compatible)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily",
+    "backupRetentionDays": 1,
+    "backupRestoreFee": 150.00,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Phone", "Live Chat", "Email", "Text/SMS", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["United States", "Canada", "United Kingdom", "Australia", "India", "Multiple international"],
+    "phoneSupportHours": "24/7",
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English", "Spanish", "Portuguese", "French", "German", "Italian", "Dutch", "Japanese", "Chinese", "Korean"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 3,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": "Plesk (for VPS/Dedicated)",
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "GoDaddy Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "May require upgrade to VPS/Dedicated if usage affects server stability",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Subject to inode limits; excess usage may require upgrade",
+    "accountSuspensionPolicy": "Email warning for resource issues; immediate suspension possible for malware/TOS violations; reinstatement within 72 hours after fixing issues",
+    "resourceAbuseDefinition": "Exceeding 100 concurrent connections, 100 active processes, 1 MB/s disk IO, 250,000 inodes, or activity that negatively affects other accounts on shared server",
+    "hiddenFeesNotes": "SSL certificates $79.99/year (free AutoSSL available but limited); Email not included - Professional Email $6.99/month; Domain privacy $14.99/year; Website Security $192/year; Backup service $3/month extra; $150 backup restore fee; $80 domain redemption fee for expired domains; Significant renewal price increases (25-40% higher); Wildcard SSL renews at $1,349.97/year (from $349.99 intro)"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": null,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Percentage + Bonuses",
+    "affiliateCommissionAmount": "10-15% revenue share; $100 bonus for new hosting customer; $25 for annual renewals; 45-day cookie"
+  },
+  "reputation": {
+    "trustpilotRating": 4.0,
+    "trustpilotReviewsCount": 131283,
+    "g2Rating": 4.0,
+    "betterBusinessBureauRating": "A+"
+  },
+  "editorial": {
+    "knownIssues": "High renewal prices (25-40% markup); $150 backup restore fee; Email not included (extra $6.99/mo); FTC order Jan 2025 for security failures; 2023 multi-year security breach confirmed; Aggressive upselling throughout checkout; BBB customer review score only 1.08/5 despite A+ rating; Low inode limit (250k) fills quickly with WordPress sites",
+    "bestFor": "Beginners wanting brand recognition; Users needing 24/7 phone support; Simple small business websites; Domain management (primary business); Users who prefer all-in-one billing",
+    "avoidIf": "Need Node.js/Python/Ruby support; Budget-conscious (renewal rates high); Adult or gambling content; High file count sites (250k inode limit); Need included email; Privacy-focused (security track record); Developer workflows (no Git deployment)",
+    "competitorComparisonNotes": "More expensive than Namecheap/Hostinger at renewal; Less developer-friendly than DigitalOcean/Vultr/Cloudways; Better phone support than budget hosts; More hidden fees than SiteGround/A2 Hosting; Larger brand but lower value than Hostinger for beginners"
+  },
+  "ratings": {
+    "valueForMoney": 2.5,
+    "performance": 3.5,
+    "supportQuality": 4.0,
+    "security": 3.0,
+    "features": 3.0,
+    "easeOfUse": 4.0,
+    "transparency": 2.0,
+    "overallRating": 3.2
+  },
+  "useCases": {
+    "suitabilityBlogger": 3,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 2,
+    "suitabilityDeveloper": 2,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 71.88,
+    "totalSecondYearCost": 119.88,
+    "renewalMarkupPercent": 66.8,
+    "effectiveMonthlyAverage": 7.99
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "World's largest domain registrar with all-in-one hosting and domain management",
+    "primaryCompetitors": ["Namecheap", "Bluehost", "HostGator"],
+    "bestAlternativeTo": "Namecheap",
+    "idealCustomerProfile": "Small business owner wanting brand recognition and phone support over technical features"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Canada", "United Kingdom", "Australia", "India"],
+    "localCurrencyBilling": ["USD", "GBP", "EUR", "AUD", "INR", "CAD"],
+    "localSupportLanguages": ["English", "Spanish", "Portuguese", "French", "German", "Italian", "Dutch", "Japanese", "Chinese", "Korean"],
+    "dataSovereigntyCompliance": ["GDPR", "CCPA"],
+    "regionalWebsites": ["godaddy.com", "uk.godaddy.com", "au.godaddy.com", "ca.godaddy.com", "in.godaddy.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "GoDaddy is suitable for beginners wanting brand recognition and 24/7 phone support, but has high renewal prices and limited developer features.",
+    "faqWhoOwnsThisHost": "GoDaddy is a publicly traded company (NYSE: GDDY) with major shareholders including KKR and Silver Lake Partners.",
+    "faqHowMuchDoesItCost": "GoDaddy shared hosting starts at $5.99/month (promo) and renews at $9.99/month. First year costs approximately $72.",
+    "faqIsItBeginnerFriendly": "Yes, GoDaddy is beginner-friendly with cPanel, 24/7 phone support, and a website builder, though upselling can be overwhelming.",
+    "faqDoesItIncludeEmail": "No, GoDaddy hosting does not include email. Professional Email costs an extra $6.99/month.",
+    "faqCanIHostWordPress": "Yes, GoDaddy offers WordPress hosting with auto-install, auto-updates, and staging on higher plans.",
+    "faqWhatsTheUptime": "GoDaddy guarantees 99.9% uptime with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee for annual plans. Monthly plans have a 48-hour cancellation window."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

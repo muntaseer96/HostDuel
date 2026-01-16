@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Google Cloud Platform (GCP)",
+    "websiteUrl": "https://cloud.google.com",
+    "yearFounded": 2008,
+    "headquartersCountry": "United States",
+    "parentCompany": "Alphabet Inc. (Google subsidiary)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "cloud-iaas",
+    "notes": "Google App Engine launched 2008, expanded to Google Cloud Platform. Headquarters in Mountain View, CA. 40 regions and 121 zones globally. Powers Kinsta, Flywheel, and other managed WordPress hosts. Third largest cloud provider after AWS and Azure. Known for BigQuery, AI/ML services, and Kubernetes (originated at Google)."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": 7.23,
+    "vpsMonthlyRenewal": 7.23,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": null,
+    "wordpressHostingMonthlyRenewal": null,
+    "cloudHostingMonthlyLowest": 7.23,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": null,
+    "moneyBackExclusions": "Pay-as-you-go; $300 free credit for 90 days; No traditional refund",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "Bank Transfer", "Google Cloud Credits"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 0,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": null,
+    "storageType": "SSD/Persistent Disk",
+    "bandwidthGb": null,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": null,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": null,
+    "phpVersionSwitching": null,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans (root access)",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": null,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "Cloud SQL (MySQL/PostgreSQL/MSSQL), Spanner, Firestore, BigQuery",
+    "redisAvailable": true,
+    "elasticsearchSupport": true,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Iowa (US)", "South Carolina (US)", "Virginia (US)", "Oregon (US)", "Los Angeles (US)", "Salt Lake City (US)", "Las Vegas (US)", "Columbus (US)", "Dallas (US)", "Montreal (Canada)", "Toronto (Canada)", "Sao Paulo (Brazil)", "Santiago (Chile)", "Belgium", "London (UK)", "Netherlands", "Frankfurt (Germany)", "Zurich (Switzerland)", "Milan (Italy)", "Paris (France)", "Warsaw (Poland)", "Madrid (Spain)", "Finland", "Stockholm (Sweden)", "Tel Aviv (Israel)", "Doha (Qatar)", "Dammam (Saudi Arabia)", "Mumbai (India)", "Delhi (India)", "Singapore", "Jakarta (Indonesia)", "Taiwan", "Tokyo (Japan)", "Osaka (Japan)", "Seoul (South Korea)", "Hong Kong", "Sydney (Australia)", "Melbourne (Australia)", "Johannesburg (South Africa)"],
+    "serverLocationOptionsCount": 40,
+    "chooseServerLocation": true,
+    "cdnIncluded": false,
+    "cdnProvider": "Cloud CDN (additional cost)",
+    "uptimeGuaranteePercent": 99.99,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Cloud Armor DDoS protection",
+    "firewallIncluded": true,
+    "malwareScanning": false,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Google-managed SSL certificates",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Manual/Snapshot-based",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": true,
+    "hipaaCompliance": true,
+    "dataCenterCertifications": ["SOC 1", "SOC 2", "SOC 3", "ISO 27001", "ISO 27017", "ISO 27018", "PCI DSS", "HIPAA", "FedRAMP"]
+  },
+  "support": {
+    "supportChannels": ["Ticket", "Phone", "Chat", "Knowledge Base", "Community Forum"],
+    "liveChatAvailable": true,
+    "liveChatHours": "Paid support plans",
+    "phoneSupportAvailable": true,
+    "phoneSupportCountries": ["Global"],
+    "phoneSupportHours": "24/7 with paid support",
+    "ticketSupport": true,
+    "prioritySupportAvailable": true,
+    "prioritySupportCost": "Standard $29/user/mo; Enhanced $500/mo minimum; Premium $12,500/mo+",
+    "supportLanguageOptions": ["English", "Japanese", "Korean", "Chinese", "German", "French", "Portuguese", "Spanish"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": false,
+    "wordpressAutoInstall": false,
+    "wordpressAutoUpdates": false,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": false,
+    "migrationWebsitesLimit": 0,
+    "migrationServiceQuality": null,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Google Cloud Console",
+    "controlPanelName": "Google Cloud Console",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Pay per GB egress; rates vary by destination",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Pay for storage used",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; abuse",
+    "resourceAbuseDefinition": "Cryptocurrency mining; spam; DDoS; ToS violations",
+    "hiddenFeesNotes": "$300 credit for 90 days (free trial); e2-micro free tier (1 instance/month); Complex pricing can surprise users; Support costs extra; Egress charges significant; No simplified VPS option like AWS Lightsail; Sustained use discounts up to 30%"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": true,
+    "gamblingSitesAllowed": "legal_only",
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": true,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "Must comply with Google Cloud AUP and applicable laws; reserves right to terminate for abuse"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Partner program",
+    "affiliateCommissionAmount": "Google Cloud Partner Network; varies by tier"
+  },
+  "reputation": {
+    "trustpilotRating": 1.5,
+    "trustpilotReviewsCount": 31,
+    "g2Rating": 4.5,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "Very poor Trustpilot rating (1.5) due to billing and support complaints; No hard billing limits (alerts only); Complex pricing leads to bill shock; Support requires paid plan; Steeper learning curve than AWS Lightsail; Account disabled issues with support loops; Smaller market share than AWS/Azure",
+    "bestFor": "Enterprises leveraging AI/ML capabilities; Kubernetes workloads (originated at Google); BigQuery data analytics; Integration with Google Workspace; Developers familiar with Google ecosystem; Managed WordPress via Kinsta/Flywheel",
+    "avoidIf": "Beginner wanting simple hosting; Need predictable pricing; Want included support; Small personal projects; Need simplified VPS option; Budget-conscious without cloud expertise",
+    "competitorComparisonNotes": "Third largest cloud provider; 40 regions (more than AWS); Best AI/ML capabilities; G2 4.5 good but Trustpilot 1.5 reflects billing frustration; $300/90-day free trial generous; Powers Kinsta, Flywheel WordPress hosts; More expensive than AWS for basic compute; Kubernetes originated here"
+  },
+  "ratings": {
+    "valueForMoney": 3.0,
+    "performance": 5.0,
+    "supportQuality": 2.0,
+    "security": 5.0,
+    "features": 5.0,
+    "easeOfUse": 2.5,
+    "transparency": 2.0,
+    "overallRating": 3.5
+  },
+  "useCases": {
+    "suitabilityBlogger": 1,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 5,
+    "suitabilityBeginner": 1,
+    "suitabilityEnterprise": 5
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 86.76,
+    "totalSecondYearCost": 86.76,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 7.23
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Best-in-class AI/ML capabilities, Kubernetes origin, and infrastructure powering managed WordPress hosts like Kinsta",
+    "primaryCompetitors": ["Amazon Web Services", "Microsoft Azure", "DigitalOcean"],
+    "bestAlternativeTo": "Amazon Web Services",
+    "idealCustomerProfile": "Enterprise or developer needing AI/ML capabilities, Kubernetes expertise, or managed WordPress via partners"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Germany", "Japan", "Australia", "Singapore", "India", "Brazil", "Canada"],
+    "localCurrencyBilling": ["USD", "EUR", "GBP", "JPY", "AUD", "SGD", "INR", "BRL", "CAD"],
+    "localSupportLanguages": ["English", "Japanese", "Korean", "Chinese", "German", "French", "Portuguese", "Spanish"],
+    "dataSovereigntyCompliance": ["GDPR", "PCI-DSS", "HIPAA", "FedRAMP", "SOC 2", "ISO 27001"],
+    "regionalWebsites": ["cloud.google.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Google Cloud Platform is excellent for enterprises and developers needing AI/ML, BigQuery analytics, or Kubernetes. G2 4.5 reflects business satisfaction, though Trustpilot 1.5 reflects billing frustration and support issues.",
+    "faqWhoOwnsThisHost": "Google Cloud Platform is a service of Alphabet Inc. (Google's parent company). The cloud division launched with App Engine in 2008 and expanded into full IaaS/PaaS. Headquartered in Mountain View, CA.",
+    "faqHowMuchDoesItCost": "GCP uses pay-as-you-go pricing. Compute Engine starts around $7/month for basic instances. $300 free credit for 90 days. e2-micro instance free tier (1/month). Sustained use discounts up to 30%.",
+    "faqIsItBeginnerFriendly": "No. GCP has a steep learning curve with complex pricing. Unlike AWS Lightsail, there's no simplified VPS product. Best for developers with cloud experience.",
+    "faqDoesItIncludeEmail": "No, GCP does not include email hosting. Google Workspace (Gmail, etc.) is a separate product with separate pricing.",
+    "faqCanIHostWordPress": "Yes, but unmanaged. You deploy VM instances and configure WordPress yourself. For managed WordPress on GCP infrastructure, use Kinsta or Flywheel instead.",
+    "faqWhatsTheUptime": "GCP guarantees 99.99% uptime for Compute Engine with SLA credits for downtime.",
+    "faqCanICancelAnytime": "Yes, pay-as-you-go with no long-term contracts. Delete resources to stop billing. Free trial includes $300 credit for 90 days."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": false,
+    "staticSiteSupport": true
+  }
+}

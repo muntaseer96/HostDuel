@@ -1,0 +1,263 @@
+{
+  "basicInfo": {
+    "companyName": "Flywheel",
+    "websiteUrl": "https://getflywheel.com",
+    "yearFounded": 2012,
+    "headquartersCountry": "United States",
+    "parentCompany": "WP Engine (acquired 2019 for ~$200M)",
+    "dataLastUpdated": "2026-01-14",
+    "greenHosting": true,
+    "instantAccountActivation": true,
+    "hostingType": "managed-wordpress",
+    "notes": "Founded in 2012 by Dusty Davidson, Rick Knudtson, and Tony Noecker in Omaha, Nebraska. Acquired by WP Engine in 2019 for approximately $200M. Continues to operate as a division of WP Engine with same brand and leadership. Focused on designers and creative agencies. Runs on Google Cloud Platform. Offices in Omaha and Sydney."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": null,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": null,
+    "dedicatedMonthlyRenewal": null,
+    "wordpressHostingMonthlyPromo": 15.00,
+    "wordpressHostingMonthlyRenewal": 15.00,
+    "cloudHostingMonthlyLowest": 15.00,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 60,
+    "moneyBackExclusions": "60-day money-back guarantee for Tiny, Startup, and non-custom Freelance plans",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 1,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 5,
+    "storageType": "SSD",
+    "bandwidthGb": 20,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": 1,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": false,
+    "pythonSupport": false,
+    "rubySupport": false,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": true,
+    "stagingIncludedTier": "All plans",
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL",
+    "redisAvailable": false,
+    "elasticsearchSupport": false,
+    "imageOptimization": true
+  },
+  "serverPerformance": {
+    "serverLocations": ["North America", "Europe", "Asia Pacific", "Australia"],
+    "serverLocationOptionsCount": 10,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Fastly CDN",
+    "uptimeGuaranteePercent": 99.9,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "DDoS protection included",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": true,
+    "malwareRemovalCost": 0,
+    "http2Support": true,
+    "brotliCompression": true
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "Let's Encrypt (auto-renewed)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": false,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Nightly (automatic)",
+    "backupRetentionDays": 30,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2 Type II"]
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7/365",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": true,
+    "woocommerceOptimized": true,
+    "litespeedCache": false,
+    "objectCaching": true,
+    "objectCacheType": "Page Caching",
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": true
+  },
+  "managedWordPress": {
+    "pricingModel": "visits",
+    "monthlyVisitLimit": 5000,
+    "visitOverageCost": 2.00,
+    "phpWorkerLimit": null,
+    "pluginRestrictions": null,
+    "devEnvironmentIncluded": true,
+    "devEnvironmentName": "Local"
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": 1,
+    "migrationServiceQuality": 5,
+    "migrationTurnaroundDays": 2,
+    "paidMigrationCost": 0
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Flywheel Dashboard (proprietary)",
+    "controlPanelName": "Flywheel Dashboard",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "20GB included on Tiny plan; $1-2 per 1,000 extra visitors; may be charged for consistent overages",
+    "bandwidthOverageCost": 1.00,
+    "storageOveragePolicy": "$1/GB for storage over limit",
+    "accountSuspensionPolicy": "Violation of ToS; non-payment; excessive resource usage",
+    "resourceAbuseDefinition": "Bandwidth/storage overage; malicious code; prohibited content",
+    "hiddenFeesNotes": "Lower starting price than parent WP Engine ($15 vs $25); Free demo sites feature; Free malware cleanup; Local development tool included (Local by Flywheel); No phone support; Bulk pricing for 30+ sites"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "contentNotes": "WordPress-only hosting with focus on designers/agencies"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Per sale",
+    "affiliateCommissionAmount": "$50-$500 per sale depending on plan; 90-day cookie"
+  },
+  "reputation": {
+    "trustpilotRating": 4.4,
+    "trustpilotReviewsCount": 350,
+    "g2Rating": 4.5,
+    "betterBusinessBureauRating": "NR"
+  },
+  "editorial": {
+    "knownIssues": "Owned by WP Engine since 2019; No phone support; No Redis caching; Storage limited on entry plan (5GB); No dedicated IPs; No PCI compliance unlike parent WP Engine; Fewer features than Kinsta at similar price point",
+    "bestFor": "Designers and creative agencies; WordPress freelancers; Users wanting free Local development tool; Those who prefer Flywheel's interface over WP Engine; Budget managed WordPress users ($15/mo entry); Sites needing free demo sites feature",
+    "avoidIf": "Need phone support; Need PCI compliance (use WP Engine instead); Need Redis caching; Large storage requirements; Prefer independent company (owned by WP Engine)",
+    "competitorComparisonNotes": "Cheaper than parent WP Engine ($15 vs $25 entry); Free Local development tool (excellent); Designer-focused features; G2 4.5 good; Trustpilot 4.4 solid; White-label available for agencies; Fastly CDN included; Google Cloud infrastructure; Less feature-rich than Kinsta"
+  },
+  "ratings": {
+    "valueForMoney": 4.0,
+    "performance": 4.0,
+    "supportQuality": 4.0,
+    "security": 4.0,
+    "features": 3.5,
+    "easeOfUse": 4.5,
+    "transparency": 4.0,
+    "overallRating": 4.0
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 4,
+    "suitabilityAgency": 5,
+    "suitabilityDeveloper": 4,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 3
+  },
+  "platformSupport": {
+    "drupalSupport": false,
+    "joomlaSupport": false,
+    "magentoSupport": false,
+    "prestashopSupport": false,
+    "laravelSupport": false,
+    "djangoSupport": false,
+    "nextjsSupport": false,
+    "railsSupport": false
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 180.00,
+    "totalSecondYearCost": 180.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 15.00
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Designer-focused managed WordPress with free Local development tool and lower price than parent WP Engine",
+    "primaryCompetitors": ["WP Engine", "Kinsta", "Cloudways"],
+    "bestAlternativeTo": "WP Engine",
+    "idealCustomerProfile": "Designer or creative agency wanting managed WordPress with great local development tools at lower cost than WP Engine"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "Australia", "United Kingdom", "Canada"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "SOC 2"],
+    "regionalWebsites": ["getflywheel.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Flywheel is excellent for designers and agencies wanting managed WordPress at a lower price than WP Engine ($15/mo vs $25/mo). The free Local development tool is highly praised. G2 4.5 and Trustpilot 4.4 ratings are solid.",
+    "faqWhoOwnsThisHost": "Flywheel was acquired by WP Engine in 2019 for approximately $200M. It continues to operate as a separate brand with the same leadership team, originally founded in Omaha, Nebraska in 2012.",
+    "faqHowMuchDoesItCost": "Flywheel Tiny plan starts at $15/month for 1 site. Higher plans from $30/month. Bulk pricing available for 30+ sites. No renewal price increases.",
+    "faqIsItBeginnerFriendly": "Yes, Flywheel has a designer-friendly dashboard and the free Local development tool makes it easy to build sites locally before deploying.",
+    "faqDoesItIncludeEmail": "No, Flywheel does not include email hosting. Third-party email services are recommended.",
+    "faqCanIHostWordPress": "Yes, Flywheel is WordPress-only managed hosting with staging, automatic updates, and nightly backups included.",
+    "faqWhatsTheUptime": "Flywheel guarantees 99.9% uptime backed by Google Cloud Platform infrastructure.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee. Monthly billing available with no long-term contracts."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": false,
+    "shopifyMigration": false,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": false
+  }
+}

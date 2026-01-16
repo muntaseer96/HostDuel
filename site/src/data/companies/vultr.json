@@ -1,0 +1,254 @@
+{
+  "basicInfo": {
+    "companyName": "Vultr",
+    "websiteUrl": "https://www.vultr.com",
+    "yearFounded": 2014,
+    "headquartersCountry": "United States",
+    "parentCompany": "The Constant Company (privately held; $333M funding in 2024 led by AMD; $3.5B valuation)",
+    "dataLastUpdated": "2026-01-13",
+    "greenHosting": null,
+    "instantAccountActivation": true,
+    "hostingType": "cloud-iaas",
+    "notes": "Founded in 2014 by David Aninowsky in West Palm Beach, Florida. World's largest privately-held cloud infrastructure company. Operates 32 data center regions across 19 countries on 6 continents. Reached unicorn status in 2024 with $333M funding round led by AMD. Over 80 million cloud servers deployed since founding. Focus on developer-friendly infrastructure with hourly billing."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": null,
+    "sharedHostingMonthlyRenewal": null,
+    "vpsMonthlyLowest": 2.50,
+    "vpsMonthlyRenewal": 2.50,
+    "dedicatedMonthlyLowest": 120.00,
+    "dedicatedMonthlyRenewal": 120.00,
+    "wordpressHostingMonthlyPromo": null,
+    "wordpressHostingMonthlyRenewal": null,
+    "cloudHostingMonthlyLowest": 2.50,
+    "freeDomainIncluded": false,
+    "freeDomainDurationMonths": null,
+    "domainTransferLockPeriodDays": null,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 0,
+    "moneyBackExclusions": "No money-back guarantee; Pay-as-you-go model with hourly billing; Can destroy instances anytime; Unused credit remains in account",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Cryptocurrency (Bitcoin, Ethereum, etc.)", "Wire Transfer", "Alipay"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": 0,
+    "monthlyBillingAvailable": true,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 10,
+    "storageType": "SSD/NVMe",
+    "bandwidthGb": 500,
+    "inodeLimit": null,
+    "maxWebsitesAllowed": null,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": null,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": null,
+    "phpVersionSwitching": null,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All plans (root access)",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": null,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": "MySQL/PostgreSQL (managed available)",
+    "redisAvailable": true,
+    "elasticsearchSupport": true,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["New York (US)", "Los Angeles (US)", "Chicago (US)", "Seattle (US)", "Dallas (US)", "Atlanta (US)", "Miami (US)", "Silicon Valley (US)", "Honolulu (US)", "Toronto (Canada)", "Mexico City (Mexico)", "Sao Paulo (Brazil)", "Santiago (Chile)", "London (UK)", "Manchester (UK)", "Amsterdam (Netherlands)", "Frankfurt (Germany)", "Paris (France)", "Madrid (Spain)", "Stockholm (Sweden)", "Warsaw (Poland)", "Tel Aviv (Israel)", "Mumbai (India)", "Bangalore (India)", "Delhi (India)", "Singapore", "Tokyo (Japan)", "Seoul (South Korea)", "Sydney (Australia)", "Melbourne (Australia)", "Johannesburg (South Africa)"],
+    "serverLocationOptionsCount": 32,
+    "chooseServerLocation": true,
+    "cdnIncluded": false,
+    "cdnProvider": null,
+    "uptimeGuaranteePercent": 100,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Standard DDoS protection included; Advanced mitigation available",
+    "firewallIncluded": true,
+    "malwareScanning": false,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": true,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": false,
+    "sslProvider": "Self-managed (Let's Encrypt or commercial)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 3.00,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Automatic (optional, 20% extra cost)",
+    "backupRetentionDays": null,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": false
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": ["SOC 2 Type II", "ISO 27001"]
+  },
+  "support": {
+    "supportChannels": ["Ticket", "Knowledge Base", "Community Forum", "API Documentation"],
+    "liveChatAvailable": false,
+    "liveChatHours": null,
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 5,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": false
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": false,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": false,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": false,
+    "wpMultisiteSupport": true
+  },
+  "migration": {
+    "freeMigration": false,
+    "migrationWebsitesLimit": 0,
+    "migrationServiceQuality": null,
+    "migrationTurnaroundDays": null,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": false,
+    "cpanelAlternative": "Vultr Control Panel (cloud dashboard)",
+    "controlPanelName": "Vultr Dashboard",
+    "softaculousAutoInstaller": false,
+    "websiteBuilderIncluded": false,
+    "websiteBuilderName": null
+  },
+  "email": {
+    "emailAccountsIncluded": false,
+    "emailAccountLimit": 0,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": false,
+    "spamFilter": false,
+    "emailForwarding": false
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "2TB free egress pooled across all instances; $0.01/GB overage",
+    "bandwidthOverageCost": 0.01,
+    "storageOveragePolicy": "Pay for additional block storage at $0.10/GB/month",
+    "accountSuspensionPolicy": "Violation of ToS; fraud detection; non-payment; abuse complaints",
+    "resourceAbuseDefinition": "Network abuse; spam; illegal content; cryptocurrency mining on some plans; attacks against other servers",
+    "hiddenFeesNotes": "Automatic backups cost 20% extra; Snapshots $0.05/GB/month; Bandwidth overage $0.01/GB; Reserved IPs $3/month; No hidden renewal markup; All pricing transparent and pay-as-you-go"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": true,
+    "gamblingSitesAllowed": "legal_only",
+    "cryptocurrencySitesAllowed": true,
+    "fileHostingAllowed": true,
+    "proxyVpnAllowed": true,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true,
+    "cryptoMiningAllowed": false,
+    "gamblingNotes": "Unlawful gambling/lotteries banned per AUP"
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "CPA (Cost Per Acquisition)",
+    "affiliateCommissionAmount": "Up to $100 per referral (customer must be active 30+ days); 30-day cookie; Monthly PayPal payments"
+  },
+  "reputation": {
+    "trustpilotRating": 2.0,
+    "trustpilotReviewsCount": 523,
+    "g2Rating": 4.3,
+    "betterBusinessBureauRating": "NR (Not Rated)"
+  },
+  "editorial": {
+    "knownIssues": "Low Trustpilot rating (2.0/5); No phone or live chat support (ticket only); Strict account verification causing frustration; Reports of account termination without warning; Billing department only available business hours; 20% extra for automatic backups; Snapshots limited to 10 per account; Support response times can be slow; Some users report load balancer outages",
+    "bestFor": "Developers wanting affordable cloud compute; Startups needing flexible pay-as-you-go pricing; Users needing many global locations (32 regions); GPU compute and machine learning workloads; API-first infrastructure automation; Users comfortable with self-management; Cryptocurrency payment acceptance",
+    "avoidIf": "Need managed WordPress hosting; Want phone or chat support; Beginner requiring hand-holding; Need included email hosting; Want cPanel/Plesk included; Require money-back guarantee; Uncomfortable with unmanaged infrastructure",
+    "competitorComparisonNotes": "Cheapest VPS ($2.50) vs DigitalOcean ($4) and Linode ($5); 32 locations (more than DO's 15 or Linode's 11); 100% SLA (vs 99.99% competitors); Lower Trustpilot (2.0) vs DigitalOcean (3.8); No phone support unlike some competitors; More flexible content policies than many; Cryptocurrency payments accepted; G2 rating (4.3) on par with competitors; Hourly billing more granular than monthly-only options"
+  },
+  "ratings": {
+    "valueForMoney": 4.5,
+    "performance": 4.5,
+    "supportQuality": 2.0,
+    "security": 3.5,
+    "features": 4.0,
+    "easeOfUse": 3.5,
+    "transparency": 4.5,
+    "overallRating": 3.8
+  },
+  "useCases": {
+    "suitabilityBlogger": 2,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 5,
+    "suitabilityBeginner": 1,
+    "suitabilityEnterprise": 4
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": true,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": true,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 30.00,
+    "totalSecondYearCost": 30.00,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 2.50
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Cheapest cloud compute ($2.50/mo) with 100% SLA and 32 global locations",
+    "primaryCompetitors": ["DigitalOcean", "Linode", "Hetzner"],
+    "bestAlternativeTo": "DigitalOcean",
+    "idealCustomerProfile": "Developer or startup wanting affordable, flexible cloud infrastructure with global reach"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "India", "Brazil", "Germany", "United Kingdom", "Singapore", "Australia"],
+    "localCurrencyBilling": ["USD"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR", "SOC 2"],
+    "regionalWebsites": ["vultr.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Vultr is excellent for developers who want affordable, flexible cloud infrastructure. However, it's unmanaged, has limited support options (ticket only), and a low Trustpilot rating due to support issues.",
+    "faqWhoOwnsThisHost": "Vultr is owned by The Constant Company, a privately-held company founded by David Aninowsky in 2014. In 2024, AMD led a $333M investment valuing Vultr at $3.5B.",
+    "faqHowMuchDoesItCost": "Vultr VPS starts at $2.50/month for 512MB RAM. High-performance NVMe instances start at $6/month. All pricing is hourly with no contracts required.",
+    "faqIsItBeginnerFriendly": "No, Vultr is designed for developers and technical users. There's no cPanel, no managed services, and support is ticket-only. Beginners should consider managed hosting alternatives.",
+    "faqDoesItIncludeEmail": "No, Vultr does not include email hosting. You must set up your own mail server or use a third-party email service.",
+    "faqCanIHostWordPress": "Yes, but it's unmanaged. Vultr offers WordPress one-click installs, but you're responsible for security updates, optimization, and maintenance.",
+    "faqWhatsTheUptime": "Vultr guarantees 100% uptime SLA for host nodes and network. If uptime falls below this, you receive account credits up to your monthly cost.",
+    "faqCanICancelAnytime": "Yes, Vultr uses pay-as-you-go hourly billing with no contracts. You can destroy instances anytime and only pay for usage. No money-back guarantee needed."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": false,
+    "wixMigration": false,
+    "squarespaceMigration": false,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}

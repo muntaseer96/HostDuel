@@ -1,0 +1,252 @@
+{
+  "basicInfo": {
+    "companyName": "Namecheap",
+    "websiteUrl": "https://www.namecheap.com",
+    "yearFounded": 2000,
+    "headquartersCountry": "United States",
+    "parentCompany": "CVC Capital Partners (majority stake acquired Sept 2025)",
+    "dataLastUpdated": "2026-01-12",
+    "greenHosting": null,
+    "instantAccountActivation": null,
+    "hostingType": "shared",
+    "notes": "Founded by Richard Kirkendall. Second-largest domain registrar globally with 12M+ domains under management. CVC Capital Partners acquired majority stake in Sept 2025 for $1.5B valuation. Current CEO is Hillan Klein (replaced founder Dec 2025). Headquarters in Phoenix, AZ. 2,000 employees across 6 continents."
+  },
+  "pricing": {
+    "sharedHostingMonthlyPromo": 1.98,
+    "sharedHostingMonthlyRenewal": 4.48,
+    "vpsMonthlyLowest": 6.88,
+    "vpsMonthlyRenewal": null,
+    "dedicatedMonthlyLowest": 44.88,
+    "dedicatedMonthlyRenewal": 60.88,
+    "wordpressHostingMonthlyPromo": 1.00,
+    "wordpressHostingMonthlyRenewal": 3.88,
+    "cloudHostingMonthlyLowest": null,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
+    "domainTransferLockPeriodDays": 60,
+    "setupFee": 0,
+    "moneyBackGuaranteeDays": 30,
+    "moneyBackExclusions": "Only first-time accounts eligible; Renewals only within 48 hours; Dedicated servers 7 days from delivery; Domains 5 days (120 hours); Premium domains non-refundable; SSL only within 90 days of purchase and 15 days of activation; Private Email within 7 days; Third-party products (WHMCS, cPanel, Softaculous) non-refundable",
+    "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Bitcoin", "Ethereum", "Litecoin", "USDC"],
+    "autoRenewalDefault": true,
+    "minimumContractMonths": null,
+    "monthlyBillingAvailable": null,
+    "domainPrivacyIncluded": null,
+    "domainPrivacyCostYearly": null
+  },
+  "technicalSpecs": {
+    "storageGb": 20,
+    "storageType": "SSD",
+    "bandwidthGb": "Unmetered",
+    "inodeLimit": 300000,
+    "maxWebsitesAllowed": 3,
+    "maxDatabases": null,
+    "maxDatabaseSizeGb": 5,
+    "maxFileUploadSizeMb": null,
+    "phpVersionsAvailable": ["5.6", "7.0", "7.1", "7.2", "7.3", "7.4", "8.0", "8.1", "8.2", "8.3", "8.4"],
+    "phpVersionSwitching": true,
+    "nodejsSupport": true,
+    "pythonSupport": true,
+    "rubySupport": true,
+    "sshAccess": true,
+    "sshAccessTierRequired": "All shared hosting plans",
+    "gitDeployment": true,
+    "wpCliAccess": true,
+    "cronJobsAllowed": true,
+    "stagingEnvironment": false,
+    "stagingIncludedTier": null,
+    "subdomainsLimit": null,
+    "ftpAccountsLimit": null,
+    "databaseType": null,
+    "redisAvailable": null,
+    "elasticsearchSupport": null,
+    "imageOptimization": null
+  },
+  "serverPerformance": {
+    "serverLocations": ["Phoenix, AZ (US)", "United Kingdom", "Europe (EU)", "Singapore"],
+    "serverLocationOptionsCount": 4,
+    "chooseServerLocation": true,
+    "cdnIncluded": true,
+    "cdnProvider": "Namecheap CDN",
+    "uptimeGuaranteePercent": 100,
+    "uptimeSlaCredit": true,
+    "ddosProtection": true,
+    "ddosProtectionLevel": "Basic",
+    "firewallIncluded": true,
+    "malwareScanning": true,
+    "malwareRemoval": false,
+    "malwareRemovalCost": null,
+    "http2Support": null,
+    "brotliCompression": null
+  },
+  "securitySsl": {
+    "freeSsl": true,
+    "sslProvider": "PositiveSSL (Sectigo)",
+    "wildcardSslAvailable": true,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": null,
+    "twoFactorAuthentication": true,
+    "backupFrequency": "Daily (6 daily, 3 weekly, 5 monthly)",
+    "backupRetentionDays": 180,
+    "backupRestoreFee": 0,
+    "onDemandBackup": true,
+    "downloadableBackups": true
+  },
+  "compliance": {
+    "gdprComplianceTools": true,
+    "pciCompliance": false,
+    "hipaaCompliance": false,
+    "dataCenterCertifications": null
+  },
+  "support": {
+    "supportChannels": ["Live Chat", "Email", "Ticket", "Knowledge Base"],
+    "liveChatAvailable": true,
+    "liveChatHours": "24/7",
+    "phoneSupportAvailable": false,
+    "phoneSupportCountries": null,
+    "phoneSupportHours": null,
+    "ticketSupport": true,
+    "prioritySupportAvailable": false,
+    "prioritySupportCost": null,
+    "supportLanguageOptions": ["English"],
+    "knowledgeBaseQuality": 4,
+    "communityForumActive": true,
+    "averageSupportWaitMinutes": null,
+    "supportOutsourced": null
+  },
+  "wordpressFeatures": {
+    "wordpressOptimized": true,
+    "wordpressAutoInstall": true,
+    "wordpressAutoUpdates": true,
+    "wordpressStaging": false,
+    "woocommerceOptimized": false,
+    "litespeedCache": false,
+    "objectCaching": false,
+    "objectCacheType": null,
+    "managedWordpressAvailable": true,
+    "wpMultisiteSupport": null
+  },
+  "migration": {
+    "freeMigration": true,
+    "migrationWebsitesLimit": null,
+    "migrationServiceQuality": 4,
+    "migrationTurnaroundDays": 1,
+    "paidMigrationCost": null
+  },
+  "controlPanel": {
+    "cpanelIncluded": true,
+    "cpanelAlternative": null,
+    "controlPanelName": "cPanel",
+    "softaculousAutoInstaller": true,
+    "websiteBuilderIncluded": true,
+    "websiteBuilderName": "Namecheap Website Builder"
+  },
+  "email": {
+    "emailAccountsIncluded": true,
+    "emailAccountLimit": 30,
+    "individualMailboxSizeGb": null,
+    "webmailAccess": true,
+    "spamFilter": true,
+    "emailForwarding": true
+  },
+  "policiesOverages": {
+    "bandwidthOveragePolicy": "Unmetered within fair use; excessive use may require upgrade",
+    "bandwidthOverageCost": null,
+    "storageOveragePolicy": "Hard limits apply; accounts exceeding 25GB removed from weekly backup",
+    "accountSuspensionPolicy": "Violations result in warning, suspension, or immediate termination at Namecheap's discretion; no refund for TOS violations",
+    "resourceAbuseDefinition": "Exceeding 300,000 inodes; more than 10GB multimedia files; more than 10GB archive/database files; excessive CPU/memory usage affecting other users",
+    "hiddenFeesNotes": "UK/EU datacenter locations cost $1/month extra; VPS backup download $15 fee; cPanel not included on VPS/Dedicated (extra $15.88+/mo); CloudLinux extra $20/mo on dedicated; renewal prices roughly double promotional rates"
+  },
+  "contentRestrictions": {
+    "adultContentAllowed": false,
+    "gamblingSitesAllowed": false,
+    "cryptocurrencySitesAllowed": null,
+    "fileHostingAllowed": false,
+    "proxyVpnAllowed": false,
+    "resellerHostingAvailable": true,
+    "whiteLabelAvailable": true
+  },
+  "business": {
+    "apiAccess": true,
+    "affiliateProgram": true,
+    "affiliateCommissionType": "Percentage",
+    "affiliateCommissionAmount": "20-35% commission; 30-day cookie; via Impact Radius, CJ, or ShareASale"
+  },
+  "reputation": {
+    "trustpilotRating": 4.2,
+    "trustpilotReviewsCount": 19298,
+    "g2Rating": 4.3,
+    "betterBusinessBureauRating": "D-"
+  },
+  "editorial": {
+    "knownIssues": "No phone support; BBB rating D- due to 159 unanswered complaints; VPS/Dedicated only available in US datacenter; renewal prices roughly double promo rates; ASGI Python apps not supported on shared hosting; some users report domain/account issues without explanation",
+    "bestFor": "Budget-conscious users; Domain registration (2nd largest registrar); Developers needing Node.js/Python on shared hosting; Users who prefer chat over phone support; Cryptocurrency payment users",
+    "avoidIf": "Need phone support; Adult or gambling content; Enterprise compliance requirements (no SOC2/HIPAA); Need VPS outside US; Prefer established BBB-accredited companies",
+    "competitorComparisonNotes": "Cheaper than GoDaddy at both promo and renewal; Better developer support (Node.js, Python) than GoDaddy/Bluehost; No phone support unlike GoDaddy/HostGator; Better value than GoDaddy for domains; Free migration with 24hr guarantee beats most competitors; Accepts crypto payments unlike most hosts"
+  },
+  "ratings": {
+    "valueForMoney": 4.5,
+    "performance": 3.5,
+    "supportQuality": 3.0,
+    "security": 4.0,
+    "features": 4.0,
+    "easeOfUse": 4.0,
+    "transparency": 4.0,
+    "overallRating": 3.9
+  },
+  "useCases": {
+    "suitabilityBlogger": 4,
+    "suitabilityEcommerce": 3,
+    "suitabilityAgency": 4,
+    "suitabilityDeveloper": 5,
+    "suitabilityBeginner": 4,
+    "suitabilityEnterprise": 2
+  },
+  "platformSupport": {
+    "drupalSupport": true,
+    "joomlaSupport": true,
+    "magentoSupport": false,
+    "prestashopSupport": true,
+    "laravelSupport": true,
+    "djangoSupport": false,
+    "nextjsSupport": true,
+    "railsSupport": true
+  },
+  "pricingCalculated": {
+    "totalFirstYearCost": 23.76,
+    "totalSecondYearCost": 53.76,
+    "renewalMarkupPercent": 126.3,
+    "effectiveMonthlyAverage": 3.23
+  },
+  "comparisonData": {
+    "uniqueSellingPoint": "Best value domain registrar with developer-friendly hosting and crypto payments",
+    "primaryCompetitors": ["GoDaddy", "Hostinger", "Porkbun"],
+    "bestAlternativeTo": "GoDaddy",
+    "idealCustomerProfile": "Budget-conscious developer or domain investor wanting value and technical flexibility"
+  },
+  "regionalTargeting": {
+    "bestForCountries": ["United States", "United Kingdom", "Europe"],
+    "localCurrencyBilling": ["USD", "GBP", "EUR"],
+    "localSupportLanguages": ["English"],
+    "dataSovereigntyCompliance": ["GDPR"],
+    "regionalWebsites": ["namecheap.com"]
+  },
+  "faqContent": {
+    "faqIsThisHostGood": "Namecheap is excellent for budget-conscious users and developers, with great value and Node.js/Python support, but lacks phone support.",
+    "faqWhoOwnsThisHost": "Namecheap was founded by Richard Kirkendall. CVC Capital Partners acquired a majority stake in September 2025.",
+    "faqHowMuchDoesItCost": "Namecheap shared hosting starts at $1.98/month (promo) and renews at $4.48/month. First year costs approximately $24.",
+    "faqIsItBeginnerFriendly": "Yes, Namecheap offers cPanel, good documentation, and easy WordPress installation, making it beginner-friendly.",
+    "faqDoesItIncludeEmail": "Yes, Namecheap includes up to 30 email accounts with shared hosting plans.",
+    "faqCanIHostWordPress": "Yes, Namecheap offers WordPress hosting with auto-install and auto-updates.",
+    "faqWhatsTheUptime": "Namecheap guarantees 100% uptime with SLA credits for any downtime.",
+    "faqCanICancelAnytime": "Yes, with a 30-day money-back guarantee for first-time accounts. Renewals have a 48-hour window."
+  },
+  "additionalPlatforms": {
+    "ghostSupport": true,
+    "shopifyMigration": true,
+    "wixMigration": true,
+    "squarespaceMigration": true,
+    "webflowExport": true,
+    "staticSiteSupport": true
+  }
+}
