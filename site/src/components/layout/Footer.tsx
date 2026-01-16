@@ -12,10 +12,9 @@ const footerLinks = {
     { href: '/category/website-builder', label: 'Website Builders' },
   ],
   resources: [
-    { href: '/blog', label: 'Blog' },
     { href: '/quiz', label: 'Hosting Quiz' },
     { href: '/compare', label: 'Compare Hosts' },
-    { href: '/blog/how-to-choose-hosting', label: 'How to Choose' },
+    { href: '/methodology', label: 'How We Rate' },
   ],
   company: [
     { href: '/about', label: 'About Us' },
