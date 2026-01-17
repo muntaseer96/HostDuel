@@ -1,0 +1,391 @@
+---
+title: "Web Hosting for HIPAA Compliance (Healthcare Sites)"
+description: "Find HIPAA-compliant web hosting for healthcare websites. Learn the requirements, get a checklist, and compare hosting providers that sign BAAs."
+date: "2026-01-17"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/12.jpg"
+category: "guides"
+tags: ["hipaa", "healthcare-hosting", "compliance", "security"]
+featured: false
+---
+
+If your website handles protected health information (PHI), you need HIPAA-compliant hosting. Regular web hosting won't cut it—and the penalties for non-compliance are severe.
+
+Here's what HIPAA compliance requires and which hosts can help you meet those requirements.
+
+## What Is HIPAA?
+
+HIPAA (Health Insurance Portability and Accountability Act) sets standards for protecting sensitive patient health information in the US.
+
+**Who needs HIPAA compliance:**
+- Healthcare providers (doctors, hospitals, clinics)
+- Health plans and insurers
+- Healthcare clearinghouses
+- Business associates handling PHI
+
+**PHI includes:**
+- Names linked to health data
+- Dates (birth, admission, discharge)
+- Contact information
+- Social Security numbers
+- Medical record numbers
+- Health conditions and treatments
+- Any data that could identify a patient
+
+## Do I Need HIPAA-Compliant Hosting?
+
+### You Need It If:
+
+✅ Your website collects patient information
+✅ Patients can book appointments online (with health details)
+✅ You have patient portals
+✅ Your site handles insurance information
+✅ You store any PHI on your server
+✅ You transmit PHI through your website
+
+### You Don't Need It If:
+
+❌ Your healthcare site is purely informational
+❌ No patient data is collected or stored
+❌ All data collection goes through HIPAA-compliant third parties
+❌ You're not a covered entity or business associate
+
+**Gray areas exist.** When in doubt, consult a HIPAA compliance expert.
+
+## What HIPAA-Compliant Hosting Requires
+
+### Business Associate Agreement (BAA)
+
+**Most important requirement.**
+
+A BAA is a contract where the hosting provider agrees to:
+- Safeguard PHI
+- Report breaches
+- Follow HIPAA security rules
+- Return or destroy PHI when contract ends
+
+**No BAA = Not HIPAA compliant**, regardless of security features.
+
+### Technical Safeguards
+
+| Requirement | Description |
+|-------------|-------------|
+| Access controls | Unique user IDs, automatic logoff |
+| Audit controls | Log all PHI access |
+| Integrity controls | Verify PHI not altered |
+| Transmission security | Encrypt data in transit (SSL/TLS) |
+
+### Physical Safeguards
+
+| Requirement | Description |
+|-------------|-------------|
+| Facility access | Data center security |
+| Workstation security | Secure server access |
+| Device controls | Media handling procedures |
+
+### Administrative Safeguards
+
+| Requirement | Description |
+|-------------|-------------|
+| Security management | Risk analysis and mitigation |
+| Workforce security | Employee access management |
+| Contingency planning | Backup and recovery |
+| Documentation | Written policies |
+
+## HIPAA-Compliant Hosting Providers
+
+### Cloudways (with HIPAA Add-on)
+
+**BAA available:** Yes (Enterprise plan or add-on)
+**Starting price:** Custom pricing for HIPAA
+**Infrastructure:** AWS, Google Cloud
+
+**Features:**
+- Built on HIPAA-eligible cloud platforms
+- Managed security
+- Regular backups
+- Encryption at rest and in transit
+
+**Best for:** WordPress and custom applications
+
+[View Cloudways details →](/hosting/cloudways)
+
+### Amazon Web Services (AWS)
+
+**BAA available:** Yes
+**Starting price:** Pay-as-you-go (varies)
+**HIPAA-eligible services:** EC2, S3, RDS, and many more
+
+**Features:**
+- Most comprehensive HIPAA services
+- Detailed compliance documentation
+- Shared responsibility model
+- Enterprise-grade security
+
+**Best for:** Large organizations, custom applications, developers
+
+[View AWS details →](/hosting/aws)
+
+### Google Cloud Platform
+
+**BAA available:** Yes
+**Starting price:** Pay-as-you-go
+**HIPAA-eligible services:** Compute Engine, Cloud Storage, BigQuery, more
+
+**Features:**
+- Strong security infrastructure
+- Compliance certifications
+- Healthcare-specific solutions
+- AI/ML capabilities for healthcare
+
+**Best for:** Organizations using Google services, data analytics
+
+[View Google Cloud details →](/hosting/gcp)
+
+### Microsoft Azure
+
+**BAA available:** Yes
+**Starting price:** Pay-as-you-go
+**HIPAA-eligible services:** Most Azure services
+
+**Features:**
+- Comprehensive compliance offerings
+- Microsoft 365 integration
+- Strong enterprise tools
+- Healthcare-focused solutions
+
+**Best for:** Microsoft shops, enterprise healthcare
+
+### Atlantic.Net
+
+**BAA available:** Yes
+**Starting price:** ~$99/month for HIPAA hosting
+**Focus:** HIPAA and compliance hosting
+
+**Features:**
+- Purpose-built for HIPAA
+- Managed compliance
+- Backup and disaster recovery
+- 24/7 support
+
+**Best for:** Small to medium healthcare organizations
+
+### Liquid Web
+
+**BAA available:** Yes
+**Starting price:** ~$200+/month for HIPAA
+**Type:** Managed hosting
+
+**Features:**
+- Fully managed HIPAA hosting
+- Compliance assistance
+- Dedicated support
+- VPS and dedicated options
+
+**Best for:** Healthcare businesses wanting managed services
+
+### HIPAA Vault
+
+**BAA available:** Yes
+**Focus:** 100% HIPAA-focused
+
+**Features:**
+- Compliance-first approach
+- Managed WordPress for healthcare
+- Email hosting
+- Backup and disaster recovery
+
+**Best for:** Healthcare organizations wanting specialists
+
+## Comparison Table
+
+| Host | BAA | Starting Price | Managed | WordPress |
+|------|-----|----------------|---------|-----------|
+| Atlantic.Net | Yes | $99/mo | Partial | Via VPS |
+| Liquid Web | Yes | $200/mo | Yes | Yes |
+| HIPAA Vault | Yes | $200/mo | Yes | Yes |
+| Cloudways | Yes | Custom | Yes | Yes |
+| AWS | Yes | Pay-as-go | No | Via EC2 |
+| Google Cloud | Yes | Pay-as-go | No | Via GCE |
+| Azure | Yes | Pay-as-go | No | Via VMs |
+
+## What Regular Hosts Lack
+
+### Popular Hosts WITHOUT HIPAA Compliance
+
+These hosts do NOT sign BAAs:
+
+| Host | HIPAA BAA |
+|------|-----------|
+| Bluehost | No |
+| HostGator | No |
+| SiteGround | No |
+| GoDaddy | No |
+| Hostinger | No |
+| DreamHost | No |
+| Namecheap | No |
+
+**Using these hosts for PHI = HIPAA violation.**
+
+### Why Regular Hosting Doesn't Work
+
+1. **No BAA:** Provider isn't legally committed to HIPAA
+2. **Insufficient logging:** May not meet audit requirements
+3. **Shared environments:** Data could be exposed
+4. **No compliance support:** You're on your own
+5. **Liability:** You bear full responsibility
+
+## HIPAA Hosting Checklist
+
+### Before Signing Up
+
+- [ ] Host signs BAA
+- [ ] Encryption at rest
+- [ ] Encryption in transit (SSL/TLS)
+- [ ] Access logging/audit trails
+- [ ] Regular backups
+- [ ] Disaster recovery plan
+- [ ] Physical security documentation
+- [ ] Breach notification procedures
+
+### Your Responsibilities
+
+HIPAA is a shared responsibility. Hosting alone doesn't make you compliant.
+
+**You must also:**
+- [ ] Encrypt PHI in your application
+- [ ] Use strong access controls
+- [ ] Train staff on HIPAA
+- [ ] Have written policies
+- [ ] Conduct risk assessments
+- [ ] Manage business associate agreements
+- [ ] Handle breach notifications
+
+### Common Mistakes
+
+1. **Assuming hosting = compliance:** Hosting is one piece
+2. **Forgetting about email:** Email with PHI needs HIPAA compliance too
+3. **Missing BAA signatures:** Actually sign and store the BAA
+4. **Overlooking backups:** Backup locations matter
+5. **Ignoring third-party tools:** Every vendor touching PHI needs BAA
+
+## Cost of HIPAA Hosting
+
+### Why It Costs More
+
+HIPAA hosting is expensive because of:
+- Compliance audits and certifications
+- Enhanced security measures
+- Dedicated resources (often)
+- Documentation and reporting
+- Specialized support
+
+### Typical Pricing
+
+| Hosting Level | Monthly Cost |
+|--------------|--------------|
+| Basic HIPAA VPS | $100-200 |
+| Managed HIPAA WordPress | $200-500 |
+| Dedicated HIPAA server | $500-1000+ |
+| Enterprise/cloud | $1000+ |
+
+### Cost vs Risk
+
+**HIPAA violation penalties:**
+
+| Tier | Penalty Per Violation |
+|------|----------------------|
+| Unknown | $100 - $50,000 |
+| Reasonable cause | $1,000 - $50,000 |
+| Willful neglect (corrected) | $10,000 - $50,000 |
+| Willful neglect (not corrected) | $50,000+ |
+
+**Annual caps:** Up to $1.5 million per violation category
+
+**Plus:** Criminal penalties, lawsuits, reputation damage
+
+**The math:** $200/month hosting vs potential $50,000+ fines.
+
+## FAQ
+
+### Does WordPress work for HIPAA sites?
+
+Yes, with proper setup:
+- HIPAA-compliant hosting
+- Security plugins (Wordfence, etc.)
+- Encrypted forms
+- Access controls
+- Audit logging
+
+**But:** Consider HIPAA-specific solutions for critical applications.
+
+### Can I use contact forms to collect patient info?
+
+Only if:
+- Forms encrypt submissions
+- Data stored HIPAA-compliantly
+- Form processor signs BAA
+- Notifications don't contain PHI
+
+**Consider:** HIPAA-compliant form services (JotForm HIPAA, FormStack)
+
+### What about email?
+
+Email containing PHI requires:
+- Encryption (TLS at minimum)
+- HIPAA-compliant email provider
+- BAA with email provider
+
+**Options:** Google Workspace (with BAA), Microsoft 365 (with BAA), HIPAA-specific email providers
+
+### Do I need a dedicated server?
+
+Not always. Options:
+
+| Type | HIPAA Possible |
+|------|---------------|
+| Shared hosting | Generally no |
+| VPS | Yes, with proper provider |
+| Dedicated | Yes, preferred for PHI |
+| Cloud (AWS, etc.) | Yes, with HIPAA services |
+
+### Is cloud hosting HIPAA compliant?
+
+**Not automatically.** AWS, Google Cloud, and Azure offer HIPAA-eligible services, but:
+- You must configure correctly
+- Use only HIPAA-eligible services
+- Sign BAA
+- Implement proper controls
+
+### What's the difference between HIPAA-eligible and HIPAA-compliant?
+
+**HIPAA-eligible:** Service CAN be used in HIPAA environment
+**HIPAA-compliant:** Service IS configured and used compliantly
+
+Hosting provider makes services eligible; YOU make them compliant.
+
+## Key Takeaways
+
+1. **BAA is mandatory** - No BAA = not compliant
+2. **Regular hosting won't work** - SiteGround, Bluehost, etc. won't sign BAAs
+3. **Hosting is one piece** - You're still responsible for application security
+4. **It costs more** - But violations cost far more
+5. **AWS/GCP/Azure work** - But require proper configuration
+6. **Managed options exist** - For those wanting less technical burden
+
+## What to Do Next
+
+1. **Determine if you need HIPAA hosting** (are you handling PHI?)
+2. **Choose appropriate provider** based on technical needs and budget
+3. **Get BAA signed** before storing any PHI
+4. **Implement additional safeguards** beyond just hosting
+5. **Consult a HIPAA expert** for full compliance review
+
+Need HIPAA-compliant hosting? [Cloudways](/hosting/cloudways), [AWS](/hosting/aws), and specialized providers like Atlantic.Net offer solutions. Compare options with our [hosting comparison tool](/compare).
+
+---
+
+*Disclaimer: This article is informational and not legal advice. Consult HIPAA compliance experts for your specific situation.*
+
+*Last updated: January 2026*

@@ -1,0 +1,379 @@
+---
+title: "My Website Was Hacked - Now What? (Recovery Guide)"
+description: "Step-by-step guide to recover your hacked website. Learn how to identify the hack, clean your site, and prevent future attacks."
+date: "2026-01-17"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/8.jpg"
+category: "guides"
+tags: ["security", "hacked-website", "malware-removal", "wordpress-security"]
+featured: false
+---
+
+Discovering your website has been hacked is terrifying. But don't panic. With the right steps, you can recover your site and prevent it from happening again.
+
+Here's exactly what to do when your website gets hacked.
+
+## Signs Your Site Was Hacked
+
+### Obvious Signs
+
+- Website redirects to spam/porn sites
+- Strange content appearing on pages
+- Google shows "This site may be hacked" warning
+- Hosting account suspended for malware
+- Visitors report malware warnings
+- Admin login doesn't work
+
+### Less Obvious Signs
+
+- Unexpected new admin users
+- Modified files (check file dates)
+- Slow site performance
+- Unknown plugins installed
+- Outgoing spam from your server
+- Strange entries in server logs
+- New .htaccess rules you didn't add
+
+## Immediate Actions (First 30 Minutes)
+
+### Step 1: Don't Panic, Document
+
+Before touching anything:
+
+1. **Screenshot everything** - Error messages, strange content
+2. **Note the time** you discovered the hack
+3. **Check when it started** - Look at file modification dates
+4. **List symptoms** - What's wrong exactly?
+
+### Step 2: Take Your Site Offline
+
+Prevent further damage and protect visitors:
+
+**Option A: Maintenance mode**
+Create `maintenance.html` and redirect:
+```html
+<!DOCTYPE html>
+<html>
+<head><title>Site Maintenance</title></head>
+<body>
+<h1>Site Under Maintenance</h1>
+<p>We'll be back shortly.</p>
+</body>
+</html>
+```
+
+**Option B: Password protect** via .htaccess
+
+**Option C: Ask host to suspend** (they may have already)
+
+### Step 3: Change All Passwords Immediately
+
+Change these NOW:
+
+- [ ] WordPress admin password
+- [ ] Database password (update wp-config.php)
+- [ ] FTP/SFTP password
+- [ ] Hosting control panel password
+- [ ] Any connected service passwords
+
+**Use strong, unique passwords for each.**
+
+### Step 4: Contact Your Host
+
+Notify your hosting provider:
+- They may have logs showing when/how it happened
+- They can scan for malware
+- They may have clean backups
+- They'll want to know to protect other customers
+
+## Recovery Options
+
+### Option 1: Restore from Clean Backup (Fastest)
+
+**If you have a backup from before the hack:**
+
+1. **Identify when hack started** - File dates, logs, Google's cache
+2. **Find backup before that date**
+3. **Download backup for safekeeping**
+4. **Restore to hosting:**
+   - Restore files
+   - Restore database
+5. **Immediately update:**
+   - WordPress core
+   - All plugins
+   - All themes
+6. **Change all passwords again**
+7. **Install security plugin**
+
+**Pros:** Fastest, most reliable
+**Cons:** May lose recent content
+
+### Option 2: Manual Cleanup (More Work)
+
+**If no clean backup or need to preserve recent content:**
+
+#### Phase 1: Scan Everything
+
+**Use malware scanners:**
+- Wordfence (free WordPress plugin)
+- Sucuri SiteCheck (free online scan)
+- MalCare (premium, thorough)
+- Your host's malware scanner
+
+**What to look for:**
+- Modified core WordPress files
+- Unknown PHP files
+- Encoded/obfuscated code (lots of strange characters)
+- New .htaccess files
+- Hidden folders
+- Files with recent modification dates
+
+#### Phase 2: Clean Files
+
+**Replace WordPress core:**
+1. Download fresh WordPress from wordpress.org
+2. Delete `/wp-admin/` and `/wp-includes/` folders
+3. Upload fresh versions
+4. Don't touch `/wp-content/` yet
+
+**Clean wp-content:**
+1. Delete `/wp-content/plugins/` entirely
+2. Reinstall plugins fresh from WordPress.org
+3. Delete unknown themes
+4. Reinstall your theme fresh
+5. Check `/wp-content/uploads/` for PHP files (shouldn't have any)
+
+**Check these files specifically:**
+- wp-config.php - Look for added code
+- .htaccess - Look for strange redirects
+- index.php - Should be minimal, standard
+- Any PHP files in uploads folder (delete them)
+
+#### Phase 3: Clean Database
+
+**Look for:**
+- Unknown admin users (delete them)
+- Spam content in posts
+- Malicious code in widget content
+- Suspicious options in wp_options table
+
+**Using phpMyAdmin:**
+1. Check `wp_users` for unknown admins
+2. Check `wp_options` for `siteurl` and `home` (correct URL?)
+3. Search all tables for malicious domains
+4. Look for base64_decode, eval, or strange code
+
+### Option 3: Professional Cleanup
+
+**Consider hiring help if:**
+- Hack is complex
+- You're not technical
+- Business-critical site
+- Multiple sites affected
+
+**Services:**
+- Sucuri ($199-499)
+- Wordfence Care ($490/year includes cleanup)
+- Your host's malware removal service
+- Independent security consultants
+
+## After Cleanup: Security Hardening
+
+### Immediate Security Steps
+
+1. **Update everything:**
+   - WordPress core
+   - All plugins
+   - All themes
+   - PHP version on server
+
+2. **Install security plugin:**
+   ```
+   Recommended: Wordfence (free) or Sucuri
+   ```
+
+3. **Remove unused plugins/themes:**
+   - Delete any you're not using
+   - Hackers exploit abandoned code
+
+4. **Check file permissions:**
+   ```
+   Folders: 755
+   Files: 644
+   wp-config.php: 600
+   ```
+
+5. **Add security headers** (via plugin or .htaccess)
+
+### Ongoing Security Practices
+
+1. **Enable 2FA** for all admin accounts
+
+2. **Limit login attempts** (Wordfence does this)
+
+3. **Regular backups:**
+   - Daily if possible
+   - Store off-site (not just on your server)
+
+4. **Keep everything updated:**
+   - Enable auto-updates for minor releases
+   - Update manually for major releases
+
+5. **Use strong passwords:**
+   - Different password for each service
+   - Use password manager
+
+6. **Regular security scans:**
+   - Weekly malware scans
+   - Monitor file changes
+
+## Understanding How Hacks Happen
+
+### Most Common Entry Points
+
+| Entry Point | Frequency | Prevention |
+|-------------|-----------|------------|
+| Outdated plugins | ~50% | Update regularly |
+| Weak passwords | ~20% | Strong passwords + 2FA |
+| Outdated WordPress | ~15% | Enable auto-updates |
+| Outdated themes | ~10% | Update or remove |
+| Server vulnerabilities | ~5% | Use quality hosting |
+
+### Common Attack Types
+
+**SEO Spam:**
+- Hidden links injected
+- Japanese/Chinese keyword spam
+- Pharma spam
+
+**Malware:**
+- Redirects to malicious sites
+- Cryptominers using your server
+- Phishing pages
+
+**Defacement:**
+- Homepage replaced
+- Political messages
+- "Hacked by" notices
+
+**Backdoors:**
+- Hidden admin accounts
+- Hidden PHP files for future access
+- Modified core files
+
+## Dealing with Google Warnings
+
+### If Google Flagged Your Site
+
+1. **Clean the site first** (don't request review while infected)
+
+2. **Verify in Google Search Console** (search.google.com/search-console)
+
+3. **Check Security Issues** section
+
+4. **After cleanup, request review:**
+   - Go to Security Issues
+   - Click "Request a Review"
+   - Explain what you cleaned
+   - Wait 24-72 hours
+
+### If You're in Google's Blocklist
+
+More severe cases end up in Google's Safe Browsing blocklist.
+
+1. Clean site thoroughly
+2. Verify in Google Search Console
+3. Request review through Security Issues
+4. May take longer to resolve
+
+## FAQ
+
+### How did they get in?
+
+Usually:
+1. Outdated plugin with known vulnerability
+2. Weak password (brute forced)
+3. Shared hosting neighbor (cross-site contamination)
+
+Check logs for login attempts and file changes.
+
+### Will this happen again?
+
+If you only clean without securing, yes. You must:
+- Update everything
+- Use strong passwords
+- Install security plugin
+- Keep backups
+
+### Should I rebuild from scratch?
+
+Consider it if:
+- Can't find all infected files
+- Hack keeps returning
+- Site was already due for redesign
+
+### Is my host at fault?
+
+Sometimes. Poor shared hosting isolation can allow cross-site infection. But usually it's your responsibility to:
+- Keep software updated
+- Use strong passwords
+- Secure your site
+
+Consider better hosting if your host has frequent security issues.
+
+### Can I sue the hackers?
+
+Theoretically, but practically:
+- Hackers are hard to identify
+- Usually in foreign countries
+- Rarely worth the legal cost
+
+Focus on recovery and prevention.
+
+### How long until everything's normal?
+
+- Site functionality: Minutes to hours after cleanup
+- Google warnings removed: 1-3 days after review
+- SEO recovery: 2-4 weeks typically
+- Reputation recovery: Varies
+
+## Prevention Checklist
+
+To prevent future hacks:
+
+- [ ] Strong, unique passwords everywhere
+- [ ] 2FA enabled on all admin accounts
+- [ ] WordPress auto-updates enabled
+- [ ] All plugins and themes current
+- [ ] Unused plugins/themes deleted
+- [ ] Security plugin installed and configured
+- [ ] Regular backups (daily if possible)
+- [ ] Quality hosting with good security
+- [ ] Regular security scans scheduled
+- [ ] File permissions properly set
+- [ ] SSL certificate installed
+
+## Key Takeaways
+
+1. **Don't panic** - Recovery is usually possible
+2. **Backup first** - Before any cleanup attempts
+3. **Change all passwords** immediately
+4. **Restore from backup** if available and clean
+5. **Manual cleanup** is thorough but time-consuming
+6. **Professional help** is worth it for complex cases
+7. **Prevent future hacks** by updating and securing
+
+## What to Do Next
+
+1. **Follow the recovery steps** above
+2. **Implement security measures** before going live again
+3. **Set up monitoring** for early detection
+4. **Schedule regular updates and backups**
+5. **Consider managed WordPress hosting** for better security
+
+Frequent security issues might mean it's time for better hosting. Managed WordPress hosts like [Kinsta](/hosting/kinsta), [WP Engine](/hosting/wpengine), and [Cloudways](/hosting/cloudways) include security features and monitoring. Compare options with our [hosting comparison tool](/compare).
+
+---
+
+*Last updated: January 2026*

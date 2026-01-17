@@ -1,0 +1,347 @@
+---
+title: "How Many Websites Can I Host on One Hosting Account?"
+description: "Learn how many websites you can run on shared, VPS, and dedicated hosting plans. Understand the real limits behind 'unlimited' sites."
+date: "2026-01-17"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/3.jpg"
+category: "guides"
+tags: ["multiple-websites", "hosting-limits", "shared-hosting", "addon-domains"]
+featured: false
+---
+
+Many hosting plans advertise "unlimited websites" or "host multiple domains." But what are the real limits? Can you actually run 50 sites on a $5/month shared hosting plan?
+
+Here's the truth about hosting multiple websites on one account.
+
+## Quick Answer by Hosting Type
+
+| Hosting Type | Typical Limit | Realistic Limit |
+|--------------|---------------|-----------------|
+| Basic Shared | 1 site | 1 site |
+| Standard Shared | "Unlimited" | 10-30 sites |
+| VPS (2GB RAM) | No limit | 20-50 sites |
+| VPS (8GB RAM) | No limit | 100+ sites |
+| Dedicated | No limit | Hundreds |
+| Managed WordPress | Plan-specific | Exactly as stated |
+
+## Shared Hosting: The "Unlimited" Truth
+
+### What "Unlimited Sites" Really Means
+
+Most shared hosting plans advertising unlimited websites have these real limits:
+
+**Hard limits:**
+- CPU usage caps
+- Memory (RAM) limits
+- I/O (disk read/write) limits
+- Concurrent process limits
+- Database limits (often 20-100)
+
+**What happens when you hit limits:**
+- Site slows down
+- 503 errors appear
+- Host throttles your account
+- Host asks you to upgrade
+
+### Realistic Site Counts on Shared Hosting
+
+| Plan Type | Small Sites | Medium Sites | High-Traffic Sites |
+|-----------|-------------|--------------|-------------------|
+| Basic ($3-5/mo) | 1-3 | 1 | 0-1 |
+| Standard ($5-10/mo) | 5-15 | 3-5 | 1-2 |
+| Premium ($10-20/mo) | 15-30 | 5-10 | 2-3 |
+
+**Small site:** Under 1,000 visits/month, simple WordPress or HTML
+**Medium site:** 1,000-10,000 visits/month, standard WordPress
+**High-traffic:** 10,000+ visits/month
+
+### Popular Shared Hosting Limits
+
+| Host | Plan | Sites Allowed | Database Limit |
+|------|------|---------------|----------------|
+| [SiteGround](/hosting/siteground) | StartUp | 1 | 1 |
+| [SiteGround](/hosting/siteground) | GrowBig | Unlimited | Unlimited |
+| [Hostinger](/hosting/hostinger) | Single | 1 | 1 |
+| [Hostinger](/hosting/hostinger) | Premium | 100 | 100 |
+| [Bluehost](/hosting/bluehost) | Basic | 1 | 1 |
+| [Bluehost](/hosting/bluehost) | Plus | Unlimited | Unlimited |
+| [DreamHost](/hosting/dreamhost) | Shared | Unlimited | Unlimited |
+| [A2 Hosting](/hosting/a2hosting) | Startup | 1 | 5 |
+| [A2 Hosting](/hosting/a2hosting) | Drive | Unlimited | Unlimited |
+
+## VPS Hosting: Real Scalability
+
+VPS hosting gives you dedicated resources, making multi-site hosting more predictable.
+
+### VPS Capacity Guidelines
+
+| VPS Size | RAM | Sites (WordPress) | Sites (Static) |
+|----------|-----|-------------------|----------------|
+| Entry | 1GB | 5-10 | 20-50 |
+| Small | 2GB | 15-25 | 50-100 |
+| Medium | 4GB | 30-50 | 100-200 |
+| Large | 8GB | 75-150 | 200-500 |
+| XL | 16GB+ | 200+ | 500+ |
+
+**Note:** These assume optimized WordPress with caching. Unoptimized sites need more resources.
+
+### VPS Multi-Site Setup
+
+**Option 1: Control panel (easy)**
+- Install cPanel, Plesk, or CyberPanel
+- Add sites through GUI
+- ~$15-20/month license cost for cPanel
+
+**Option 2: Server management platform**
+- [Cloudways](/hosting/cloudways) - Managed cloud, easy multi-site
+- ServerPilot - Simple WordPress management
+- RunCloud - Modern control panel
+
+**Option 3: Manual (technical)**
+- Configure Nginx/Apache virtual hosts
+- No additional cost
+- Requires Linux knowledge
+
+## Managed WordPress Hosting
+
+Managed WordPress hosts have explicit site limits per plan:
+
+| Host | Plan | Sites | Price/mo |
+|------|------|-------|----------|
+| [Kinsta](/hosting/kinsta) | Starter | 1 | $35 |
+| [Kinsta](/hosting/kinsta) | Pro | 2 | $70 |
+| [Kinsta](/hosting/kinsta) | Business 1 | 5 | $115 |
+| [WP Engine](/hosting/wpengine) | Startup | 1 | $20 |
+| [WP Engine](/hosting/wpengine) | Growth | 10 | $77 |
+| [Flywheel](/hosting/flywheel) | Tiny | 1 | $15 |
+| [Flywheel](/hosting/flywheel) | Agency | 30 | $290 |
+
+**Why explicit limits matter:**
+- Resources actually allocated per site
+- Predictable performance
+- No surprise throttling
+- Clear upgrade path
+
+## Dedicated Servers
+
+Dedicated servers can host hundreds of sites, limited only by:
+
+- Server hardware (CPU, RAM, storage)
+- Your management capacity
+- Software configuration
+
+**Typical dedicated server capacity:**
+- Entry (4 cores, 16GB): 200-500 sites
+- Mid-range (8 cores, 32GB): 500-1,000 sites
+- High-end (16+ cores, 64GB+): 1,000+ sites
+
+Most agencies and hosting resellers use dedicated servers for this reason.
+
+## How to Add Multiple Sites
+
+### Method 1: Addon Domains
+
+Most common for shared hosting:
+
+1. Register domain elsewhere or with host
+2. Go to cPanel → Addon Domains
+3. Enter domain name
+4. Domain gets its own folder
+5. Install WordPress or upload files
+
+**Result:** Separate website at new domain
+
+### Method 2: Subdomains
+
+Free, no additional domain needed:
+
+1. Go to cPanel → Subdomains
+2. Create subdomain (blog.yourdomain.com)
+3. Gets its own folder
+4. Install content
+
+**Best for:** Staging sites, project sites, testing
+
+### Method 3: WordPress Multisite
+
+One WordPress installation, multiple sites:
+
+1. Install WordPress
+2. Enable Multisite in wp-config.php
+3. Add sites through Network Admin
+4. Sites share themes and plugins
+
+**Pros:** Easier updates, shared resources
+**Cons:** Complexity, harder to separate later
+
+### Method 4: Subdirectory
+
+Sites in folders of main domain:
+
+- yourdomain.com/site1/
+- yourdomain.com/site2/
+
+**Best for:** Related microsites, less common for separate businesses
+
+## Warning Signs You Have Too Many Sites
+
+### Performance Issues
+
+- Pages take 4+ seconds to load
+- Random 503 errors
+- Admin dashboards are slow
+- High TTFB (time to first byte)
+
+### Resource Warnings
+
+- Host emails about resource usage
+- cPanel shows high CPU/memory
+- "Resource limit reached" errors
+- Sites go offline during traffic spikes
+
+### What to Do
+
+1. **Optimize existing sites:** Caching, image compression
+2. **Remove unused sites:** Delete dormant projects
+3. **Upgrade plan:** More resources
+4. **Move to VPS:** Predictable resources
+5. **Split across accounts:** Distribute load
+
+## Cost Comparison: One Account vs Multiple
+
+### Scenario: 10 WordPress Sites
+
+**Option A: One shared hosting account**
+- SiteGround GrowBig: $4.99/month
+- All 10 sites on one account
+- Total: ~$5/month
+
+**Option B: Separate shared accounts**
+- 10 × SiteGround StartUp: $2.99 × 10 = $30/month
+- Each site isolated
+- Total: ~$30/month
+
+**Option C: VPS**
+- DigitalOcean 4GB: $24/month
+- Cloudways managed: $50/month
+- Dedicated resources
+- Total: $24-50/month
+
+**Verdict:** One shared account is cheapest but riskiest. VPS offers best balance at scale.
+
+## When to Use Multiple Accounts
+
+### Separate accounts recommended for:
+
+1. **Client sites you don't own**
+   - Client can take over hosting
+   - Issues isolated
+   - Billing separation
+
+2. **High-traffic sites**
+   - Dedicated resources
+   - No impact from other sites
+
+3. **Different owners/businesses**
+   - Separate billing
+   - Legal separation
+   - Access control
+
+4. **Security-sensitive sites**
+   - E-commerce stores
+   - Sites handling personal data
+   - Regulated industries
+
+### One account is fine for:
+
+1. **Your own projects**
+   - Personal sites
+   - Side projects
+   - Testing environments
+
+2. **Related businesses**
+   - Same owner
+   - Similar traffic levels
+   - Shared management
+
+3. **Low-traffic sites**
+   - Blogs with minimal traffic
+   - Brochure sites
+   - Landing pages
+
+## FAQ
+
+### Can I really host unlimited sites on shared hosting?
+
+Technically yes, practically no. "Unlimited" means no hard number limit, but resource caps (CPU, RAM, I/O) effectively limit you. Most shared hosting works well with 10-30 small sites.
+
+### What happens if I add too many sites?
+
+1. Performance degrades gradually
+2. You may receive warning emails
+3. Host may throttle your account
+4. In extreme cases, temporary suspension
+5. Asked to upgrade or reduce sites
+
+### Do all my sites share the same resources?
+
+On shared hosting and VPS: Yes. If one site gets traffic spike, others may slow down.
+
+On managed WordPress: Resources are often allocated per site, providing better isolation.
+
+### Can I have sites on different domains?
+
+Yes. You can host completely unrelated domains on the same account:
+- mybusiness.com
+- myhobby.net
+- clientsite.org
+
+Each gets its own folder and can have different content.
+
+### Should I use WordPress Multisite for multiple sites?
+
+**Use Multisite if:**
+- Sites are related (same organization)
+- You want centralized management
+- Sites share themes/plugins
+- You understand the complexity
+
+**Don't use Multisite if:**
+- Sites are for different clients
+- Sites may need to be separated later
+- You want simple, isolated installations
+
+### Is one VPS better than multiple shared accounts?
+
+Usually yes at 5+ sites:
+
+| Factor | Multiple Shared | One VPS |
+|--------|-----------------|---------|
+| Cost (10 sites) | ~$30/month | ~$24/month |
+| Performance | Variable | Consistent |
+| Control | Limited | Full |
+| Management | Multiple logins | One server |
+| Isolation | Good | Requires setup |
+
+## Key Takeaways
+
+1. **"Unlimited" isn't unlimited:** Resource caps limit realistic site counts
+2. **Shared hosting:** Good for 10-30 small sites
+3. **VPS:** Better for 20+ sites or high-traffic sites
+4. **Managed WordPress:** Pay per site, get guaranteed resources
+5. **Watch for warnings:** Resource alerts mean time to upgrade
+6. **Isolate important sites:** Client sites and e-commerce deserve their own resources
+
+## What to Do Next
+
+1. **Audit your sites:** List all sites and their traffic levels
+2. **Check current usage:** Look at hosting resource reports
+3. **Plan for growth:** Consider where you'll be in 12 months
+4. **Right-size your hosting:** Match hosting type to actual needs
+
+Need help choosing hosting for multiple sites? Use our [hosting comparison tool](/compare) to find plans that support your site count, or take the [hosting quiz](/quiz) for personalized recommendations.
+
+---
+
+*Last updated: January 2026*

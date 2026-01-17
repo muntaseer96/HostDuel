@@ -1,0 +1,405 @@
+---
+title: "Email Not Working After Switching Hosts? Here's How to Fix It"
+description: "Email stopped working after migrating to a new web host? Learn how to fix MX records, SPF, DKIM, and other common email issues after migration."
+date: "2026-01-17"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/6.jpg"
+category: "guides"
+tags: ["email-troubleshooting", "dns-records", "migration", "mx-records"]
+featured: false
+---
+
+You migrated to a new web host and now email doesn't work. You can't send, can't receive, or both. This is one of the most common post-migration issues.
+
+Here's how to diagnose and fix email problems after switching hosts.
+
+## Why Email Breaks After Migration
+
+### Common Causes
+
+1. **MX records changed or deleted** - Most common cause
+2. **DNS not fully propagated** - Takes up to 48 hours
+3. **Email hosting changed unintentionally** - Was using old host's email
+4. **SPF/DKIM records missing** - Affects deliverability
+5. **Mail client settings wrong** - Server addresses changed
+
+### Quick Diagnosis
+
+| Symptom | Likely Cause |
+|---------|--------------|
+| Can't receive email | MX records wrong |
+| Can't send email | SMTP settings or SPF issue |
+| Email goes to spam | SPF/DKIM missing |
+| Email delayed | DNS propagation |
+| Webmail doesn't work | Email hosting changed |
+
+## Step 1: Check Your MX Records
+
+MX (Mail Exchange) records tell the internet where to deliver your email.
+
+### How to Check MX Records
+
+**Using MXToolbox:**
+1. Go to mxtoolbox.com
+2. Enter your domain
+3. Check MX Lookup results
+
+**Using command line:**
+```bash
+dig yourdomain.com MX
+# or
+nslookup -type=mx yourdomain.com
+```
+
+### What MX Records Should Look Like
+
+**If using hosting email (cPanel, Plesk):**
+```
+Priority: 0
+Mail Server: mail.yourdomain.com
+# or
+Priority: 0
+Mail Server: yourdomain.com
+```
+
+**If using Google Workspace:**
+```
+Priority: 1  → ASPMX.L.GOOGLE.COM
+Priority: 5  → ALT1.ASPMX.L.GOOGLE.COM
+Priority: 5  → ALT2.ASPMX.L.GOOGLE.COM
+Priority: 10 → ALT3.ASPMX.L.GOOGLE.COM
+Priority: 10 → ALT4.ASPMX.L.GOOGLE.COM
+```
+
+**If using Microsoft 365:**
+```
+Priority: 0
+Mail Server: yourdomain-com.mail.protection.outlook.com
+```
+
+### How to Fix MX Records
+
+**In your DNS provider (Cloudflare, Namecheap, etc.):**
+
+1. Log into DNS management
+2. Find MX records section
+3. Delete incorrect MX records
+4. Add correct MX records for your email provider
+5. Save and wait for propagation (up to 48 hours)
+
+## Step 2: Identify Your Email Setup
+
+### Where Is Your Email Actually Hosted?
+
+**Scenario A: Email with old host**
+- You were using old host's email (cPanel email)
+- MX records pointed to old host
+- Website moved, but email needs to stay
+
+**Fix:** Point MX records back to old host's mail server
+
+**Scenario B: Email with new host**
+- You want email at new host
+- Need to set up email accounts on new host
+- Update MX records to new host
+
+**Fix:** Create email accounts on new host, update MX records
+
+**Scenario C: Third-party email (Google, Microsoft)**
+- Email with Google Workspace, Microsoft 365, Zoho
+- MX records should point to email provider
+- Website migration shouldn't affect email
+
+**Fix:** Verify MX records still point to email provider
+
+### Finding Old Host's Mail Server
+
+Contact old host or check documentation:
+
+| Host | Typical Mail Server |
+|------|---------------------|
+| GoDaddy | secureserver.net |
+| Bluehost | mail.yourdomain.com |
+| SiteGround | yourdomain.com |
+| HostGator | mail.yourdomain.com |
+| Namecheap | privateemail.com (if using their email) |
+
+## Step 3: Fix Common Issues
+
+### Issue 1: MX Records Point to Wrong Server
+
+**Symptoms:**
+- Not receiving email
+- Emails bounce back to sender
+
+**Fix:**
+1. Determine correct mail server (see above)
+2. Update MX records in DNS
+3. Wait for propagation
+
+### Issue 2: SPF Record Missing or Wrong
+
+SPF tells receiving servers which servers can send email for your domain.
+
+**Symptoms:**
+- Sent emails go to spam
+- Emails rejected by some recipients
+
+**Check SPF:**
+```bash
+dig yourdomain.com TXT | grep spf
+```
+
+**Example SPF records:**
+
+For hosting email:
+```
+v=spf1 a mx include:_spf.yourhostingdomain.com ~all
+```
+
+For Google Workspace:
+```
+v=spf1 include:_spf.google.com ~all
+```
+
+For Microsoft 365:
+```
+v=spf1 include:spf.protection.outlook.com ~all
+```
+
+**Fix:** Add correct SPF record as TXT record in DNS.
+
+### Issue 3: DKIM Not Set Up
+
+DKIM cryptographically signs your emails, improving deliverability.
+
+**Symptoms:**
+- Emails occasionally go to spam
+- Failed DKIM in email headers
+
+**Fix:**
+1. Get DKIM key from email provider
+2. Add as TXT record in DNS
+3. Usually named: `default._domainkey.yourdomain.com`
+
+### Issue 4: Mail Client Settings Wrong
+
+If webmail works but desktop/mobile doesn't:
+
+**Check these settings:**
+
+| Setting | Value |
+|---------|-------|
+| Incoming server | mail.yourdomain.com or provider's server |
+| Incoming port | 993 (IMAP SSL) or 995 (POP3 SSL) |
+| Outgoing server | mail.yourdomain.com or smtp.provider.com |
+| Outgoing port | 465 (SSL) or 587 (TLS) |
+| Username | full email address |
+| Authentication | Required for outgoing |
+
+### Issue 5: DNS Not Propagated
+
+**Symptoms:**
+- Some people can email you, others can't
+- Works intermittently
+
+**Fix:** Wait up to 48 hours. Check propagation at whatsmydns.net.
+
+## Step 4: Common Scenarios & Solutions
+
+### Scenario: Moved to New Host, Want New Host's Email
+
+**Steps:**
+1. Create email accounts on new host (cPanel → Email Accounts)
+2. Note the mail server (usually mail.yourdomain.com)
+3. Update MX records to point to new host
+4. Add SPF record for new host
+5. Set up DKIM if available
+6. Update mail client settings
+7. Wait for DNS propagation
+
+### Scenario: Moved Website, Keep Email at Old Host
+
+**Steps:**
+1. Keep email accounts at old host (don't delete!)
+2. Find old host's mail server
+3. Update MX records to point to OLD host
+4. Update SPF to include old host
+5. Website DNS (A record) points to new host
+6. Email DNS (MX record) points to old host
+
+**DNS will look like:**
+```
+Type    Name    Value
+A       @       new.host.ip.address
+MX      @       mail.oldhost.com
+```
+
+### Scenario: Moved Website, Use Google Workspace
+
+**Steps:**
+1. Verify MX records point to Google
+2. Check SPF includes Google
+3. Website A record points to new host
+4. Email should be unaffected
+
+**If email stopped working:**
+- Check if MX records were accidentally changed
+- Restore Google's MX records
+
+### Scenario: Want to Move Email to Google Workspace
+
+**Steps:**
+1. Set up Google Workspace account
+2. Add users and verify domain
+3. Update MX records to Google
+4. Add Google SPF record
+5. Set up DKIM in Google Admin
+6. Export emails from old host (if needed)
+
+## Email Migration Best Practices
+
+### Before Migration
+
+1. **Document current DNS records** (screenshot everything)
+2. **Note email provider** (hosting, Google, Microsoft)
+3. **Lower DNS TTL** to 300 seconds (5 minutes) 24 hours before
+4. **Backup emails** if switching email providers
+
+### During Migration
+
+1. **Don't delete email accounts** on old host yet
+2. **Keep MX records pointing to current email** provider
+3. **Only change A/CNAME records** for website
+
+### After Migration
+
+1. **Test email** (send and receive)
+2. **Check spam folders** of recipients
+3. **Verify SPF/DKIM** with mail-tester.com
+4. **Monitor for 48-72 hours**
+5. **Then** cancel old hosting if email moved
+
+## Testing Your Email
+
+### Test Receiving
+
+1. Send email to yourself from external address (Gmail, etc.)
+2. Check if it arrives
+3. Check spam folder
+
+### Test Sending
+
+1. Send email to external address
+2. Check if recipient receives it
+3. Ask if it went to spam
+
+### Test Authentication
+
+**Using mail-tester.com:**
+1. Go to mail-tester.com
+2. Send email to the provided address
+3. Check your score
+4. Fix any SPF/DKIM issues flagged
+
+**Using Google's header analyzer:**
+1. Send email to Gmail account
+2. Open email, click three dots → Show original
+3. Check SPF, DKIM, DMARC status
+
+## FAQ
+
+### How long until email works after fixing DNS?
+
+MX record changes can take 1-48 hours to propagate. Most propagate within 4-6 hours.
+
+### Can I use different hosts for website and email?
+
+Yes, this is common. A/CNAME records point to website host, MX records point to email host.
+
+### My email works but goes to spam. Why?
+
+Usually missing or incorrect SPF/DKIM records. Test at mail-tester.com.
+
+### Should I use hosting email or third-party?
+
+**Use hosting email if:**
+- Budget is limited
+- Low volume email
+- Simple needs
+
+**Use third-party (Google, Microsoft) if:**
+- Email is critical
+- Need reliability/features
+- Want email separate from hosting
+
+Read more: [Email Hosting vs Web Hosting](/blog/email-hosting-vs-web-hosting)
+
+### What if I lost emails during migration?
+
+Check:
+1. Old host's email (might still be there)
+2. Email client's local storage
+3. Contact old host for backup restoration
+
+Prevention: Always backup emails before migration.
+
+### My host says email is set up correctly but it doesn't work
+
+Check:
+1. DNS propagation (whatsmydns.net)
+2. MX records point to correct server
+3. No conflicting MX records
+4. SPF record is correct
+5. Try from different email client
+
+## Quick Reference: Common Email Providers' DNS Settings
+
+### Google Workspace
+
+**MX Records:**
+```
+1 ASPMX.L.GOOGLE.COM
+5 ALT1.ASPMX.L.GOOGLE.COM
+5 ALT2.ASPMX.L.GOOGLE.COM
+10 ALT3.ASPMX.L.GOOGLE.COM
+10 ALT4.ASPMX.L.GOOGLE.COM
+```
+
+**SPF:** `v=spf1 include:_spf.google.com ~all`
+
+### Microsoft 365
+
+**MX:** `yourdomain-com.mail.protection.outlook.com`
+
+**SPF:** `v=spf1 include:spf.protection.outlook.com ~all`
+
+### Zoho Mail
+
+**MX:** `mx.zoho.com` (priority 10), `mx2.zoho.com` (priority 20)
+
+**SPF:** `v=spf1 include:zoho.com ~all`
+
+## Key Takeaways
+
+1. **MX records are the #1 cause** of post-migration email issues
+2. **Document everything** before migrating
+3. **Website and email can use different hosts** - they're separate DNS records
+4. **SPF/DKIM are crucial** for deliverability
+5. **Wait 48 hours** for full DNS propagation
+6. **Test thoroughly** before declaring success
+
+## What to Do Next
+
+1. **Diagnose:** Check MX records at mxtoolbox.com
+2. **Identify:** Determine where email should be hosted
+3. **Fix:** Update DNS records as needed
+4. **Test:** Verify sending and receiving works
+5. **Monitor:** Watch for issues over next 48 hours
+
+Still having email issues after a hosting switch? The problem is almost always DNS-related. Compare email hosting options with our [comparison tool](/compare) or check our guide on [email hosting vs web hosting](/blog/email-hosting-vs-web-hosting).
+
+---
+
+*Last updated: January 2026*
