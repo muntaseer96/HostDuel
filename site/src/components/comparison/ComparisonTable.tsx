@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { Search, SlidersHorizontal, ArrowUpDown, ArrowUp, ArrowDown, X, Columns3 } from 'lucide-react';
-import { Button } from '@/components/ui';
+import { Button, DataDisclaimer } from '@/components/ui';
 import { HostRow } from './HostRow';
 import { FilterSidebar } from './FilterSidebar';
 import { CompareWidget } from './CompareWidget';
@@ -887,6 +887,9 @@ export function ComparisonTable({ hosts, hostingTypeCounts }: ComparisonTablePro
           )}
         </div>
       </div>
+
+      {/* Data Disclaimer */}
+      <DataDisclaimer className="mt-6" />
 
       {/* Compare Widget */}
       <CompareWidget

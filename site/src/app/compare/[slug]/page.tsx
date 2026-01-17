@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, XCircle, ExternalLink, ChevronRight } from 'lucide-react';
 import { Container } from '@/components/layout';
-import { Button, Badge } from '@/components/ui';
+import { Button, Badge, DataDisclaimer } from '@/components/ui';
 import { getTableRowById } from '@/lib/data';
 import {
   generateComparisonPairs,
@@ -674,6 +674,7 @@ export default async function ComparePage({ params }: ComparePageProps) {
               </tbody>
             </table>
           </div>
+          <DataDisclaimer className="mt-6" />
         </Container>
       </section>
 

@@ -10,3 +10,4 @@ export {
 } from './Card';
 export { Badge, type BadgeProps } from './Badge';
 export { Input, SearchInput, type InputProps } from './Input';
+export { DataDisclaimer } from './DataDisclaimer';

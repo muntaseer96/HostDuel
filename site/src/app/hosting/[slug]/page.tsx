@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getCompanyById, getTableRowById, getAllCompanyIds, getAllTableRows } from '@/lib/data';
 import { Container } from '@/components/layout';
+import { DataDisclaimer } from '@/components/ui';
 import { SITE_NAME, SITE_DOMAIN, HOSTING_TYPES, type HostingType } from '@/lib/constants';
 import {
   Breadcrumbs,
@@ -211,6 +212,13 @@ export default async function HostPage({ params }: HostPageProps) {
 
       {/* Specs Grid */}
       <SpecsGrid company={company} tableRow={tableRow} />
+
+      {/* Data Disclaimer */}
+      <section className="pb-8">
+        <Container>
+          <DataDisclaimer />
+        </Container>
+      </section>
 
       {/* FAQ */}
       {faqItems.length > 0 && <HostFAQ items={faqItems} hostName={company.basicInfo.companyName} />}
