@@ -1,0 +1,443 @@
+---
+title: "Best Hosting for WordPress Multisite (Requirements & Recommendations)"
+description: "WordPress Multisite needs specific hosting features. Learn the requirements, limitations of shared hosting, and the best hosts for running a multisite network."
+date: "2026-01-17"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/15.jpg"
+category: "guides"
+tags: ["wordpress-multisite", "multisite-hosting", "wordpress", "hosting-requirements"]
+featured: false
+---
+
+WordPress Multisite lets you run multiple websites from a single WordPress installation. It's powerful, but it needs the right hosting.
+
+Not every host supports Multisite well. Here's what you need to know before setting up a WordPress network.
+
+## What Is WordPress Multisite?
+
+WordPress Multisite turns one WordPress installation into a network of sites sharing:
+- Core WordPress files
+- Themes (available to all sites)
+- Plugins (activated network-wide or per-site)
+- User database
+
+**Use cases:**
+- **Blogs network:** Like WordPress.com's hosted blogs
+- **University sites:** Departments sharing infrastructure
+- **Franchise sites:** Multiple locations, same branding
+- **Client management:** Agencies hosting client sites
+- **Multilingual sites:** Language-specific subsites
+
+## Multisite vs Multiple Installations
+
+| Aspect | Single Multisite | Multiple Separate Installs |
+|--------|------------------|---------------------------|
+| **Management** | One dashboard | Separate dashboards |
+| **Updates** | Update once, affects all | Update each separately |
+| **Themes/plugins** | Shared, but can control | Independent per site |
+| **User accounts** | Shared across network | Separate per site |
+| **Isolation** | Less isolated | Fully isolated |
+| **Complexity** | More complex | Simpler per site |
+| **Best for** | Related sites, same owner | Unrelated sites, different owners |
+
+**Important:** Multisite isn't always the right choice. If sites need different plugins or complete isolation, separate installations may be better.
+
+## Hosting Requirements for Multisite
+
+### Domain/URL Structure
+
+Multisite supports two URL structures:
+
+**Subdomains:** site1.yourdomain.com, site2.yourdomain.com
+- Requires wildcard DNS
+- Requires wildcard SSL
+
+**Subdirectories:** yourdomain.com/site1, yourdomain.com/site2
+- Simpler to set up
+- One SSL certificate works
+
+**Different domains (domain mapping):** site1.com, site2.com
+- Requires plugin and DNS configuration
+- Most complex setup
+
+### Hosting Must Support
+
+| Requirement | Why Needed |
+|-------------|------------|
+| **Wildcard subdomains** | For subdomain multisite |
+| **Wildcard SSL** | HTTPS on all subdomains |
+| **Sufficient resources** | Multiple sites = more load |
+| **mod_rewrite** | URL handling |
+| **Not restricted** | Some hosts block multisite |
+
+### Resource Considerations
+
+Multisite uses more resources than single sites:
+
+**Database:**
+- Shared tables (users, usermeta)
+- Per-site tables (posts, options, etc.)
+- Database size grows with each site
+
+**Memory:**
+- Each site request loads WordPress
+- Active sites can hit PHP memory limits
+- Recommend 256MB+ PHP memory
+
+**Storage:**
+- Media uploads per site
+- Themes and plugins shared
+- Grows with content
+
+**CPU:**
+- Multiple sites = more processing
+- Cron jobs multiply
+- Consider server capacity
+
+## Shared Hosting Limitations
+
+Many shared hosts either don't support Multisite or support it poorly.
+
+### Common Restrictions
+
+| Issue | Impact |
+|-------|--------|
+| **No wildcard subdomains** | Can't use subdomain structure |
+| **No wildcard SSL** | SSL issues on subdomains |
+| **Low resource limits** | Sites slow or crash |
+| **Limited sites allowed** | Artificial caps |
+| **Blocked by host** | Outright prohibited |
+
+### Shared Hosts and Multisite
+
+| Host | Multisite Support |
+|------|-------------------|
+| [SiteGround](/hosting/siteground) | Supported on GrowBig+ |
+| [Hostinger](/hosting/hostinger) | Supported (check limits) |
+| [Bluehost](/hosting/bluehost) | Supported but limited |
+| [A2 Hosting](/hosting/a2hosting) | Supported |
+| [GoDaddy](/hosting/godaddy) | Limited |
+
+**Reality check:** Shared hosting can work for small networks (3-5 low-traffic sites) but isn't ideal for production multisite networks.
+
+## Best Hosting Types for Multisite
+
+### 1. Managed WordPress Hosting
+
+**Best for:** Medium networks, non-technical users
+
+| Host | Multisite | Sites Included | Starting Price |
+|------|-----------|----------------|----------------|
+| [Kinsta](/hosting/kinsta) | Full support | Counts toward site limit | $35/mo |
+| [WP Engine](/hosting/wpengine) | Full support | Counts toward site limit | $20/mo |
+| [Pressable](/hosting/pressable) | Full support | Part of site count | $25/mo |
+| [Flywheel](/hosting/flywheel) | Full support | Part of site count | $13/mo |
+
+**Kinsta details:**
+- Each Multisite counts as one install
+- Network sites don't count separately
+- Full wildcard SSL
+- Staging for multisite
+- Expert support
+
+**WP Engine details:**
+- Multisite supported on all plans
+- Domain mapping possible
+- Developer tools included
+- Wildcard SSL available
+
+### 2. Cloud/VPS Hosting
+
+**Best for:** Large networks, technical users, agencies
+
+| Host | Type | Starting Price | Notes |
+|------|------|----------------|-------|
+| [Cloudways](/hosting/cloudways) | Managed Cloud | $14/mo | Excellent for multisite |
+| [DigitalOcean](/hosting/digitalocean) | VPS | $5/mo | Unmanaged, full control |
+| [Vultr](/hosting/vultr) | VPS | $5/mo | Unmanaged, performant |
+| [Linode](/hosting/linode) | VPS | $5/mo | Unmanaged, reliable |
+
+**Cloudways advantages:**
+- Easy multisite setup
+- Scale resources as needed
+- Wildcard SSL supported
+- Multiple site management tools
+
+**VPS advantages:**
+- Full control over configuration
+- No artificial limits
+- Scale as needed
+- Cost-effective for large networks
+
+### 3. Quality Shared Hosting
+
+**Best for:** Small networks, testing, budget projects
+
+| Host | Best Plan | Notes |
+|------|-----------|-------|
+| [SiteGround](/hosting/siteground) | GrowBig or GoGeek | Good support, wildcards available |
+| [A2 Hosting](/hosting/a2hosting) | Turbo | Fast, supports multisite |
+
+**Limitations:**
+- Resource constraints for growth
+- May need to upgrade sooner
+- Not ideal for high-traffic networks
+
+## Our Top Recommendations
+
+### Best Overall: Kinsta
+
+[Kinsta](/hosting/kinsta) provides the best managed multisite experience.
+
+**Why Kinsta for Multisite:**
+- Full multisite support on all plans
+- Each network counts as one site
+- Wildcard SSL automatic
+- Staging for multisite testing
+- Google Cloud infrastructure
+- Expert WordPress support
+
+**Pricing:** $35/mo for 1 site (multisite counts as 1)
+
+**Downside:** Cost increases with sites/resources needed.
+
+[View Kinsta Details →](/hosting/kinsta)
+
+### Best Value: Cloudways
+
+[Cloudways](/hosting/cloudways) offers cloud power at reasonable prices.
+
+**Why Cloudways for Multisite:**
+- Full multisite support
+- Scale resources independently
+- No per-site charges
+- Wildcard SSL available
+- Multiple cloud providers
+- Pay for what you use
+
+**Pricing:** $14/mo (DigitalOcean) with no site limits
+
+**Downside:** More technical than Kinsta; no email hosting.
+
+[View Cloudways Details →](/hosting/cloudways)
+
+### Best Budget: SiteGround GrowBig
+
+[SiteGround](/hosting/siteground) is the best shared option for multisite.
+
+**Why SiteGround for Multisite:**
+- Multisite supported on GrowBig+
+- Wildcard SSL available
+- Good performance for shared
+- Excellent support
+- Staging environment
+
+**Pricing:** $4.99/mo (GrowBig)
+
+**Downside:** Shared hosting limits; not for large networks.
+
+[View SiteGround Details →](/hosting/siteground)
+
+### Best for Agencies: WP Engine
+
+[WP Engine](/hosting/wpengine) offers features agencies need.
+
+**Why WP Engine for Multisite:**
+- Multisite supported
+- Transferable sites to clients
+- Development environments
+- Strong security
+- Good for client management
+
+**Pricing:** $20/mo starting
+
+**Downside:** Site limits on plans; costs scale with growth.
+
+[View WP Engine Details →](/hosting/wpengine)
+
+## Setting Up Multisite
+
+### Basic Setup Steps
+
+**1. Fresh WordPress install** (easier than converting existing)
+
+**2. Edit wp-config.php:**
+```php
+/* Multisite */
+define( 'WP_ALLOW_MULTISITE', true );
+```
+
+**3. Complete network setup in WordPress admin**
+- Go to Tools → Network Setup
+- Choose subdomain or subdirectory
+- Follow instructions
+
+**4. Update wp-config.php and .htaccess**
+WordPress provides the code to add.
+
+**5. Configure host settings**
+- Wildcard subdomains (if using subdomain structure)
+- Wildcard SSL certificate
+
+**6. Create sites in Network Admin**
+
+### Domain Mapping Setup
+
+To use different domains for network sites:
+
+**1. Install domain mapping plugin** (WordPress MU Domain Mapping or similar)
+
+**2. Add domains to your hosting**
+
+**3. Point DNS for each domain to your server**
+
+**4. Configure SSL for each domain**
+
+**5. Map domains in WordPress**
+
+This is more complex than subdomain/subdirectory setups.
+
+## Multisite Performance Optimization
+
+### Caching
+
+Standard caching is more complex with multisite:
+- Must cache per-site
+- Some caching plugins need multisite-compatible configuration
+- Host-level caching often works best
+
+**Recommended:**
+- [Kinsta](/hosting/kinsta) and [WP Engine](/hosting/wpengine) handle this
+- On VPS: Redis object caching + page caching
+- On shared: WP Super Cache (multisite compatible)
+
+### CDN
+
+CDN helps multisite performance:
+- Cloudflare works with multisite
+- Configure for subdomain or subdirectory structure
+- Wildcard SSL on CDN if using subdomains
+
+### Database Optimization
+
+Multisite databases grow large:
+- Regular cleanup (WP-Optimize)
+- Remove spam comments and revisions
+- Optimize database tables
+
+### Resource Monitoring
+
+Watch for:
+- PHP memory limits being hit
+- Database connection limits
+- Storage filling up
+- CPU spikes during traffic
+
+## Common Multisite Issues
+
+### Problem: Wildcard SSL Not Working
+
+**Cause:** Host doesn't support or hasn't configured wildcard SSL
+
+**Solution:**
+- Confirm host supports wildcard SSL
+- Use Let's Encrypt wildcard (requires DNS validation)
+- Consider Cloudflare for SSL management
+
+### Problem: Subdomain Sites Not Resolving
+
+**Cause:** Wildcard DNS not configured
+
+**Solution:**
+- Add wildcard DNS record: `*.yourdomain.com → server IP`
+- Wait for DNS propagation
+
+### Problem: Plugin Conflicts
+
+**Cause:** Plugin not multisite-compatible
+
+**Solution:**
+- Check plugin documentation for multisite support
+- Test on staging network first
+- Use multisite-specific plugins when available
+
+### Problem: Running Out of Resources
+
+**Cause:** Network outgrew shared hosting
+
+**Solution:**
+- Upgrade to VPS or managed hosting
+- Add resources (RAM, CPU)
+- Optimize existing sites
+
+## FAQ
+
+### How many sites can I run on one multisite?
+
+Technically unlimited. Practically limited by:
+- Server resources
+- Hosting plan limits
+- Management complexity
+
+10-50 sites is manageable. 100+ requires significant resources and management tools.
+
+### Is multisite good for client sites?
+
+Mixed opinions:
+- **Pro:** Centralized management, single updates
+- **Con:** Less isolation, harder to transfer sites to clients
+
+Many agencies prefer separate installations for client independence.
+
+### Can I convert existing WordPress to multisite?
+
+Yes, but it's complex:
+- Existing content becomes the main site
+- Existing users gain network roles
+- Some URL restructuring may be needed
+- Backup thoroughly before attempting
+
+Starting fresh is easier if possible.
+
+### Does each multisite count against host limits?
+
+Depends on host:
+- **Kinsta/WP Engine:** Network counts as 1 site
+- **Cloudways:** No limits (resource-based)
+- **Shared hosts:** Varies, check terms
+
+### Can sites on my network have different themes?
+
+Yes. Themes are uploaded once but activated per-site. Each site chooses its own active theme from network-available themes.
+
+### What happens if the main site goes down?
+
+All sites in the network go down. They share the same WordPress installation. This is a key consideration for critical sites.
+
+## Key Takeaways
+
+1. **Multisite needs specific hosting features** (wildcard SSL, subdomains)
+2. **Shared hosting works for small networks** but not long-term production
+3. **Managed WordPress hosts** ([Kinsta](/hosting/kinsta), [WP Engine](/hosting/wpengine)) make multisite easy
+4. **Cloud hosting** ([Cloudways](/hosting/cloudways)) offers flexibility and value
+5. **Consider if multisite is right** for your use case before committing
+6. **Resource needs grow** with your network—plan for scaling
+
+## What to Do Next
+
+**Before starting multisite:**
+1. Confirm your use case fits multisite
+2. Choose subdomain vs subdirectory structure
+3. Select hosting with proper multisite support
+
+**Recommended path:**
+- Small/testing: [SiteGround](/hosting/siteground) GrowBig
+- Production: [Cloudways](/hosting/cloudways) or [Kinsta](/hosting/kinsta)
+- Enterprise: [Kinsta](/hosting/kinsta) higher tiers or custom VPS
+
+Need help choosing? Use our [comparison tool](/compare) to find multisite-compatible hosts, or take our [hosting quiz](/quiz) for personalized recommendations.
+
+---
+
+*Last updated: January 2026*

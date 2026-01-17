@@ -1,0 +1,371 @@
+---
+title: "Website Down But Hosting Says It's Up? Here's What to Check"
+description: "Your site won't load but your host claims everything is fine. Learn how to diagnose and fix common issues when your website appears down."
+date: "2026-01-17"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/5.jpg"
+category: "guides"
+tags: ["troubleshooting", "website-down", "dns", "hosting-issues"]
+featured: false
+---
+
+Your website won't load. You contact your host. They say everything is fine on their end.
+
+Frustrating, but often true. Many "website down" issues aren't hosting problems—they're DNS, caching, or local issues.
+
+Here's a systematic approach to diagnosing and fixing the problem.
+
+## First: Is Your Site Actually Down?
+
+### Check from Multiple Sources
+
+Your site might work for others but not you.
+
+**Tools to check:**
+- **downforeveryoneorjustme.com** - Quick check
+- **isitdownrightnow.com** - Status history
+- **uptimerobot.com** - Free monitoring
+
+**What results mean:**
+
+| Result | Meaning |
+|--------|---------|
+| Down for everyone | Likely server/hosting issue |
+| Down just for you | Local issue (DNS, ISP, cache) |
+| Intermittent | Could be various causes |
+
+### Check from Different Networks
+
+Try accessing your site from:
+- Your phone (on cellular, not WiFi)
+- A VPN (different IP address)
+- Ask someone else to check
+
+If it works on other networks, the issue is likely your local network or ISP.
+
+## Common Causes and Fixes
+
+### 1. DNS Issues
+
+**What it is:** DNS translates your domain name to an IP address. If DNS is broken, browsers can't find your server.
+
+**Symptoms:**
+- "Site can't be reached"
+- "DNS_PROBE_FINISHED_NXDOMAIN"
+- Works with IP, not domain
+- Works on some networks but not others
+
+**Diagnosis:**
+```bash
+# Check DNS resolution
+nslookup yourdomain.com
+# or
+dig yourdomain.com
+```
+
+If no IP address returns, DNS is the problem.
+
+**Fixes:**
+
+| Cause | Fix |
+|-------|-----|
+| DNS not propagated | Wait 24-48 hours after changes |
+| Nameservers wrong | Update at domain registrar |
+| Domain expired | Renew domain immediately |
+| DNS cache on your computer | Flush DNS cache |
+
+**Flush DNS cache:**
+- **Windows:** `ipconfig /flushdns`
+- **Mac:** `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`
+- **Chrome:** Visit `chrome://net-internals/#dns` and clear
+
+### 2. SSL Certificate Issues
+
+**What it is:** Expired or misconfigured SSL certificate blocks access.
+
+**Symptoms:**
+- "Your connection is not private"
+- "NET::ERR_CERT_DATE_INVALID"
+- Browser blocks access
+- Works with http:// but not https://
+
+**Diagnosis:**
+- Check certificate expiration at ssllabs.com/ssltest
+- View certificate details in browser
+
+**Fixes:**
+
+| Cause | Fix |
+|-------|-----|
+| Certificate expired | Renew SSL (Let's Encrypt or paid) |
+| Certificate wrong domain | Install certificate for correct domain |
+| Mixed content | Fix http:// resources on https:// page |
+| Hosting misconfiguration | Contact host to fix SSL setup |
+
+### 3. Browser Cache
+
+**What it is:** Your browser is showing a cached version (or cached error).
+
+**Symptoms:**
+- Works in incognito/private mode
+- Works in different browser
+- Others can access, you can't
+
+**Fixes:**
+- **Hard refresh:** Ctrl+F5 (Windows) or Cmd+Shift+R (Mac)
+- **Clear cache:** Browser settings → Clear browsing data
+- **Try incognito mode** to bypass cache
+
+### 4. Local Internet Issues
+
+**What it is:** Your ISP or router is blocking or routing incorrectly.
+
+**Symptoms:**
+- Works on cellular data, not WiFi
+- Other websites work fine
+- Site accessible via VPN
+
+**Diagnosis:**
+```bash
+# Trace the network path
+traceroute yourdomain.com
+# Windows
+tracert yourdomain.com
+```
+
+Look for where the trace stops or times out.
+
+**Fixes:**
+
+| Cause | Fix |
+|-------|-----|
+| Router DNS cache | Restart router |
+| ISP DNS issues | Use Google DNS (8.8.8.8) or Cloudflare (1.1.1.1) |
+| ISP blocking | Contact ISP or use VPN |
+| Firewall blocking | Check firewall/antivirus settings |
+
+### 5. Domain Not Pointing to Server
+
+**What it is:** Domain points to wrong IP or no IP.
+
+**Symptoms:**
+- Site loads different content (old site, parking page)
+- "This site can't be reached"
+- Changed hosts recently
+
+**Diagnosis:**
+```bash
+# Check where domain points
+dig yourdomain.com A +short
+```
+
+Compare result with your hosting IP address.
+
+**Fixes:**
+- Update A record at DNS provider to correct IP
+- Update nameservers to hosting provider's nameservers
+- Wait for DNS propagation (24-48 hours)
+
+### 6. Server Errors
+
+**What it is:** Your hosting server has an issue.
+
+**Symptoms:**
+- 500 Internal Server Error
+- 502 Bad Gateway
+- 503 Service Unavailable
+- Site down for everyone
+
+**Fixes by error:**
+
+| Error | Likely Cause | Fix |
+|-------|--------------|-----|
+| 500 | PHP error, .htaccess | Check error logs, fix code |
+| 502 | PHP timeout, memory | Increase limits, optimize |
+| 503 | Server overloaded | Wait, upgrade hosting |
+| 504 | Gateway timeout | Check database, increase timeout |
+
+### 7. Plugin or Code Issues (WordPress)
+
+**What it is:** A bad plugin or code change broke the site.
+
+**Symptoms:**
+- Broke after update
+- White screen of death
+- PHP errors visible
+
+**Fixes:**
+1. Access via FTP/SFTP
+2. Rename `/wp-content/plugins/` to `/wp-content/plugins_disabled/`
+3. If site loads, a plugin was the problem
+4. Rename back and disable plugins one by one
+
+### 8. Database Connection Error
+
+**What it is:** WordPress can't connect to database.
+
+**Symptoms:**
+- "Error establishing a database connection"
+
+**Causes and fixes:**
+
+| Cause | Fix |
+|-------|-----|
+| Database server down | Contact host |
+| Wrong credentials in wp-config.php | Verify DB name, user, password |
+| Database corrupted | Repair database via phpMyAdmin |
+| Exceeded connections | Reduce traffic, optimize, upgrade |
+
+### 9. Hosting Account Suspended
+
+**What it is:** Host suspended your account.
+
+**Symptoms:**
+- Suspension message shows
+- Can't access cPanel either
+- No email from hosting email
+
+**Common reasons:**
+- Non-payment
+- Terms of service violation
+- Malware detected
+- Resource overuse
+
+**Fix:** Contact host support immediately to resolve.
+
+### 10. Malware or Hack
+
+**What it is:** Site compromised and blocked or broken.
+
+**Symptoms:**
+- Google "This site may be hacked" warning
+- Redirect to spam sites
+- Foreign content appearing
+- Host suspended for malware
+
+**Fixes:**
+1. Restore from clean backup
+2. Scan with Wordfence or Sucuri
+3. Clean infected files
+4. Update all passwords
+5. Patch vulnerabilities
+
+## Diagnostic Flowchart
+
+```
+Site Won't Load
+     │
+     ├─ Check if down for everyone or just you
+     │   │
+     │   ├─ Just me → DNS, cache, or local network issue
+     │   │
+     │   └─ Everyone → Continue...
+     │
+     ├─ Check for error message
+     │   │
+     │   ├─ SSL error → Certificate issue
+     │   ├─ 500 error → Server/code error
+     │   ├─ 502/503 → Server overload
+     │   ├─ Database error → Database connection
+     │   └─ Suspension page → Account suspended
+     │
+     └─ No error, just doesn't load
+         │
+         ├─ Check DNS resolves → nslookup
+         ├─ Check IP is correct → Compare to hosting IP
+         └─ Contact host with specific findings
+```
+
+## Information to Gather Before Contacting Support
+
+When contacting your host, provide:
+
+1. **Your domain name**
+2. **Error message** (exact text or screenshot)
+3. **When it started** (time, what you changed)
+4. **What you've tried**
+5. **Results of diagnostics:**
+   - Is it down for everyone? (provide tool URL)
+   - DNS resolution result
+   - Traceroute result
+   - Different browser/device results
+
+This speeds up support significantly.
+
+## Prevention: Monitoring Setup
+
+### Free Monitoring Tools
+
+**UptimeRobot (free tier):**
+- 50 monitors
+- 5-minute check intervals
+- Email/SMS alerts
+
+**Freshping:**
+- 50 monitors
+- 1-minute checks
+- Multiple locations
+
+### What to Monitor
+
+- Main website URL
+- Important pages (checkout, login)
+- SSL certificate expiration
+- Domain expiration
+
+### Alert Response
+
+When alert fires:
+1. Verify issue isn't false alarm
+2. Check from multiple locations
+3. Run through diagnostic steps
+4. Contact host with findings if needed
+
+## FAQ
+
+### My host says server is up. What now?
+
+Server being up doesn't mean your site works. Issues can be at DNS level, your specific account, or your local network. Work through the diagnostic steps to find the actual problem.
+
+### How long should I wait before panicking?
+
+Brief outages (minutes) happen. If your site is down for:
+- 5-15 minutes: Probably temporary, monitor
+- 30+ minutes: Start diagnosing
+- 1+ hours: Contact host with findings
+- Multiple hours: Escalate with host
+
+### My site is slow, not down. Same process?
+
+Similar but different. Slow sites are usually resource issues (overloaded hosting, unoptimized site). Check out [Why Is My Website Slow?](/blog/why-is-my-website-slow) for that situation.
+
+### I made DNS changes and now site is down
+
+DNS propagation takes up to 48 hours. Your site might work for some visitors and not others during this time. Wait it out, or use DNSChecker.org to see propagation status.
+
+### Site works on phone but not computer
+
+Likely DNS cache on your computer. Flush DNS cache, try incognito mode, or restart your router.
+
+## Key Takeaways
+
+1. **Verify if site is actually down** or just for you
+2. **DNS issues** are common after hosting or domain changes
+3. **Browser cache** causes many phantom problems
+4. **Error messages** point to specific issues
+5. **Gather diagnostic info** before contacting support
+6. **Set up monitoring** to catch issues early
+
+## What to Do Next
+
+1. **Bookmark diagnostic tools** for future use
+2. **Set up UptimeRobot** monitoring (free)
+3. **Know how to flush DNS** on your devices
+4. **Save your hosting support contact** for emergencies
+
+Need more reliable hosting with better uptime? Compare options with our [hosting comparison tool](/compare) or take our [hosting quiz](/quiz) for recommendations.
+
+---
+
+*Last updated: January 2026*

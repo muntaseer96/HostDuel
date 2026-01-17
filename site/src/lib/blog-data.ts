@@ -93,13 +93,16 @@ export async function getFeaturedPosts(): Promise<BlogPostMeta[]> {
 export async function getRelatedPosts(
   currentSlug: string,
   category: BlogCategory,
-  tags: string[],
+  tags: string[] = [],
   limit = 3
 ): Promise<BlogPostMeta[]> {
   const allPosts = await getAllPosts();
 
   // Filter out current post
   const otherPosts = allPosts.filter((post) => post.slug !== currentSlug);
+
+  // Ensure tags is an array
+  const safeTags = tags || [];
 
   // Score posts by relevance
   const scoredPosts = otherPosts.map((post) => {
@@ -111,7 +114,8 @@ export async function getRelatedPosts(
     }
 
     // Each matching tag gets 1 point
-    const matchingTags = post.tags.filter((tag) => tags.includes(tag));
+    const postTags = post.tags || [];
+    const matchingTags = postTags.filter((tag) => safeTags.includes(tag));
     score += matchingTags.length;
 
     return { post, score };

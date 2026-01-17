@@ -233,13 +233,13 @@ A comprehensive web hosting comparison site with 56 providers, 355+ attributes, 
 5. "How much bandwidth does my website need?" - Traffic-based calculations ✅ DONE
 6. "What does 99.9% uptime guarantee actually mean?" - Real downtime math (43 min/month) ✅ DONE
 
-*Choosing a Host:*
-7. "Which hosting is best for a small business website?" - Budget vs features vs support
-8. "Best web hosting for beginners with no technical knowledge" - User-friendly options
-9. "Cheapest web hosting that's actually good (Reddit recommendations)" - Budget picks
-10. "How to choose a web hosting provider: 10 factors to consider" - Checklist
+*Choosing a Host:* [DONE]
+7. "Which hosting is best for a small business website?" - Budget vs features vs support ✅ DONE
+8. "Best web hosting for beginners with no technical knowledge" - User-friendly options ✅ DONE (covered by web-hosting-for-beginners.mdx)
+9. "Cheapest web hosting that's actually good (Reddit recommendations)" - Budget picks ✅ DONE (covered by cheapest-web-hosting.mdx)
+10. "How to choose a web hosting provider: 10 factors to consider" - Checklist ✅ DONE (covered by how-to-choose-web-hosting.mdx)
 11. "What's the difference between shared, VPS, and dedicated hosting?" - Visual comparison ✅ DONE
-12. "Is managed WordPress hosting worth the extra cost?" - When to upgrade
+12. "Is managed WordPress hosting worth the extra cost?" - When to upgrade ✅ DONE
 
 **Technical Deep-Dives (Medium Competition, High Intent):**
 
