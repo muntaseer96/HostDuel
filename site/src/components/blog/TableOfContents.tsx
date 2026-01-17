@@ -77,8 +77,8 @@ export function TableOfContents({ items, className }: TableOfContentsProps) {
       <div
         className={cn(
           'overflow-hidden transition-all duration-200',
-          isCollapsed ? 'max-h-0' : 'max-h-[500px]',
-          'lg:max-h-none'
+          isCollapsed ? 'max-h-0' : 'max-h-[400px]',
+          'lg:max-h-[calc(100vh-200px)] lg:overflow-y-auto'
         )}
       >
         <ul className="px-4 pb-4 space-y-1">

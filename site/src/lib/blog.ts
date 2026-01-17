@@ -48,6 +48,15 @@ export function slugify(text: string): string {
 }
 
 /**
+ * Strip markdown links from text - converts [text](url) to just text
+ * @param text - Text potentially containing markdown links
+ * @returns Text with links stripped
+ */
+function stripMarkdownLinks(text: string): string {
+  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+}
+
+/**
  * Extract headings from markdown/MDX content for Table of Contents
  * @param content - Markdown content
  * @returns Array of TOC items
@@ -59,7 +68,9 @@ export function extractHeadings(content: string): TOCItem[] {
 
   while ((match = headingRegex.exec(content)) !== null) {
     const level = match[1].length as 2 | 3;
-    const text = match[2].trim();
+    // Strip markdown links from heading text
+    const rawText = match[2].trim();
+    const text = stripMarkdownLinks(rawText);
     const id = slugify(text);
 
     headings.push({ id, text, level });
