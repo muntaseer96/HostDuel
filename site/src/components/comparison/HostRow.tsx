@@ -540,19 +540,17 @@ export function HostRow({ host, isSelected, onToggleCompare, compareDisabled, co
               Details
             </Button>
           </Link>
-          {host.websiteUrl && (
-            <a
-              href={host.websiteUrl}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              onClick={() => trackHostClick(host.id, host.name, 'visit_site')}
-            >
-              <Button size="sm" className="hidden sm:flex">
-                Visit
-                <ExternalLink className="ml-1 h-3 w-3" />
-              </Button>
-            </a>
-          )}
+          <a
+            href={`/go/${host.id}`}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            onClick={() => trackHostClick(host.id, host.name, 'visit_site')}
+          >
+            <Button size="sm" className="hidden sm:flex">
+              Visit
+              <ExternalLink className="ml-1 h-3 w-3" />
+            </Button>
+          </a>
         </div>
       </td>
     </tr>

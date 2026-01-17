@@ -1,0 +1,13 @@
+{
+  "_comment": "Add your affiliate links below. Set active to false to temporarily disable.",
+  "_example": {
+    "url": "https://example.com?ref=YOUR_AFFILIATE_ID",
+    "active": true,
+    "notes": "Commission rate, signup date, etc."
+  },
+  "wpx": {
+    "url": "https://wpx.net/?affid=4314",
+    "active": true,
+    "notes": "First affiliate - Jan 2026"
+  }
+}

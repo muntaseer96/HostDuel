@@ -692,58 +692,34 @@ export default async function ComparePage({ params }: ComparePageProps) {
       <section className="py-8 border-b border-border-subtle">
         <Container>
           <div className="grid gap-4 md:grid-cols-2">
-            {hostA.websiteUrl ? (
-              <TrackedLink
-                href={hostA.websiteUrl}
-                hostId={hostA.id}
-                hostName={hostA.name}
-                action="visit_site"
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="flex items-center justify-center gap-2 rounded-xl border border-blue-500/30 bg-blue-500/10 p-6 hover:bg-blue-500/20 transition-colors"
-              >
-                <span className="text-lg font-semibold text-blue-400">
-                  Visit {hostA.name}
-                </span>
-                <ExternalLink className="h-5 w-5 text-blue-400" />
-              </TrackedLink>
-            ) : (
-              <Link
-                href={`/hosting/${hostA.id}`}
-                className="flex items-center justify-center gap-2 rounded-xl border border-blue-500/30 bg-blue-500/10 p-6 hover:bg-blue-500/20 transition-colors"
-              >
-                <span className="text-lg font-semibold text-blue-400">
-                  Learn More About {hostA.name}
-                </span>
-                <ExternalLink className="h-5 w-5 text-blue-400" />
-              </Link>
-            )}
-            {hostB.websiteUrl ? (
-              <TrackedLink
-                href={hostB.websiteUrl}
-                hostId={hostB.id}
-                hostName={hostB.name}
-                action="visit_site"
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="flex items-center justify-center gap-2 rounded-xl border border-purple-500/30 bg-purple-500/10 p-6 hover:bg-purple-500/20 transition-colors"
-              >
-                <span className="text-lg font-semibold text-purple-400">
-                  Visit {hostB.name}
-                </span>
-                <ExternalLink className="h-5 w-5 text-purple-400" />
-              </TrackedLink>
-            ) : (
-              <Link
-                href={`/hosting/${hostB.id}`}
-                className="flex items-center justify-center gap-2 rounded-xl border border-purple-500/30 bg-purple-500/10 p-6 hover:bg-purple-500/20 transition-colors"
-              >
-                <span className="text-lg font-semibold text-purple-400">
-                  Learn More About {hostB.name}
-                </span>
-                <ExternalLink className="h-5 w-5 text-purple-400" />
-              </Link>
-            )}
+            <TrackedLink
+              href={`/go/${hostA.id}`}
+              hostId={hostA.id}
+              hostName={hostA.name}
+              action="visit_site"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="flex items-center justify-center gap-2 rounded-xl border border-blue-500/30 bg-blue-500/10 p-6 hover:bg-blue-500/20 transition-colors"
+            >
+              <span className="text-lg font-semibold text-blue-400">
+                Visit {hostA.name}
+              </span>
+              <ExternalLink className="h-5 w-5 text-blue-400" />
+            </TrackedLink>
+            <TrackedLink
+              href={`/go/${hostB.id}`}
+              hostId={hostB.id}
+              hostName={hostB.name}
+              action="visit_site"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="flex items-center justify-center gap-2 rounded-xl border border-purple-500/30 bg-purple-500/10 p-6 hover:bg-purple-500/20 transition-colors"
+            >
+              <span className="text-lg font-semibold text-purple-400">
+                Visit {hostB.name}
+              </span>
+              <ExternalLink className="h-5 w-5 text-purple-400" />
+            </TrackedLink>
           </div>
         </Container>
       </section>

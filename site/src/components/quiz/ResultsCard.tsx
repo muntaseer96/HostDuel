@@ -115,19 +115,17 @@ export function ResultsCard({ result, rank, className }: ResultsCardProps) {
             View Details
           </Button>
         </Link>
-        {host.websiteUrl && (
-          <a
-            href={host.websiteUrl}
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            className="flex-1"
-          >
-            <Button variant="primary" size="md" className="w-full">
-              Visit Site
-              <ExternalLink className="w-4 h-4 ml-2" />
-            </Button>
-          </a>
-        )}
+        <a
+          href={`/go/${host.id}`}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="flex-1"
+        >
+          <Button variant="primary" size="md" className="w-full">
+            Visit Site
+            <ExternalLink className="w-4 h-4 ml-2" />
+          </Button>
+        </a>
       </div>
     </div>
   );

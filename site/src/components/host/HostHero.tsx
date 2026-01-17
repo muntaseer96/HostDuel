@@ -68,7 +68,7 @@ export function HostHero({ company, tableRow }: HostHeroProps) {
 
             {/* CTA Button */}
             <a
-              href={company.basicInfo.websiteUrl}
+              href={`/go/${tableRow.id}`}
               target="_blank"
               rel="noopener noreferrer nofollow"
               onClick={() => trackHostClick(tableRow.id, company.basicInfo.companyName, 'visit_site')}

@@ -144,7 +144,7 @@ export function PricingCards({ company }: PricingCardsProps) {
 
                 {/* CTA */}
                 <a
-                  href={company.basicInfo.websiteUrl}
+                  href={`/go/${company.basicInfo.companyName.toLowerCase().replace(/\s+/g, '-')}`}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   className="block"
