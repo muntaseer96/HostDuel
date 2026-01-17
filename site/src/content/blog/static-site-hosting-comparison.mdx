@@ -1,0 +1,423 @@
+---
+title: "Static Site Hosting: Netlify vs Vercel vs GitHub Pages vs Cloudflare Pages"
+description: "Compare the best platforms for hosting static sites and JAMstack applications. Find out which is best for your portfolio, documentation, or web app."
+date: "2026-01-17"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/9.jpg"
+category: "comparisons"
+tags: ["static-hosting", "netlify", "vercel", "github-pages", "jamstack"]
+featured: false
+---
+
+Static site hosting has never been better. Free tiers are generous, deployment is automated, and performance is excellent.
+
+But which platform should you choose? Netlify, Vercel, GitHub Pages, and Cloudflare Pages all have strengths and weaknesses.
+
+Here's a detailed comparison to help you decide.
+
+## Quick Comparison
+
+| Feature | Netlify | Vercel | GitHub Pages | Cloudflare Pages |
+|---------|---------|--------|--------------|------------------|
+| **Best for** | General static/JAMstack | Next.js/React | Docs, simple sites | All static sites |
+| **Free tier** | Generous | Generous | Good | Very generous |
+| **Serverless functions** | Yes | Yes | No | Yes |
+| **Build minutes** | 300/month | 6000/month | N/A | Unlimited |
+| **Bandwidth** | 100GB | 100GB | 100GB | Unlimited |
+| **Custom domains** | Yes | Yes | Yes | Yes |
+| **SSL** | Free | Free | Free | Free |
+
+## Netlify
+
+### Overview
+
+Netlify pioneered modern JAMstack hosting. It's feature-rich and developer-friendly.
+
+### Free Tier Includes
+
+- 100GB bandwidth/month
+- 300 build minutes/month
+- 1 concurrent build
+- Serverless functions (125K requests/month)
+- Form handling (100 submissions/month)
+- Identity (1000 users/month)
+- Analytics (limited)
+
+### Strengths
+
+**Deploy previews:** Every PR gets a unique preview URL. Share with team, stakeholders, or QA.
+
+**Forms handling:** Add `netlify` attribute to forms—no backend needed.
+
+**Split testing:** A/B test different branches.
+
+**Plugins ecosystem:** Extend builds with community plugins.
+
+**Edge functions:** Run code at the edge for personalization.
+
+### Weaknesses
+
+**Build minute limits:** 300/month on free tier depletes quickly with frequent deploys.
+
+**Function limitations:** 10-second timeout on free tier.
+
+**Pricing scales quickly:** Pro tier is $19/member/month.
+
+### Best For
+
+- JAMstack sites of all kinds
+- Teams wanting deploy previews
+- Sites needing form handling
+- Non-Next.js frameworks (Hugo, 11ty, Gatsby)
+
+### Pricing
+
+| Plan | Price | Build Minutes | Bandwidth |
+|------|-------|---------------|-----------|
+| Starter | Free | 300/mo | 100GB |
+| Pro | $19/user/mo | 25,000/mo | 1TB |
+| Business | $99/user/mo | 25,000/mo | 1TB |
+
+## Vercel
+
+### Overview
+
+Vercel created Next.js and optimizes specifically for it, though it works with any framework.
+
+### Free Tier Includes
+
+- 100GB bandwidth/month
+- 6000 build minutes/month (20x Netlify!)
+- Serverless functions (100GB-hours)
+- Edge functions
+- Analytics (basic)
+- Preview deployments
+
+### Strengths
+
+**Next.js optimization:** If you use Next.js, Vercel is the best deployment target. Features like ISR (Incremental Static Regeneration) work seamlessly.
+
+**Generous build minutes:** 6000/month vs Netlify's 300.
+
+**Fast deployments:** Excellent global edge network.
+
+**Framework autodetection:** Detects and configures most frameworks automatically.
+
+### Weaknesses
+
+**Hobby tier restrictions:** Free tier is for personal, non-commercial projects only. Commercial use requires Pro ($20/month minimum).
+
+**Next.js bias:** Non-Next.js frameworks work but aren't as optimized.
+
+**Function size limits:** Serverless functions have stricter size limits.
+
+### Best For
+
+- Next.js projects (clearly)
+- React developers
+- Personal projects and portfolios
+- Rapid iteration (generous build minutes)
+
+### Pricing
+
+| Plan | Price | Build Minutes | Note |
+|------|-------|---------------|------|
+| Hobby | Free | 6000/mo | Personal only |
+| Pro | $20/user/mo | 24,000/mo | Commercial OK |
+| Enterprise | Custom | Unlimited | |
+
+**Important:** Hobby tier prohibits commercial use. If your portfolio helps you get clients, that's arguably commercial.
+
+## GitHub Pages
+
+### Overview
+
+Free hosting directly from GitHub repositories. Simple but limited.
+
+### Free Tier Includes
+
+- 100GB bandwidth/month
+- 1GB repository size
+- 10 builds per hour
+- Jekyll support (auto-built)
+- Custom domains
+- Free SSL
+
+### Strengths
+
+**Simplicity:** Push to repo, site deploys. No separate service to manage.
+
+**Jekyll integration:** GitHub builds Jekyll sites automatically.
+
+**Reliability:** GitHub's infrastructure.
+
+**Perfect for docs:** Many open-source projects use it for documentation.
+
+### Weaknesses
+
+**No build system (except Jekyll):** Other frameworks need pre-built output or GitHub Actions.
+
+**No serverless functions:** Static files only.
+
+**Public repos only:** Private repos require GitHub Pro or Enterprise.
+
+**Limited builds:** 10 per hour max.
+
+### Best For
+
+- Documentation sites
+- Open-source project pages
+- Simple HTML/CSS portfolios
+- Jekyll blogs
+- Developers already using GitHub
+
+### Pricing
+
+| Plan | Price | Features |
+|------|-------|----------|
+| Free | $0 | Public repos only |
+| Pro | $4/mo | Private repos |
+
+## Cloudflare Pages
+
+### Overview
+
+Cloudflare's entry into static hosting. Excellent performance and very generous limits.
+
+### Free Tier Includes
+
+- **Unlimited bandwidth** (!!!)
+- **Unlimited requests**
+- 500 builds/month
+- 1 concurrent build
+- Functions (100K requests/day)
+- Custom domains
+- Free SSL
+
+### Strengths
+
+**Unlimited bandwidth:** No overages ever. Crucial for viral content.
+
+**Cloudflare network:** Same edge network as their CDN. Very fast.
+
+**Functions (Workers):** Powerful serverless functions at the edge.
+
+**Build output caching:** Faster subsequent builds.
+
+### Weaknesses
+
+**Newer platform:** Less mature ecosystem than Netlify/Vercel.
+
+**Framework support:** Good but not as polished as Vercel for Next.js.
+
+**UI/UX:** Dashboard less refined than competitors.
+
+### Best For
+
+- High-traffic sites (unlimited bandwidth)
+- Sites that might go viral
+- Users already using Cloudflare
+- Cost-conscious projects
+
+### Pricing
+
+| Plan | Price | Builds | Bandwidth |
+|------|-------|--------|-----------|
+| Free | $0 | 500/mo | Unlimited |
+| Pro | $20/mo | 5000/mo | Unlimited |
+
+## Feature Comparison
+
+### Continuous Deployment
+
+| Feature | Netlify | Vercel | GitHub Pages | Cloudflare |
+|---------|---------|--------|--------------|------------|
+| Git integration | GitHub, GitLab, Bitbucket | GitHub, GitLab, Bitbucket | GitHub only | GitHub, GitLab |
+| Deploy previews | Yes | Yes | No | Yes |
+| Instant rollbacks | Yes | Yes | Via git | Yes |
+| Build caching | Yes | Yes | N/A | Yes |
+
+**Winner:** Netlify and Vercel tie. Cloudflare close behind.
+
+### Serverless Functions
+
+| Feature | Netlify | Vercel | GitHub Pages | Cloudflare |
+|---------|---------|--------|--------------|------------|
+| Available | Yes | Yes | No | Yes (Workers) |
+| Edge functions | Yes | Yes | No | Yes (native) |
+| Free tier | 125K/mo | 100GB-hours | N/A | 100K/day |
+| Timeout (free) | 10s | 10s | N/A | 10ms (CPU) |
+
+**Winner:** Cloudflare Workers for edge computing. Vercel for Next.js API routes.
+
+### Performance
+
+All four platforms deliver excellent performance through global edge networks:
+
+| Platform | CDN | Global Locations |
+|----------|-----|------------------|
+| Netlify | Yes | 20+ |
+| Vercel | Yes | 20+ |
+| GitHub Pages | Fastly | Global |
+| Cloudflare | Yes | 300+ |
+
+**Winner:** Cloudflare has the largest edge network.
+
+### Forms
+
+| Feature | Netlify | Vercel | GitHub Pages | Cloudflare |
+|---------|---------|--------|--------------|------------|
+| Built-in forms | Yes | No | No | No |
+| Free submissions | 100/mo | N/A | N/A | N/A |
+| Spam filtering | Yes | N/A | N/A | N/A |
+
+**Winner:** Netlify (only one with built-in forms).
+
+## Framework Recommendations
+
+### Next.js
+
+**Best choice:** Vercel
+
+Vercel built Next.js. Features like ISR, middleware, and image optimization work perfectly.
+
+**Alternative:** Netlify (works well with adapter)
+
+### Gatsby
+
+**Best choice:** Netlify or Gatsby Cloud
+
+Both well-optimized for Gatsby. Gatsby Cloud is specialized but Netlify is more versatile.
+
+### Hugo / 11ty / Jekyll
+
+**Best choice:** Netlify or Cloudflare Pages
+
+No framework-specific optimization needed. Both work great.
+
+### Astro
+
+**Best choice:** Vercel or Netlify
+
+Both support Astro well. Vercel edge functions complement Astro's island architecture.
+
+### Plain HTML/CSS
+
+**Best choice:** GitHub Pages or Cloudflare Pages
+
+No build needed. Simple deployment.
+
+## Cost Comparison
+
+### Personal Project (Low Traffic)
+
+All free tiers work. Choose based on features needed.
+
+### Portfolio Site (Medium Traffic)
+
+| Platform | Likely Cost | Notes |
+|----------|-------------|-------|
+| Cloudflare Pages | $0 | Unlimited bandwidth |
+| Netlify | $0 | 100GB usually enough |
+| GitHub Pages | $0 | 100GB usually enough |
+| Vercel | $0 (if personal) | Commercial requires Pro |
+
+### Business Site (Higher Traffic)
+
+| Platform | 500GB/mo | Notes |
+|----------|----------|-------|
+| Cloudflare Pages | $0 | Unlimited |
+| Netlify | $19/mo | Pro tier |
+| Vercel | $20/mo | Pro tier |
+| GitHub Pages | N/A | May exceed limits |
+
+**Winner:** Cloudflare Pages for budget-conscious.
+
+## Migration Considerations
+
+### From Traditional Hosting to Static
+
+**Process:**
+1. Choose static site generator (or build tool)
+2. Convert or recreate site
+3. Connect Git repository
+4. Configure build settings
+5. Point domain
+
+### Between Static Platforms
+
+**Usually simple:**
+1. Connect same repository to new platform
+2. Configure build command and output directory
+3. Test deploy preview
+4. Move custom domain
+
+Most sites migrate in under an hour.
+
+## FAQ
+
+### Which is fastest?
+
+All are fast. Cloudflare has the largest edge network (300+ locations). For practical purposes, visitors won't notice differences.
+
+### Can I use these for WordPress?
+
+Not directly. These host static files. You could:
+- Use WordPress headlessly with a static frontend
+- Export WordPress to static HTML
+- Use alternatives like Hugo or 11ty
+
+### Do I need a static site generator?
+
+No. You can deploy plain HTML/CSS/JS files. But static site generators (Hugo, 11ty, Astro) make content management easier.
+
+### What happens if I exceed free tier limits?
+
+- **Netlify:** Builds stop until next month, site stays up
+- **Vercel:** May throttle or ask to upgrade
+- **GitHub Pages:** Site may become unavailable
+- **Cloudflare:** Unlimited bandwidth, unlikely to exceed
+
+### Can I use server-side rendering?
+
+Vercel and Netlify support SSR for frameworks like Next.js. GitHub Pages and basic Cloudflare Pages don't. Cloudflare Workers can add SSR capabilities.
+
+### Which is best for beginners?
+
+**GitHub Pages** is simplest for basic sites.
+**Netlify** is most beginner-friendly for JAMstack.
+
+## Summary Recommendations
+
+| Use Case | Recommendation |
+|----------|----------------|
+| Next.js projects | Vercel |
+| General JAMstack | Netlify |
+| Documentation sites | GitHub Pages |
+| High-traffic / cost-conscious | Cloudflare Pages |
+| Need forms | Netlify |
+| Personal portfolio | Any (all good) |
+| Commercial project | Cloudflare or Netlify (Vercel requires Pro) |
+
+## Key Takeaways
+
+1. **All four platforms are excellent** for static sites
+2. **Vercel is best for Next.js** due to tight integration
+3. **Netlify is most feature-rich** with forms, split testing, plugins
+4. **Cloudflare has unlimited bandwidth** on free tier
+5. **GitHub Pages is simplest** for basic sites
+6. **Free tiers are generous**—most sites never need to pay
+
+## What to Do Next
+
+1. **Choose based on your framework** (Next.js → Vercel, others → Netlify or Cloudflare)
+2. **Start with free tier**—upgrade only if needed
+3. **Connect your Git repository** for automatic deployments
+4. **Configure custom domain** and SSL
+
+For dynamic hosting needs beyond static sites, check our [hosting comparison tool](/compare) or take our [hosting quiz](/quiz).
+
+---
+
+*Last updated: January 2026*
