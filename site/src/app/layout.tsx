@@ -53,11 +53,15 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hostduel.com'),
   title: {
     default: `${SITE_NAME} - Find Your Perfect Web Host`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: '/',
+  },
   verification: {
     google: 'qiMqUGVIZaQayYLGXbR9kjONYWWyqqQ86tNiMJk07SA',
   },
@@ -89,18 +93,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: SITE_NAME,
-    images: [
-      {
-        url: 'https://hostduel.com/logo.png',
-        width: 1000,
-        height: 1000,
-        alt: SITE_NAME,
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['https://hostduel.com/logo.png'],
   },
   robots: {
     index: true,
@@ -116,6 +111,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Preconnect to external domains for faster loading */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://cdn.usefathom.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

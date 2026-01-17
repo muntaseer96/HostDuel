@@ -5,6 +5,9 @@ import { SITE_NAME, RATING_WEIGHTS } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Our Methodology',
   description: `How ${SITE_NAME} rates and compares web hosting providers. Learn about our data-driven approach and scoring criteria.`,
+  alternates: {
+    canonical: '/methodology',
+  },
 };
 
 const ratingCategories = [

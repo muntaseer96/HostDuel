@@ -10,6 +10,9 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Blog',
   description: `Expert web hosting guides, comparisons, and tips from ${SITE_NAME}. Learn how to choose the best hosting for your needs.`,
+  alternates: {
+    canonical: '/blog',
+  },
   openGraph: {
     title: `Blog | ${SITE_NAME}`,
     description: `Expert web hosting guides, comparisons, and tips from ${SITE_NAME}.`,

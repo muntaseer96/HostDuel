@@ -43,6 +43,9 @@ export async function generateMetadata({ params }: HostPageProps): Promise<Metad
   return {
     title: `${name} Review - ${hostingType}`,
     description,
+    alternates: {
+      canonical: `/hosting/${slug}`,
+    },
     keywords: [
       name,
       `${name} review`,
