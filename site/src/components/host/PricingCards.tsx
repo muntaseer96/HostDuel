@@ -1,6 +1,9 @@
+'use client';
+
 import { Check, AlertCircle } from 'lucide-react';
 import { Container } from '@/components/layout';
 import { Card, CardHeader, CardTitle, CardContent, Button } from '@/components/ui';
+import { trackHostClick } from '@/lib/tracking';
 import type { Company } from '@/types';
 
 interface PricingCardsProps {
@@ -145,6 +148,11 @@ export function PricingCards({ company }: PricingCardsProps) {
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   className="block"
+                  onClick={() => trackHostClick(
+                    company.basicInfo.companyName.toLowerCase().replace(/\s+/g, '-'),
+                    company.basicInfo.companyName,
+                    'visit_site'
+                  )}
                 >
                   <Button
                     className="w-full"

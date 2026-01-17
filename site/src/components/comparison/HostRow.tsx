@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ExternalLink, Check, CheckCircle, XCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { trackHostClick } from '@/lib/tracking';
 import { Badge, Button } from '@/components/ui';
 import { HOSTING_TYPES, HOSTING_TYPE_COLORS, type HostingType } from '@/lib/constants';
 import type { CompanyTableRow, ColumnSet } from '@/types';
@@ -531,13 +532,21 @@ export function HostRow({ host, isSelected, onToggleCompare, compareDisabled, co
       {/* Actions - Always visible */}
       <td className="px-3 py-3">
         <div className="flex items-center gap-1">
-          <Link href={`/hosting/${host.id}`}>
+          <Link
+            href={`/hosting/${host.id}`}
+            onClick={() => trackHostClick(host.id, host.name, 'view_details')}
+          >
             <Button size="sm" variant="ghost">
               Details
             </Button>
           </Link>
-{host.websiteUrl && (
-            <a href={host.websiteUrl} target="_blank" rel="noopener noreferrer sponsored">
+          {host.websiteUrl && (
+            <a
+              href={host.websiteUrl}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              onClick={() => trackHostClick(host.id, host.name, 'visit_site')}
+            >
               <Button size="sm" className="hidden sm:flex">
                 Visit
                 <ExternalLink className="ml-1 h-3 w-3" />

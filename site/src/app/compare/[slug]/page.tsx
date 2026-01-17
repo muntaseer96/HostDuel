@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, XCircle, ExternalLink, ChevronRight } from 'lucide-react';
 import { Container } from '@/components/layout';
-import { Button, Badge, DataDisclaimer } from '@/components/ui';
+import { Button, Badge, DataDisclaimer, TrackedLink } from '@/components/ui';
 import { getTableRowById } from '@/lib/data';
 import {
   generateComparisonPairs,
@@ -693,8 +693,11 @@ export default async function ComparePage({ params }: ComparePageProps) {
         <Container>
           <div className="grid gap-4 md:grid-cols-2">
             {hostA.websiteUrl ? (
-              <a
+              <TrackedLink
                 href={hostA.websiteUrl}
+                hostId={hostA.id}
+                hostName={hostA.name}
+                action="visit_site"
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="flex items-center justify-center gap-2 rounded-xl border border-blue-500/30 bg-blue-500/10 p-6 hover:bg-blue-500/20 transition-colors"
@@ -703,7 +706,7 @@ export default async function ComparePage({ params }: ComparePageProps) {
                   Visit {hostA.name}
                 </span>
                 <ExternalLink className="h-5 w-5 text-blue-400" />
-              </a>
+              </TrackedLink>
             ) : (
               <Link
                 href={`/hosting/${hostA.id}`}
@@ -716,8 +719,11 @@ export default async function ComparePage({ params }: ComparePageProps) {
               </Link>
             )}
             {hostB.websiteUrl ? (
-              <a
+              <TrackedLink
                 href={hostB.websiteUrl}
+                hostId={hostB.id}
+                hostName={hostB.name}
+                action="visit_site"
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="flex items-center justify-center gap-2 rounded-xl border border-purple-500/30 bg-purple-500/10 p-6 hover:bg-purple-500/20 transition-colors"
@@ -726,7 +732,7 @@ export default async function ComparePage({ params }: ComparePageProps) {
                   Visit {hostB.name}
                 </span>
                 <ExternalLink className="h-5 w-5 text-purple-400" />
-              </a>
+              </TrackedLink>
             ) : (
               <Link
                 href={`/hosting/${hostB.id}`}

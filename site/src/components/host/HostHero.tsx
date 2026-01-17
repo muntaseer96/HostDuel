@@ -1,6 +1,9 @@
+'use client';
+
 import { ExternalLink, Star, MapPin, Calendar, Building2 } from 'lucide-react';
 import { Container } from '@/components/layout';
 import { Button, Badge } from '@/components/ui';
+import { trackHostClick } from '@/lib/tracking';
 import { HOSTING_TYPES, HOSTING_TYPE_COLORS, type HostingType } from '@/lib/constants';
 import type { Company, CompanyTableRow } from '@/types';
 
@@ -68,6 +71,7 @@ export function HostHero({ company, tableRow }: HostHeroProps) {
               href={company.basicInfo.websiteUrl}
               target="_blank"
               rel="noopener noreferrer nofollow"
+              onClick={() => trackHostClick(tableRow.id, company.basicInfo.companyName, 'visit_site')}
             >
               <Button size="lg">
                 Visit {company.basicInfo.companyName}
