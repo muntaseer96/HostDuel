@@ -225,13 +225,13 @@ A comprehensive web hosting comparison site with 56 providers, 355+ attributes, 
 
 **Beginner Questions (High Volume, Low Competition):**
 
-*Hosting Basics:*
+*Hosting Basics:* [DONE]
 1. "What is web hosting and do I need it?" - Explain hosting vs domain, when you need it ✅ DONE
-2. "Do I need web hosting for WordPress, Shopify, or Wix?" - Platform-specific requirements
-3. "What happens when my web hosting expires?" - Grace periods, data loss, recovery
-4. "How long does it take to switch web hosts?" - DNS propagation (24-48 hours)
-5. "How much bandwidth does my website need?" - Traffic-based calculations
-6. "What does 99.9% uptime guarantee actually mean?" - Real downtime math (43 min/month)
+2. "Do I need web hosting for WordPress, Shopify, or Wix?" - Platform-specific requirements ✅ DONE
+3. "What happens when my web hosting expires?" - Grace periods, data loss, recovery ✅ DONE
+4. "How long does it take to switch web hosts?" - DNS propagation (24-48 hours) ✅ DONE
+5. "How much bandwidth does my website need?" - Traffic-based calculations ✅ DONE
+6. "What does 99.9% uptime guarantee actually mean?" - Real downtime math (43 min/month) ✅ DONE
 
 *Choosing a Host:*
 7. "Which hosting is best for a small business website?" - Budget vs features vs support
