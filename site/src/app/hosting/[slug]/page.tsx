@@ -103,6 +103,7 @@ export default async function HostPage({ params }: HostPageProps) {
     name: company.basicInfo.companyName,
     description: company.comparisonData.uniqueSellingPoint || company.editorial.bestFor,
     url: company.basicInfo.websiteUrl,
+    image: 'https://hostduel.com/logo.png',
     aggregateRating: company.ratings.overallRating
       ? {
           '@type': 'AggregateRating',

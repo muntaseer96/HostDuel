@@ -22,12 +22,14 @@ function generateHostListSchema(hosts: { id: string; name: string; overallRating
         '@type': 'Product',
         name: host.name,
         url: `https://hostduel.com/hosting/${host.id}`,
+        image: 'https://hostduel.com/logo.png',
         ...(host.overallRating && {
           aggregateRating: {
             '@type': 'AggregateRating',
             ratingValue: host.overallRating,
             bestRating: 5,
             worstRating: 1,
+            ratingCount: 1,
           },
         }),
         ...(host.monthlyPrice && {
@@ -36,6 +38,7 @@ function generateHostListSchema(hosts: { id: string; name: string; overallRating
             price: host.monthlyPrice,
             priceCurrency: 'USD',
             priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+            availability: 'https://schema.org/InStock',
           },
         }),
       },
