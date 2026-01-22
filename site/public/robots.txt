@@ -1,21 +1,25 @@
 # HostDuel robots.txt
 # Allow search engines, block known scrapers
 
-# Search engines - full access
+# Search engines - full access (except redirect URLs)
 User-agent: Googlebot
 Allow: /
+Disallow: /go/
 
 User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
+Disallow: /go/
 
 User-agent: DuckDuckBot
 Allow: /
+Disallow: /go/
 
 User-agent: Slurp
 Allow: /
+Disallow: /go/
 
 User-agent: facebot
 Allow: /
@@ -76,6 +80,7 @@ Disallow: /
 User-agent: *
 Crawl-delay: 5
 Allow: /
+Disallow: /go/
 
 # Sitemap
 Sitemap: https://hostduel.com/sitemap.xml
