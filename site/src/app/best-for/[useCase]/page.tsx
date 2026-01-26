@@ -156,6 +156,7 @@ export default async function BestForPage({ params }: PageProps) {
         name: host.name,
         description: `${host.name} - rated ${host.suitabilityScore}/5 for ${config.name.toLowerCase()}`,
         url: `${SITE_DOMAIN}/hosting/${host.id}`,
+        image: `${SITE_DOMAIN}/logo.png`,
         ...(host.overallRating && {
           aggregateRating: {
             '@type': 'AggregateRating',
