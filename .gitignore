@@ -2,4 +2,4 @@
 .claude/
 node_modules/
 *.log
-CLAUDE.md
+*.md
