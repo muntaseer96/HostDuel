@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build",
+    "postbuild": "node scripts/indexnow.mjs",
     "start": "next start",
+    "indexnow": "node scripts/indexnow.mjs",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,json}\"",
