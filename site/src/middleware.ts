@@ -36,6 +36,8 @@ const GOOD_BOTS = [
   'whatsapp',
   'telegrambot',
   'applebot',
+  'indexnow',
+  'yandex',
 ];
 
 export function middleware(request: NextRequest) {
