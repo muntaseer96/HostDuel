@@ -4,7 +4,7 @@ import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: `Terms of Service for ${SITE_NAME}. Read our terms and conditions for using our web hosting comparison service.`,
+  description: `Terms of Service for ${SITE_NAME}. Read our terms and conditions governing your use of our web hosting comparison platform, including data accuracy disclaimers and affiliate disclosures.`,
   alternates: {
     canonical: '/terms',
   },

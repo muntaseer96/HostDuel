@@ -7,7 +7,7 @@ import { Star } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Best Cloud Hosting Providers',
-  description: 'Compare the best cloud hosting and IaaS providers. Get scalable infrastructure with comprehensive comparisons.',
+  description: 'Compare the best cloud hosting and IaaS providers side by side. Find scalable cloud infrastructure with pricing, performance benchmarks, and feature comparisons across top platforms.',
 };
 
 export default async function CloudHostingCategory() {

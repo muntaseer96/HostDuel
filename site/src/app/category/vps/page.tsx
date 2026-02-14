@@ -7,7 +7,7 @@ import { Star } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Best VPS Hosting Providers',
-  description: 'Compare the best VPS hosting providers. Get dedicated resources and full control with comprehensive comparisons.',
+  description: 'Compare the best VPS hosting providers side by side. Find virtual private servers with dedicated resources, root access, and full control with pricing and performance comparisons.',
 };
 
 export default async function VPSHostingCategory() {

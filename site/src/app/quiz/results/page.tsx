@@ -249,6 +249,6 @@ export async function generateMetadata({ searchParams }: PageProps) {
 
   return {
     title: `${title} | Hosting Comparison Tool`,
-    description: 'Personalized hosting recommendations based on your specific needs and preferences.',
+    description: 'Personalized web hosting recommendations based on your specific needs, budget, and technical requirements. See top-rated providers matched to your website goals.',
   };
 }

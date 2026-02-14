@@ -7,7 +7,7 @@ import { Star } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Best Website Builders',
-  description: 'Compare the best website builders. Create stunning websites without coding with comprehensive comparisons.',
+  description: 'Compare the best website builders side by side. Create stunning websites without coding using drag-and-drop editors, with pricing and feature comparisons across top platforms.',
 };
 
 export default async function WebsiteBuilderCategory() {

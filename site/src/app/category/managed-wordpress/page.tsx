@@ -7,7 +7,7 @@ import { Star } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Best Managed WordPress Hosting Providers',
-  description: 'Compare the best managed WordPress hosting providers. Get optimized performance and expert support with comprehensive comparisons.',
+  description: 'Compare the best managed WordPress hosting providers side by side. Find WP-optimized hosts with automatic updates, expert support, and performance comparisons across top providers.',
 };
 
 export default async function ManagedWordPressCategory() {

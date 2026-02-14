@@ -4,7 +4,7 @@ import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: `About ${SITE_NAME} - Our mission to help you find the perfect web hosting provider through data-driven comparisons.`,
+  description: `About ${SITE_NAME} - Our mission is to help you find the perfect web hosting provider through data-driven comparisons across 355+ metrics including pricing, performance, and support quality.`,
   alternates: {
     canonical: '/about',
   },

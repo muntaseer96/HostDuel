@@ -7,7 +7,7 @@ import { Star } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Best Shared Hosting Providers',
-  description: 'Compare the best shared hosting providers. Find affordable, beginner-friendly hosting with comprehensive comparisons.',
+  description: 'Compare the best shared hosting providers side by side. Find affordable, beginner-friendly web hosting with pricing, performance ratings, and feature comparisons across top providers.',
 };
 
 export default async function SharedHostingCategory() {
