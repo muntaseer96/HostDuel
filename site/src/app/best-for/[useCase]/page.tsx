@@ -163,6 +163,7 @@ export default async function BestForPage({ params }: PageProps) {
             ratingValue: host.overallRating,
             bestRating: 5,
             worstRating: 1,
+            ratingCount: 1,
           },
         }),
         ...(host.monthlyPrice && {
@@ -171,6 +172,7 @@ export default async function BestForPage({ params }: PageProps) {
             price: host.monthlyPrice,
             priceCurrency: 'USD',
             availability: 'https://schema.org/InStock',
+            priceValidUntil: `${new Date().getFullYear() + 1}-12-31`,
           },
         }),
       },

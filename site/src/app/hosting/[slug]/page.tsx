@@ -119,6 +119,7 @@ export default async function HostPage({ params }: HostPageProps) {
           price: tableRow.monthlyPrice,
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
+          priceValidUntil: `${new Date().getFullYear() + 1}-12-31`,
         }
       : undefined,
     brand: {
