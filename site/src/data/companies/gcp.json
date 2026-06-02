@@ -5,7 +5,7 @@
     "yearFounded": 2008,
     "headquartersCountry": "United States",
     "parentCompany": "Alphabet Inc. (Google subsidiary)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "cloud-iaas",
@@ -14,8 +14,8 @@
   "pricing": {
     "sharedHostingMonthlyPromo": null,
     "sharedHostingMonthlyRenewal": null,
-    "vpsMonthlyLowest": 7.23,
-    "vpsMonthlyRenewal": 7.23,
+    "vpsMonthlyLowest": 6.11,
+    "vpsMonthlyRenewal": 6.11,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
     "wordpressHostingMonthlyPromo": null,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 86.76,
-    "totalSecondYearCost": 86.76,
+    "totalFirstYearCost": 73.32,
+    "totalSecondYearCost": 73.32,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 7.23
+    "effectiveMonthlyAverage": 6.11
   },
   "comparisonData": {
     "uniqueSellingPoint": "Best-in-class AI/ML capabilities, Kubernetes origin, and infrastructure powering managed WordPress hosts like Kinsta",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 6.11,
+      "renewalMonthly": 6.11,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

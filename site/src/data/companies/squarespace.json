@@ -254,15 +254,9 @@
   "priceHistory": [
     {
       "date": "2026-06-02",
-      "promoMonthly": 12,
-      "renewalMonthly": 12,
-      "renewalMarkupPercent": 0
-    },
-    {
-      "date": "2026-06-02",
       "promoMonthly": 19,
       "renewalMonthly": 19,
       "renewalMarkupPercent": 0
     }
-  ]  ]
+  ]
 }
