@@ -90,6 +90,7 @@ export function companyToTableRow(id: string, company: Company): CompanyTableRow
     name: company.basicInfo.companyName,
     hostingType: company.basicInfo.hostingType,
     websiteUrl: company.basicInfo.websiteUrl || null,
+    dataLastUpdated: company.basicInfo.dataLastUpdated || null,
 
     // === ESSENTIAL ===
     monthlyPrice: company.pricing.sharedHostingMonthlyPromo ?? company.pricing.vpsMonthlyLowest ?? company.pricing.wordpressHostingMonthlyPromo,

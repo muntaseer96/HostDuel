@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle, XCircle, ExternalLink, ChevronRight } from 'lucide-react';
+import { CheckCircle, XCircle, ExternalLink, ChevronRight } from 'lucide-react';
 import { Container } from '@/components/layout';
-import { Button, Badge, DataDisclaimer, TrackedLink } from '@/components/ui';
+import { Button, DataDisclaimer, TrackedLink } from '@/components/ui';
 import { getTableRowById } from '@/lib/data';
 import {
   generateComparisonPairs,
@@ -18,6 +18,11 @@ import {
   VerdictSection,
   RelatedComparisons
 } from '@/components/compare';
+import {
+  generateCompareIntro,
+  generateCompareMetaDescription,
+  generateCompareFaqs,
+} from '@/lib/compare-content';
 import { HOSTING_TYPES, type HostingType } from '@/lib/constants';
 import type { Metadata } from 'next';
 import type { CompanyTableRow } from '@/types';
@@ -51,8 +56,13 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
     return { title: 'Comparison Not Found' };
   }
 
+  // Compute winners so the meta description can lead with a real verdict + price,
+  // making each comparison's snippet unique instead of a shared template.
+  const categoryWinners = calculateCategoryWinners(hostA, hostB);
+  const overallWinner = calculateOverallWinner(hostA, hostB, categoryWinners);
+
   const title = `${hostA.name} vs ${hostB.name}: Complete 2026 Comparison | HostDuel`;
-  const description = `Compare ${hostA.name} vs ${hostB.name} side by side. See pricing, features, performance, support, and our expert verdict on which hosting is better for your needs.`;
+  const description = generateCompareMetaDescription(hostA, hostB, categoryWinners, overallWinner);
 
   return {
     title,
@@ -93,6 +103,17 @@ export default async function ComparePage({ params }: ComparePageProps) {
   // Calculate winners
   const categoryWinners = calculateCategoryWinners(hostA, hostB);
   const overallWinner = calculateOverallWinner(hostA, hostB, categoryWinners);
+
+  // Unique, data-derived prose so no two comparison pages read the same
+  const introParagraphs = generateCompareIntro(hostA, hostB, categoryWinners, overallWinner);
+  const faqs = generateCompareFaqs(hostA, hostB, categoryWinners, overallWinner);
+
+  // Freshness signal: use the older of the two hosts' data dates
+  const updatedDates = [hostA.dataLastUpdated, hostB.dataLastUpdated].filter(Boolean) as string[];
+  const lastUpdated = updatedDates.sort()[0] || null;
+  const lastUpdatedLabel = lastUpdated
+    ? new Date(lastUpdated).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
+    : null;
 
   // Get related comparisons
   const relatedForA = await getRelatedComparisons(hostA.id, slug, 2);
@@ -508,6 +529,8 @@ export default async function ComparePage({ params }: ComparePageProps) {
     '@type': 'WebPage',
     name: `${hostA.name} vs ${hostB.name}: Complete 2026 Comparison`,
     description: `Side-by-side comparison of ${hostA.name} and ${hostB.name} web hosting providers.`,
+    url: `https://hostduel.com/compare/${slug}`,
+    ...(lastUpdated && { dateModified: lastUpdated }),
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: [
@@ -559,6 +582,20 @@ export default async function ComparePage({ params }: ComparePageProps) {
     },
   };
 
+  // FAQPage JSON-LD — built from the same data-driven Q&As shown on the page
+  const faqJsonLd = faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
       {/* JSON-LD Schema */}
@@ -566,6 +603,12 @@ export default async function ComparePage({ params }: ComparePageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
 
       {/* Breadcrumbs & Header */}
       <section className="border-b border-border-subtle bg-bg-secondary py-8">
@@ -582,9 +625,16 @@ export default async function ComparePage({ params }: ComparePageProps) {
           <h1 className="text-3xl md:text-4xl font-bold text-foreground">
             {hostA.name} vs {hostB.name}: Complete 2026 Comparison
           </h1>
-          <p className="mt-2 text-text-secondary max-w-2xl">
-            In-depth comparison of these two hosting providers across pricing, performance, features, and support.
-          </p>
+          {introParagraphs.length > 0 && (
+            <p className="mt-2 text-text-secondary max-w-3xl">
+              {introParagraphs[0]}
+            </p>
+          )}
+          {lastUpdatedLabel && (
+            <p className="mt-3 text-xs text-text-muted">
+              Data last updated {lastUpdatedLabel}
+            </p>
+          )}
         </Container>
       </section>
 
@@ -599,6 +649,22 @@ export default async function ComparePage({ params }: ComparePageProps) {
           />
         </Container>
       </section>
+
+      {/* Overview prose — unique per comparison */}
+      {introParagraphs.length > 1 && (
+        <section className="py-8 border-b border-border-subtle">
+          <Container>
+            <h2 className="text-xl font-semibold text-foreground mb-4">
+              {hostA.name} vs {hostB.name}: Overview
+            </h2>
+            <div className="max-w-3xl space-y-4 text-text-secondary leading-relaxed">
+              {introParagraphs.slice(1).map((para, idx) => (
+                <p key={idx}>{para}</p>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* Category Winners */}
       <section className="py-8 border-b border-border-subtle">
@@ -729,6 +795,29 @@ export default async function ComparePage({ params }: ComparePageProps) {
           </div>
         </Container>
       </section>
+
+      {/* FAQ — data-driven, unique per comparison */}
+      {faqs.length > 0 && (
+        <section className="py-8 border-b border-border-subtle">
+          <Container>
+            <h2 className="text-xl font-semibold text-foreground mb-6">
+              {hostA.name} vs {hostB.name}: Frequently Asked Questions
+            </h2>
+            <div className="max-w-3xl space-y-6">
+              {faqs.map((faq, idx) => (
+                <div key={idx}>
+                  <h3 className="text-base font-semibold text-foreground mb-2">
+                    {faq.question}
+                  </h3>
+                  <p className="text-sm text-text-secondary leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* Related Comparisons */}
       {relatedWithNames.length > 0 && (

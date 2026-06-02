@@ -377,6 +377,7 @@ export interface CompanyTableRow {
   name: string;
   hostingType: HostingType | null;
   websiteUrl: string | null;
+  dataLastUpdated: string | null;
 
   // === ESSENTIAL ===
   monthlyPrice: number | null;

@@ -1,7 +1,7 @@
 export const SITE_NAME = 'HostDuel';
 export const SITE_DOMAIN = 'https://hostduel.com';
 export const SITE_DESCRIPTION =
-  'Compare 56 web hosting providers across 355+ data points including pricing, performance, and features. Find the perfect host for your website with expert ratings and side-by-side comparisons.';
+  'Compare 56 web hosting providers across 355+ data points: real pricing, renewal costs, uptime, and features, with expert ratings and side-by-side tables.';
 
 export const HOSTING_TYPES = {
   shared: 'Shared Hosting',
