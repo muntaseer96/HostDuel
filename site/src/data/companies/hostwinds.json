@@ -4,12 +4,12 @@
     "websiteUrl": "https://www.hostwinds.com",
     "yearFounded": 2010,
     "headquartersCountry": "United States",
-    "parentCompany": "Independent (privately held; founded by Peter Holden; bootstrapped)",
+    "parentCompany": "HostPapa (acquired April 2026; previously independent, founded by Peter Holden)",
     "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": true,
     "hostingType": "shared",
-    "notes": "Founded in 2010 by Peter Holden in Tulsa, Oklahoma. Now headquartered in Seattle, Washington. PC Magazine Editors' Choice for best hosting for 10 consecutive years. Focus on customer-centric hosting with 24/7 US-based support. Offers full range from shared hosting to dedicated servers. Known for transparent pricing and highly customizable VPS options."
+    "notes": "Founded in 2010 by Peter Holden in Tulsa, Oklahoma; later headquartered in Seattle, Washington. Acquired by HostPapa in April 2026, adding Seattle, Dallas, and Amsterdam data centers to HostPapa's footprint. PC Magazine Editors' Choice for best hosting for 10 consecutive years. Focus on customer-centric hosting with 24/7 US-based support. Offers full range from shared hosting to dedicated servers. Known for transparent pricing and highly customizable VPS options."
   },
   "pricing": {
     "sharedHostingMonthlyPromo": 4.54,

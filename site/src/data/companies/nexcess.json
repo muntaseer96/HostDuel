@@ -4,12 +4,12 @@
     "websiteUrl": "https://www.nexcess.net",
     "yearFounded": 2000,
     "headquartersCountry": "United States",
-    "parentCompany": "Liquid Web (acquired 2019; merging as one brand)",
+    "parentCompany": "Liquid Web (acquired 2019; now consolidated under the LiquidWeb brand)",
     "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "managed-wordpress",
-    "notes": "Founded 2000, acquired by Liquid Web in 2019. Brands merging as one. Specializes in managed WordPress, WooCommerce, and Magento hosting. Owns 3 private data centers with 25,000+ servers. Known for e-commerce expertise. Offers auto-scaling and premium performance."
+    "notes": "Founded 2000, acquired by Liquid Web in 2019. Now consolidated under LiquidWeb: nexcess.net redirects to liquidweb.com and its managed-WordPress plans are sold as LiquidWeb 'Spark' tiers (from $6/mo). Specializes in managed WordPress, WooCommerce, and Magento hosting. Operates private data centers with 25,000+ servers. Known for e-commerce expertise. Offers auto-scaling and premium performance."
   },
   "pricing": {
     "sharedHostingMonthlyPromo": null,
