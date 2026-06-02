@@ -25,7 +25,7 @@
     "freeDomainDurationMonths": 12,
     "domainTransferLockPeriodDays": 60,
     "setupFee": 0,
-    "moneyBackGuaranteeDays": 45,
+    "moneyBackGuaranteeDays": 30,
     "moneyBackExclusions": "Dedicated servers excluded (30 days only); Domain registrations non-refundable ($17.99 fee if free domain used and cancelled within first year); SSL certificates non-refundable; SiteLock and CodeGuard non-refundable; Administrative fees non-refundable; PayPal and credit card payments only",
     "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal"],
     "autoRenewalDefault": true,
@@ -35,11 +35,11 @@
     "domainPrivacyCostYearly": null
   },
   "technicalSpecs": {
-    "storageGb": null,
-    "storageType": "SSD (Unmetered)",
+    "storageGb": 10,
+    "storageType": "SSD",
     "bandwidthGb": "Unmetered",
     "inodeLimit": 100000,
-    "maxWebsitesAllowed": 1,
+    "maxWebsitesAllowed": 10,
     "maxDatabases": null,
     "maxDatabaseSizeGb": 5,
     "maxFileUploadSizeMb": 50,

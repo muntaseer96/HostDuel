@@ -5,7 +5,7 @@
     "yearFounded": 2011,
     "headquartersCountry": "Malta",
     "parentCompany": "DigitalOcean (acquired September 2022 for $350M)",
-    "dataLastUpdated": "2026-01-12",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": true,
     "hostingType": "vps",
@@ -36,7 +36,7 @@
   },
   "technicalSpecs": {
     "storageGb": 25,
-    "storageType": "SSD",
+    "storageType": "NVMe SSD",
     "bandwidthGb": 1000,
     "inodeLimit": null,
     "maxWebsitesAllowed": "Unlimited",
