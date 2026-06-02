@@ -5,7 +5,7 @@
     "yearFounded": 2009,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (publicly traded on NYSE as NET; founded by Matthew Prince, Lee Holloway, and Michelle Zatlyn)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "cdn-security",
@@ -155,7 +155,7 @@
     "storageOveragePolicy": "Usage-based pricing for R2, KV, D1",
     "accountSuspensionPolicy": "Violation of ToS; abuse; illegal content",
     "resourceAbuseDefinition": "Excessive API calls; abuse of free tier; ToS violations",
-    "hiddenFeesNotes": "Free tier is generous; Paid Workers starts $5/mo for 10M requests; R2 storage charges separate; No egress fees on R2; Pages static assets unlimited and free; Enterprise pricing requires sales contact"
+    "hiddenFeesNotes": "Free tier generous; Pro plan $20/mo (billed annually) or $25/mo monthly; Business $200/mo (annual) or $250/mo monthly; Enterprise/Contract custom; Paid Workers from $5/mo (10M requests); R2 storage charged separately with no egress fees; Pages static assets unlimited and free; Enterprise requires sales contact"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,

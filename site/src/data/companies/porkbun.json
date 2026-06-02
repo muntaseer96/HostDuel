@@ -5,21 +5,21 @@
     "yearFounded": 2014,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (Top Level Design LLC)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "domain-registrar",
     "notes": "Founded 2014 in Portland, Oregon. Known for affordable domain registration with free WHOIS privacy. Over 1 million domains managed. Quirky pig branding. Recently expanded into web hosting. Trustpilot 4.8 excellent reputation. Transparent no-hidden-fees pricing."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 8.00,
-    "sharedHostingMonthlyRenewal": 8.00,
+    "sharedHostingMonthlyPromo": 7.5,
+    "sharedHostingMonthlyRenewal": 7.5,
     "vpsMonthlyLowest": null,
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
-    "wordpressHostingMonthlyPromo": 10.00,
-    "wordpressHostingMonthlyRenewal": 10.00,
+    "wordpressHostingMonthlyPromo": 2.5,
+    "wordpressHostingMonthlyRenewal": 10,
     "cloudHostingMonthlyLowest": 10.00,
     "freeDomainIncluded": false,
     "freeDomainDurationMonths": null,
@@ -215,10 +215,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 80.00,
-    "totalSecondYearCost": 96.00,
+    "totalFirstYearCost": 90,
+    "totalSecondYearCost": 90,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 7.33
+    "effectiveMonthlyAverage": 7.5
   },
   "comparisonData": {
     "uniqueSellingPoint": "Domain registrar with FREE WHOIS privacy, transparent pricing, and affordable Cloud WordPress hosting",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 7.5,
+      "renewalMonthly": 7.5,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

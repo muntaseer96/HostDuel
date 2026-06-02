@@ -5,7 +5,7 @@
     "yearFounded": 1998,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (publicly traded; owned by Apollo Global Management since 2016)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": false,
     "hostingType": "cloud-iaas",
@@ -155,7 +155,7 @@
     "storageOveragePolicy": "Varies by contract",
     "accountSuspensionPolicy": "Violation of ToS; non-payment",
     "resourceAbuseDefinition": "ToS violations; abuse; illegal content",
-    "hiddenFeesNotes": "Premium pricing for managed services; Support quality reported as declining post-outsourcing; Complex enterprise contracts; Best for large enterprises needing multi-cloud management"
+    "hiddenFeesNotes": "Quote-based managed multicloud — no public per-plan VPS specs or fixed pricing; cloud server pricing is vCPU/usage-based billed hourly (~730 hrs/mo); Managed Infrastructure support from $50/mo minimum, Managed Operations from $500/mo minimum; manages AWS/Azure/GCP/OpenStack environments; premium pricing; best for large enterprises needing multicloud management; support quality reported declining post-outsourcing"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,

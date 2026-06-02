@@ -5,7 +5,7 @@
     "yearFounded": 2006,
     "headquartersCountry": "Canada",
     "parentCompany": "Independent (publicly traded NYSE: SHOP)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "ecommerce-platform",
@@ -155,7 +155,7 @@
     "storageOveragePolicy": "Unlimited storage included",
     "accountSuspensionPolicy": "Violation of ToS; payment issues",
     "resourceAbuseDefinition": "ToS violations; fraud; illegal products",
-    "hiddenFeesNotes": "Transaction fees 0.5-2% (unless Shopify Payments); Credit card fees 2.4-2.9% + $0.30; Apps $5-100+/mo extra; Premium themes $150-380; Domain $10-20/yr; Email via third party; No free trial credit card needed (3 days)"
+    "hiddenFeesNotes": "Plans (billed yearly): Basic $29/mo, Grow $95/mo (formerly Shopify tier), Advanced $360/mo, Plus from $2,300/mo; intro 3 days free then $1/mo for 3 months; card rates 2.9%/2.7%/2.5%/2.25% + 30¢ by tier; transaction fees 0.5-2% extra unless using Shopify Payments; apps $5-100+/mo; premium themes $150-380; domain $10-20/yr; email via third party; AI commerce assistant included"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,

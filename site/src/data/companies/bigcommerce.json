@@ -155,7 +155,7 @@
     "storageOveragePolicy": "Unlimited storage included",
     "accountSuspensionPolicy": "Violation of ToS",
     "resourceAbuseDefinition": "ToS violations; fraud; illegal products",
-    "hiddenFeesNotes": "NO TRANSACTION FEES (unlike Shopify); Revenue caps force plan upgrades ($50K Standard, $180K Plus, $400K Pro); Payment processing 2.59% + 49¢; Forced Enterprise plan over $1M; Limited free themes; Apps can add cost; Domains $12+/yr"
+    "hiddenFeesNotes": "Plans (billed annually): Standard $29/mo (up to $50K revenue), Plus $79/mo (up to $180K), Pro $299/mo (up to $400K+), Enterprise custom ($1M+); 15-day free trial; NO BigCommerce transaction fees (0% added) unlike Shopify; card processing ~2.59% + 49¢; revenue caps force plan upgrades; limited free themes; apps can add cost; domains $12+/yr"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,
