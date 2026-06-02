@@ -3,14 +3,21 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Container } from './Container';
 import { Button } from '@/components/ui';
-import { NAV_LINKS, SITE_NAME } from '@/lib/constants';
+import { NAV, isNavGroup, SITE_NAME } from '@/lib/constants';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+
+  const closeMobile = () => {
+    setMobileMenuOpen(false);
+    setMobileExpanded(null);
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-border-subtle bg-background/80 backdrop-blur-lg">
@@ -29,15 +36,61 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 md:flex">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-base font-medium text-text-secondary transition-colors hover:text-foreground"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {NAV.map((item) =>
+              isNavGroup(item) ? (
+                <div
+                  key={item.label}
+                  className="relative"
+                  onMouseEnter={() => setOpenDropdown(item.label)}
+                  onMouseLeave={() => setOpenDropdown(null)}
+                >
+                  <button
+                    type="button"
+                    className="flex items-center gap-1 text-base font-medium text-text-secondary transition-colors hover:text-foreground"
+                    onClick={() => setOpenDropdown((d) => (d === item.label ? null : item.label))}
+                    aria-expanded={openDropdown === item.label}
+                    aria-haspopup="true"
+                  >
+                    {item.label}
+                    <ChevronDown
+                      className={cn('h-4 w-4 transition-transform', openDropdown === item.label && 'rotate-180')}
+                    />
+                  </button>
+
+                  {/* Dropdown panel */}
+                  <div
+                    className={cn(
+                      'absolute right-0 top-full pt-3 w-72 transition-opacity',
+                      openDropdown === item.label ? 'opacity-100 visible' : 'pointer-events-none invisible opacity-0'
+                    )}
+                  >
+                    <div className="rounded-xl border border-border-subtle bg-bg-secondary p-2 shadow-xl">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="block rounded-lg px-3 py-2.5 transition-colors hover:bg-background"
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          <span className="block text-sm font-semibold text-foreground">{child.label}</span>
+                          {child.description && (
+                            <span className="block text-xs text-text-muted mt-0.5">{child.description}</span>
+                          )}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-base font-medium text-text-secondary transition-colors hover:text-foreground"
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
           </div>
 
           {/* CTA Button */}
@@ -62,21 +115,56 @@ export function Header() {
         <div
           className={cn(
             'md:hidden overflow-hidden transition-all duration-300',
-            mobileMenuOpen ? 'max-h-64 pb-4' : 'max-h-0'
+            mobileMenuOpen ? 'max-h-[32rem] pb-4' : 'max-h-0'
           )}
         >
-          <div className="flex flex-col gap-4 pt-4">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-base font-medium text-text-secondary transition-colors hover:text-foreground"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link href="/#compare" onClick={() => setMobileMenuOpen(false)}>
+          <div className="flex flex-col gap-1 pt-4">
+            {NAV.map((item) =>
+              isNavGroup(item) ? (
+                <div key={item.label}>
+                  <button
+                    type="button"
+                    className="flex w-full items-center justify-between py-2 text-base font-medium text-text-secondary"
+                    onClick={() => setMobileExpanded((m) => (m === item.label ? null : item.label))}
+                    aria-expanded={mobileExpanded === item.label}
+                  >
+                    {item.label}
+                    <ChevronDown
+                      className={cn('h-4 w-4 transition-transform', mobileExpanded === item.label && 'rotate-180')}
+                    />
+                  </button>
+                  <div
+                    className={cn(
+                      'overflow-hidden transition-all duration-300',
+                      mobileExpanded === item.label ? 'max-h-96' : 'max-h-0'
+                    )}
+                  >
+                    <div className="flex flex-col gap-1 border-l border-border-subtle pl-4 ml-1 py-1">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="py-1.5 text-sm text-text-secondary transition-colors hover:text-foreground"
+                          onClick={closeMobile}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="py-2 text-base font-medium text-text-secondary transition-colors hover:text-foreground"
+                  onClick={closeMobile}
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
+            <Link href="/#compare" onClick={closeMobile} className="mt-3">
               <Button size="sm" className="w-full">
                 Compare All Hosts
               </Button>

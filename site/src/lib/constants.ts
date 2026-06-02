@@ -41,14 +41,35 @@ export const COMPARISON_CATEGORIES = [
   { id: 'modern-platforms', name: 'Modern Platforms', types: ['jamstack', 'paas'] },
 ] as const;
 
-export const NAV_LINKS = [
-  { href: '/', label: 'Home' },
-  { href: '/compare', label: 'Compare' },
-  { href: '/calculator', label: 'Calculator' },
-  { href: '/quiz', label: 'Find Hosting' },
-  { href: '/research', label: 'Research' },
-  { href: '/blog', label: 'Blog' },
-] as const;
+export interface NavLeaf {
+  label: string;
+  href: string;
+  description?: string;
+}
+export interface NavGroup {
+  label: string;
+  children: NavLeaf[];
+}
+export type NavItem = NavLeaf | NavGroup;
+
+export const isNavGroup = (item: NavItem): item is NavGroup => 'children' in item;
+
+export const NAV: NavItem[] = [
+  { label: 'Home', href: '/' },
+  { label: 'Compare', href: '/compare' },
+  { label: 'Find Hosting', href: '/quiz' },
+  {
+    label: 'Resources',
+    children: [
+      { label: 'True-Cost Calculator', href: '/calculator', description: 'Rank hosts by real multi-year cost' },
+      { label: 'Hosting Alternatives', href: '/alternatives', description: 'Best alternatives to top hosts' },
+      { label: 'Hosting by Country', href: '/best-hosting-in', description: 'Best hosting for your market' },
+      { label: 'Research & Studies', href: '/research', description: 'Original data studies' },
+      { label: 'How We Rate', href: '/methodology', description: 'Our rating methodology' },
+    ],
+  },
+  { label: 'Blog', href: '/blog' },
+];
 
 export const RATING_WEIGHTS = {
   valueForMoney: 0.2,
