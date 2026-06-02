@@ -35,11 +35,11 @@
     "domainPrivacyCostYearly": null
   },
   "technicalSpecs": {
-    "storageGb": 50,
-    "storageType": "NVMe SSD",
+    "storageGb": 20,
+    "storageType": "SSD",
     "bandwidthGb": 100,
     "inodeLimit": 200000,
-    "maxWebsitesAllowed": 1,
+    "maxWebsitesAllowed": 3,
     "maxDatabases": 2,
     "maxDatabaseSizeGb": 3,
     "maxFileUploadSizeMb": 1024,
@@ -124,7 +124,7 @@
     "objectCaching": true,
     "objectCacheType": "ObjectCache",
     "managedWordpressAvailable": true,
-    "wpMultisiteSupport": null
+    "wpMultisiteSupport": true
   },
   "migration": {
     "freeMigration": true,
@@ -174,7 +174,7 @@
   },
   "reputation": {
     "trustpilotRating": 4.7,
-    "trustpilotReviewsCount": 60398,
+    "trustpilotReviewsCount": 68378,
     "g2Rating": 4.4,
     "betterBusinessBureauRating": "N/A (Not in BBB service area)"
   },
