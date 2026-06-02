@@ -15,6 +15,8 @@ const footerLinks = {
     { href: '/quiz', label: 'Hosting Quiz' },
     { href: '/compare', label: 'Compare Hosts' },
     { href: '/calculator', label: 'True-Cost Calculator' },
+    { href: '/alternatives', label: 'Hosting Alternatives' },
+    { href: '/best-hosting-in', label: 'Hosting by Country' },
     { href: '/research', label: 'Research & Studies' },
     { href: '/methodology', label: 'How We Rate' },
   ],

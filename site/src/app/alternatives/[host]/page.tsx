@@ -65,9 +65,9 @@ export default async function AlternativesPage({ params }: { params: Promise<{ h
         <nav className="flex items-center gap-1 text-sm text-text-muted mb-6" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-accent">Home</Link>
           <ChevronRight className="w-4 h-4" />
-          <Link href={`/hosting/${anchor.id}`} className="hover:text-accent">{anchor.name}</Link>
+          <Link href="/alternatives" className="hover:text-accent">Alternatives</Link>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-text-secondary">Alternatives</span>
+          <span className="text-text-secondary">{anchor.name}</span>
         </nav>
 
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 leading-tight">

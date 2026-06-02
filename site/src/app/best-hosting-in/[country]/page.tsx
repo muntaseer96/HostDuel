@@ -63,7 +63,9 @@ export default async function CountryPage({ params }: { params: Promise<{ countr
         <nav className="flex items-center gap-1 text-sm text-text-muted mb-6" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-accent">Home</Link>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-text-secondary">Best hosting in {country}</span>
+          <Link href="/best-hosting-in" className="hover:text-accent">Best Hosting by Country</Link>
+          <ChevronRight className="w-4 h-4" />
+          <span className="text-text-secondary">{country}</span>
         </nav>
 
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 leading-tight">
