@@ -5,7 +5,7 @@
     "yearFounded": 2003,
     "headquartersCountry": "Germany",
     "parentCompany": "Independent (privately held; founded by Michael Herpich and Michael Bolke as Giga-International, rebranded to Contabo 2013)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": true,
     "hostingType": "cloud-iaas",
@@ -37,7 +37,7 @@
   "technicalSpecs": {
     "storageGb": 100,
     "storageType": "SSD/NVMe",
-    "bandwidthGb": 32000,
+    "bandwidthGb": "Unlimited",
     "inodeLimit": null,
     "maxWebsitesAllowed": null,
     "maxDatabases": null,
@@ -101,7 +101,7 @@
   "support": {
     "supportChannels": ["Live Chat", "Ticket", "Phone", "Knowledge Base"],
     "liveChatAvailable": true,
-    "liveChatHours": "Business hours",
+    "liveChatHours": "24/7",
     "phoneSupportAvailable": true,
     "phoneSupportCountries": ["Germany", "United States", "United Kingdom"],
     "phoneSupportHours": "Business hours",
@@ -150,7 +150,7 @@
     "emailForwarding": false
   },
   "policiesOverages": {
-    "bandwidthOveragePolicy": "32TB included; overage billed per TB",
+    "bandwidthOveragePolicy": "Unlimited traffic; fair usage policy applies (throttling for disruptive usage)",
     "bandwidthOverageCost": null,
     "storageOveragePolicy": "Pay for additional storage",
     "accountSuspensionPolicy": "Violation of ToS; non-payment; abuse reports",
@@ -175,8 +175,8 @@
     "affiliateCommissionAmount": "€25-€100 per referral; 30-day cookie"
   },
   "reputation": {
-    "trustpilotRating": 4.2,
-    "trustpilotReviewsCount": 8168,
+    "trustpilotRating": 4.5,
+    "trustpilotReviewsCount": 9514,
     "g2Rating": 4.0,
     "betterBusinessBureauRating": "N/A (Germany-based)"
   },

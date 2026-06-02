@@ -5,7 +5,7 @@
     "yearFounded": 1997,
     "headquartersCountry": "Germany",
     "parentCompany": "Independent (privately held; founded by Martin Hetzner)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "cloud-iaas",
@@ -96,7 +96,7 @@
     "gdprComplianceTools": true,
     "pciCompliance": false,
     "hipaaCompliance": false,
-    "dataCenterCertifications": ["ISO 27001", "SOC 1", "SOC 2"]
+    "dataCenterCertifications": ["ISO 27001", "SOC 1", "SOC 2", "C5 (BSI)"]
   },
   "support": {
     "supportChannels": ["Ticket", "Phone", "Knowledge Base", "Community Forum"],
