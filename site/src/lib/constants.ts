@@ -44,10 +44,10 @@ export const COMPARISON_CATEGORIES = [
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/compare', label: 'Compare' },
+  { href: '/calculator', label: 'Calculator' },
   { href: '/quiz', label: 'Find Hosting' },
   { href: '/research', label: 'Research' },
   { href: '/blog', label: 'Blog' },
-  { href: '/methodology', label: 'Methodology' },
 ] as const;
 
 export const RATING_WEIGHTS = {

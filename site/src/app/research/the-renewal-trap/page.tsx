@@ -245,7 +245,9 @@ export default async function RenewalTrapStudy() {
           <Link href="/methodology" className="text-accent hover:underline">methodology</Link>.
         </p>
         <p className="text-text-secondary">
-          Want to see what a host will <em>really</em> cost you over time? Browse our{' '}
+          Want to see what a host will <em>really</em> cost you over time? Try our{' '}
+          <Link href="/calculator" className="text-accent hover:underline">True-Cost Calculator</Link> to rank
+          hosts by their multi-year price, or browse the{' '}
           <Link href="/compare" className="text-accent hover:underline">side-by-side comparisons</Link> — every
           one shows the renewal price, not just the teaser rate.
         </p>
