@@ -5,7 +5,7 @@
     "yearFounded": 2015,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (VC-backed, $9.3B valuation)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "jamstack",
@@ -155,7 +155,7 @@
     "storageOveragePolicy": "Usage-based pricing",
     "accountSuspensionPolicy": "ToS violations; non-payment; abuse",
     "resourceAbuseDefinition": "Crypto mining; excessive resource usage; ToS violations",
-    "hiddenFeesNotes": "Free tier generous but limited; Hobby tier non-commercial only; Pro $20/mo + usage; Enterprise custom; Serverless function limits; Bandwidth overages can add up; Edge requests 1M hobby/10M pro; Data transfer costs extra"
+    "hiddenFeesNotes": "Hobby free (non-commercial only; hard usage caps; cannot buy additional usage); Pro $20/mo includes $20 usage credit then pay-as-you-go uncapped; Enterprise custom; Edge requests 1M (Hobby)/10M (Pro) then $2/1M; Fast Data Transfer 100GB/1TB then $0.15/GB; Functions, ISR, Blob, Image Optimization all metered; SAML SSO $300/mo; HIPAA BAA $350/mo (Pro); default $200 spend budget with optional hard cap"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,

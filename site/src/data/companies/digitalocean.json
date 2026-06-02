@@ -5,7 +5,7 @@
     "yearFounded": 2012,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (publicly traded NYSE: DOCN since March 2021; major investors include Access Industries, BlackRock, Vanguard)",
-    "dataLastUpdated": "2026-01-13",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": true,
     "hostingType": "cloud-iaas",
@@ -35,9 +35,9 @@
     "domainPrivacyCostYearly": null
   },
   "technicalSpecs": {
-    "storageGb": 25,
+    "storageGb": 10,
     "storageType": "SSD/NVMe",
-    "bandwidthGb": 1000,
+    "bandwidthGb": 500,
     "inodeLimit": null,
     "maxWebsitesAllowed": null,
     "maxDatabases": null,

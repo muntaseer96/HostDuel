@@ -5,7 +5,7 @@
     "yearFounded": 2014,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (VC-backed)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "jamstack",
@@ -150,12 +150,12 @@
     "emailForwarding": false
   },
   "policiesOverages": {
-    "bandwidthOveragePolicy": "Credit-based system; Free: 300 credits/mo; Personal: 1,000; Pro: 3,000; Bandwidth costs 10 credits/GB",
+    "bandwidthOveragePolicy": "Credit-based system; Free: 300 credits/mo (hard limit); Personal: 1,000; Pro: 3,000 (unlimited members); Bandwidth 20 credits/GB; Production deploys 15 credits; Compute 10 credits/GB-hour; Web requests 2 credits/10k",
     "bandwidthOverageCost": null,
     "storageOveragePolicy": "Credit-based usage",
     "accountSuspensionPolicy": "ToS violations; non-payment",
     "resourceAbuseDefinition": "Excessive resource usage; abuse; ToS violations",
-    "hiddenFeesNotes": "Credit-based pricing complex; Free 300 credits/mo; Personal $9/mo; Pro $20/member/mo; Enterprise ~$30K/yr for WAF; Build minutes and bandwidth consume credits; Serverless functions extra; Forms cost credits; Can be expensive at scale"
+    "hiddenFeesNotes": "Credit-based pricing; Free 300 credits/mo (always-free hard limit); Personal $9/mo (1,000 credits); Pro $20/mo for unlimited members (3,000 credits, no per-seat charge as of Apr 2025); Enterprise custom; bandwidth 20 credits/GB; production deploys 15 credits each; auto-recharge off by default; new credit-based plans since Sept 2025; can be expensive at scale"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,
