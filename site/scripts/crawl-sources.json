@@ -1,0 +1,7 @@
+{
+  "_comment": "Per-host source overrides for crawl-host-firecrawl.mjs. Without an entry, a host defaults to its pricing-page URL (or basicInfo.websiteUrl) for facts + its derived Trustpilot page for reputation. The overview page is noisy — point a host at its DEEP features/specs pages here to cut false diffs. Shape: \"<hostId>\": { \"siteUrls\": [\"https://host.com/features\", \"https://host.com/web-hosting\"], \"reputationUrl\": \"https://www.trustpilot.com/review/host.com\" }",
+  "_example_hostinger": {
+    "siteUrls": ["https://www.hostinger.com/web-hosting"],
+    "reputationUrl": "https://www.trustpilot.com/review/hostinger.com"
+  }
+}
