@@ -48,6 +48,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/quiz`, lastModified: hostsLastUpdated, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/about`, lastModified: dataLastUpdated, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/methodology`, lastModified: dataLastUpdated, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/research`, lastModified: hostsLastUpdated, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/research/the-renewal-trap`, lastModified: hostsLastUpdated, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/contact`, lastModified: dataLastUpdated, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/privacy`, lastModified: dataLastUpdated, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${baseUrl}/terms`, lastModified: dataLastUpdated, changeFrequency: 'yearly', priority: 0.3 },
