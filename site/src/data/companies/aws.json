@@ -5,7 +5,7 @@
     "yearFounded": 2006,
     "headquartersCountry": "United States",
     "parentCompany": "Amazon.com Inc. (subsidiary)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "cloud-iaas",
@@ -14,8 +14,8 @@
   "pricing": {
     "sharedHostingMonthlyPromo": null,
     "sharedHostingMonthlyRenewal": null,
-    "vpsMonthlyLowest": 5.00,
-    "vpsMonthlyRenewal": 5.00,
+    "vpsMonthlyLowest": 3.5,
+    "vpsMonthlyRenewal": 3.5,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
     "wordpressHostingMonthlyPromo": null,
@@ -155,7 +155,7 @@
     "storageOveragePolicy": "Pay for additional volumes/snapshots",
     "accountSuspensionPolicy": "Violation of ToS; non-payment; abuse",
     "resourceAbuseDefinition": "Cryptocurrency mining; spam; DDoS; ToS violations",
-    "hiddenFeesNotes": "Free tier 12 months (750 hours Lightsail); Lightsail simple pricing vs complex EC2; Support costs extra ($29-$15,000+/mo); CloudFront CDN separate; Data transfer out charges; Complex billing can surprise users"
+    "hiddenFeesNotes": "Cheapest Lightsail Linux bundle $3.50/mo (IPv6-only) or $5/mo with public IPv4; Free tier: 3 months free on select instance/container/database bundles (since 7/8/2021), 12 months free CDN (50GB) + 5GB object storage; Lightsail simple bundled pricing vs complex EC2; support costs extra ($29-$15,000+/mo); CloudFront CDN separate; data transfer overage $0.09/GB; complex billing can surprise users"
   },
   "contentRestrictions": {
     "adultContentAllowed": true,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 60.00,
-    "totalSecondYearCost": 60.00,
+    "totalFirstYearCost": 42,
+    "totalSecondYearCost": 42,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 5.00
+    "effectiveMonthlyAverage": 3.5
   },
   "comparisonData": {
     "uniqueSellingPoint": "Market-leading cloud provider with 38 regions, most compliance certifications, and Lightsail for simplified VPS at $5/month",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 3.5,
+      "renewalMonthly": 3.5,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }
