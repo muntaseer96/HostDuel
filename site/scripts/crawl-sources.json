@@ -1,7 +1,17 @@
 {
-  "_comment": "Per-host source overrides for crawl-host-firecrawl.mjs. Without an entry, a host defaults to its pricing-page URL (or basicInfo.websiteUrl) for facts + its derived Trustpilot page for reputation. The overview page is noisy — point a host at its DEEP features/specs pages here to cut false diffs. Shape: \"<hostId>\": { \"siteUrls\": [\"https://host.com/features\", \"https://host.com/web-hosting\"], \"reputationUrl\": \"https://www.trustpilot.com/review/host.com\" }",
+  "_comment": "Per-host source overrides for crawl-host-firecrawl.mjs. Without an entry a host defaults to its (legacy) pricing-source URL or basicInfo.websiteUrl — often a homepage, which is marketing fluff with no per-plan specs (see the failed fastcomet/hostpapa runs). Point each host at the DEEP shared/web-hosting plan-spec page that lists per-plan storage/sites/backups/features — the same kind of page that produced clean tmdhosting diffs. URLs below mirror the browser-verified scripts/pricing-urls.json. NOTE: hetzner/contabo/kamatera/ovhcloud are VPS/cloud-first; their shared-spec pages are thin, so the crawl yields low-value facts — run them last. Shape: \"<hostId>\": { \"siteUrls\": [\"https://host.com/web-hosting\"], \"reputationUrl\": \"https://www.trustpilot.com/review/host.com\" } (reputationUrl optional — derived from the domain if omitted).",
   "_example_hostinger": {
     "siteUrls": ["https://www.hostinger.com/web-hosting"],
     "reputationUrl": "https://www.trustpilot.com/review/hostinger.com"
-  }
+  },
+  "fastcomet": { "siteUrls": ["https://www.fastcomet.com/pricing"] },
+  "hostpapa": { "siteUrls": ["https://www.hostpapa.com/web-hosting-plan/"] },
+  "verpex": { "siteUrls": ["https://verpex.com/web-hosting"] },
+  "tmdhosting": { "siteUrls": ["https://www.tmdhosting.com/shared-hosting.html"] },
+  "interserver": { "siteUrls": ["https://www.interserver.net/webhosting/"] },
+  "hostarmada": { "siteUrls": ["https://hostarmada.com/cloud-ssd-shared-hosting/"] },
+  "accuwebhosting": { "siteUrls": ["https://www.accuwebhosting.com/web-hosting"] },
+  "scalahosting": { "siteUrls": ["https://www.scalahosting.com/web-hosting-for-small-business.html"] },
+  "chemicloud": { "siteUrls": ["https://chemicloud.com/pricing/"] },
+  "bluehost": { "siteUrls": ["https://www.bluehost.com/hosting/shared"] }
 }

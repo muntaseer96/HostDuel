@@ -35,12 +35,12 @@
     "domainPrivacyCostYearly": 0
   },
   "technicalSpecs": {
-    "storageGb": 15,
-    "storageType": "SSD",
+    "storageGb": 10,
+    "storageType": "NVMe SSD",
     "bandwidthGb": "Unmetered",
     "inodeLimit": 250000,
     "maxWebsitesAllowed": 1,
-    "maxDatabases": "Unlimited",
+    "maxDatabases": 5,
     "maxDatabaseSizeGb": null,
     "maxFileUploadSizeMb": null,
     "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
@@ -87,7 +87,7 @@
     "dedicatedIpCostMonthly": 2.95,
     "twoFactorAuthentication": true,
     "backupFrequency": "Daily",
-    "backupRetentionDays": 30,
+    "backupRetentionDays": 7,
     "backupRestoreFee": 0,
     "onDemandBackup": true,
     "downloadableBackups": true
@@ -120,7 +120,7 @@
     "wordpressAutoUpdates": true,
     "wordpressStaging": true,
     "woocommerceOptimized": true,
-    "litespeedCache": false,
+    "litespeedCache": true,
     "objectCaching": true,
     "objectCacheType": "Memcached",
     "managedWordpressAvailable": true,
@@ -128,7 +128,7 @@
   },
   "migration": {
     "freeMigration": true,
-    "migrationWebsitesLimit": 3,
+    "migrationWebsitesLimit": 1,
     "migrationServiceQuality": 5,
     "migrationTurnaroundDays": 2,
     "paidMigrationCost": 0
@@ -143,7 +143,7 @@
   },
   "email": {
     "emailAccountsIncluded": true,
-    "emailAccountLimit": "Unlimited",
+    "emailAccountLimit": 5,
     "individualMailboxSizeGb": 0.5,
     "webmailAccess": true,
     "spamFilter": true,

@@ -35,13 +35,13 @@
     "domainPrivacyCostYearly": 0
   },
   "technicalSpecs": {
-    "storageGb": 10,
+    "storageGb": 30,
     "storageType": "NVMe SSD",
     "bandwidthGb": "Unlimited",
     "inodeLimit": 100000,
     "maxWebsitesAllowed": 1,
-    "maxDatabases": 1,
-    "maxDatabaseSizeGb": null,
+    "maxDatabases": "Unlimited",
+    "maxDatabaseSizeGb": 5,
     "maxFileUploadSizeMb": 128,
     "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
     "phpVersionSwitching": true,
@@ -58,7 +58,7 @@
     "subdomainsLimit": "Unlimited",
     "ftpAccountsLimit": "Unlimited",
     "databaseType": "MySQL/MariaDB",
-    "redisAvailable": false,
+    "redisAvailable": true,
     "elasticsearchSupport": false,
     "imageOptimization": true
   },
@@ -68,7 +68,7 @@
     "chooseServerLocation": true,
     "cdnIncluded": true,
     "cdnProvider": "Cloudflare CDN",
-    "uptimeGuaranteePercent": 99.9,
+    "uptimeGuaranteePercent": 99.5,
     "uptimeSlaCredit": true,
     "ddosProtection": true,
     "ddosProtectionLevel": "DDoS protection included",
@@ -83,7 +83,7 @@
     "freeSsl": true,
     "sslProvider": "Let's Encrypt (auto-renewing)",
     "wildcardSslAvailable": true,
-    "dedicatedIpAvailable": false,
+    "dedicatedIpAvailable": true,
     "dedicatedIpCostMonthly": null,
     "twoFactorAuthentication": true,
     "backupFrequency": "Daily",
@@ -143,7 +143,7 @@
   },
   "email": {
     "emailAccountsIncluded": true,
-    "emailAccountLimit": 1,
+    "emailAccountLimit": "Unlimited",
     "individualMailboxSizeGb": null,
     "webmailAccess": true,
     "spamFilter": true,
@@ -175,8 +175,8 @@
     "affiliateCommissionAmount": "Up to $100 per sale"
   },
   "reputation": {
-    "trustpilotRating": 4.7,
-    "trustpilotReviewsCount": 1146,
+    "trustpilotRating": 4.6,
+    "trustpilotReviewsCount": 1263,
     "g2Rating": 4.5,
     "betterBusinessBureauRating": "NR"
   },
