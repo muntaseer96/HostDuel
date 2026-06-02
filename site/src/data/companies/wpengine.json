@@ -37,7 +37,7 @@
   "technicalSpecs": {
     "storageGb": 10,
     "storageType": "SSD",
-    "bandwidthGb": 50,
+    "bandwidthGb": 75,
     "inodeLimit": null,
     "maxWebsitesAllowed": 1,
     "maxDatabases": null,

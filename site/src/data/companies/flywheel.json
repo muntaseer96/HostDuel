@@ -35,9 +35,9 @@
     "domainPrivacyCostYearly": null
   },
   "technicalSpecs": {
-    "storageGb": 5,
+    "storageGb": 10,
     "storageType": "SSD",
-    "bandwidthGb": 20,
+    "bandwidthGb": 50,
     "inodeLimit": null,
     "maxWebsitesAllowed": 1,
     "maxDatabases": null,
