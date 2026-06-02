@@ -5,15 +5,15 @@
     "yearFounded": 2007,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (privately held)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "shared",
     "notes": "Founded 2007 in Orlando, Florida. Independently owned. Data centers across 3 continents (North America, Europe, Asia). Known for solid performance and helpful support. Offers shared, VPS, dedicated, and WordPress hosting. Uses SSD storage and free CDN."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 2.95,
-    "sharedHostingMonthlyRenewal": 7.95,
+    "sharedHostingMonthlyPromo": 9.52,
+    "sharedHostingMonthlyRenewal": 11.9,
     "vpsMonthlyLowest": 19.97,
     "vpsMonthlyRenewal": 29.95,
     "dedicatedMonthlyLowest": 79.97,
@@ -35,12 +35,12 @@
     "domainPrivacyCostYearly": 0
   },
   "technicalSpecs": {
-    "storageGb": "Unlimited",
+    "storageGb": 50,
     "storageType": "SSD",
     "bandwidthGb": "Unlimited",
     "inodeLimit": 250000,
     "maxWebsitesAllowed": 1,
-    "maxDatabases": "Unlimited",
+    "maxDatabases": 5,
     "maxDatabaseSizeGb": null,
     "maxFileUploadSizeMb": 128,
     "phpVersionsAvailable": ["7.4", "8.0", "8.1", "8.2", "8.3"],
@@ -68,7 +68,7 @@
     "chooseServerLocation": true,
     "cdnIncluded": true,
     "cdnProvider": "Cloudflare CDN",
-    "uptimeGuaranteePercent": 99.99,
+    "uptimeGuaranteePercent": 99.9,
     "uptimeSlaCredit": true,
     "ddosProtection": true,
     "ddosProtectionLevel": "DDoS protection included",
@@ -86,8 +86,8 @@
     "dedicatedIpAvailable": true,
     "dedicatedIpCostMonthly": 2.50,
     "twoFactorAuthentication": true,
-    "backupFrequency": "Daily",
-    "backupRetentionDays": 14,
+    "backupFrequency": "None",
+    "backupRetentionDays": 0,
     "backupRestoreFee": 0,
     "onDemandBackup": true,
     "downloadableBackups": true
@@ -111,7 +111,7 @@
     "supportLanguageOptions": ["English"],
     "knowledgeBaseQuality": 4,
     "communityForumActive": false,
-    "averageSupportWaitMinutes": 5,
+    "averageSupportWaitMinutes": 15,
     "supportOutsourced": false
   },
   "wordpressFeatures": {
@@ -120,7 +120,7 @@
     "wordpressAutoUpdates": true,
     "wordpressStaging": true,
     "woocommerceOptimized": true,
-    "litespeedCache": false,
+    "litespeedCache": true,
     "objectCaching": true,
     "objectCacheType": "Memcached",
     "managedWordpressAvailable": true,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 35.40,
-    "totalSecondYearCost": 95.40,
-    "renewalMarkupPercent": 169.49,
-    "effectiveMonthlyAverage": 5.45
+    "totalFirstYearCost": 114.24,
+    "totalSecondYearCost": 142.8,
+    "renewalMarkupPercent": 25,
+    "effectiveMonthlyAverage": 10.71
   },
   "comparisonData": {
     "uniqueSellingPoint": "Solid all-around hosting with 60-day money-back guarantee, green hosting, and BBB A+ rating",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 9.52,
+      "renewalMonthly": 11.9,
+      "renewalMarkupPercent": 25
+    }
+  ]
 }
