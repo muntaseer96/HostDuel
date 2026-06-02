@@ -5,7 +5,7 @@
     "yearFounded": 2018,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (VC-backed)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "paas",
@@ -83,8 +83,8 @@
     "freeSsl": true,
     "sslProvider": "Let's Encrypt (automatic)",
     "wildcardSslAvailable": true,
-    "dedicatedIpAvailable": false,
-    "dedicatedIpCostMonthly": null,
+    "dedicatedIpAvailable": true,
+    "dedicatedIpCostMonthly": 100,
     "twoFactorAuthentication": true,
     "backupFrequency": "Daily",
     "backupRetentionDays": 7,
@@ -155,7 +155,7 @@
     "storageOveragePolicy": "Postgres storage $0.30/GB/month extra",
     "accountSuspensionPolicy": "ToS violations; non-payment",
     "resourceAbuseDefinition": "Crypto mining; abuse; excessive resource usage",
-    "hiddenFeesNotes": "Hobby $0/user; Professional $19/user; Organization $29/user; Web services: Free (512MB), Starter $7, Standard $25, Pro $85; Postgres free tier 256MB; Storage $0.30/GB; HIPAA 20% compute premium or $250 min; Billing prorated to second; Static sites free"
+    "hiddenFeesNotes": "Workspace plans flat (not per-user): Hobby $0, Pro $25/mo, Scale $499/mo, Enterprise custom; Compute (web services): Free 512MB, Starter $7, Standard $25, Pro $85, Pro Plus $175, Pro Max $225, Pro Ultra $450; Postgres from $6/mo (free tier 30-day limit, 256MB); Persistent disks $0.25/GB; Postgres expandable storage $0.30/GB; Bandwidth 5GB (Hobby)/25GB (Pro)/1TB (Scale) then $0.15/GB; Custom domains 2 included then $0.25/domain; Dedicated IPs $100/set (Pro+); HIPAA 20% compute premium (Scale+); billing prorated to the second; static sites free"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,

@@ -5,7 +5,7 @@
     "yearFounded": 2005,
     "headquartersCountry": "United States",
     "parentCompany": "Automattic",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "managed-wordpress",
@@ -18,8 +18,8 @@
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
-    "wordpressHostingMonthlyPromo": 4.00,
-    "wordpressHostingMonthlyRenewal": 4.00,
+    "wordpressHostingMonthlyPromo": 4,
+    "wordpressHostingMonthlyRenewal": 5,
     "cloudHostingMonthlyLowest": 4.00,
     "freeDomainIncluded": true,
     "freeDomainDurationMonths": 12,
@@ -224,10 +224,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 48.00,
-    "totalSecondYearCost": 48.00,
-    "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 4.00
+    "totalFirstYearCost": 48,
+    "totalSecondYearCost": 60,
+    "renewalMarkupPercent": 25,
+    "effectiveMonthlyAverage": 4.5
   },
   "comparisonData": {
     "uniqueSellingPoint": "Official WordPress hosting by Automattic with 100% uptime guarantee and edge caching CDN",
@@ -259,5 +259,13 @@
     "squarespaceMigration": true,
     "webflowExport": false,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 4,
+      "renewalMonthly": 5,
+      "renewalMarkupPercent": 25
+    }
+  ]
 }

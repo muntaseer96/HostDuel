@@ -18,8 +18,8 @@
     "vpsMonthlyRenewal": 7.99,
     "dedicatedMonthlyLowest": 99.00,
     "dedicatedMonthlyRenewal": 99.00,
-    "wordpressHostingMonthlyPromo": 0,
-    "wordpressHostingMonthlyRenewal": 4.99,
+    "wordpressHostingMonthlyPromo": 1.99,
+    "wordpressHostingMonthlyRenewal": 1.99,
     "cloudHostingMonthlyLowest": 3.09,
     "freeDomainIncluded": false,
     "freeDomainDurationMonths": null,
@@ -63,8 +63,8 @@
     "imageOptimization": false
   },
   "serverPerformance": {
-    "serverLocations": ["New Jersey (US)", "Dallas (US)", "Los Angeles (US)", "Amsterdam (Netherlands)", "Singapore", "Sydney (Australia)"],
-    "serverLocationOptionsCount": 6,
+    "serverLocations": ["Denver, CO (US)", "Dallas, TX (US)", "London (UK)", "Frankfurt (Germany)", "Johannesburg (South Africa)", "Mumbai (India)", "Singapore", "Sydney (Australia)"],
+    "serverLocationOptionsCount": 8,
     "chooseServerLocation": true,
     "cdnIncluded": false,
     "cdnProvider": null,
@@ -258,5 +258,5 @@
       "renewalMonthly": 1.99,
       "renewalMarkupPercent": 0
     }
-  ]
+  ]  ]
 }

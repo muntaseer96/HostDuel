@@ -5,7 +5,7 @@
     "yearFounded": 2017,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (VC-backed)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "managed-wordpress",
@@ -18,14 +18,14 @@
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
-    "wordpressHostingMonthlyPromo": 10.00,
-    "wordpressHostingMonthlyRenewal": 10.00,
+    "wordpressHostingMonthlyPromo": 20,
+    "wordpressHostingMonthlyRenewal": 20,
     "cloudHostingMonthlyLowest": 10.00,
-    "freeDomainIncluded": false,
-    "freeDomainDurationMonths": null,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
     "domainTransferLockPeriodDays": null,
     "setupFee": 0,
-    "moneyBackGuaranteeDays": 0,
+    "moneyBackGuaranteeDays": 30,
     "moneyBackExclusions": "NO REFUNDS - 7-day free trial instead of money-back guarantee",
     "acceptedPaymentMethods": ["Credit Card", "PayPal"],
     "autoRenewalDefault": true,
@@ -35,7 +35,7 @@
     "domainPrivacyCostYearly": null
   },
   "technicalSpecs": {
-    "storageGb": 15,
+    "storageGb": 10,
     "storageType": "SSD",
     "bandwidthGb": "Unlimited",
     "inodeLimit": null,
@@ -164,7 +164,7 @@
     "storageOveragePolicy": "Storage overage $2/5GB; Backup storage overage $2/20GB",
     "accountSuspensionPolicy": "ToS violations; non-payment",
     "resourceAbuseDefinition": "Excessive resource usage beyond plan limits",
-    "hiddenFeesNotes": "AI Personal $10/mo (1 site, 25K visits, 10GB SSD); AI Premium $24/mo (3 sites, 100K visits, 15GB); AI Ultimate higher; Agency plans $60+/mo; Visit overages $2/10K extra; Storage overages $2/5GB; Backup storage overages $2/20GB; No email hosting; 14-day free trial; NO REFUNDS; Annual saves 50%; Cloudflare Enterprise CDN included"
+    "hiddenFeesNotes": "Entry AI Starter $20/mo (1 site, 10GB SSD, 10K visits); AI Premium $30/mo (2 sites, 15GB, 20K); AI Ultimate $45/mo (4 sites, 25GB, 50K); Agency Core $160/mo (20 sites); annual saves 30%, 24mo 50%, 36mo 60%; visit overages $2/10K; storage overages $2/5GB; first custom domain free for 1 year (up to $30); 30-day money-back guarantee; no email hosting; Cloudflare Enterprise CDN included"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,
@@ -224,10 +224,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 120.00,
-    "totalSecondYearCost": 120.00,
+    "totalFirstYearCost": 240,
+    "totalSecondYearCost": 240,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 10.00
+    "effectiveMonthlyAverage": 20
   },
   "comparisonData": {
     "uniqueSellingPoint": "AI-powered WordPress site builder with GPT-4 integration and Google Cloud infrastructure across 275 data centers",
@@ -259,5 +259,13 @@
     "squarespaceMigration": true,
     "webflowExport": false,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 20,
+      "renewalMonthly": 20,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }
