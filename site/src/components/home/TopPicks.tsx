@@ -42,6 +42,7 @@ export function TopPicks({ hosts, category, categoryLabel }: TopPicksProps) {
                 <div>
                   <Link
                     href={`/hosting/${host.id}`}
+                    prefetch={false}
                     className="font-semibold text-foreground hover:text-accent"
                   >
                     {host.name}
@@ -84,7 +85,7 @@ export function TopPicks({ hosts, category, categoryLabel }: TopPicksProps) {
               </div>
 
               <div className="flex gap-2">
-                <Link href={`/hosting/${host.id}`} className="flex-1">
+                <Link href={`/hosting/${host.id}`} prefetch={false} className="flex-1">
                   <Button variant="outline" size="sm" className="w-full">
                     Details
                   </Button>

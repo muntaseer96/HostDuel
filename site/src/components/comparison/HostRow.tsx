@@ -95,6 +95,7 @@ export function HostRow({ host, isSelected, onToggleCompare, compareDisabled, co
         <div className="flex flex-col gap-1">
           <Link
             href={`/hosting/${host.id}`}
+            prefetch={false}
             className="font-medium text-foreground hover:text-accent"
           >
             {host.name}
@@ -536,6 +537,7 @@ export function HostRow({ host, isSelected, onToggleCompare, compareDisabled, co
         <div className="flex items-center gap-1">
           <Link
             href={`/hosting/${host.id}`}
+            prefetch={false}
             onClick={() => trackHostClick(host.id, host.name, 'view_details')}
           >
             <Button size="sm" variant="ghost">
