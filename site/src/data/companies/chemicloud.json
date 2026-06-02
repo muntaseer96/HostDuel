@@ -38,7 +38,7 @@
     "storageGb": 20,
     "storageType": "NVMe SSD",
     "bandwidthGb": "Unlimited",
-    "inodeLimit": 200000,
+    "inodeLimit": 250000,
     "maxWebsitesAllowed": 1,
     "maxDatabases": "Unlimited",
     "maxDatabaseSizeGb": null,
@@ -87,7 +87,7 @@
     "dedicatedIpCostMonthly": 4.00,
     "twoFactorAuthentication": true,
     "backupFrequency": "Daily",
-    "backupRetentionDays": 30,
+    "backupRetentionDays": 10,
     "backupRestoreFee": 0,
     "onDemandBackup": true,
     "downloadableBackups": true
@@ -122,7 +122,7 @@
     "woocommerceOptimized": true,
     "litespeedCache": true,
     "objectCaching": true,
-    "objectCacheType": "Memcached",
+    "objectCacheType": "Redis",
     "managedWordpressAvailable": true,
     "wpMultisiteSupport": true
   },

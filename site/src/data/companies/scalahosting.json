@@ -35,8 +35,8 @@
     "domainPrivacyCostYearly": 0
   },
   "technicalSpecs": {
-    "storageGb": 50,
-    "storageType": "SSD",
+    "storageGb": 10,
+    "storageType": "NVMe SSD",
     "bandwidthGb": "Unmetered",
     "inodeLimit": null,
     "maxWebsitesAllowed": 1,
@@ -49,7 +49,7 @@
     "pythonSupport": true,
     "rubySupport": true,
     "sshAccess": true,
-    "sshAccessTierRequired": "All VPS plans",
+    "sshAccessTierRequired": "All shared and VPS plans",
     "gitDeployment": true,
     "wpCliAccess": true,
     "cronJobsAllowed": true,
@@ -60,7 +60,7 @@
     "databaseType": "MySQL/MariaDB",
     "redisAvailable": true,
     "elasticsearchSupport": false,
-    "imageOptimization": null
+    "imageOptimization": true
   },
   "serverPerformance": {
     "serverLocations": ["Dallas, TX (US)", "New York, NY (US)", "Sofia (Bulgaria)", "Bangalore (India)", "London (UK)", "Frankfurt (Germany)", "Amsterdam (Netherlands)", "Singapore", "Sydney (Australia)", "Tokyo (Japan)", "Toronto (Canada)", "Sao Paulo (Brazil)"],

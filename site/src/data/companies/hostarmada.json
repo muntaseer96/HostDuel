@@ -63,8 +63,8 @@
     "imageOptimization": true
   },
   "serverPerformance": {
-    "serverLocations": ["Newark (US)", "Dallas (US)", "Fremont (US)", "Toronto (Canada)", "London (UK)", "Frankfurt (Germany)", "Mumbai (India)", "Singapore", "Sydney (Australia)"],
-    "serverLocationOptionsCount": 9,
+    "serverLocations": ["Newark (US)", "Dallas (US)", "Fremont (US)", "Toronto (Canada)", "London (UK)", "Frankfurt (Germany)", "Milan (Italy)", "Mumbai (India)", "Singapore", "Sydney (Australia)", "Osaka (Japan)"],
+    "serverLocationOptionsCount": 11,
     "chooseServerLocation": true,
     "cdnIncluded": true,
     "cdnProvider": "Cloudflare CDN",
