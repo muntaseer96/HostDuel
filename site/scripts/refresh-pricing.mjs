@@ -112,7 +112,7 @@ function upsertPriceHistory(raw, arr) {
   const idx = raw.indexOf(`"priceHistory":`);
   if (idx >= 0) {
     const close = /\n {2}\]/.exec(raw.slice(idx));
-    const end = idx + close.index + close.length;
+    const end = idx + close.index + close[0].length;
     return raw.slice(0, idx) + `"priceHistory": ${text}` + raw.slice(end);
   }
   // Append before the final top-level brace, comma-joining the previous section.
