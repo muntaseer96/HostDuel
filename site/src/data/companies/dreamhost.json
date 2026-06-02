@@ -25,7 +25,7 @@
     "freeDomainDurationMonths": 12,
     "domainTransferLockPeriodDays": 60,
     "setupFee": 0,
-    "moneyBackGuaranteeDays": 97,
+    "moneyBackGuaranteeDays": 30,
     "moneyBackExclusions": "Only applies to shared hosting with credit card payment; DreamPress has 30-day guarantee; Domain registrations non-refundable; SSL certificates non-refundable; Add-on services non-refundable; Updated to 30 days as of July 2025",
     "acceptedPaymentMethods": ["Credit Card", "Debit Card", "PayPal", "Check"],
     "autoRenewalDefault": true,
@@ -35,11 +35,11 @@
     "domainPrivacyCostYearly": null
   },
   "technicalSpecs": {
-    "storageGb": 50,
+    "storageGb": 25,
     "storageType": "NVMe SSD",
     "bandwidthGb": "Unmetered",
     "inodeLimit": null,
-    "maxWebsitesAllowed": null,
+    "maxWebsitesAllowed": 25,
     "maxDatabases": null,
     "maxDatabaseSizeGb": null,
     "maxFileUploadSizeMb": null,
@@ -174,7 +174,7 @@
   },
   "reputation": {
     "trustpilotRating": 4.7,
-    "trustpilotReviewsCount": 7738,
+    "trustpilotReviewsCount": 8018,
     "g2Rating": 4.0,
     "betterBusinessBureauRating": "Not Accredited"
   },

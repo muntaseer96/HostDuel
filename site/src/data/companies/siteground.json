@@ -5,7 +5,7 @@
     "yearFounded": 2004,
     "headquartersCountry": "Bulgaria",
     "parentCompany": "SiteGround Capital (Cyprus-registered holding)",
-    "dataLastUpdated": "2026-01-12",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": null,
     "hostingType": "shared",
@@ -21,8 +21,8 @@
     "wordpressHostingMonthlyPromo": 2.99,
     "wordpressHostingMonthlyRenewal": 17.99,
     "cloudHostingMonthlyLowest": 100.00,
-    "freeDomainIncluded": false,
-    "freeDomainDurationMonths": null,
+    "freeDomainIncluded": true,
+    "freeDomainDurationMonths": 12,
     "domainTransferLockPeriodDays": 60,
     "setupFee": 0,
     "moneyBackGuaranteeDays": 30,
@@ -155,7 +155,7 @@
     "storageOveragePolicy": "Must upgrade plan; inode limits enforced strictly",
     "accountSuspensionPolicy": "Exceeding inode limits causes suspension; TOS violations lead to termination; abuse investigated promptly",
     "resourceAbuseDefinition": "Exceeding inode limits (200K-600K depending on plan); excessive CPU usage; hosting prohibited content; using >80% inodes blocks git repo creation",
-    "hiddenFeesNotes": "Renewal 6x higher than promo ($2.99 → $17.99); No free domain included; Cloud hosting only 14-day refund; Monthly subscriptions excluded from money-back guarantee; On-demand backups only on GrowBig+; No traditional VPS offering; $35 per additional migration"
+    "hiddenFeesNotes": "Renewal 6x higher than promo ($2.99 → $17.99); Free domain (.com/.us/.org/.net) included for first year only; Cloud hosting only 14-day refund; Monthly subscriptions excluded from money-back guarantee; On-demand backups only on GrowBig+; No traditional VPS offering; $35 per additional migration"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,
