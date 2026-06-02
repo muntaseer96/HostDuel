@@ -1,4 +1,4 @@
-import { getAllTableRows, getTableRowById } from './data';
+import { getAllTableRows } from './data';
 import type { CompanyTableRow, HostingType } from '@/types';
 
 /**

@@ -4,9 +4,9 @@ import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
 import { ResultsCard } from '@/components/quiz/ResultsCard';
 import { getAllTableRows } from '@/lib/data';
-import { getRecommendations, paramsToAnswers, QUIZ_QUESTIONS } from '@/lib/quiz-engine';
+import { getRecommendations, paramsToAnswers } from '@/lib/quiz-engine';
 import type { QuizResultsParams } from '@/types/quiz';
-import { RotateCcw, Share2, ArrowRight, Trophy, CheckCircle } from 'lucide-react';
+import { RotateCcw, ArrowRight, Trophy, CheckCircle } from 'lucide-react';
 
 interface PageProps {
   searchParams: Promise<QuizResultsParams>;
@@ -43,25 +43,6 @@ function AnswersSummary({ params }: { params: QuizResultsParams }) {
         </div>
       )}
     </div>
-  );
-}
-
-// Share button with copy functionality
-function ShareButton({ url }: { url: string }) {
-  return (
-    <Button
-      variant="outline"
-      size="md"
-      className="gap-2"
-      onClick={() => {
-        if (typeof navigator !== 'undefined' && navigator.clipboard) {
-          navigator.clipboard.writeText(url);
-        }
-      }}
-    >
-      <Share2 className="w-4 h-4" />
-      Share Results
-    </Button>
   );
 }
 

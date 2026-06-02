@@ -4,7 +4,7 @@ import { ExternalLink, Star, MapPin, Calendar, Building2 } from 'lucide-react';
 import { Container } from '@/components/layout';
 import { Button, Badge } from '@/components/ui';
 import { trackHostClick } from '@/lib/tracking';
-import { HOSTING_TYPES, HOSTING_TYPE_COLORS, type HostingType } from '@/lib/constants';
+import { HOSTING_TYPES, HOSTING_TYPE_COLORS } from '@/lib/constants';
 import type { Company, CompanyTableRow } from '@/types';
 
 interface HostHeroProps {

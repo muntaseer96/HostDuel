@@ -65,6 +65,20 @@ async function submitToIndexNow(urls) {
 }
 
 async function main() {
+  // Only ping search engines on a real production deploy. Netlify sets CONTEXT to
+  // 'production' | 'deploy-preview' | 'branch-deploy'. Local builds and preview
+  // builds must NOT submit, or we repeatedly re-flag unchanged URLs (and leak build
+  // behaviour onto network/live state). Override with INDEXNOW_FORCE=1 for a manual run.
+  const isProductionDeploy = process.env.CONTEXT === 'production';
+  const forced = process.env.INDEXNOW_FORCE === '1';
+  if (!isProductionDeploy && !forced) {
+    console.log(
+      `[IndexNow] Skipped (CONTEXT="${process.env.CONTEXT ?? 'unset'}"). ` +
+        'Runs only on production deploys; set INDEXNOW_FORCE=1 to submit manually.'
+    );
+    return;
+  }
+
   console.log('[IndexNow] Starting URL submission...');
 
   try {

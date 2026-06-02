@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { getCompanyById, getTableRowById, getAllCompanyIds, getAllTableRows } from '@/lib/data';
 import { Container } from '@/components/layout';
 import { DataDisclaimer } from '@/components/ui';
-import { SITE_NAME, SITE_DOMAIN, HOSTING_TYPES, type HostingType } from '@/lib/constants';
+import { SITE_NAME, SITE_DOMAIN, HOSTING_TYPES } from '@/lib/constants';
 import {
   Breadcrumbs,
   HostHero,
@@ -14,7 +14,7 @@ import {
   HostFAQ,
   AlternativeHosts,
 } from '@/components/host';
-import type { Company, CompanyTableRow } from '@/types';
+import type { Company } from '@/types';
 
 interface HostPageProps {
   params: Promise<{ slug: string }>;

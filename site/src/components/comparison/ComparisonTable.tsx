@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Search, SlidersHorizontal, ArrowUpDown, ArrowUp, ArrowDown, X, Columns3 } from 'lucide-react';
+import { Search, SlidersHorizontal, ArrowUpDown, ArrowUp, ArrowDown, X } from 'lucide-react';
 import { Button, DataDisclaimer } from '@/components/ui';
 import { HostRow } from './HostRow';
 import { FilterSidebar } from './FilterSidebar';
@@ -83,7 +83,6 @@ export function ComparisonTable({ hosts, hostingTypeCounts }: ComparisonTablePro
   const [showFilters, setShowFilters] = useState(false);
   const [selectedHosts, setSelectedHosts] = useState<string[]>([]);
   const [activeColumnSet, setActiveColumnSet] = useState<ColumnSet>('essential');
-  const [showColumnPicker, setShowColumnPicker] = useState(false);
 
   // Smart search - matches name, hosting type, and feature keywords
   const matchesSearch = (host: CompanyTableRow, searchTerm: string): boolean => {

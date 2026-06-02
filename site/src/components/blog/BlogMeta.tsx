@@ -1,5 +1,4 @@
 import { Calendar, Clock, RefreshCw } from 'lucide-react';
-import { Badge } from '@/components/ui';
 import { formatDate } from '@/lib/blog';
 import type { BlogCategory } from '@/types/blog';
 import { CATEGORY_COLORS } from '@/types/blog';

@@ -16,6 +16,39 @@ interface HostRowProps {
   columnSet: ColumnSet;
 }
 
+// Cell renderers are declared at module scope (not inside HostRow) so React
+// keeps a stable component identity across re-renders — see react-hooks/static-components.
+function BooleanCell({ value }: { value: boolean | null }) {
+  if (value === null) return <span className="text-text-muted">—</span>;
+  return value ? (
+    <CheckCircle className="h-4 w-4 text-green-500" />
+  ) : (
+    <XCircle className="h-4 w-4 text-text-muted" />
+  );
+}
+
+function NumberCell({ value, suffix = '' }: { value: number | null; suffix?: string }) {
+  if (value === null) return <span className="text-text-muted">—</span>;
+  return <span className="text-sm text-foreground">{value}{suffix}</span>;
+}
+
+function MoneyCell({ value }: { value: number | null }) {
+  if (value === null) return <span className="text-text-muted">—</span>;
+  return <span className="text-sm text-foreground">${value.toFixed(0)}</span>;
+}
+
+function RatingCell({ value }: { value: number | null }) {
+  if (value === null) return <span className="text-text-muted">—</span>;
+  const color = value >= 4 ? 'text-green-400' : value >= 3 ? 'text-yellow-400' : 'text-red-400';
+  return <span className={cn("text-sm font-medium", color)}>{value.toFixed(1)}</span>;
+}
+
+function ScoreCell({ value }: { value: number | null }) {
+  if (value === null) return <span className="text-text-muted">—</span>;
+  const color = value >= 8 ? 'text-green-400' : value >= 5 ? 'text-yellow-400' : 'text-red-400';
+  return <span className={cn("text-sm font-medium", color)}>{value}/10</span>;
+}
+
 export function HostRow({ host, isSelected, onToggleCompare, compareDisabled, columnSet }: HostRowProps) {
   const formatPrice = (price: number | null) => {
     if (price === null) return 'N/A';
@@ -32,37 +65,6 @@ export function HostRow({ host, isSelected, onToggleCompare, compareDisabled, co
     if (rating === null) return <span className="text-text-muted">N/A</span>;
     const variant = rating >= 4 ? 'success' : rating >= 3 ? 'warning' : 'error';
     return <Badge variant={variant}>{rating.toFixed(1)}</Badge>;
-  };
-
-  const BooleanCell = ({ value }: { value: boolean | null }) => {
-    if (value === null) return <span className="text-text-muted">—</span>;
-    return value ? (
-      <CheckCircle className="h-4 w-4 text-green-500" />
-    ) : (
-      <XCircle className="h-4 w-4 text-text-muted" />
-    );
-  };
-
-  const NumberCell = ({ value, suffix = '' }: { value: number | null; suffix?: string }) => {
-    if (value === null) return <span className="text-text-muted">—</span>;
-    return <span className="text-sm text-foreground">{value}{suffix}</span>;
-  };
-
-  const MoneyCell = ({ value }: { value: number | null }) => {
-    if (value === null) return <span className="text-text-muted">—</span>;
-    return <span className="text-sm text-foreground">${value.toFixed(0)}</span>;
-  };
-
-  const RatingCell = ({ value }: { value: number | null }) => {
-    if (value === null) return <span className="text-text-muted">—</span>;
-    const color = value >= 4 ? 'text-green-400' : value >= 3 ? 'text-yellow-400' : 'text-red-400';
-    return <span className={cn("text-sm font-medium", color)}>{value.toFixed(1)}</span>;
-  };
-
-  const ScoreCell = ({ value }: { value: number | null }) => {
-    if (value === null) return <span className="text-text-muted">—</span>;
-    const color = value >= 8 ? 'text-green-400' : value >= 5 ? 'text-yellow-400' : 'text-red-400';
-    return <span className={cn("text-sm font-medium", color)}>{value}/10</span>;
   };
 
   const hostingTypeColor = host.hostingType

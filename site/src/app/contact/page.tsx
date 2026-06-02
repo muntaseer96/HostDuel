@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { Metadata } from 'next';
 import { Container } from '@/components/layout';
 import { Button, Card } from '@/components/ui';
 import { Send, CheckCircle, AlertCircle } from 'lucide-react';

@@ -26,7 +26,7 @@ interface SpecsGridProps {
   tableRow: CompanyTableRow;
 }
 
-export function SpecsGrid({ company, tableRow }: SpecsGridProps) {
+export function SpecsGrid({ tableRow }: SpecsGridProps) {
   return (
     <section className="py-12 bg-bg-secondary">
       <Container>

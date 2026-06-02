@@ -200,7 +200,7 @@ export default async function Home() {
       <section className="py-16">
         <Container>
           <div className="mx-auto mb-10 max-w-2xl text-center">
-            <h2 className="text-2xl font-bold text-foreground sm:text-3xl">Why Use HostCompare?</h2>
+            <h2 className="text-2xl font-bold text-foreground sm:text-3xl">Why Use HostDuel?</h2>
             <p className="mt-3 text-text-secondary">
               We go beyond the surface to give you the data that actually matters.
             </p>

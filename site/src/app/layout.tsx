@@ -26,14 +26,6 @@ const websiteSchema = {
   name: SITE_NAME,
   url: 'https://hostduel.com',
   description: SITE_DESCRIPTION,
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: 'https://hostduel.com/?search={search_term_string}',
-    },
-    'query-input': 'required name=search_term_string',
-  },
 };
 
 const geistSans = Geist({
@@ -145,12 +137,6 @@ export default function RootLayout({
           <Header />
           <main className="flex-1" suppressHydrationWarning>{children}</main>
           <Footer />
-          {/* Honeypot links - hidden from users, trap bots */}
-          <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: '-9999px', height: 0, width: 0, overflow: 'hidden' }}>
-            <a href="/admin-panel" tabIndex={-1}>Admin</a>
-            <a href="/wp-admin" tabIndex={-1}>WordPress</a>
-            <a href="/.env" tabIndex={-1}>Config</a>
-          </div>
         </div>
       </body>
     </html>

@@ -18,7 +18,7 @@ const categoryIcons: Record<string, React.ReactNode> = {
   beginners: <Users className="h-5 w-5" />,
 };
 
-export function CategoryWinners({ hostA, hostB, winners }: CategoryWinnersProps) {
+export function CategoryWinners({ winners }: CategoryWinnersProps) {
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {winners.map((cw) => (

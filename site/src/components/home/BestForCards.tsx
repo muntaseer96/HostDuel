@@ -7,7 +7,7 @@ import {
   GraduationCap,
   Building,
 } from 'lucide-react';
-import { Card, CardContent, Badge } from '@/components/ui';
+import { Card, CardContent } from '@/components/ui';
 
 const useCases = [
   {
