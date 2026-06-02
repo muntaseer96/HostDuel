@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Container } from '@/components/layout';
 import { BlogCard } from '@/components/blog';
-import { getPostsByCategory } from '@/lib/blog-data';
+import { getPostsByCategory, getNonEmptyCategories } from '@/lib/blog-data';
 import { SITE_NAME } from '@/lib/constants';
 import { BLOG_CATEGORIES, type BlogCategory } from '@/types/blog';
 
@@ -22,8 +22,10 @@ function isBlogCategory(value: string): value is BlogCategory {
   return BLOG_CATEGORIES.some((c) => c.value === value);
 }
 
-export function generateStaticParams() {
-  return BLOG_CATEGORIES.map((c) => ({ category: c.value }));
+export async function generateStaticParams() {
+  // Only pre-render categories that actually have posts — never a blank archive.
+  const categories = await getNonEmptyCategories();
+  return categories.map((c) => ({ category: c.value }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -57,6 +59,14 @@ export default async function BlogCategoryPage({ params }: PageProps) {
   const label = BLOG_CATEGORIES.find((c) => c.value === category)!.label;
   const posts = await getPostsByCategory(category);
 
+  // A category with no posts is not a real archive — 404 it rather than render blank.
+  if (posts.length === 0) {
+    notFound();
+  }
+
+  // Only show chips for categories that actually have posts.
+  const navCategories = await getNonEmptyCategories();
+
   return (
     <section className="py-16">
       <Container>
@@ -73,7 +83,7 @@ export default async function BlogCategoryPage({ params }: PageProps) {
           >
             All
           </Link>
-          {BLOG_CATEGORIES.map((c) => (
+          {navCategories.map((c) => (
             <Link
               key={c.value}
               href={`/blog/category/${c.value}`}

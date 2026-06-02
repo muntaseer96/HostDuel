@@ -2,9 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout';
 import { BlogHero, BlogCard } from '@/components/blog';
-import { getAllPosts, getFeaturedPosts } from '@/lib/blog-data';
+import { getAllPosts, getFeaturedPosts, getNonEmptyCategories } from '@/lib/blog-data';
 import { SITE_NAME } from '@/lib/constants';
-import { BLOG_CATEGORIES } from '@/types/blog';
 import { ArrowRight, BookOpen } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -23,6 +22,7 @@ export const metadata: Metadata = {
 export default async function BlogPage() {
   const allPosts = await getAllPosts();
   const featuredPosts = await getFeaturedPosts();
+  const navCategories = await getNonEmptyCategories();
 
   // Get the first featured post for the hero, rest go to the grid
   const heroPost = featuredPosts[0];
@@ -80,7 +80,7 @@ export default async function BlogPage() {
           >
             All
           </Link>
-          {BLOG_CATEGORIES.map((category) => (
+          {navCategories.map((category) => (
             <Link
               key={category.value}
               href={`/blog/category/${category.value}`}

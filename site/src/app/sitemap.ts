@@ -70,8 +70,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  // Blog category pages
-  const blogCategoryPages: MetadataRoute.Sitemap = BLOG_CATEGORIES.map((c) => ({
+  // Blog category pages — only those that actually have posts (no blank archives).
+  const usedCategories = new Set(posts.map((p) => p.category));
+  const blogCategoryPages: MetadataRoute.Sitemap = BLOG_CATEGORIES.filter((c) =>
+    usedCategories.has(c.value)
+  ).map((c) => ({
     url: `${baseUrl}/blog/category/${c.value}`,
     lastModified: blogLastUpdated,
     changeFrequency: 'weekly' as const,

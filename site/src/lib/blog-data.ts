@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import readingTime from 'reading-time';
 import type { BlogPost, BlogPostMeta, BlogCategory, BlogPostFrontmatter } from '@/types/blog';
+import { BLOG_CATEGORIES } from '@/types/blog';
 
 const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blog');
 
@@ -77,6 +78,17 @@ export async function getAllPosts(): Promise<BlogPostMeta[]> {
 export async function getPostsByCategory(category: BlogCategory): Promise<BlogPostMeta[]> {
   const allPosts = await getAllPosts();
   return allPosts.filter((post) => post.category === category);
+}
+
+/**
+ * Get the blog categories that actually contain at least one post, in the
+ * canonical BLOG_CATEGORIES order. Use this for nav chips, static params, and
+ * the sitemap so we never link to or render an empty category archive.
+ */
+export async function getNonEmptyCategories(): Promise<typeof BLOG_CATEGORIES> {
+  const allPosts = await getAllPosts();
+  const used = new Set(allPosts.map((post) => post.category));
+  return BLOG_CATEGORIES.filter((c) => used.has(c.value));
 }
 
 /**

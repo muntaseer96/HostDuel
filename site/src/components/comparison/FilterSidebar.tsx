@@ -24,13 +24,13 @@ export function FilterSidebar({
     hostingType: true,
     price: true,
     rating: true,
-    uptime: false,
+    uptime: true,
     features: true,
-    technical: false,
-    wordpress: false,
-    support: false,
-    compliance: false,
-    suitability: false,
+    technical: true,
+    wordpress: true,
+    support: true,
+    compliance: true,
+    suitability: true,
   });
 
   const toggleSection = (section: string) => {

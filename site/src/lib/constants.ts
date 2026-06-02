@@ -46,6 +46,7 @@ export const NAV_LINKS = [
   { href: '/compare', label: 'Compare' },
   { href: '/quiz', label: 'Find Hosting' },
   { href: '/blog', label: 'Blog' },
+  { href: '/methodology', label: 'Methodology' },
 ] as const;
 
 export const RATING_WEIGHTS = {
