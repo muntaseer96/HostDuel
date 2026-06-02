@@ -1,0 +1,87 @@
+---
+title: "Bluehost Not Sending WordPress Emails? Why It Happens and How to Fix It"
+description: "Contact form and WordPress notification emails silently failing on Bluehost? Here's why shared hosts block or throttle server mail — and the transactional-SMTP fix that actually works."
+date: "2026-06-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/2.jpg"
+category: "tutorials"
+tags: ["bluehost", "wordpress", "email-deliverability", "troubleshooting"]
+featured: false
+---
+
+A frustrating, hard-to-diagnose problem keeps coming up: WordPress contact forms and notification emails **silently stop sending on Bluehost** — no error, the form says "thanks," but nothing arrives. One widely-shared report put it bluntly: Bluehost was *"stopping contact form emails from popular plugins at the server and not notifying WordPress customers."*
+
+If your Bluehost site's emails vanish, here's what's happening and the fix that reliably solves it.
+
+## Why Shared Hosts Block WordPress Email
+
+WordPress sends mail with PHP's `mail()` function by default. On shared hosting that's a problem for everyone:
+
+- **Spam control:** one compromised site on a shared server can blast spam, so hosts **throttle or block `mail()`** and outbound SMTP to protect the server's IP reputation.
+- **Shared IP reputation:** you share a sending IP with hundreds of sites. If any get flagged, **your** mail lands in spam or is rejected.
+- **No authentication:** `mail()` sends without SPF/DKIM alignment, so Gmail/Outlook increasingly **silently drop** it.
+
+The result: the email "sends" from WordPress's point of view, but the host never relays it — or the recipient's provider discards it. No error surfaces, which is why it's so maddening to debug.
+
+## Confirm It's an Email Problem (2-minute check)
+
+1. Install a test plugin (e.g. **WP Mail SMTP**'s built-in email test, or "Check & Log Email").
+2. Send a test to an address on a **different** provider (send from a Bluehost-hosted site to a Gmail address).
+3. If the test fails or lands in spam, it's a **sending/deliverability** problem — not your form plugin.
+
+## The Fix: Send Through Transactional SMTP
+
+Stop relying on the host's `mail()`. Route WordPress email through a dedicated **transactional email service** that authenticates properly. This is the standard, permanent fix.
+
+### Step by step
+
+1. **Pick a transactional provider** (generous free tiers): Brevo (formerly Sendinblue), Amazon SES, Mailgun, or Postmark.
+2. **Install a free SMTP plugin** — **WP Mail SMTP** or **FluentSMTP**.
+3. **Connect via the provider's API or SMTP** credentials in the plugin.
+4. **Authenticate your domain** — add the provider's **SPF and DKIM** DNS records (and ideally a **DMARC** record). This is the part that actually fixes deliverability.
+5. **Set a real From address** on your own domain (e.g. `hello@yourdomain.com`), not a generic `wordpress@`.
+6. **Send a test** to confirm it now arrives in the inbox.
+
+Once mail flows through an authenticated transactional service, the host's `mail()` throttling no longer matters — and your inbox placement improves dramatically.
+
+> Keep **email separate from hosting** as a general principle. It insulates you from exactly this problem and makes switching hosts painless later — see [email hosting vs web hosting](/blog/email-hosting-vs-web-hosting).
+
+## When the Real Fix Is a Different Host
+
+If you're fighting Bluehost on email *and* other limits, it may be a symptom. [Bluehost](/hosting/bluehost) is a capable shared host (4.6 on Trustpilot), but it's entry-level shared hosting — transactional SMTP solves the email issue on any host, but if you've also outgrown the plan, consider a move:
+
+- **Managed WordPress** with better mail handling — see [best managed WordPress hosting](/blog/best-managed-wordpress-hosting).
+- A host you control (VPS) where you configure your own mail relay.
+
+Either way, **set up transactional SMTP regardless** — even premium hosts benefit from authenticated sending.
+
+## FAQ
+
+### Why are my Bluehost contact form emails not sending?
+
+Shared hosts throttle/block PHP `mail()` to protect the shared IP's reputation, and unauthenticated mail gets silently dropped by Gmail/Outlook. The form "sends" but nothing relays. Fix it with transactional SMTP + SPF/DKIM.
+
+### Will WP Mail SMTP fix Bluehost email?
+
+Yes — when paired with a transactional provider (Brevo, SES, Mailgun) and proper SPF/DKIM records. The plugin alone isn't enough; the authentication is what fixes deliverability.
+
+### Is this a Bluehost-specific problem?
+
+No. Every shared host throttles `mail()` for the same reasons. The transactional-SMTP fix works everywhere, which is why it's best practice on any host.
+
+### Do I need to pay for transactional email?
+
+Usually not at first — Brevo, SES, and Mailgun have free tiers that cover a typical small site's volume.
+
+## Key Takeaways
+
+1. WordPress `mail()` on shared hosting gets **throttled/blocked**, so emails silently fail.
+2. Confirm it's deliverability with a **test email to an external provider**.
+3. **Fix:** route mail through transactional SMTP (Brevo/SES/Mailgun) + a free SMTP plugin.
+4. The real cure is **SPF/DKIM authentication** on your domain.
+5. Keep **email separate from hosting** to avoid this entirely.
+
+---
+
+*Last updated: June 2026*

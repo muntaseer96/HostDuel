@@ -1,0 +1,137 @@
+---
+title: "Why Node.js Won't Run on Your Shared Hosting (Bluehost, Hostinger, cPanel)"
+description: "Node app dies on shared hosting? EADDRINUSE, PM2 getting killed, no persistent process? Here's why shared/cPanel hosting breaks Node.js — and exactly what to host it on instead."
+date: "2026-06-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/7.jpg"
+category: "tutorials"
+tags: ["nodejs", "shared-hosting", "deployment", "cpanel"]
+featured: false
+---
+
+The pattern repeats in every dev community: someone buys cheap shared hosting, tries to deploy a Node app, and hits a wall. *"PM2 daemon keeps dying on Hostinger Premium."* *"Node.js EADDRINUSE on cPanel shared hosting — won't use dynamic PORT."* *"Best way to deploy React + Node.js when my hosting plan doesn't support Node?"*
+
+It's not your code. **Shared hosting was built for PHP, not for long-running Node processes** — and the ways it fights you are predictable once you understand the architecture. Here's what's actually happening and what to host Node on instead.
+
+## Why Shared Hosting Breaks Node.js
+
+Shared hosting (and most cPanel plans) is designed around the **PHP request model**: a request comes in, the web server spins up PHP, it runs, returns HTML, and dies. Nothing stays running. Node is the opposite — it's a **persistent process** that owns a port and runs forever. That mismatch causes every symptom below.
+
+### 1. No persistent process (PM2 keeps dying)
+
+On shared hosting, the provider **kills long-running processes** to protect the shared box. You start your app with PM2, it runs for a while, then the host's process reaper kills it. There's no real daemon support, so "PM2 keeps dying" is the system working as designed — against you.
+
+### 2. You don't own a port (EADDRINUSE / dynamic PORT)
+
+Your Node app wants to `listen` on a port (say 3000). On shared hosting you **don't control ports** — the front-end web server (Apache/LiteSpeed via Phusion Passenger) assigns one and passes it through an environment variable. If you hardcode a port, you get **`EADDRINUSE`** (already in use) or the app simply isn't reachable. The fix the platform *wants* is:
+
+```js
+const port = process.env.PORT || 3000;
+app.listen(port);
+```
+
+…but even when you do this, you're still stuck inside the host's Passenger sandbox with its restart limits.
+
+### 3. cPanel's "Setup Node.js App" is limited
+
+Many cPanel hosts include a **"Setup Node.js App"** tool (Passenger-based). It works for small apps, but:
+
+- It restarts your app on its own schedule, not yours.
+- Background jobs, WebSockets, and workers are flaky or unsupported.
+- Resource limits are tight; a busy app gets throttled or killed.
+
+It's enough for a toy API, not a real backend.
+
+### Does your host even support Node?
+
+Many popular shared hosts simply **don't support Node.js at all** on their entry plans:
+
+| Host | Node.js on shared? | SSH? |
+|------|-------------------|------|
+| [Bluehost](/hosting/bluehost) | No | Yes |
+| [Hostinger](/hosting/hostinger) | No | No |
+| [SiteGround](/hosting/siteground) | No | Yes |
+| [DreamHost](/hosting/dreamhost) | Yes (limited) | Yes |
+| [Hosting.com (A2)](/hosting/a2hosting) | Yes (limited) | Yes |
+
+If you're on Bluehost, Hostinger, or SiteGround shared hosting, the answer to "why won't my Node app run" is simply: **it isn't supported.**
+
+## What to Host Node.js On Instead
+
+You have two good paths depending on how much you want to manage.
+
+### Path 1: A PaaS (easiest — push and deploy)
+
+Platform-as-a-service handles the process, ports, and restarts for you. You `git push` and it runs.
+
+- [Render](/hosting/render) — purpose-built for Node/web services, free tier to start, persistent processes and WebSockets just work.
+- [Vercel](/hosting/vercel) / [Netlify](/hosting/netlify) — ideal if your "Node" is really a **Next.js / serverless API**; less ideal for a always-on stateful backend.
+
+Best for: developers who want zero server admin.
+
+### Path 2: A VPS (full control)
+
+A VPS gives you a real Linux box where Node runs like it does locally — you own the ports, PM2 stays alive, WebSockets and workers all work.
+
+- [DigitalOcean](/hosting/digitalocean) (~$4/mo), [Vultr](/hosting/vultr) (~$2.50/mo), or [Cloudways](/hosting/cloudways) (~$14/mo, managed VPS so you skip most of the sysadmin).
+
+Best for: anyone who needs background jobs, WebSockets, or full control.
+
+### The deploy pattern on a VPS
+
+Once you have a VPS, the reliable setup is:
+
+```bash
+# 1. run your app under a process manager that survives reboots
+npm i -g pm2
+pm2 start app.js --name api
+pm2 startup && pm2 save
+
+# 2. put Nginx in front as a reverse proxy (handles port 80/443 + SSL)
+#    proxy_pass http://localhost:3000;
+
+# 3. add a free SSL cert
+sudo certbot --nginx
+```
+
+PM2 keeps the process alive, Nginx handles public traffic and HTTPS, and nothing kills your app because the box is yours.
+
+## Quick Decision Guide
+
+- **Static front-end + serverless API?** → Vercel or Netlify.
+- **Always-on Node backend, minimal ops?** → Render or Cloudways.
+- **Full control, background workers, WebSockets?** → DigitalOcean / Vultr VPS.
+- **Already on Bluehost/Hostinger and stuck?** → don't fight it; move the Node app to one of the above (keep your marketing site where it is if you like).
+
+## FAQ
+
+### Can I run Node.js on Bluehost or Hostinger shared hosting?
+
+Generally no — their shared plans don't support Node.js. You'd need their VPS/cloud tiers or a different host built for Node.
+
+### How do I fix EADDRINUSE on shared hosting?
+
+Use `process.env.PORT` instead of a hardcoded port so the platform assigns it. But the deeper fix is to move to a VPS/PaaS where you control the port outright.
+
+### Why does PM2 keep dying on shared hosting?
+
+Shared hosts kill long-running processes to protect the shared server. PM2 can't keep a daemon alive there. On a VPS, `pm2 startup && pm2 save` makes it persist across reboots.
+
+### Is a $4 VPS enough for a Node app?
+
+For a small-to-medium app, yes. A 1GB DigitalOcean/Vultr droplet running Node + Nginx handles real traffic fine. Scale up when you need to.
+
+## Key Takeaways
+
+1. Shared hosting is built for **PHP's request model**, not persistent Node processes.
+2. The symptoms — **PM2 dying, EADDRINUSE, no dynamic port** — are the platform, not your code.
+3. Bluehost, Hostinger, and SiteGround shared plans **don't support Node** at all.
+4. Use a **PaaS** (Render/Vercel) for easy deploys or a **VPS** (DO/Vultr/Cloudways) for full control.
+5. On a VPS: **PM2 + Nginx reverse proxy + Certbot** is the reliable stack.
+
+Need a host that actually runs Node? Compare developer-friendly options in our [comparison tool](/compare) or read [best Node.js hosting](/blog/best-nodejs-hosting).
+
+---
+
+*Last updated: June 2026*

@@ -1,0 +1,115 @@
+---
+title: "Dedicated Server vs VPS vs 'Dedicated VM': What You're Actually Buying"
+description: "Some hosts sell 'dedicated servers' that are really virtual machines. Here's how to tell dedicated from VPS from a dedicated-branded VM — and how to verify what you got."
+date: "2026-06-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/12.jpg"
+category: "guides"
+tags: ["dedicated-server", "vps", "hostgator", "buying-guide"]
+featured: false
+---
+
+A complaint that surfaces in hosting forums: *"HostGator sells fake 'dedicated servers' (actually just VMs)."* Whether or not that's true of any specific plan, it points at real confusion the whole industry trades on — the words **"dedicated," "VPS," and "cloud"** get used loosely, and buyers often pay dedicated-server money for something that isn't a dedicated server.
+
+Here's how to tell the three apart and verify exactly what you're renting.
+
+## The Three Things Being Sold
+
+### True dedicated server
+
+An **entire physical machine** is yours. All the CPU cores, all the RAM, all the disks — no other tenants. You get raw performance and full control, and you pay for it (typically **$80–200+/mo**).
+
+### VPS (virtual private server)
+
+One physical server is **sliced into multiple virtual machines**. You get a guaranteed (or "fair use") slice of CPU/RAM and an isolated OS, but you **share the underlying hardware** with other tenants. Much cheaper, and fine for most sites.
+
+### "Dedicated" that's really a VM
+
+Here's the gray area. Some hosts market **a large VPS or a single-tenant VM** as a "dedicated server." It might even be a VM that happens to occupy a whole host — but it's virtualized, not bare metal. Sometimes that's a reasonable product ("dedicated cloud"); sometimes it's a VPS wearing a dedicated-server price tag.
+
+| | True dedicated | VPS | "Dedicated" VM |
+|---|---|---|---|
+| Hardware | Whole physical box | Shared, sliced | Virtualized |
+| Neighbors | None | Yes | Maybe (often none) |
+| Typical price | $80–200+/mo | $4–40/mo | Varies — watch for VPS specs at dedicated prices |
+| Virtualization layer | None (bare metal) | Yes | Yes |
+
+## How to Verify What You Actually Have
+
+Don't trust the product name — check the machine.
+
+### 1. Look for a hypervisor
+
+On the server:
+
+```bash
+systemd-detect-virt        # prints "none" on bare metal, or kvm/vmware/xen/openvz on a VM
+lscpu | grep -i hypervisor # "Hypervisor vendor" line only appears on virtualized hardware
+dmesg | grep -i virtual    # virtualization hints in boot logs
+```
+
+If `systemd-detect-virt` returns anything other than **`none`**, you're on a virtual machine — regardless of what the plan is called.
+
+### 2. Check the CPU is real and whole
+
+```bash
+lscpu
+```
+
+A true dedicated server reports a **specific physical CPU model** (e.g. "Intel Xeon E-2388G") and a sane core count. A VM often shows a generic or partial CPU and a virtualized topology.
+
+### 3. Match specs to the price
+
+A "dedicated server" advertised with **4 vCPU / 8GB RAM** for a low price is almost certainly a **VPS**. Real dedicated boxes list **physical CPU models, full RAM (32–128GB+), and physical disks** — not "vCPUs."
+
+## When You Actually Need Bare Metal
+
+Most people **don't** need a true dedicated server. A good VPS or cloud instance covers the vast majority of sites and apps. Bare metal earns its premium only when you need:
+
+- **Consistent, no-neighbor performance** (heavy databases, real-time workloads).
+- **Full hardware control** (custom kernels, specific hardware, compliance isolation).
+- **Maximum single-tenant security**.
+
+If you don't have one of those needs, a **dedicated-vCPU VPS** gives you near-dedicated performance at a fraction of the cost.
+
+## Honest Buying Advice
+
+To be fair to [HostGator](/hosting/hostgator) and the budget brands: they hold solid public ratings (HostGator sits at **4.5 on Trustpilot** across ~16k reviews). The issue isn't that their servers don't work — it's **naming and expectations**. If you pay for "dedicated," make sure you're getting dedicated.
+
+- **Read the spec sheet, not the product name.** "vCPU" = virtual. "Physical cores / Xeon / EPYC" = bare metal.
+- **Ask support directly:** "Is this bare metal or a VM?" Get it in writing.
+- **Compare price-to-spec.** If a "dedicated server" costs like a VPS, it probably is one.
+- **For honest bare metal**, established providers publish the exact CPU model and physical specs — look for that transparency.
+
+## FAQ
+
+### Are HostGator's dedicated servers fake?
+
+HostGator does offer server plans, but forum users have argued some "dedicated" offerings are virtualized. Don't take either side on faith — **run `systemd-detect-virt`** on the box. It'll tell you definitively whether it's bare metal or a VM.
+
+### Is a VPS as good as a dedicated server?
+
+For most sites, yes — and often better value. A **dedicated-vCPU VPS** delivers consistent performance without the cost of a whole physical machine. You only need true dedicated for heavy, no-neighbor workloads.
+
+### How do I know if I'm on a VM?
+
+Run `systemd-detect-virt`. Output of `none` = bare metal; `kvm`, `vmware`, `xen`, or `openvz` = a virtual machine.
+
+### Why do hosts call a VM a "dedicated server"?
+
+"Dedicated" sells. A single-tenant VM can legitimately be called "dedicated cloud," but the line gets blurry when VPS-class specs are sold at dedicated prices. Verify before you pay.
+
+## Key Takeaways
+
+1. **Dedicated** = whole physical box; **VPS** = a slice; **"dedicated VM"** = virtualized, sometimes mispriced.
+2. The product **name** isn't proof — `systemd-detect-virt` is.
+3. "vCPU" specs at a "dedicated" price = it's a VPS.
+4. Most sites don't need bare metal; a **dedicated-vCPU VPS** is the sweet spot.
+5. Ask support "bare metal or VM?" and get it in writing.
+
+Comparing VPS and dedicated options? See real specs side by side in our [comparison tool](/compare), or read [shared vs VPS vs dedicated hosting](/blog/shared-vs-vps-vs-dedicated-hosting).
+
+---
+
+*Last updated: June 2026*

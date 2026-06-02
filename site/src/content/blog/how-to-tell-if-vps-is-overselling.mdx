@@ -1,0 +1,114 @@
+---
+title: "How to Tell If Your VPS Host Is Overselling (And How to Test It)"
+description: "That '8GB VPS' feels like 2GB? You may be on an oversold node. Here's how to detect CPU steal, fake NVMe, and burst RAM — plus the providers known for not overselling."
+date: "2026-06-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/9.jpg"
+category: "guides"
+tags: ["vps", "overselling", "performance", "contabo"]
+featured: false
+---
+
+There's a question that comes up constantly in hosting communities: *"Anyone else notice how hard it is to find VPS providers that don't oversell everything?"* One user even posted benchmarks showing a host *"advertises NVMe storage but delivers SSD-level performance — with proof."*
+
+This is **overselling**: a provider sells more virtual resources than the physical server actually has, betting that not everyone uses their full allocation at once. Usually that bet is fine. When it isn't, your "8GB, 4-core NVMe" VPS performs like a fraction of that — and the spec sheet won't tell you.
+
+Here's how to detect it before *and* after you buy.
+
+## What "Overselling" Actually Means
+
+A physical server has fixed CPU cores, RAM, and disk. A host slices it into VPS plans. Overselling happens when the **sum of all plans on that node exceeds the hardware**:
+
+- **CPU oversell** — 40 vCPUs sold on a 16-core machine. When neighbors get busy, you wait for CPU time ("steal").
+- **RAM oversell** — relying on the fact that most VPSes idle below their cap. Fine until several spike together.
+- **Disk/IO oversell** — "NVMe" branding on storage that delivers SATA-SSD speeds because the IO is shared across too many tenants.
+
+It's not always malicious — light overselling keeps prices low and most users never notice. The problem is the **bad nodes**, where you're packed in with noisy neighbors and there's no way to know from the marketing.
+
+## How to Detect It on a VPS You Already Have
+
+You can measure all three in a few minutes over SSH.
+
+### 1. CPU steal time
+
+"Steal" is the percentage of time your virtual CPU wanted to run but the physical CPU was busy with someone else.
+
+```bash
+# install sysstat if needed, then:
+mpstat 1 5
+```
+
+Look at the **`%steal`** column. A healthy node sits near **0**. Consistently **5%+** means you're competing for CPU; **double digits** means the node is oversold.
+
+### 2. Disk speed (is that "NVMe" real?)
+
+```bash
+# rough sequential write test
+dd if=/dev/zero of=test.img bs=1M count=1024 oflag=dsync
+# random IO (install fio):
+fio --name=rand --rw=randread --bs=4k --size=1G --numjobs=1 --runtime=30 --time_based
+```
+
+Real NVMe should post **hundreds of MB/s to several GB/s** and high random IOPS. If your "NVMe" plan reads like a slow SATA SSD (~100–300 MB/s, low IOPS), the storage is shared/throttled.
+
+### 3. RAM behavior
+
+Watch `free -m` and `vmstat 1` under load. If you hit swap or get OOM-killed well below your advertised RAM, or performance collapses when neighbors are active, that's a red flag.
+
+### 4. Read the ToS and the benchmark forums
+
+Before buying, search **"[host] overselling benchmark"** and check **LowEndTalk / r/webhosting** threads. Look in the ToS for **"fair use"** CPU language — heavy fair-use restrictions on a "dedicated core" plan is a tell.
+
+## Providers and the Overselling Reputation
+
+To be fair: overselling exists across budget VPS, and a high rating doesn't rule it out. [Contabo](/hosting/contabo), the most-cited name in overselling discussions, still holds a **4.5 Trustpilot** — its low prices ($4.50/mo flat) come with a documented tradeoff of variable performance and the NVMe-vs-SSD complaints above.
+
+The pattern is consistent: **the cheaper and more "generous" the spec for the price, the more likely some overselling is baked in.**
+
+| What you want | What to look for |
+|---------------|------------------|
+| Honest CPU | **"dedicated vCPU"** plans (not "fair use" shared cores) |
+| Real NVMe | Published IOPS figures, not just "NVMe" branding |
+| Predictable RAM | Reputable provider, transparent node density |
+| Proof | Independent benchmarks, not marketing |
+
+### Providers known for *not* overselling (you pay a bit more)
+
+- [Vultr](/hosting/vultr) — High-Frequency and dedicated-vCPU plans with published specs (~$2.50/mo entry).
+- [DigitalOcean](/hosting/digitalocean) — predictable shared + dedicated-CPU droplets (~$4/mo entry).
+- **Dedicated-vCPU tiers** generally (Vultr, DO, Linode/Akamai) — you pay for guaranteed cores, and `%steal` stays near zero.
+
+The honest tradeoff: a no-oversell VPS costs more per GB of RAM than a Contabo-style plan. For a hobby box, the cheap oversold option may be fine. For anything customer-facing, **pay for guaranteed resources** — the "deal" isn't a deal if it runs at half speed.
+
+## FAQ
+
+### Is overselling illegal?
+
+No — it's standard practice and usually invisible to the user. It becomes a problem only on **overpacked nodes** where your performance suffers.
+
+### Why does my "NVMe" VPS feel slow?
+
+Either the storage IO is shared across too many tenants (so you never see NVMe speeds), or CPU steal is bottlenecking you. Run the `fio` and `mpstat` tests above to find out which.
+
+### Is Contabo bad?
+
+Not "bad" — it's **cheap with a tradeoff**. Great price-per-GB, but variable performance and documented NVMe-vs-SSD complaints. Fine for non-critical workloads; risky for production sites that need consistent speed.
+
+### What's a safe steal-time number?
+
+Near **0%** is healthy. Brief spikes are normal; **sustained 5%+** means contention, and **10%+** means the node is oversold.
+
+## Key Takeaways
+
+1. Overselling = more virtual resources sold than the hardware has.
+2. Test it: **`%steal` (mpstat)**, **disk IO (fio/dd)**, and **RAM under load**.
+3. Cheap, "generous" specs are the ones most likely oversold.
+4. For production, choose **dedicated-vCPU** plans with published specs.
+5. Verify with **independent benchmarks**, not marketing copy.
+
+Comparing VPS plans? Our [comparison tool](/compare) lists real specs side by side, or take the [hosting quiz](/quiz) for a match based on your workload.
+
+---
+
+*Last updated: June 2026*

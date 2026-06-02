@@ -1,0 +1,97 @@
+---
+title: "Best Laravel Hosting in 2026 (And Why Shared Hosting Isn't It)"
+description: "What to host a Laravel app on — Forge + VPS, Cloudways, or a PaaS — plus the honest answer to 'does Pantheon support Laravel?' and why cheap shared hosting struggles with Laravel."
+date: "2026-06-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/10.jpg"
+category: "guides"
+tags: ["laravel", "php-hosting", "vps", "developers"]
+featured: false
+---
+
+Laravel runs on PHP, so in theory any PHP host works. In practice, a real Laravel app wants things cheap shared hosting fights you on: **SSH and Composer, a modern PHP version, queue workers, a scheduler (cron), and often Redis**. Get those wrong and you're stuck `ftp`-ing files and wondering why your queues don't run.
+
+Here's what actually fits Laravel in 2026, matched to how much you want to manage.
+
+## What Laravel Actually Needs From a Host
+
+- **SSH access + Composer** — Laravel is deployed via Composer, not file upload. No SSH = pain.
+- **Modern PHP (8.2+)** with common extensions.
+- **A queue worker** that stays running (`php artisan queue:work`) — same persistent-process problem Node has on shared hosting.
+- **The scheduler** — a single cron entry running `schedule:run` every minute.
+- **Redis or Memcached** for cache/queues at any real scale.
+- **Zero-downtime deploys** ideally (Envoyer, Deployer, or a PaaS).
+
+The queue worker is the kicker: budget shared hosting kills long-running processes, so your jobs silently stop. That alone pushes serious Laravel to a VPS or PaaS.
+
+## Best Laravel Hosting, by Approach
+
+### 1. Laravel Forge + a VPS (the community default)
+
+The most popular setup by far: **Laravel Forge** provisions and manages a VPS for you on [DigitalOcean](/hosting/digitalocean) (~$4/mo), [Vultr](/hosting/vultr) (~$2.50/mo), [Hetzner](/hosting/hetzner) (~$3.49/mo), or others. Forge handles Nginx, PHP, queues, scheduler, SSL, and deploys — you get a real server tuned for Laravel without hand-configuring it.
+
+Best for: most production Laravel apps. You pay the VPS price + Forge's flat fee.
+
+### 2. Managed VPS — [Cloudways](/hosting/cloudways)
+
+If you'd rather not touch server config at all, **Cloudways** (~$14/mo) gives you a managed VPS with PHP, Redis, and queue support built in, on top of DO/Vultr/Linode. Less control than Forge, less work.
+
+Best for: developers/agencies who want managed without learning server admin.
+
+### 3. PaaS — [Render](/hosting/render) (or Laravel Cloud)
+
+Want pure `git push`? **Render** (~$7/mo) runs Laravel as a web service with managed Postgres/Redis and background workers as first-class citizens. Laravel's own **Laravel Cloud** is also purpose-built if you want the first-party platform.
+
+Best for: teams that want zero server management.
+
+### 4. Small/hobby Laravel — quality shared with SSH
+
+For a small app, a developer-friendly shared host with **SSH + Composer** works: [Hosting.com (A2)](/hosting/a2hosting) supports SSH and Node and is Laravel-tolerant. Just know you'll be limited on long-running queue workers.
+
+Best for: tiny side projects, not production with heavy jobs.
+
+## "Does Pantheon Support Laravel Hosting?"
+
+Short answer: **no, not really.** [Pantheon](/hosting/pantheon) is a purpose-built PaaS for **WordPress and Drupal** — its entire workflow, caching, and tooling are tuned for those CMSes. It is **not** a general-purpose Laravel platform. If you searched for this, you want a Laravel-friendly PaaS like **Render** or **Laravel Cloud**, or **Forge + a VPS** — not Pantheon.
+
+## Quick Pick
+
+| You want… | Use |
+|-----------|-----|
+| The standard production setup | **Forge + DigitalOcean/Vultr/Hetzner** |
+| Managed, minimal server work | **Cloudways** |
+| Push-to-deploy, no server | **Render** / Laravel Cloud |
+| Cheap hobby app | quality **shared host with SSH** (Hosting.com) |
+| WordPress/Drupal (not Laravel) | Pantheon |
+
+## FAQ
+
+### Can I run Laravel on shared hosting?
+
+A small app, yes — if the host gives you SSH and Composer. But **queue workers and the scheduler** struggle on shared hosting because long-running processes get killed. For production, use Forge + a VPS, Cloudways, or a PaaS.
+
+### What's the most popular Laravel hosting setup?
+
+**Laravel Forge managing a VPS** (DigitalOcean, Vultr, or Hetzner). It's the community default because it handles deploys, queues, scheduler, and SSL on a server you control.
+
+### Does Pantheon support Laravel?
+
+No — Pantheon is built for WordPress and Drupal, not general Laravel apps. Use Render, Laravel Cloud, or Forge + a VPS instead.
+
+### Do I need Redis for Laravel?
+
+Not for a tiny app, but for caching, sessions, and queues at any real scale, yes. Forge, Cloudways, and Render all make Redis easy to add.
+
+## Key Takeaways
+
+1. Laravel needs **SSH + Composer, modern PHP, queue workers, scheduler, and often Redis**.
+2. **Forge + a VPS** is the production default; **Cloudways** is the managed route; **Render/Laravel Cloud** is the no-server route.
+3. Shared hosting can run tiny Laravel apps but **chokes on queue workers**.
+4. **Pantheon does not host Laravel** — it's WordPress/Drupal only.
+
+Compare developer-friendly hosts in our [comparison tool](/compare) or read [why Node.js won't run on shared hosting](/blog/why-nodejs-wont-run-on-shared-hosting) — Laravel queues hit the same wall.
+
+---
+
+*Last updated: June 2026*
