@@ -144,7 +144,7 @@
   "email": {
     "emailAccountsIncluded": true,
     "emailAccountLimit": 2,
-    "individualMailboxSizeGb": 1,
+    "individualMailboxSizeGb": 5,
     "webmailAccess": true,
     "spamFilter": true,
     "emailForwarding": true

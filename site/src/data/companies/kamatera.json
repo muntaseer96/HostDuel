@@ -5,7 +5,7 @@
     "yearFounded": 1995,
     "headquartersCountry": "Israel",
     "parentCompany": "Independent (privately held)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "cloud-iaas",
@@ -36,8 +36,8 @@
   },
   "technicalSpecs": {
     "storageGb": 20,
-    "storageType": "SSD",
-    "bandwidthGb": 1000,
+    "storageType": "NVMe SSD",
+    "bandwidthGb": 5000,
     "inodeLimit": null,
     "maxWebsitesAllowed": null,
     "maxDatabases": null,
@@ -63,8 +63,8 @@
     "imageOptimization": null
   },
   "serverPerformance": {
-    "serverLocations": ["New York (US)", "Dallas (US)", "Santa Clara (US)", "Miami (US)", "Toronto (Canada)", "London (UK)", "Amsterdam (Netherlands)", "Frankfurt (Germany)", "Tel Aviv (Israel)", "Hong Kong", "Singapore", "Sydney (Australia)", "Tokyo (Japan)", "Mumbai (India)", "Chicago (US)", "Denver (US)", "Seattle (US)", "Stockholm (Sweden)"],
-    "serverLocationOptionsCount": 18,
+    "serverLocations": ["New York (US)", "Dallas (US)", "Santa Clara (US)", "Miami (US)", "Atlanta (US)", "Los Angeles (US)", "Chicago (US)", "Seattle (US)", "Toronto (Canada)", "London (UK)", "Amsterdam (Netherlands)", "Frankfurt (Germany)", "Milan (Italy)", "Madrid (Spain)", "Stockholm (Sweden)", "Tel Aviv (Israel)", "Hong Kong", "Singapore", "Sydney (Australia)", "Tokyo (Japan)"],
+    "serverLocationOptionsCount": 20,
     "chooseServerLocation": true,
     "cdnIncluded": false,
     "cdnProvider": null,

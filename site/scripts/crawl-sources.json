@@ -13,5 +13,9 @@
   "accuwebhosting": { "siteUrls": ["https://www.accuwebhosting.com/web-hosting"] },
   "scalahosting": { "siteUrls": ["https://www.scalahosting.com/web-hosting-for-small-business.html"] },
   "chemicloud": { "siteUrls": ["https://chemicloud.com/pricing/"] },
-  "bluehost": { "siteUrls": ["https://www.bluehost.com/hosting/shared"] }
+  "bluehost": { "siteUrls": ["https://www.bluehost.com/hosting/shared"] },
+  "kamatera": { "siteUrls": ["https://www.kamatera.com/pricing/"] },
+  "ovhcloud": { "siteUrls": ["https://www.ovhcloud.com/en/web-hosting/"] },
+  "hetzner": { "siteUrls": ["https://www.hetzner.com/cloud"] },
+  "contabo": { "siteUrls": ["https://contabo.com/en/vps/"] }
 }
