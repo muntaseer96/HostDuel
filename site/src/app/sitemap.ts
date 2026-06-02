@@ -3,6 +3,7 @@ import { getAllCompanies } from '@/lib/data';
 import { generateComparisonPairs, getComparisonSlug } from '@/lib/comparisons';
 import { getAllPosts } from '@/lib/blog-data';
 import { USE_CASES } from '@/lib/constants';
+import { TOP_HOSTS, TOP_COUNTRIES, countrySlug } from '@/lib/programmatic';
 import { BLOG_CATEGORIES } from '@/types/blog';
 
 const baseUrl = 'https://hostduel.com';
@@ -108,6 +109,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
+  // Programmatic alternatives pages (curated top hosts) — track host data freshness
+  const alternativesPages: MetadataRoute.Sitemap = TOP_HOSTS.map((id) => ({
+    url: `${baseUrl}/alternatives/${id}`,
+    lastModified: hostDate.get(id) ?? hostsLastUpdated,
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }));
+
+  // Programmatic "best hosting in [country]" pages (curated markets)
+  const countryPages: MetadataRoute.Sitemap = TOP_COUNTRIES.map((c) => ({
+    url: `${baseUrl}/best-hosting-in/${countrySlug(c)}`,
+    lastModified: hostsLastUpdated,
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...bestForPages,
@@ -116,5 +133,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...hostPages,
     ...comparisonPages,
     ...blogPages,
+    ...alternativesPages,
+    ...countryPages,
   ];
 }

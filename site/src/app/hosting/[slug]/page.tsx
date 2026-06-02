@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getCompanyById, getTableRowById, getAllCompanyIds, getAllTableRows } from '@/lib/data';
+import { TOP_HOSTS } from '@/lib/programmatic';
 import { Container } from '@/components/layout';
 import { DataDisclaimer } from '@/components/ui';
 import { SITE_NAME, SITE_DOMAIN, HOSTING_TYPES } from '@/lib/constants';
@@ -228,6 +230,20 @@ export default async function HostPage({ params }: HostPageProps) {
       {/* Alternative Hosts */}
       {alternatives.length > 0 && (
         <AlternativeHosts hosts={alternatives} currentHostName={company.basicInfo.companyName} />
+      )}
+
+      {/* Link to the dedicated, ranked alternatives breakdown (curated hosts only) */}
+      {(TOP_HOSTS as readonly string[]).includes(slug) && (
+        <section className="pb-12">
+          <Container>
+            <Link
+              href={`/alternatives/${slug}`}
+              className="inline-flex items-center gap-1 text-accent font-medium hover:underline"
+            >
+              See the full ranked breakdown of {company.basicInfo.companyName} alternatives →
+            </Link>
+          </Container>
+        </section>
       )}
     </>
   );
