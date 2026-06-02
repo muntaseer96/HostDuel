@@ -70,6 +70,14 @@ export default async function Home() {
     ...hosts.filter((h) => h.monthlyPrice !== null).map((h) => h.monthlyPrice as number)
   );
 
+  // "Data Updated" label, derived from the newest host refresh — never hardcoded.
+  const dataUpdatedTimes = hosts
+    .map((h) => (h.dataLastUpdated ? Date.parse(h.dataLastUpdated) : NaN))
+    .filter((t) => !Number.isNaN(t));
+  const dataUpdatedLabel = (
+    dataUpdatedTimes.length ? new Date(Math.max(...dataUpdatedTimes)) : new Date()
+  ).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+
   return (
     <>
       {/* JSON-LD Structured Data for Host List */}
@@ -257,7 +265,7 @@ export default async function Home() {
               </div>
               <div>
                 <p className="font-medium text-foreground">Data Updated</p>
-                <p className="text-sm text-text-secondary">January 2026</p>
+                <p className="text-sm text-text-secondary">{dataUpdatedLabel}</p>
               </div>
             </div>
             <div className="flex items-center gap-4 rounded-lg border border-border-subtle bg-background/50 p-4">
