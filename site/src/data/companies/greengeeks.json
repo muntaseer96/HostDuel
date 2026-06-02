@@ -5,7 +5,7 @@
     "yearFounded": 2008,
     "headquartersCountry": "United States",
     "parentCompany": "Private (founded by Trey Gardner)",
-    "dataLastUpdated": "2026-01-12",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": null,
     "hostingType": "shared",
@@ -13,7 +13,7 @@
   },
   "pricing": {
     "sharedHostingMonthlyPromo": 2.95,
-    "sharedHostingMonthlyRenewal": 12.95,
+    "sharedHostingMonthlyRenewal": 13.95,
     "vpsMonthlyLowest": 39.95,
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
@@ -213,10 +213,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 35.40,
-    "totalSecondYearCost": 155.40,
-    "renewalMarkupPercent": 339.0,
-    "effectiveMonthlyAverage": 7.95
+    "totalFirstYearCost": 35.4,
+    "totalSecondYearCost": 167.4,
+    "renewalMarkupPercent": 372.88,
+    "effectiveMonthlyAverage": 8.45
   },
   "comparisonData": {
     "uniqueSellingPoint": "Industry's greenest host putting 3x energy back as renewable, with LiteSpeed and cPanel",
@@ -248,5 +248,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 2.95,
+      "renewalMonthly": 13.95,
+      "renewalMarkupPercent": 372.88
+    }
+  ]
 }

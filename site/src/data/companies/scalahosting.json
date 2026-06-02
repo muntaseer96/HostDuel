@@ -5,7 +5,7 @@
     "yearFounded": 2007,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (privately held; founded in Bulgaria, HQ moved to Dallas, TX)",
-    "dataLastUpdated": "2026-01-13",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": true,
     "hostingType": "shared",
@@ -13,7 +13,7 @@
   },
   "pricing": {
     "sharedHostingMonthlyPromo": 2.95,
-    "sharedHostingMonthlyRenewal": 6.95,
+    "sharedHostingMonthlyRenewal": 11.95,
     "vpsMonthlyLowest": 20.00,
     "vpsMonthlyRenewal": 20.00,
     "dedicatedMonthlyLowest": null,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 35.40,
-    "totalSecondYearCost": 83.40,
-    "renewalMarkupPercent": 135.6,
-    "effectiveMonthlyAverage": 4.95
+    "totalFirstYearCost": 35.4,
+    "totalSecondYearCost": 143.4,
+    "renewalMarkupPercent": 305.08,
+    "effectiveMonthlyAverage": 7.45
   },
   "comparisonData": {
     "uniqueSellingPoint": "Free SPanel control panel eliminating cPanel licensing costs plus SShield AI security",
@@ -250,5 +250,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 2.95,
+      "renewalMonthly": 11.95,
+      "renewalMarkupPercent": 305.08
+    }
+  ]
 }

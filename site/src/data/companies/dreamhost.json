@@ -5,15 +5,15 @@
     "yearFounded": 1996,
     "headquartersCountry": "United States",
     "parentCompany": "New Dream Network, LLC (employee-owned)",
-    "dataLastUpdated": "2026-01-12",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": null,
     "hostingType": "shared",
     "notes": "Founded in 1996 by Dallas Bethune, Josh Jones, Michael Rodriguez, and Sage Weil - undergraduate students at Harvey Mudd College. Employee-owned company. Hosts 1M+ domains, supports 400K+ customers. 285 employees across 6 continents. Co-CEOs are original founders (Kashuba and Rodriguez). HQ in Brea, California. Known for privacy advocacy and open-source support."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 2.95,
-    "sharedHostingMonthlyRenewal": 7.99,
+    "sharedHostingMonthlyPromo": 2.89,
+    "sharedHostingMonthlyRenewal": 10.99,
     "vpsMonthlyLowest": 10.00,
     "vpsMonthlyRenewal": 24.99,
     "dedicatedMonthlyLowest": 165.00,
@@ -213,10 +213,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 35.40,
-    "totalSecondYearCost": 95.88,
-    "renewalMarkupPercent": 170.8,
-    "effectiveMonthlyAverage": 5.47
+    "totalFirstYearCost": 34.68,
+    "totalSecondYearCost": 131.88,
+    "renewalMarkupPercent": 280.28,
+    "effectiveMonthlyAverage": 6.94
   },
   "comparisonData": {
     "uniqueSellingPoint": "Employee-owned privacy advocate with 100% uptime guarantee and full developer tools",
@@ -248,5 +248,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 2.89,
+      "renewalMonthly": 10.99,
+      "renewalMarkupPercent": 280.28
+    }
+  ]
 }

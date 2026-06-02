@@ -5,15 +5,15 @@
     "yearFounded": 2006,
     "headquartersCountry": "United States",
     "parentCompany": "Square (acquired 2018 for $365M)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "website-builder",
     "notes": "Founded 2006 in San Francisco. Acquired by Square in 2018 for $365M. Development has largely stalled since acquisition as Square focuses on Square Online. Still offers free plan with e-commerce. Known for simplicity but templates/features now outdated."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 5.00,
-    "sharedHostingMonthlyRenewal": 5.00,
+    "sharedHostingMonthlyPromo": 13,
+    "sharedHostingMonthlyRenewal": 13,
     "vpsMonthlyLowest": null,
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
@@ -215,10 +215,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 60.00,
-    "totalSecondYearCost": 60.00,
+    "totalFirstYearCost": 156,
+    "totalSecondYearCost": 156,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 5.00
+    "effectiveMonthlyAverage": 13
   },
   "comparisonData": {
     "uniqueSellingPoint": "Free plan with e-commerce and phone support - most generous free tier among website builders",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 13,
+      "renewalMonthly": 13,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

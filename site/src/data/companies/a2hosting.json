@@ -5,15 +5,15 @@
     "yearFounded": 2001,
     "headquartersCountry": "United States",
     "parentCompany": "World Host Group / hosting.com (acquired January 2025; rebranded to hosting.com May 2025; investors include Oakley Capital, Barings, Bain Capital)",
-    "dataLastUpdated": "2026-01-13",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "shared",
     "notes": "Founded in 2001 as Iniquinet in Ann Arbor, Michigan by Bryan Muthig. Renamed to A2 Hosting in 2003 (A2 refers to Ann Arbor). Acquired by World Host Group in January 2025 and rebranded to hosting.com in May 2025. Known for 'Turbo' servers claiming 20x faster speeds. Focus on speed and developer-friendly features. 4 data centers across 3 continents."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 1.99,
-    "sharedHostingMonthlyRenewal": 12.99,
+    "sharedHostingMonthlyPromo": 2.99,
+    "sharedHostingMonthlyRenewal": 11.99,
     "vpsMonthlyLowest": 2.99,
     "vpsMonthlyRenewal": 2.99,
     "dedicatedMonthlyLowest": 105.99,
@@ -216,9 +216,9 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 23.88,
-    "totalSecondYearCost": 155.88,
-    "renewalMarkupPercent": 552.3,
+    "totalFirstYearCost": 35.88,
+    "totalSecondYearCost": 143.88,
+    "renewalMarkupPercent": 301,
     "effectiveMonthlyAverage": 7.49
   },
   "comparisonData": {
@@ -251,5 +251,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 2.99,
+      "renewalMonthly": 11.99,
+      "renewalMarkupPercent": 301
+    }
+  ]
 }

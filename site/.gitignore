@@ -42,3 +42,7 @@ next-env.d.ts
 
 # Claude Code context
 CLAUDE.md
+
+# Pricing-refresh scratch output (regenerated each run)
+scripts/.pricing-fetch-results.json
+scripts/.pricing-scrape.json

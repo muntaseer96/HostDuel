@@ -5,7 +5,7 @@
     "yearFounded": 2009,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (publicly traded NASDAQ: BIGC)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "ecommerce-platform",
@@ -20,7 +20,7 @@
     "dedicatedMonthlyRenewal": null,
     "wordpressHostingMonthlyPromo": null,
     "wordpressHostingMonthlyRenewal": null,
-    "cloudHostingMonthlyLowest": 39.00,
+    "cloudHostingMonthlyLowest": 29,
     "freeDomainIncluded": false,
     "freeDomainDurationMonths": null,
     "domainTransferLockPeriodDays": null,
@@ -250,5 +250,13 @@
     "squarespaceMigration": true,
     "webflowExport": false,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": null,
+      "renewalMonthly": null,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

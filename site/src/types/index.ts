@@ -327,6 +327,15 @@ export interface AdditionalPlatforms {
   staticSiteSupport: boolean | null;
 }
 
+// Price history snapshot — one entry appended per monthly refresh when prices
+// change. Powers change-over-time content, the TCO calculator, and price alerts.
+export interface PriceSnapshot {
+  date: string; // YYYY-MM-DD
+  promoMonthly: number | null;
+  renewalMonthly: number | null;
+  renewalMarkupPercent: number | null;
+}
+
 // Complete Company Data
 export interface Company {
   basicInfo: BasicInfo;
@@ -354,6 +363,7 @@ export interface Company {
   regionalTargeting: RegionalTargeting;
   faqContent: FaqContent;
   additionalPlatforms: AdditionalPlatforms;
+  priceHistory?: PriceSnapshot[];
 }
 
 // Company Index Entry

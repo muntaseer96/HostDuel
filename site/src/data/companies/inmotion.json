@@ -5,15 +5,15 @@
     "yearFounded": 2001,
     "headquartersCountry": "United States",
     "parentCompany": "Privately held (employee-owned, founded by Sunil Saxena and Todd Robinson)",
-    "dataLastUpdated": "2026-01-12",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": null,
     "hostingType": "shared",
     "notes": "Founded in 2001, employee-owned company. Co-founders Sunil Saxena and Todd Robinson still lead the company. HQ in Virginia Beach, VA with offices in California. 267 employees across 5 continents. Serves 170,000+ customers. Owns and operates own servers in data centers in California, Virginia, Netherlands, and Singapore. Known for US-based support and 90-day money-back guarantee."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 2.62,
-    "sharedHostingMonthlyRenewal": 12.49,
+    "sharedHostingMonthlyPromo": 4.79,
+    "sharedHostingMonthlyRenewal": 14.99,
     "vpsMonthlyLowest": 29.99,
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": 99.99,
@@ -213,10 +213,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 31.44,
-    "totalSecondYearCost": 149.88,
-    "renewalMarkupPercent": 376.7,
-    "effectiveMonthlyAverage": 7.56
+    "totalFirstYearCost": 57.48,
+    "totalSecondYearCost": 179.88,
+    "renewalMarkupPercent": 212.94,
+    "effectiveMonthlyAverage": 9.89
   },
   "comparisonData": {
     "uniqueSellingPoint": "Employee-owned US host with 90-day money-back, US-based support, and 99.99% uptime",
@@ -248,5 +248,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 4.79,
+      "renewalMonthly": 14.99,
+      "renewalMarkupPercent": 212.94
+    }
+  ]
 }

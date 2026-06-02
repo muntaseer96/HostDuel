@@ -5,15 +5,15 @@
     "yearFounded": 1999,
     "headquartersCountry": "France",
     "parentCompany": "Independent (publicly traded on Euronext Paris as OVH since Oct 2021; Klaba family majority stake)",
-    "dataLastUpdated": "2026-01-13",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "cloud-iaas",
     "notes": "Founded in 1999 by Octave Klaba in Roubaix, France. Rebranded to OVHcloud in 2019. Europe's largest cloud provider with 44+ data centers across 10 countries. KKR and TowerBrook acquired minority stake for €250M in 2016. IPO on Euronext Paris in October 2021. Owns and operates its own data centers with water-cooling technology for sustainability. Major 2021 Strasbourg fire affected customers but recovery was managed."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 1.04,
-    "sharedHostingMonthlyRenewal": 1.04,
+    "sharedHostingMonthlyPromo": 1.89,
+    "sharedHostingMonthlyRenewal": 3.09,
     "vpsMonthlyLowest": 4.20,
     "vpsMonthlyRenewal": 4.20,
     "dedicatedMonthlyLowest": 55.99,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 12.48,
-    "totalSecondYearCost": 12.48,
-    "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 1.04
+    "totalFirstYearCost": 22.68,
+    "totalSecondYearCost": 37.08,
+    "renewalMarkupPercent": 63.49,
+    "effectiveMonthlyAverage": 2.49
   },
   "comparisonData": {
     "uniqueSellingPoint": "Europe's largest cloud provider with no renewal price increases and own infrastructure",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 1.89,
+      "renewalMonthly": 3.09,
+      "renewalMarkupPercent": 63.49
+    }
+  ]
 }

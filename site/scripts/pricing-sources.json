@@ -1,0 +1,21 @@
+{
+  "_comment": "Pricing-page URLs for the monthly refresh, in priority order (hosts that get search impressions first). Used as a reference by the /refresh-pricing playbook — fetch these, read the cheapest plan's promo + renewal, then run `node scripts/refresh-pricing.mjs set <host> '<patch>'`. Verify/correct a URL if it redirects. 'type' notes whether the simple auto-recompute is valid (shared/vps) or pricingCalculated must be set by hand (annual/free-tier/tiered).",
+  "_autoRecomputeSafe": "Auto-recompute (pricingCalculated) is correct for traditional monthly promo->renewal hosts. For hetzner, liquidweb, render, porkbun, pressable, wpx and any PaaS, set pricingCalculated by hand — annual/free-tier nuance the formula can't reproduce.",
+  "sources": [
+    { "id": "hostinger", "type": "shared", "url": "https://www.hostinger.com/web-hosting" },
+    { "id": "hetzner", "type": "vps-manual", "url": "https://www.hetzner.com/cloud" },
+    { "id": "contabo", "type": "vps", "url": "https://contabo.com/en/vps/" },
+    { "id": "fastcomet", "type": "shared", "url": "https://www.fastcomet.com/" },
+    { "id": "hostpapa", "type": "shared", "url": "https://www.hostpapa.com/" },
+    { "id": "verpex", "type": "shared", "url": "https://verpex.com/web-hosting" },
+    { "id": "tmdhosting", "type": "shared", "url": "https://www.tmdhosting.com/shared-hosting.html" },
+    { "id": "interserver", "type": "shared", "url": "https://www.interserver.net/webhosting/" },
+    { "id": "hostarmada", "type": "shared", "url": "https://hostarmada.com/" },
+    { "id": "accuwebhosting", "type": "shared", "url": "https://www.accuwebhosting.com/" },
+    { "id": "kamatera", "type": "vps", "url": "https://www.kamatera.com/pricing/" },
+    { "id": "scalahosting", "type": "shared", "url": "https://www.scalahosting.com/" },
+    { "id": "chemicloud", "type": "shared", "url": "https://chemicloud.com/hosting/" },
+    { "id": "bluehost", "type": "shared", "url": "https://www.bluehost.com/hosting/shared" },
+    { "id": "ovhcloud", "type": "shared", "url": "https://www.ovhcloud.com/en/web-hosting/" }
+  ]
+}

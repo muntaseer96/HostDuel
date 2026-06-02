@@ -5,7 +5,7 @@
     "yearFounded": 2000,
     "headquartersCountry": "United States",
     "parentCompany": "Liquid Web (acquired 2019; merging as one brand)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "managed-wordpress",
@@ -18,8 +18,8 @@
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
-    "wordpressHostingMonthlyPromo": 21.00,
-    "wordpressHostingMonthlyRenewal": 21.00,
+    "wordpressHostingMonthlyPromo": 6,
+    "wordpressHostingMonthlyRenewal": 6,
     "cloudHostingMonthlyLowest": 21.00,
     "freeDomainIncluded": false,
     "freeDomainDurationMonths": null,
@@ -224,10 +224,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 252.00,
-    "totalSecondYearCost": 252.00,
+    "totalFirstYearCost": 72,
+    "totalSecondYearCost": 72,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 21.00
+    "effectiveMonthlyAverage": 6
   },
   "comparisonData": {
     "uniqueSellingPoint": "E-commerce expertise with managed WooCommerce and Magento hosting, 100% uptime SLA, and PCI/HIPAA compliance",
@@ -259,5 +259,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 6,
+      "renewalMonthly": 6,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

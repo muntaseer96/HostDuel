@@ -5,14 +5,14 @@
     "yearFounded": 2010,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (privately held; founded by Peter Holden; bootstrapped)",
-    "dataLastUpdated": "2026-01-13",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": true,
     "hostingType": "shared",
     "notes": "Founded in 2010 by Peter Holden in Tulsa, Oklahoma. Now headquartered in Seattle, Washington. PC Magazine Editors' Choice for best hosting for 10 consecutive years. Focus on customer-centric hosting with 24/7 US-based support. Offers full range from shared hosting to dedicated servers. Known for transparent pricing and highly customizable VPS options."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 3.29,
+    "sharedHostingMonthlyPromo": 4.54,
     "sharedHostingMonthlyRenewal": 4.99,
     "vpsMonthlyLowest": 5.17,
     "vpsMonthlyRenewal": 5.17,
@@ -216,10 +216,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 39.48,
+    "totalFirstYearCost": 54.48,
     "totalSecondYearCost": 59.88,
-    "renewalMarkupPercent": 51.7,
-    "effectiveMonthlyAverage": 4.14
+    "renewalMarkupPercent": 9.91,
+    "effectiveMonthlyAverage": 4.76
   },
   "comparisonData": {
     "uniqueSellingPoint": "99.9999% uptime guarantee with transparent pricing and adult content hosting allowed",
@@ -251,5 +251,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 4.54,
+      "renewalMonthly": 4.99,
+      "renewalMarkupPercent": 9.91
+    }
+  ]
 }

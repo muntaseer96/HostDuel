@@ -5,15 +5,15 @@
     "yearFounded": 2016,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (privately held)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "shared",
     "notes": "Founded 2016, independently owned. Team with 10+ years hosting industry experience. 7 global data centers. Known for excellent customer service (4.9 Trustpilot). Offers lifetime free domain on annual plans. Uses LiteSpeed web servers for performance."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 2.95,
-    "sharedHostingMonthlyRenewal": 7.90,
+    "sharedHostingMonthlyPromo": 2.49,
+    "sharedHostingMonthlyRenewal": 11.95,
     "vpsMonthlyLowest": 39.95,
     "vpsMonthlyRenewal": 39.95,
     "dedicatedMonthlyLowest": null,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 35.40,
-    "totalSecondYearCost": 94.80,
-    "renewalMarkupPercent": 167.80,
-    "effectiveMonthlyAverage": 5.43
+    "totalFirstYearCost": 29.88,
+    "totalSecondYearCost": 143.4,
+    "renewalMarkupPercent": 379.92,
+    "effectiveMonthlyAverage": 7.22
   },
   "comparisonData": {
     "uniqueSellingPoint": "Lifetime free domain with exceptional support (4.9 Trustpilot), LiteSpeed performance, and 30-day backup retention",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 2.49,
+      "renewalMonthly": 11.95,
+      "renewalMarkupPercent": 379.92
+    }
+  ]
 }

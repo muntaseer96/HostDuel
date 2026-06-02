@@ -5,15 +5,15 @@
     "yearFounded": 2003,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (privately held; debt-free)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "shared",
     "notes": "Founded 2003 in Old Tappan, New Jersey. Debt-free, privately owned with 20+ years experience. 101,025+ customers served. Microsoft WebMatrix Compatible Hosting approved. Specializes in Windows hosting and VPS. Offers free WordPress hosting program (requires review)."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 3.09,
-    "sharedHostingMonthlyRenewal": 3.49,
+    "sharedHostingMonthlyPromo": 1.99,
+    "sharedHostingMonthlyRenewal": 1.99,
     "vpsMonthlyLowest": 7.99,
     "vpsMonthlyRenewal": 7.99,
     "dedicatedMonthlyLowest": 99.00,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 37.08,
-    "totalSecondYearCost": 41.88,
-    "renewalMarkupPercent": 12.94,
-    "effectiveMonthlyAverage": 3.29
+    "totalFirstYearCost": 23.88,
+    "totalSecondYearCost": 23.88,
+    "renewalMarkupPercent": 0,
+    "effectiveMonthlyAverage": 1.99
   },
   "comparisonData": {
     "uniqueSellingPoint": "Windows hosting specialty with 20+ year track record, BBB A+ rating, and minimal renewal markup",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 1.99,
+      "renewalMonthly": 1.99,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

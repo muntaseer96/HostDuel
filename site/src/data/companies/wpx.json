@@ -5,7 +5,7 @@
     "yearFounded": 2013,
     "headquartersCountry": "Bulgaria",
     "parentCompany": "Independent",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "managed-wordpress",
@@ -18,8 +18,8 @@
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
-    "wordpressHostingMonthlyPromo": 24.99,
-    "wordpressHostingMonthlyRenewal": 24.99,
+    "wordpressHostingMonthlyPromo": 17.99,
+    "wordpressHostingMonthlyRenewal": 17.99,
     "cloudHostingMonthlyLowest": 24.99,
     "freeDomainIncluded": false,
     "freeDomainDurationMonths": null,
@@ -224,10 +224,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 249.99,
-    "totalSecondYearCost": 299.88,
+    "totalFirstYearCost": 215.88,
+    "totalSecondYearCost": 215.88,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 22.91
+    "effectiveMonthlyAverage": 17.99
   },
   "comparisonData": {
     "uniqueSellingPoint": "30-second average support response with Trustpilot 5.0 rating and no renewal price increases",
@@ -259,5 +259,13 @@
     "squarespaceMigration": true,
     "webflowExport": false,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 17.99,
+      "renewalMonthly": 17.99,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

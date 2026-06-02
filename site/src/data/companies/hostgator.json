@@ -5,15 +5,15 @@
     "yearFounded": 2002,
     "headquartersCountry": "United States",
     "parentCompany": "Newfold Digital (formerly Endurance International Group)",
-    "dataLastUpdated": "2026-01-12",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": null,
     "hostingType": "shared",
     "notes": "Founded in 2002 in a dorm room. Acquired by Endurance International Group (EIG) in June 2012. EIG merged with Web.com to form Newfold Digital in 2021. Hosts over 2 million domains. Sister company to Bluehost under Newfold Digital umbrella. Corporate office in Houston, Texas. Data centers in Provo, Utah and Houston, Texas."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 2.75,
-    "sharedHostingMonthlyRenewal": 11.95,
+    "sharedHostingMonthlyPromo": 3.75,
+    "sharedHostingMonthlyRenewal": 10.99,
     "vpsMonthlyLowest": 34.99,
     "vpsMonthlyRenewal": 53.99,
     "dedicatedMonthlyLowest": 91.00,
@@ -213,10 +213,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 33.00,
-    "totalSecondYearCost": 143.40,
-    "renewalMarkupPercent": 334.5,
-    "effectiveMonthlyAverage": 7.35
+    "totalFirstYearCost": 45,
+    "totalSecondYearCost": 131.88,
+    "renewalMarkupPercent": 193.07,
+    "effectiveMonthlyAverage": 7.37
   },
   "comparisonData": {
     "uniqueSellingPoint": "Budget cPanel hosting with 45-day money-back guarantee and 24/7 phone support",
@@ -248,5 +248,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 3.75,
+      "renewalMonthly": 10.99,
+      "renewalMarkupPercent": 193.07
+    }
+  ]
 }

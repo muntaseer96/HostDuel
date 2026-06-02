@@ -5,15 +5,15 @@
     "yearFounded": 2003,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (publicly traded NYSE: SQSP)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "website-builder",
     "notes": "Founded 2003 by Anthony Casalena in a dorm room at University of Maryland. Went public in 2021. Known for beautiful design-focused templates. Website builder + hosting platform. Acquired Tock (restaurant reservations) and Acuity Scheduling. Popular with creatives, small businesses, portfolios."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 16.00,
-    "sharedHostingMonthlyRenewal": 16.00,
+    "sharedHostingMonthlyPromo": 12,
+    "sharedHostingMonthlyRenewal": 12,
     "vpsMonthlyLowest": null,
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
@@ -215,10 +215,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 192.00,
-    "totalSecondYearCost": 192.00,
+    "totalFirstYearCost": 144,
+    "totalSecondYearCost": 144,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 16.00
+    "effectiveMonthlyAverage": 12
   },
   "comparisonData": {
     "uniqueSellingPoint": "Design-focused website builder with beautiful templates, integrated scheduling, and all-in-one simplicity",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 12,
+      "renewalMonthly": 12,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

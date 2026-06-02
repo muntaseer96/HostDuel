@@ -5,14 +5,14 @@
     "yearFounded": 2019,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (privately held)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "shared",
     "notes": "Founded November 2019 in Wilmington, DE. Fast-growing independent web host. Cloud SSD infrastructure with 9 data centers globally. Known for excellent support (4.9 Trustpilot) and beginner-friendly approach. Free daily backups on all plans. Uses LiteSpeed web servers for performance."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 2.49,
+    "sharedHostingMonthlyPromo": 1.99,
     "sharedHostingMonthlyRenewal": 9.95,
     "vpsMonthlyLowest": 41.21,
     "vpsMonthlyRenewal": 41.21,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 29.88,
-    "totalSecondYearCost": 119.40,
-    "renewalMarkupPercent": 299.60,
-    "effectiveMonthlyAverage": 6.22
+    "totalFirstYearCost": 23.88,
+    "totalSecondYearCost": 119.4,
+    "renewalMarkupPercent": 400,
+    "effectiveMonthlyAverage": 5.97
   },
   "comparisonData": {
     "uniqueSellingPoint": "Exceptional support (4.9 Trustpilot) with LiteSpeed performance and free daily backups on cloud SSD infrastructure",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 1.99,
+      "renewalMonthly": 9.95,
+      "renewalMarkupPercent": 400
+    }
+  ]
 }

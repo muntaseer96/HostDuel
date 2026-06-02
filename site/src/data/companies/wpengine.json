@@ -5,7 +5,7 @@
     "yearFounded": 2010,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (privately held; founded by Jason Cohen and Ben Metcalfe; backed by Silver Lake Partners)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": true,
     "hostingType": "managed-wordpress",
@@ -18,8 +18,8 @@
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
-    "wordpressHostingMonthlyPromo": 25.00,
-    "wordpressHostingMonthlyRenewal": 25.00,
+    "wordpressHostingMonthlyPromo": 30,
+    "wordpressHostingMonthlyRenewal": 30,
     "cloudHostingMonthlyLowest": 25.00,
     "freeDomainIncluded": false,
     "freeDomainDurationMonths": null,
@@ -224,10 +224,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 300.00,
-    "totalSecondYearCost": 300.00,
+    "totalFirstYearCost": 360,
+    "totalSecondYearCost": 360,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 25.00
+    "effectiveMonthlyAverage": 30
   },
   "comparisonData": {
     "uniqueSellingPoint": "PCI-compliant managed WordPress with proprietary EverCache technology and 60-day money-back guarantee",
@@ -259,5 +259,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 30,
+      "renewalMonthly": 30,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

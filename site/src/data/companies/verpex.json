@@ -5,15 +5,15 @@
     "yearFounded": 2018,
     "headquartersCountry": "United Kingdom",
     "parentCompany": "Independent (privately held)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": false,
     "instantAccountActivation": true,
     "hostingType": "shared",
     "notes": "Founded 2018. UK-based independent host with global presence. 12 data centers across 5 continents. Claims to be #1 hosting provider on Trustpilot. Focuses on affordable, reliable hosting with free migration. Uses cPanel and LiteSpeed."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 0.50,
-    "sharedHostingMonthlyRenewal": 6.00,
+    "sharedHostingMonthlyPromo": 3,
+    "sharedHostingMonthlyRenewal": 6,
     "vpsMonthlyLowest": 5.50,
     "vpsMonthlyRenewal": 5.50,
     "dedicatedMonthlyLowest": null,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 6.00,
-    "totalSecondYearCost": 72.00,
-    "renewalMarkupPercent": 1100.00,
-    "effectiveMonthlyAverage": 3.25
+    "totalFirstYearCost": 36,
+    "totalSecondYearCost": 72,
+    "renewalMarkupPercent": 100,
+    "effectiveMonthlyAverage": 4.5
   },
   "comparisonData": {
     "uniqueSellingPoint": "Extremely low entry pricing ($0.50/mo) with 12 global data centers including South Africa and South America",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 3,
+      "renewalMonthly": 6,
+      "renewalMarkupPercent": 100
+    }
+  ]
 }

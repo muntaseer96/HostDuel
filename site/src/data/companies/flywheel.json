@@ -5,7 +5,7 @@
     "yearFounded": 2012,
     "headquartersCountry": "United States",
     "parentCompany": "WP Engine (acquired 2019 for ~$200M)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "managed-wordpress",
@@ -18,8 +18,8 @@
     "vpsMonthlyRenewal": null,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
-    "wordpressHostingMonthlyPromo": 15.00,
-    "wordpressHostingMonthlyRenewal": 15.00,
+    "wordpressHostingMonthlyPromo": 25,
+    "wordpressHostingMonthlyRenewal": 25,
     "cloudHostingMonthlyLowest": 15.00,
     "freeDomainIncluded": false,
     "freeDomainDurationMonths": null,
@@ -224,10 +224,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 180.00,
-    "totalSecondYearCost": 180.00,
+    "totalFirstYearCost": 300,
+    "totalSecondYearCost": 300,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 15.00
+    "effectiveMonthlyAverage": 25
   },
   "comparisonData": {
     "uniqueSellingPoint": "Designer-focused managed WordPress with free Local development tool and lower price than parent WP Engine",
@@ -259,5 +259,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 25,
+      "renewalMonthly": 25,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }

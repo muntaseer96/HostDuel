@@ -5,15 +5,15 @@
     "yearFounded": 2013,
     "headquartersCountry": "United States",
     "parentCompany": "World Host Group (acquired April 2025; previously independent)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "shared",
     "notes": "Founded in 2013 in San Francisco, now headquartered in Delaware following World Host Group acquisition in April 2025. Operates 12 data centers across Americas, Europe, Asia, and Australia. Known for excellent support and beginner-friendly interface. Same parent company as A2 Hosting and hosting.com."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 1.79,
-    "sharedHostingMonthlyRenewal": 8.95,
+    "sharedHostingMonthlyPromo": 1.99,
+    "sharedHostingMonthlyRenewal": 9.95,
     "vpsMonthlyLowest": 47.95,
     "vpsMonthlyRenewal": 47.95,
     "dedicatedMonthlyLowest": 139.00,
@@ -214,10 +214,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 21.48,
-    "totalSecondYearCost": 107.40,
+    "totalFirstYearCost": 23.88,
+    "totalSecondYearCost": 119.4,
     "renewalMarkupPercent": 400,
-    "effectiveMonthlyAverage": 5.37
+    "effectiveMonthlyAverage": 5.97
   },
   "comparisonData": {
     "uniqueSellingPoint": "45-day money-back guarantee with staging environments on all plans and 12 global data centers",
@@ -249,5 +249,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 1.99,
+      "renewalMonthly": 9.95,
+      "renewalMarkupPercent": 400
+    }
+  ]
 }

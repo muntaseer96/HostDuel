@@ -5,14 +5,14 @@
     "yearFounded": 2004,
     "headquartersCountry": "Lithuania",
     "parentCompany": "Employee-owned (ConHostinger acquired 31% stake in 2021)",
-    "dataLastUpdated": "2026-01-12",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": null,
     "hostingType": "shared",
     "notes": "Founded in 2004 as Hosting Media, rebranded to Hostinger in 2011. Headquarters in Kaunas/Vilnius, Lithuania. Employee-owned company with ~1,000 employees. Parent of Hosting24, Zyro, Niagahoster, and 000webhost. Offices in Lithuania, Indonesia (Yogyakarta), and Brazil (Florianopolis). Private equity firm ConHostinger acquired ~31% controlling stake in 2021."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 1.99,
+    "sharedHostingMonthlyPromo": 2.99,
     "sharedHostingMonthlyRenewal": 10.99,
     "vpsMonthlyLowest": 4.99,
     "vpsMonthlyRenewal": 8.49,
@@ -213,10 +213,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 28.87,
+    "totalFirstYearCost": 40.87,
     "totalSecondYearCost": 131.88,
-    "renewalMarkupPercent": 452.3,
-    "effectiveMonthlyAverage": 6.70
+    "renewalMarkupPercent": 267.56,
+    "effectiveMonthlyAverage": 7.2
   },
   "comparisonData": {
     "uniqueSellingPoint": "Cheapest premium hosting with LiteSpeed, 11 data centers, and AI website builder",
@@ -248,5 +248,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 2.99,
+      "renewalMonthly": 10.99,
+      "renewalMarkupPercent": 267.56
+    }
+  ]
 }

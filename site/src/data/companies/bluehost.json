@@ -5,14 +5,14 @@
     "yearFounded": 2003,
     "headquartersCountry": "United States",
     "parentCompany": "Newfold Digital (formerly Endurance International Group, acquired 2010)",
-    "dataLastUpdated": "2026-01-12",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": null,
     "hostingType": "shared",
     "notes": "Founded in 2003, officially recommended by WordPress.org since 2005. Acquired by Endurance International Group (EIG) in 2010. EIG rebranded to Newfold Digital in Feb 2021. Headquarters in Orem, Utah. Part of Bluehost Group serving 13M+ customers globally. Portfolio includes HostGator, Yoast SEO, YITH Commerce. Expanded to 11 global data centers in Oct 2025."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 2.95,
+    "sharedHostingMonthlyPromo": 3.99,
     "sharedHostingMonthlyRenewal": 9.99,
     "vpsMonthlyLowest": 46.99,
     "vpsMonthlyRenewal": 65.99,
@@ -213,10 +213,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 35.40,
+    "totalFirstYearCost": 47.88,
     "totalSecondYearCost": 119.88,
-    "renewalMarkupPercent": 238.6,
-    "effectiveMonthlyAverage": 6.47
+    "renewalMarkupPercent": 150.38,
+    "effectiveMonthlyAverage": 6.99
   },
   "comparisonData": {
     "uniqueSellingPoint": "Only host officially recommended by WordPress.org with staging on all WP plans",
@@ -248,5 +248,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 3.99,
+      "renewalMonthly": 9.99,
+      "renewalMarkupPercent": 150.38
+    }
+  ]
 }
