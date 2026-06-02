@@ -5,7 +5,7 @@
     "yearFounded": 1999,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (privately held; employee-owned; founded by Mike Lavrik and John Quaglieri)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": true,
     "hostingType": "shared",
@@ -13,7 +13,7 @@
   },
   "pricing": {
     "sharedHostingMonthlyPromo": 2.50,
-    "sharedHostingMonthlyRenewal": 2.50,
+    "sharedHostingMonthlyRenewal": 7,
     "vpsMonthlyLowest": 6.00,
     "vpsMonthlyRenewal": 6.00,
     "dedicatedMonthlyLowest": 80.00,
@@ -134,9 +134,9 @@
     "paidMigrationCost": null
   },
   "controlPanel": {
-    "cpanelIncluded": true,
-    "cpanelAlternative": "DirectAdmin also available",
-    "controlPanelName": "cPanel/DirectAdmin",
+    "cpanelIncluded": false,
+    "cpanelAlternative": "cPanel available as a separate plan",
+    "controlPanelName": "DirectAdmin",
     "softaculousAutoInstaller": true,
     "websiteBuilderIncluded": true,
     "websiteBuilderName": "SitePad"
@@ -155,7 +155,7 @@
     "storageOveragePolicy": "Unlimited within fair use",
     "accountSuspensionPolicy": "Violation of ToS; non-payment; resource abuse",
     "resourceAbuseDefinition": "Excessive CPU/memory usage; spam; illegal activities",
-    "hiddenFeesNotes": "Price-lock guarantee - pay same price forever (no renewal increases); Free domain NOT included; Only 2 data center locations; Support outsourcing reported by some users"
+    "hiddenFeesNotes": "Monthly plan renews at $7/mo (was $2.50 promo) — the legacy price-lock no longer applies on the standard monthly plan; Free domain NOT included; Only 2 data center locations; Support outsourcing reported by some users"
   },
   "contentRestrictions": {
     "adultContentAllowed": false,
@@ -214,10 +214,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 30.00,
-    "totalSecondYearCost": 30.00,
-    "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 2.50
+    "totalFirstYearCost": 30,
+    "totalSecondYearCost": 84,
+    "renewalMarkupPercent": 180,
+    "effectiveMonthlyAverage": 4.75
   },
   "comparisonData": {
     "uniqueSellingPoint": "Price-lock guarantee with $2.50/month forever - no renewal price increases",
@@ -249,5 +249,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 2.5,
+      "renewalMonthly": 7,
+      "renewalMarkupPercent": 180
+    }
+  ]
 }

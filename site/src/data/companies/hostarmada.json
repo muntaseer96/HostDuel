@@ -81,7 +81,7 @@
   },
   "securitySsl": {
     "freeSsl": true,
-    "sslProvider": "Let's Encrypt (auto-renewing)",
+    "sslProvider": "Sectigo (auto-renewing)",
     "wildcardSslAvailable": true,
     "dedicatedIpAvailable": true,
     "dedicatedIpCostMonthly": 3.00,
@@ -128,7 +128,7 @@
   },
   "migration": {
     "freeMigration": true,
-    "migrationWebsitesLimit": "Unlimited",
+    "migrationWebsitesLimit": 1,
     "migrationServiceQuality": "Expert migration team",
     "migrationTurnaroundDays": 2,
     "paidMigrationCost": 0

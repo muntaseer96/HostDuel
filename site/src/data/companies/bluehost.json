@@ -71,7 +71,7 @@
     "uptimeGuaranteePercent": 99.99,
     "uptimeSlaCredit": true,
     "ddosProtection": true,
-    "ddosProtectionLevel": "Basic (SiteLock WAF available as paid add-on)",
+    "ddosProtectionLevel": "DDoS protection and Web Application Firewall included on all plans",
     "firewallIncluded": true,
     "malwareScanning": true,
     "malwareRemoval": true,
