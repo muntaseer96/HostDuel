@@ -163,7 +163,7 @@ export function CalculatorClient({ hosts, initialOptions }: Props) {
                     )}
                   </td>
                   <td className="p-3 text-right">
-                    <Link href={`/go/${r.id}`} className="text-accent text-xs hover:underline whitespace-nowrap">
+                    <Link href={`/go/${r.id}`} rel="sponsored" className="text-accent text-xs hover:underline whitespace-nowrap">
                       Visit →
                     </Link>
                   </td>

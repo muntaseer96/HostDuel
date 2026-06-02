@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
     f.shared.avgMarkupPercent
   )}, with the worst offender raising prices by ${fmtPct(f.shared.worstOffenders[0]?.markupPercent ?? 0)} at renewal.`;
   return {
-    title: `${title} | ${SITE_NAME}`,
+    title,
     description,
     alternates: { canonical: STUDY_PATH },
     openGraph: { title, description, type: 'article' },
@@ -35,7 +35,15 @@ export default async function RenewalTrapStudy() {
   const top = f.shared.worstOffenders;
   const maxMarkup = top[0]?.markupPercent ?? 100;
 
-  const jsonLd = {
+  const jsonLd = [{
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_DOMAIN },
+      { '@type': 'ListItem', position: 2, name: 'Research', item: `${SITE_DOMAIN}/research` },
+      { '@type': 'ListItem', position: 3, name: 'The Renewal Trap', item: `${SITE_DOMAIN}${STUDY_PATH}` },
+    ],
+  }, {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: `The Renewal Trap: Web Hosting Renews at ${f.shared.avgMultiplier}× the Sign-Up Price`,
@@ -48,7 +56,7 @@ export default async function RenewalTrapStudy() {
     url: `${SITE_DOMAIN}${STUDY_PATH}`,
     about: 'Web hosting renewal pricing and hidden fees',
     isAccessibleForFree: true,
-  };
+  }];
 
   return (
     <section className="py-12 sm:py-16">

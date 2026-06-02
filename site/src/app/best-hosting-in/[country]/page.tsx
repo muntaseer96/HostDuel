@@ -27,7 +27,7 @@ export async function generateMetadata({
   const data = await getCountryData(country);
   if (!data) return { title: 'Not Found' };
   return {
-    title: `Best Web Hosting in ${country} (2026): Top ${data.hosts.length} Compared | ${SITE_NAME}`,
+    title: `Best Web Hosting in ${country} (2026): Top ${data.hosts.length} Compared`,
     description: `The best web hosting for ${country} in 2026 — ${data.hosts.length} providers ranked, with ${data.localDataCenterCount} offering in-country data centres and local-currency billing. Real pricing, no fluff.`,
     alternates: { canonical: `/best-hosting-in/${slug}` },
     openGraph: { title: `Best Web Hosting in ${country} (2026)`, type: 'article' },
@@ -42,6 +42,15 @@ export default async function CountryPage({ params }: { params: Promise<{ countr
   if (!data) notFound();
 
   const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_DOMAIN },
+        { '@type': 'ListItem', position: 2, name: 'Best Hosting by Country', item: `${SITE_DOMAIN}/best-hosting-in` },
+        { '@type': 'ListItem', position: 3, name: country, item: `${SITE_DOMAIN}/best-hosting-in/${slug}` },
+      ],
+    },
     {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
@@ -123,6 +132,7 @@ export default async function CountryPage({ params }: { params: Promise<{ countr
                 </div>
                 <Link
                   href={`/go/${h.id}`}
+                  rel="sponsored"
                   className="shrink-0 text-sm bg-accent text-background font-semibold px-4 py-2 rounded-lg hover:opacity-90"
                 >
                   Visit

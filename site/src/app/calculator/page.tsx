@@ -7,7 +7,7 @@ import { parseTcoOptions, type TcoHost } from '@/lib/tco';
 import { SITE_NAME, SITE_DOMAIN } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `True-Cost Hosting Calculator: Real Multi-Year Prices | ${SITE_NAME}`,
+  title: 'True-Cost Hosting Calculator: Real Multi-Year Prices',
   description: `Rank web hosts by what they actually cost over 1–3 years — promotional pricing plus full renewal rates, not just the teaser price. Built from ${SITE_NAME}'s real-pricing dataset.`,
   alternates: { canonical: '/calculator' },
   openGraph: {

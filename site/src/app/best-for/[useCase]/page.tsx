@@ -103,7 +103,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const config = useCaseConfig[useCase as UseCase];
 
   return {
-    title: `${config.title} | ${SITE_NAME}`,
+    title: config.title,
     description: config.metaDescription,
     keywords: config.keywords,
     alternates: {

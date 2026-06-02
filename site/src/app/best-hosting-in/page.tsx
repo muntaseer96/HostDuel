@@ -4,10 +4,9 @@ import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/layout';
 import { getAllCompanies } from '@/lib/data';
 import { TOP_COUNTRIES, countrySlug } from '@/lib/programmatic';
-import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `Best Web Hosting by Country (2026) | ${SITE_NAME}`,
+  title: 'Best Web Hosting by Country (2026)',
   description: `Find the best web hosting for your country — providers ranked by rating, with in-country data centres and local-currency billing flagged. Pick your market to compare.`,
   alternates: { canonical: '/best-hosting-in' },
 };

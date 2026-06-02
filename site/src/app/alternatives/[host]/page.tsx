@@ -26,7 +26,7 @@ export async function generateMetadata({
   const { anchor, alternatives } = data;
   const top = alternatives.slice(0, 3).map((a) => a.name).join(', ');
   return {
-    title: `${alternatives.length} Best ${anchor.name} Alternatives in 2026 | ${SITE_NAME}`,
+    title: `${alternatives.length} Best ${anchor.name} Alternatives in 2026`,
     description: `Looking for a ${anchor.name} alternative? We compare the top ${alternatives.length} options${
       top ? ` — including ${top}` : ''
     } on real price, uptime, and ratings, with the reasons to switch and the trade-offs.`,
@@ -43,6 +43,15 @@ export default async function AlternativesPage({ params }: { params: Promise<{ h
   const { anchor, alternatives, specs, faqs } = data;
 
   const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_DOMAIN },
+        { '@type': 'ListItem', position: 2, name: 'Alternatives', item: `${SITE_DOMAIN}/alternatives` },
+        { '@type': 'ListItem', position: 3, name: `${anchor.name} Alternatives`, item: `${SITE_DOMAIN}/alternatives/${host}` },
+      ],
+    },
     {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
@@ -131,6 +140,7 @@ export default async function AlternativesPage({ params }: { params: Promise<{ h
                 </div>
                 <Link
                   href={`/go/${alt.id}`}
+                  rel="sponsored"
                   className="shrink-0 text-sm bg-accent text-background font-semibold px-4 py-2 rounded-lg hover:opacity-90"
                 >
                   Visit

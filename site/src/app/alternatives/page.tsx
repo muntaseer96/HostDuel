@@ -4,10 +4,9 @@ import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/layout';
 import { getAllCompanies } from '@/lib/data';
 import { TOP_HOSTS } from '@/lib/programmatic';
-import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `Web Hosting Alternatives: Switch From the Top Providers | ${SITE_NAME}`,
+  title: 'Web Hosting Alternatives: Switch From the Top Providers',
   description: `Thinking of switching hosts? Compare the best alternatives to the most-searched web hosting providers — ranked on real price, uptime, and ratings, with reasons to switch.`,
   alternates: { canonical: '/alternatives' },
 };

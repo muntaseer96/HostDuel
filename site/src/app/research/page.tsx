@@ -6,7 +6,7 @@ import { computeStudyFindings } from '@/lib/study-data';
 import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `Hosting Research & Original Data Studies | ${SITE_NAME}`,
+  title: 'Hosting Research & Original Data Studies',
   description: `Original, citable research built from ${SITE_NAME}'s dataset of 56 web hosting providers — renewal markups, hidden fees, and the real cost of cheap hosting.`,
   alternates: { canonical: '/research' },
 };
