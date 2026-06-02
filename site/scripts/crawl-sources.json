@@ -1,61 +1,284 @@
 {
   "_comment": "Per-host source overrides for crawl-host-firecrawl.mjs. Without an entry a host defaults to its (legacy) pricing-source URL or basicInfo.websiteUrl — often a homepage, which is marketing fluff with no per-plan specs (see the failed fastcomet/hostpapa runs). Point each host at the DEEP shared/web-hosting plan-spec page that lists per-plan storage/sites/backups/features — the same kind of page that produced clean tmdhosting diffs. URLs below mirror the browser-verified scripts/pricing-urls.json. NOTE: hetzner/contabo/kamatera/ovhcloud are VPS/cloud-first; their shared-spec pages are thin, so the crawl yields low-value facts — run them last. Shape: \"<hostId>\": { \"siteUrls\": [\"https://host.com/web-hosting\"], \"reputationUrl\": \"https://www.trustpilot.com/review/host.com\" } (reputationUrl optional — derived from the domain if omitted).",
   "_example_hostinger": {
-    "siteUrls": ["https://www.hostinger.com/web-hosting"],
+    "siteUrls": [
+      "https://www.hostinger.com/web-hosting"
+    ],
     "reputationUrl": "https://www.trustpilot.com/review/hostinger.com"
   },
-  "fastcomet": { "siteUrls": ["https://www.fastcomet.com/pricing"] },
-  "hostpapa": { "siteUrls": ["https://www.hostpapa.com/web-hosting-plan/"] },
-  "verpex": { "siteUrls": ["https://verpex.com/web-hosting"] },
-  "tmdhosting": { "siteUrls": ["https://www.tmdhosting.com/shared-hosting.html"] },
-  "interserver": { "siteUrls": ["https://www.interserver.net/webhosting/"] },
-  "hostarmada": { "siteUrls": ["https://hostarmada.com/cloud-ssd-shared-hosting/"] },
-  "accuwebhosting": { "siteUrls": ["https://www.accuwebhosting.com/web-hosting"] },
-  "scalahosting": { "siteUrls": ["https://www.scalahosting.com/web-hosting-for-small-business.html"] },
-  "chemicloud": { "siteUrls": ["https://chemicloud.com/pricing/"] },
-  "bluehost": { "siteUrls": ["https://www.bluehost.com/hosting/shared"] },
-  "kamatera": { "siteUrls": ["https://www.kamatera.com/pricing/"] },
-  "ovhcloud": { "siteUrls": ["https://www.ovhcloud.com/en/web-hosting/"] },
-  "hetzner": { "siteUrls": ["https://www.hetzner.com/cloud"] },
-  "contabo": { "siteUrls": ["https://contabo.com/en/vps/"] },
-  "siteground": { "siteUrls": ["https://www.siteground.com/web-hosting.htm"] },
-  "godaddy": { "siteUrls": ["https://www.godaddy.com/en-us/hosting/web-hosting"] },
-  "namecheap": { "siteUrls": ["https://www.namecheap.com/hosting/shared/"] },
-  "dreamhost": { "siteUrls": ["https://www.dreamhost.com/hosting/shared/"] },
-  "inmotion": { "siteUrls": ["https://www.inmotionhosting.com/shared-hosting"] },
-  "hostgator": { "siteUrls": ["https://www.hostgator.com/web-hosting"] },
-  "greengeeks": { "siteUrls": ["https://www.greengeeks.com/web-hosting"] },
-  "a2hosting": { "siteUrls": ["https://hosting.com/web-hosting/"] },
-  "ionos": { "siteUrls": ["https://www.ionos.com/hosting/web-hosting"] },
-  "cloudways": { "siteUrls": ["https://www.cloudways.com/en/pricing.php"] },
-  "kinsta": { "siteUrls": ["https://kinsta.com/plans/"] },
-  "wpengine": { "siteUrls": ["https://wpengine.com/plans/"] },
-  "flywheel": { "siteUrls": ["https://getflywheel.com/pricing/"] },
-  "pressable": { "siteUrls": ["https://pressable.com/plans/"] },
-  "nexcess": { "siteUrls": ["https://www.liquidweb.com/wordpress-hosting/managed-wordpress/"] },
-  "pantheon": { "siteUrls": ["https://pantheon.io/pricing"] },
-  "rocketnet": { "siteUrls": ["https://rocket.net/pricing/"] },
-  "liquidweb": { "siteUrls": ["https://www.liquidweb.com/vps-hosting/"] },
-  "hostwinds": { "siteUrls": ["https://www.hostwinds.com/hosting/shared"] },
-  "10web": { "siteUrls": ["https://10web.io/pricing/"] },
-  "wordpresscom": { "siteUrls": ["https://wordpress.com/pricing/"] },
-  "wpx": { "siteUrls": ["https://wpx.net/"] },
-  "render": { "siteUrls": ["https://render.com/pricing"] },
-  "digitalocean": { "siteUrls": ["https://www.digitalocean.com/pricing/droplets"] },
-  "linode": { "siteUrls": ["https://www.linode.com/pricing/"] },
-  "vultr": { "siteUrls": ["https://www.vultr.com/pricing/"] },
-  "netlify": { "siteUrls": ["https://www.netlify.com/pricing/"] },
-  "vercel": { "siteUrls": ["https://vercel.com/pricing"] },
-  "cloudflare": { "siteUrls": ["https://www.cloudflare.com/plans/"] },
-  "rackspace": { "siteUrls": ["https://www.rackspace.com/cloud/servers"] },
-  "porkbun": { "siteUrls": ["https://porkbun.com/products/web_hosting"] },
-  "shopify": { "siteUrls": ["https://www.shopify.com/pricing"] },
-  "bigcommerce": { "siteUrls": ["https://www.bigcommerce.com/essentials/pricing/"] },
-  "wix": { "siteUrls": ["https://www.wix.com/premium-purchase-plan/dynamo"] },
-  "weebly": { "siteUrls": ["https://www.weebly.com/pricing"] },
-  "squarespace": { "siteUrls": ["https://www.squarespace.com/pricing"] },
-  "aws": { "siteUrls": ["https://aws.amazon.com/lightsail/pricing/"] },
-  "azure": { "siteUrls": ["https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/"] },
-  "gcp": { "siteUrls": ["https://cloud.google.com/compute/vm-instance-pricing"] },
-  "alibabacloud": { "siteUrls": ["https://www.alibabacloud.com/product/ecs"] }
+  "fastcomet": {
+    "siteUrls": [
+      "https://www.fastcomet.com/pricing"
+    ]
+  },
+  "hostpapa": {
+    "siteUrls": [
+      "https://www.hostpapa.com/web-hosting-plan/"
+    ]
+  },
+  "verpex": {
+    "siteUrls": [
+      "https://verpex.com/web-hosting"
+    ]
+  },
+  "tmdhosting": {
+    "siteUrls": [
+      "https://www.tmdhosting.com/shared-hosting.html"
+    ]
+  },
+  "interserver": {
+    "siteUrls": [
+      "https://www.interserver.net/webhosting/"
+    ]
+  },
+  "hostarmada": {
+    "siteUrls": [
+      "https://hostarmada.com/cloud-ssd-shared-hosting/"
+    ]
+  },
+  "accuwebhosting": {
+    "siteUrls": [
+      "https://www.accuwebhosting.com/web-hosting"
+    ]
+  },
+  "scalahosting": {
+    "siteUrls": [
+      "https://www.scalahosting.com/web-hosting-for-small-business.html"
+    ]
+  },
+  "chemicloud": {
+    "siteUrls": [
+      "https://chemicloud.com/pricing/"
+    ]
+  },
+  "bluehost": {
+    "siteUrls": [
+      "https://www.bluehost.com/hosting/shared"
+    ]
+  },
+  "kamatera": {
+    "siteUrls": [
+      "https://www.kamatera.com/pricing/"
+    ]
+  },
+  "ovhcloud": {
+    "siteUrls": [
+      "https://www.ovhcloud.com/en/web-hosting/"
+    ]
+  },
+  "hetzner": {
+    "siteUrls": [
+      "https://www.hetzner.com/cloud"
+    ]
+  },
+  "contabo": {
+    "siteUrls": [
+      "https://contabo.com/en/vps/"
+    ]
+  },
+  "siteground": {
+    "siteUrls": [
+      "https://www.siteground.com/web-hosting.htm"
+    ]
+  },
+  "godaddy": {
+    "siteUrls": [
+      "https://www.godaddy.com/hosting/web-hosting"
+    ]
+  },
+  "namecheap": {
+    "siteUrls": [
+      "https://www.namecheap.com/hosting/shared/"
+    ]
+  },
+  "dreamhost": {
+    "siteUrls": [
+      "https://www.dreamhost.com/hosting/shared/"
+    ]
+  },
+  "inmotion": {
+    "siteUrls": [
+      "https://www.inmotionhosting.com/shared-hosting"
+    ]
+  },
+  "hostgator": {
+    "siteUrls": [
+      "https://www.hostgator.com/web-hosting"
+    ]
+  },
+  "greengeeks": {
+    "siteUrls": [
+      "https://www.greengeeks.com/web-hosting"
+    ]
+  },
+  "a2hosting": {
+    "siteUrls": [
+      "https://hosting.com/web-hosting/"
+    ]
+  },
+  "ionos": {
+    "siteUrls": [
+      "https://www.ionos.com/hosting/web-hosting"
+    ]
+  },
+  "cloudways": {
+    "siteUrls": [
+      "https://www.cloudways.com/en/pricing.php"
+    ]
+  },
+  "kinsta": {
+    "siteUrls": [
+      "https://kinsta.com/plans/"
+    ]
+  },
+  "wpengine": {
+    "siteUrls": [
+      "https://wpengine.com/plans/"
+    ]
+  },
+  "flywheel": {
+    "siteUrls": [
+      "https://getflywheel.com/pricing/"
+    ]
+  },
+  "pressable": {
+    "siteUrls": [
+      "https://pressable.com/plans/"
+    ]
+  },
+  "nexcess": {
+    "siteUrls": [
+      "https://www.liquidweb.com/wordpress-hosting/managed-wordpress/"
+    ]
+  },
+  "pantheon": {
+    "siteUrls": [
+      "https://pantheon.io/plans/pricing"
+    ]
+  },
+  "rocketnet": {
+    "siteUrls": [
+      "https://rocket.net/pricing/"
+    ]
+  },
+  "liquidweb": {
+    "siteUrls": [
+      "https://www.liquidweb.com/vps-hosting/"
+    ]
+  },
+  "hostwinds": {
+    "siteUrls": [
+      "https://www.hostwinds.com/hosting/shared"
+    ]
+  },
+  "10web": {
+    "siteUrls": [
+      "https://10web.io/pricing/"
+    ]
+  },
+  "wordpresscom": {
+    "siteUrls": [
+      "https://wordpress.com/pricing/"
+    ]
+  },
+  "wpx": {
+    "siteUrls": [
+      "https://wpx.net/"
+    ]
+  },
+  "render": {
+    "siteUrls": [
+      "https://render.com/pricing"
+    ]
+  },
+  "digitalocean": {
+    "siteUrls": [
+      "https://www.digitalocean.com/pricing/droplets"
+    ]
+  },
+  "linode": {
+    "siteUrls": [
+      "https://www.linode.com/pricing/"
+    ]
+  },
+  "vultr": {
+    "siteUrls": [
+      "https://www.vultr.com/pricing/"
+    ]
+  },
+  "netlify": {
+    "siteUrls": [
+      "https://www.netlify.com/pricing/"
+    ]
+  },
+  "vercel": {
+    "siteUrls": [
+      "https://vercel.com/pricing"
+    ]
+  },
+  "cloudflare": {
+    "siteUrls": [
+      "https://www.cloudflare.com/plans/"
+    ]
+  },
+  "rackspace": {
+    "siteUrls": [
+      "https://www.rackspace.com/cloud/servers"
+    ]
+  },
+  "porkbun": {
+    "siteUrls": [
+      "https://porkbun.com/products/web_hosting"
+    ]
+  },
+  "shopify": {
+    "siteUrls": [
+      "https://www.shopify.com/pricing"
+    ]
+  },
+  "bigcommerce": {
+    "siteUrls": [
+      "https://www.bigcommerce.com/essentials/pricing/"
+    ]
+  },
+  "wix": {
+    "siteUrls": [
+      "https://www.wix.com/premium-purchase-plan/dynamo"
+    ]
+  },
+  "weebly": {
+    "siteUrls": [
+      "https://www.weebly.com/pricing"
+    ]
+  },
+  "squarespace": {
+    "siteUrls": [
+      "https://www.squarespace.com/pricing"
+    ]
+  },
+  "aws": {
+    "siteUrls": [
+      "https://aws.amazon.com/lightsail/pricing/"
+    ]
+  },
+  "azure": {
+    "siteUrls": [
+      "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/"
+    ]
+  },
+  "gcp": {
+    "siteUrls": [
+      "https://cloud.google.com/compute/vm-instance-pricing"
+    ]
+  },
+  "alibabacloud": {
+    "siteUrls": [
+      "https://www.alibabacloud.com/product/ecs"
+    ]
+  },
+  "pagely": {
+    "siteUrls": [
+      "https://pagely.com/pricing-signup/"
+    ]
+  }
 }

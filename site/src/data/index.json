@@ -136,11 +136,11 @@
     },
     {
       "id": "a2hosting",
-      "name": "A2 Hosting",
+      "name": "Hosting.com",
       "file": "./companies/a2hosting.json",
-      "websiteUrl": "https://www.a2hosting.com",
+      "websiteUrl": "https://hosting.com",
       "status": "complete",
-      "lastUpdated": "2026-01-13"
+      "lastUpdated": "2026-06-02"
     },
     {
       "id": "scalahosting",

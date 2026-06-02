@@ -39,7 +39,7 @@
     "storageType": "NVMe SSD",
     "bandwidthGb": "Unlimited",
     "inodeLimit": 50000,
-    "maxWebsitesAllowed": 1,
+    "maxWebsitesAllowed": 2,
     "maxDatabases": null,
     "maxDatabaseSizeGb": null,
     "maxFileUploadSizeMb": null,
@@ -63,8 +63,8 @@
     "imageOptimization": null
   },
   "serverPerformance": {
-    "serverLocations": ["Los Angeles, CA (US)", "Ashburn, VA (US)", "Amsterdam (Netherlands)", "Singapore"],
-    "serverLocationOptionsCount": 4,
+    "serverLocations": ["Los Angeles, CA (US)", "Ashburn, VA (US)", "Amsterdam (Netherlands)"],
+    "serverLocationOptionsCount": 3,
     "chooseServerLocation": true,
     "cdnIncluded": true,
     "cdnProvider": "InMotion CDN",

@@ -5,7 +5,7 @@
     "yearFounded": 1997,
     "headquartersCountry": "United States",
     "parentCompany": null,
-    "dataLastUpdated": "2026-01-12",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": null,
     "instantAccountActivation": null,
     "hostingType": "shared",
@@ -13,7 +13,7 @@
   },
   "pricing": {
     "sharedHostingMonthlyPromo": 5.99,
-    "sharedHostingMonthlyRenewal": 9.99,
+    "sharedHostingMonthlyRenewal": 11.99,
     "vpsMonthlyLowest": 6.00,
     "vpsMonthlyRenewal": 14.99,
     "dedicatedMonthlyLowest": null,
@@ -35,8 +35,8 @@
     "domainPrivacyCostYearly": null
   },
   "technicalSpecs": {
-    "storageGb": 100,
-    "storageType": "SSD",
+    "storageGb": 25,
+    "storageType": "NVMe SSD",
     "bandwidthGb": "Unlimited",
     "inodeLimit": 250000,
     "maxWebsitesAllowed": 1,
@@ -214,9 +214,9 @@
   },
   "pricingCalculated": {
     "totalFirstYearCost": 71.88,
-    "totalSecondYearCost": 119.88,
-    "renewalMarkupPercent": 66.8,
-    "effectiveMonthlyAverage": 7.99
+    "totalSecondYearCost": 143.88,
+    "renewalMarkupPercent": 100.17,
+    "effectiveMonthlyAverage": 8.99
   },
   "comparisonData": {
     "uniqueSellingPoint": "World's largest domain registrar with all-in-one hosting and domain management",
@@ -248,5 +248,13 @@
     "squarespaceMigration": true,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 5.99,
+      "renewalMonthly": 11.99,
+      "renewalMarkupPercent": 100.17
+    }
+  ]
 }

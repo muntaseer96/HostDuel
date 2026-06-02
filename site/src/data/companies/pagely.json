@@ -5,7 +5,7 @@
     "yearFounded": 2006,
     "headquartersCountry": "United States",
     "parentCompany": "Independent (GoDaddy acquired in 2023)",
-    "dataLastUpdated": "2026-01-14",
+    "dataLastUpdated": "2026-06-02",
     "greenHosting": true,
     "instantAccountActivation": false,
     "hostingType": "managed-wordpress",
@@ -18,9 +18,9 @@
     "vpsMonthlyRenewal": 299.00,
     "dedicatedMonthlyLowest": null,
     "dedicatedMonthlyRenewal": null,
-    "wordpressHostingMonthlyPromo": 299.00,
-    "wordpressHostingMonthlyRenewal": 299.00,
-    "cloudHostingMonthlyLowest": 299.00,
+    "wordpressHostingMonthlyPromo": 499,
+    "wordpressHostingMonthlyRenewal": 499,
+    "cloudHostingMonthlyLowest": 499,
     "freeDomainIncluded": false,
     "freeDomainDurationMonths": null,
     "domainTransferLockPeriodDays": null,
@@ -35,11 +35,11 @@
     "domainPrivacyCostYearly": null
   },
   "technicalSpecs": {
-    "storageGb": null,
+    "storageGb": 50,
     "storageType": "SSD",
-    "bandwidthGb": null,
+    "bandwidthGb": 200,
     "inodeLimit": null,
-    "maxWebsitesAllowed": 1,
+    "maxWebsitesAllowed": 35,
     "maxDatabases": null,
     "maxDatabaseSizeGb": null,
     "maxFileUploadSizeMb": null,
@@ -224,10 +224,10 @@
     "railsSupport": false
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 3588.00,
-    "totalSecondYearCost": 3588.00,
+    "totalFirstYearCost": 5988,
+    "totalSecondYearCost": 5988,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 299.00
+    "effectiveMonthlyAverage": 499
   },
   "comparisonData": {
     "uniqueSellingPoint": "Original managed WordPress host (2006) with AWS infrastructure, HIPAA/PCI/FedRAMP compliance for enterprise",
@@ -259,5 +259,13 @@
     "squarespaceMigration": false,
     "webflowExport": false,
     "staticSiteSupport": false
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-06-02",
+      "promoMonthly": 499,
+      "renewalMonthly": 499,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }
