@@ -1,0 +1,97 @@
+---
+title: "Does Shared Hosting Support WebSockets?"
+description: "Building live chat, notifications, or a real-time app? Here's why shared hosting can't run a WebSocket server, how to tell if yours does, and what to host real-time features on instead."
+date: "2026-07-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/15.jpg"
+category: "guides"
+tags: ["websockets", "shared-hosting", "vps", "realtime"]
+featured: false
+---
+
+You're adding something real-time — live chat, a notifications feed, a multiplayer feature, a live dashboard — and it needs WebSockets. Naturally you ask whether the shared hosting you already pay for can handle it. The answer developers keep running into: *"Websockets on shared hosting: not possible"*, *"can't find any shared hosts that advertise this as a feature."*
+
+**In almost all cases, no — shared hosting can't run a WebSocket server.** Here's exactly why, how to check your own host, and where to run real-time features instead.
+
+## Why WebSockets don't work on shared hosting
+
+A normal web request is short: the browser asks, the server answers, the connection closes. That's what shared hosting is optimized for. A **WebSocket is the opposite — a single connection that stays open** for as long as the user is on the page, with messages flowing both ways.
+
+That persistent, two-way connection breaks the shared-hosting model:
+
+- **You need a long-running server process.** A WebSocket server (Socket.IO, `ws`, Ratchet, etc.) has to stay running to hold connections. Shared hosting **kills long-running processes** — so the server dies.
+- **You don't control ports.** WebSocket servers listen on a port; shared hosting doesn't let you bind arbitrary ports or keep a listener open.
+- **Connection limits and timeouts.** Even where a socket briefly opens, shared servers cap concurrent connections and time them out to protect the box — the opposite of what real-time needs.
+
+The nuance: some shared hosts (Hostinger, for example) allow **outgoing** WebSocket connections — your PHP can *connect out* to someone else's WebSocket. But you still **can't run your own WebSocket server** for browsers to connect *to*. For a chat app or live feature, that's the part you need — and it's the part that doesn't work.
+
+## How to tell if your host supports WebSockets
+
+- **Check the plan type.** If it's "shared", "starter", or cPanel-based, assume no inbound WebSocket server.
+- **Search the host's docs** for "WebSocket". Most either say "not supported on shared/reseller" or stay silent (which means no).
+- **Try it, briefly.** Start a small `ws` server; if the process is killed within minutes or you can't reach it from a browser, that's your answer.
+
+If you have to fight the host to *maybe* keep a socket open, it's the wrong environment.
+
+## Where to run real-time features instead
+
+Anything with a persistent process runs WebSockets fine.
+
+### A VPS (full control)
+
+Your own server — run Socket.IO / `ws` / Ratchet exactly as you would locally, behind Nginx as a reverse proxy (which upgrades HTTP connections to WebSocket).
+
+| Provider | From | Notes |
+|----------|------|-------|
+| [Vultr](/hosting/vultr) | ~$2.50/mo | Cheapest for a small real-time app |
+| [DigitalOcean](/hosting/digitalocean) | ~$4/mo | Best docs for the Nginx + Node setup |
+| [Contabo](/hosting/contabo) | ~$5.50/mo | More RAM for many concurrent connections |
+
+The Nginx config that makes it work is just the connection-upgrade headers:
+
+```nginx
+location /socket.io/ {
+    proxy_pass http://localhost:3000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+}
+```
+
+### A PaaS (easiest)
+
+- [Render](/hosting/render) — WebSockets work out of the box on web services; just deploy your Node/Python server.
+- **Managed real-time services** (Pusher, Ably) — if you'd rather not run the socket server at all, these handle the connections and you call their API. Great when real-time is a small part of an otherwise-static site.
+
+## FAQ
+
+### Can I use WebSockets on Hostinger / Bluehost shared hosting?
+
+You can generally make **outgoing** WebSocket connections from PHP, but you **can't host your own WebSocket server** for browsers to connect to. For live chat or notifications you need a VPS, a PaaS, or a managed service like Pusher/Ably.
+
+### Do I need a VPS just for real-time features?
+
+If you want to run the WebSocket server yourself, yes — a cheap [VPS](/hosting/vultr) (~$2.50/mo) or [Render](/hosting/render). If real-time is minor, a managed service (Pusher/Ably) avoids running a server at all.
+
+### Will Nginx break my WebSockets?
+
+Only if it's missing the upgrade headers. Add `proxy_set_header Upgrade` and `Connection "upgrade"` (above) and Nginx proxies WebSocket traffic correctly.
+
+### What about serverless (Vercel/Netlify)?
+
+Classic serverless functions are short-lived and not ideal for holding open WebSocket connections. Use a persistent host (VPS/Render) or a managed real-time service for the socket layer.
+
+## Key takeaways
+
+1. Shared hosting is built for **short requests**, not the persistent open connection a WebSocket needs.
+2. You can't run a **WebSocket server** on shared hosting — the process gets killed and you can't own a port.
+3. "Outgoing WebSocket allowed" ≠ "you can host a chat app" — you need the **inbound server**, which shared hosting blocks.
+4. Use a **VPS** ([Vultr](/hosting/vultr)/[DigitalOcean](/hosting/digitalocean)) with Nginx upgrade headers, [Render](/hosting/render), or a managed service (Pusher/Ably).
+5. Serverless isn't ideal for the socket layer either — use a persistent process.
+
+WebSockets are one of [several things shared hosting can't run](/blog/what-you-cant-run-on-shared-hosting). Compare real-time-friendly hosts in our [comparison tool](/compare) or see the [best VPS hosting](/blog/best-vps-hosting).
+
+---
+
+*Last updated: July 2026*

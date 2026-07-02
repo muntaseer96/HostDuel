@@ -1,0 +1,97 @@
+---
+title: "Can You Host a Discord Bot on Regular Web Hosting?"
+description: "Trying to run a Discord bot on your shared/cPanel web hosting? Here's why it keeps going offline, and the cheapest way to host a Discord bot 24/7 that actually stays online."
+date: "2026-07-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/13.jpg"
+category: "guides"
+tags: ["discord-bot", "shared-hosting", "vps", "deployment"]
+featured: false
+---
+
+You built a Discord bot, you already pay for web hosting, so it seems obvious to just put the bot there. Then it goes offline the moment you close your laptop — or a few minutes after you start it on the server. The forums are full of the same question: *"What's the best place to host a Discord bot 24/7?"* and *"reliable Discord bot hosting, free or cheap?"*
+
+Short answer: **regular shared/cPanel web hosting can't host a Discord bot** — and no setting will fix it. Here's why, and what to use instead (starting around $2.50/mo).
+
+## Why shared web hosting can't run a Discord bot
+
+A Discord bot isn't a website. A website waits for a visitor, sends back a page, and stops. A **bot is a program that stays connected to Discord 24/7**, listening for events — a *persistent process*.
+
+Shared and cPanel hosting is built for the website model, so it actively works against a bot:
+
+- **It kills long-running processes.** To protect a server shared by hundreds of accounts, the host reaps anything that keeps running. Your bot gets terminated minutes after it starts.
+- **No real background process control.** You can't reliably keep a `node bot.js` or `python bot.py` alive. Even cPanel's "Setup Node.js App" restarts on its own schedule and throttles background work.
+- **No persistent outbound connection.** The bot needs a steady gateway connection to Discord; shared hosting isn't designed to hold that open.
+
+So "my bot keeps going offline" on shared hosting is the platform working as designed — against you.
+
+## What you actually need
+
+Anything that gives you a **persistent process** works. Two good routes:
+
+### 1. A cheap VPS (best value, full control)
+
+A VPS is your own small Linux server — the bot runs exactly like it does on your PC, but it never sleeps.
+
+| Provider | From | Notes |
+|----------|------|-------|
+| [Vultr](/hosting/vultr) | ~$2.50/mo | Cheapest reliable option for a single bot |
+| [DigitalOcean](/hosting/digitalocean) | ~$4/mo | Best beginner docs and tutorials |
+| [Contabo](/hosting/contabo) | ~$5.50/mo | Lots of RAM if your bot is heavy |
+
+Once you have a VPS, keep the bot alive with a process manager so it restarts on crashes and reboots:
+
+```bash
+# Node bot
+npm i -g pm2
+pm2 start bot.js --name discord-bot
+pm2 startup && pm2 save
+
+# Python bot (systemd is the clean way, or):
+pip install pm2 || nohup python bot.py &
+```
+
+That's the whole trick — `pm2 startup && pm2 save` makes the bot survive a server reboot.
+
+### 2. A PaaS (easiest, no server admin)
+
+If you'd rather not touch a Linux box, [Render](/hosting/render) runs a bot as a "background worker" — you connect your GitHub repo and it stays online. There's a free tier to start; a paid worker (~$7/mo) avoids the free tier sleeping.
+
+> **What about dedicated "Discord bot hosts"?** Sites like bot-hosting.net or Pella exist and can work for a first bot, but they're often ad-supported, resource-limited, or unreliable at the free tier. A $2.50 VPS gives you a real server you control — and it can run other projects too.
+
+## Don't host it on your own PC
+
+A common "free" option is running the bot on your home computer. It works until your PC sleeps, reboots, or your internet blips — then the bot is offline and members notice. For anything you want online 24/7, a cheap VPS is worth the couple of dollars.
+
+## FAQ
+
+### Can I host a Discord bot on Bluehost / Hostinger / GoDaddy shared hosting?
+
+No. Their shared plans kill long-running processes and don't support a 24/7 bot. You'd need their VPS tier or a separate cheap VPS.
+
+### What's the cheapest way to host a Discord bot 24/7?
+
+A [Vultr](/hosting/vultr) or [DigitalOcean](/hosting/digitalocean) VPS from ~$2.50–4/mo, or a [Render](/hosting/render) background worker. All keep the bot online without your computer being on.
+
+### Do I need a VPS or is free hosting enough?
+
+Free tiers (like Render's) work for a small bot but may sleep or limit runtime. For a bot people rely on, a cheap always-on VPS is the safer choice.
+
+### Can one VPS run multiple bots?
+
+Yes. A single small VPS can run several bots (and other small apps) at once — just start each under its own PM2/systemd process.
+
+## Key takeaways
+
+1. A Discord bot is a **24/7 process**, not a website — shared/cPanel hosting can't keep it alive.
+2. Your host isn't broken; it **kills long-running processes** by design.
+3. Use a **cheap VPS** ([Vultr](/hosting/vultr) ~$2.50, [DigitalOcean](/hosting/digitalocean) ~$4) or a [Render](/hosting/render) worker.
+4. Keep it alive with **PM2** (`pm2 startup && pm2 save`) or systemd.
+5. Don't rely on your home PC — it goes offline the moment the machine sleeps.
+
+This is one of several things [shared hosting simply can't run](/blog/what-you-cant-run-on-shared-hosting). Compare VPS options in our [comparison tool](/compare) or see the [best VPS hosting](/blog/best-vps-hosting).
+
+---
+
+*Last updated: July 2026*

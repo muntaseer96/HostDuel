@@ -1,0 +1,103 @@
+---
+title: "Can You Run a Python Script 24/7 on Shared Hosting?"
+description: "Need a Python scraper, Telegram bot, or scheduled job running 24/7? Here's why shared hosting won't keep it alive, and the cheapest way to run a Python script continuously that actually works."
+date: "2026-07-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/14.jpg"
+category: "guides"
+tags: ["python", "shared-hosting", "vps", "automation"]
+featured: false
+---
+
+You've got a Python script — a web scraper, a Telegram bot, a job that checks something every few minutes — and you want it running around the clock without your laptop on. You already have shared hosting, so the natural question is: *"can I just run it there?"* The dev forums answer it constantly: *"cheapest way to run python code 24/7?"*, *"how do I keep a Python app running 24/7 on host?"*, *"shared hosting that supports Python?!"*
+
+The honest answer: **most shared hosting can't run a Python script 24/7** — and where it technically can, the host kills it. Here's why, and the cheap fix.
+
+## Why shared hosting won't keep your script running
+
+Shared hosting is built to run a script *for one web request and then stop*. A 24/7 script is the opposite: it needs a process that **stays alive indefinitely**. That clashes with how shared hosting protects its servers:
+
+- **Long-running processes get killed.** The host reaps anything that keeps running, so your `while True:` loop or `python bot.py` gets terminated to protect the shared box.
+- **No real process control.** Even hosts with a cPanel "Setup Python App" (Passenger) feature restart your app on *their* schedule and throttle background work — fine for a small web app, not for an always-on worker.
+- **Cron is not "24/7".** Some people try to fake it with a cron job every minute. That works for a light periodic task, but it's fragile, has minimum intervals, and won't hold state or a live connection.
+
+So a script that must *stay running* — a bot, a listener, a continuous scraper — doesn't belong on shared hosting.
+
+## What actually runs Python 24/7
+
+You need something that gives you a persistent process. Cheapest to easiest:
+
+### 1. A VPS (cheapest, full control)
+
+Your own Linux server where Python runs exactly like on your machine — and never stops.
+
+| Provider | From | Notes |
+|----------|------|-------|
+| [Vultr](/hosting/vultr) | ~$2.50/mo | Cheapest for a single script/bot |
+| [DigitalOcean](/hosting/digitalocean) | ~$4/mo | Best tutorials for first-timers |
+| [Contabo](/hosting/contabo) | ~$5.50/mo | More RAM for data-heavy scripts |
+
+The clean way to keep a Python script alive on a VPS is a **systemd service**, so it auto-restarts on crashes and reboots:
+
+```ini
+# /etc/systemd/system/myscript.service
+[Unit]
+Description=My Python script
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/user/myscript.py
+Restart=always
+User=user
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+sudo systemctl enable --now myscript
+```
+
+`Restart=always` means it comes back if it ever dies. That's the piece shared hosting can never give you.
+
+### 2. A PaaS or purpose-built Python host (easiest)
+
+- [Render](/hosting/render) — run the script as a "background worker"; connect GitHub and it stays on. Free tier to start.
+- **PythonAnywhere** — beginner-friendly for Python specifically, with an "always-on task" option on paid plans.
+
+### For periodic (not continuous) jobs
+
+If your script only needs to run *every X minutes* rather than continuously, a **cron job** on a cheap VPS (or even some shared hosts) is enough — and cleaner than a 24/7 process. Continuous connection or state → VPS/PaaS. Fire-and-forget every N minutes → cron.
+
+## FAQ
+
+### Can I run Python on Hostinger / Bluehost shared hosting?
+
+You can run Python for a normal web request on some plans, but you **can't keep a script running 24/7** — the host kills long-running processes. For an always-on script you need their VPS tier or a separate VPS.
+
+### What's the cheapest way to run a Python script 24/7?
+
+A [Vultr](/hosting/vultr) or [DigitalOcean](/hosting/digitalocean) VPS from ~$2.50–4/mo with a systemd service, or a [Render](/hosting/render) background worker.
+
+### Can I just use a cron job to fake 24/7?
+
+Only for periodic tasks. Cron runs your script on a schedule (e.g. every 5 minutes) and exits — it can't hold a live connection or keep state between runs. For a bot or listener, use a real persistent process.
+
+### How do I make the script restart if it crashes?
+
+On a VPS, use a `systemd` service with `Restart=always` (Python) or PM2. Both automatically relaunch the script on crashes and server reboots.
+
+## Key takeaways
+
+1. Shared hosting runs a script **per request, then stops** — it can't keep one running 24/7.
+2. Long-running Python processes get **killed by the host** by design.
+3. **Cron ≠ 24/7** — it's only for periodic jobs.
+4. Use a **cheap VPS** ([Vultr](/hosting/vultr) ~$2.50, [DigitalOcean](/hosting/digitalocean) ~$4) with `systemd Restart=always`, or a [Render](/hosting/render) worker.
+5. `Restart=always` gives you the auto-recovery shared hosting never will.
+
+Running Python 24/7 is one of [several things shared hosting can't do](/blog/what-you-cant-run-on-shared-hosting). Compare hosts in our [comparison tool](/compare) or see the [best VPS hosting](/blog/best-vps-hosting).
+
+---
+
+*Last updated: July 2026*

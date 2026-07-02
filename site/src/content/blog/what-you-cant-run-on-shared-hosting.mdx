@@ -1,0 +1,104 @@
+---
+title: "What You Can't Run on Cheap Shared Hosting (and What to Use Instead)"
+description: "Discord bots, Node.js, Python scripts, WebSockets — cheap shared hosting kills them all. Here's why shared hosting can't run anything that stays on, and exactly what to host it on instead."
+date: "2026-07-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/12.jpg"
+category: "guides"
+tags: ["shared-hosting", "vps", "nodejs", "python", "deployment"]
+featured: false
+---
+
+Every week someone asks a version of the same question: *"I bought cheap shared hosting — why won't my Discord bot / Node app / Python script / chat feature run?"* The frustrating part is that the host advertised "unlimited" everything, so it feels like it *should* work.
+
+It doesn't, and it's not your code. **Shared hosting can serve web pages, but it can't run anything that needs to stay on.** Once you understand that one limitation, every one of these failures makes sense — and the fix is always the same.
+
+## The one rule: shared hosting doesn't do persistent processes
+
+Shared hosting was built around the **PHP request model**: a request comes in, the server runs a script, sends back HTML, and the script *dies*. Nothing keeps running between requests. That's what lets a host pack hundreds of accounts onto one box cheaply.
+
+Anything that needs a **process that stays alive** — listening on a port, holding a connection open, running a loop 24/7 — fights that model directly. To protect the shared server, the host **kills long-running processes**, blocks arbitrary ports, and throttles background work. So the following all break for the same underlying reason.
+
+### Discord bots ❌
+
+A Discord bot is a program that stays connected to Discord's gateway **24/7**. Shared hosting reaps long-running processes, so the bot dies minutes after you start it. → [Can you host a Discord bot on regular web hosting?](/blog/host-discord-bot-on-web-hosting)
+
+### Node.js apps ❌
+
+Node is a persistent process that owns a port — the opposite of PHP. You get `EADDRINUSE`, PM2 keeps getting killed, and most shared plans don't support Node at all. → [Why Node.js won't run on your shared hosting](/blog/why-nodejs-wont-run-on-shared-hosting)
+
+### Python scripts / bots running 24/7 ❌
+
+A scraper, a Telegram bot, a scheduled job that runs continuously — same story. Most shared hosts don't give you real Python process control, and the ones that do kill anything long-running. → [Can you run a Python script 24/7 on shared hosting?](/blog/run-python-script-24-7-shared-hosting)
+
+### WebSockets / real-time features ❌
+
+WebSockets hold a **persistent two-way connection** open per user. Shared hosting is built to open and close connections fast, so real-time chat, live dashboards, and multiplayer features won't work. → [Does shared hosting support WebSockets?](/blog/does-shared-hosting-support-websockets)
+
+### Background workers, queues & long cron jobs ⚠️
+
+Job queues, video processing, anything that runs longer than a few seconds — shared hosting throttles or kills these too. A one-line cron that hits a URL is fine; a worker that grinds for minutes is not.
+
+## What actually works: a VPS or a PaaS
+
+There are only two real fixes, depending on how much you want to manage.
+
+### Option 1: A VPS (full control, cheapest)
+
+A VPS is your own small Linux server. Processes stay alive, you own the ports, and everything above just works like it does on your laptop.
+
+| Provider | From | Best for |
+|----------|------|----------|
+| [Vultr](/hosting/vultr) | ~$2.50/mo | Cheapest way to run a bot or small app |
+| [DigitalOcean](/hosting/digitalocean) | ~$4/mo | Great docs, easiest first VPS |
+| [Contabo](/hosting/contabo) | ~$5.50/mo | Most RAM/storage per dollar |
+| [Cloudways](/hosting/cloudways) | ~$14/mo | Managed VPS — skip the sysadmin |
+
+The reliable pattern on a VPS: run your app under a process manager that survives reboots (`pm2` for Node, `systemd` for Python), put Nginx in front for public traffic and SSL, and you're done.
+
+### Option 2: A PaaS (easiest, push-to-deploy)
+
+Platform-as-a-service handles the server for you — you `git push` and it runs, with persistent processes and WebSockets supported out of the box.
+
+- [Render](/hosting/render) — purpose-built for always-on web services and workers; a free tier to start.
+- [Vercel](/hosting/vercel) / [Netlify](/hosting/netlify) — perfect if your app is really a **Next.js/serverless** front-end, less so for a stateful always-on backend.
+
+## Quick decision guide
+
+- **Discord/Telegram bot, small script?** → the cheapest [VPS](/hosting/vultr) (~$2.50/mo) or [Render](/hosting/render).
+- **Always-on Node/Python backend, minimal ops?** → [Render](/hosting/render) or managed [Cloudways](/hosting/cloudways).
+- **Real-time (WebSockets), workers, full control?** → a [DigitalOcean](/hosting/digitalocean)/[Vultr](/hosting/vultr) VPS.
+- **Just a WordPress/PHP site?** → shared hosting is genuinely fine. Keep it.
+
+## FAQ
+
+### Why does everything "long-running" die on shared hosting?
+
+Shared hosting kills long-running processes on purpose, to stop one account from hogging a server shared by hundreds of others. It's a design choice, not a bug — so no config tweak fixes it.
+
+### Can't I just upgrade my shared plan?
+
+Usually not — even the top shared tier keeps the same process limits. You need a different *product* (VPS or PaaS), not a bigger shared plan. The good news is a VPS starts cheaper than most people expect (~$2.50/mo).
+
+### Do I have to move my whole site?
+
+No. A common setup is to keep your marketing site on shared hosting and run just the bot/app/API on a cheap VPS. They don't have to live together.
+
+### Is a $2.50–5 VPS really enough?
+
+For a bot or a small app, yes. A 1GB VPS running one process comfortably handles real use. Scale up only when you actually need to.
+
+## Key takeaways
+
+1. Shared hosting can serve pages but **can't run anything that stays on**.
+2. Discord bots, Node apps, 24/7 Python, and WebSockets all fail for the **same reason** — persistent processes get killed.
+3. Upgrading your shared plan won't fix it; you need a **VPS or PaaS**.
+4. A [VPS from ~$2.50/mo](/hosting/vultr) or [Render](/hosting/render) solves all four.
+5. Keep shared hosting for what it's good at — **PHP/WordPress sites**.
+
+Ready to pick one? Compare developer-friendly hosts in our [comparison tool](/compare) or start with the [best VPS hosting](/blog/best-vps-hosting).
+
+---
+
+*Last updated: July 2026*
