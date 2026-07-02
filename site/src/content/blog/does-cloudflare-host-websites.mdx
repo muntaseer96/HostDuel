@@ -1,0 +1,86 @@
+---
+title: "Does Cloudflare Actually Host Websites?"
+description: "Confused whether Cloudflare hosts your site or just sits in front of it? Here's exactly what Cloudflare does, what Cloudflare Pages can and can't host, and when you still need a real host."
+date: "2026-07-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/5.jpg"
+category: "guides"
+tags: ["cloudflare", "hosting", "cdn", "pages"]
+featured: false
+---
+
+It's one of the most common points of confusion in web hosting: you point your domain at Cloudflare, your site gets faster and gets SSL, and you start to wonder — *"wait, is Cloudflare hosting my website now? Do I still need my host?"* People ask it constantly: *"is Cloudflare a web host or just a CDN?"*, *"can I host my site entirely on Cloudflare for free?"*
+
+The answer has two halves, because Cloudflare is really two different products. **The classic Cloudflare (CDN/DNS/proxy) does *not* host your site — it sits in front of your real host. But Cloudflare Pages *does* host sites** — specifically static and Jamstack sites. Here's how to tell which one you need.
+
+## The classic Cloudflare: a shield, not a host
+
+When most people say "I use Cloudflare," they mean the free CDN/DNS/proxy layer. What that actually does:
+
+- **DNS** — Cloudflare answers "where is this domain?"
+- **CDN/proxy** — it caches and serves your content from edge locations worldwide, and hides your origin server.
+- **Security/SSL** — free SSL, DDoS protection, a firewall.
+
+But the **origin — where your HTML, PHP, database, and files actually live — is still somewhere else.** Your WordPress site still runs on Bluehost, Hostinger, SiteGround, or wherever. Cloudflare just caches and protects it. Turn Cloudflare off and your site still exists on the host; turn the host off and Cloudflare has nothing to serve. That's the tell: **classic Cloudflare needs a host behind it.**
+
+## Cloudflare Pages: this one *does* host
+
+Separately, Cloudflare offers **Cloudflare Pages** (and Workers), which genuinely hosts websites on Cloudflare's own network — no origin host required. But there's a catch about *what kind* of site:
+
+- **Static & Jamstack sites** — HTML/CSS/JS, or a framework that builds to static (Next.js static export, Astro, Hugo, React, Vue). ✅ Pages hosts these fully and fast, on a generous free tier.
+- **Dynamic backends** — anything needing a traditional server, PHP, or a persistent database. You'd rebuild it on **Workers** + a serverless data store (D1, KV), which is a different architecture, not "upload your WordPress site."
+
+So Cloudflare Pages *is* hosting — for the static/Jamstack world. It is **not** a drop-in home for a classic PHP/WordPress site.
+
+## Can I run WordPress on Cloudflare?
+
+Not on Cloudflare alone. WordPress needs PHP and MySQL, which Pages/Workers don't provide the traditional way. The normal setup is:
+
+**WordPress on a real host + Cloudflare's free CDN in front.** You get Cloudflare's speed and protection, but the hosting is still done by a WordPress host.
+
+| Your site is… | Host it on | Cloudflare's role |
+|---------------|-----------|-------------------|
+| Static / Jamstack | [Cloudflare](/hosting/cloudflare) Pages (or [Netlify](/hosting/netlify)/[Vercel](/hosting/vercel)) | Cloudflare *is* the host |
+| WordPress / PHP | [Hostinger](/hosting/hostinger), [SiteGround](/hosting/siteground), etc. | Free CDN + SSL in front |
+| Node/dynamic app | [Render](/hosting/render) or a [VPS](/hosting/vultr) | Free CDN + DDoS in front |
+
+## So do you still need a web host?
+
+- **Static site?** No — Cloudflare Pages can be your entire host, free.
+- **WordPress or any PHP/database site?** Yes — you need a real host; Cloudflare goes *in front* of it.
+- **Node/dynamic backend?** Yes — host it on [Render](/hosting/render) or a [VPS](/hosting/vultr); optionally put Cloudflare in front.
+
+The mental model: **classic Cloudflare = a fast, protective layer over your host. Cloudflare Pages = an actual host, but only for static/Jamstack.**
+
+## FAQ
+
+### Is Cloudflare a web host or a CDN?
+
+Both, via two products. The classic Cloudflare is a **CDN/DNS/security proxy** that sits in front of your real host. **Cloudflare Pages** is genuine hosting — for static and Jamstack sites.
+
+### Can I host my website for free on Cloudflare?
+
+If it's a **static or Jamstack** site, yes — Cloudflare Pages has a generous free tier. A dynamic PHP/WordPress site still needs a separate host, with Cloudflare's free CDN in front.
+
+### Can I run WordPress on Cloudflare?
+
+Not on Cloudflare by itself — WordPress needs PHP and MySQL. Host WordPress on a [WordPress host](/hosting/hostinger) and use Cloudflare's free CDN/SSL in front of it.
+
+### If I use Cloudflare, can I cancel my hosting?
+
+Only if you move to Cloudflare **Pages** (static sites). For classic Cloudflare in front of WordPress, no — your host is where the site actually lives.
+
+## Key takeaways
+
+1. **Classic Cloudflare (CDN/DNS/proxy) does not host your site** — it caches and protects a site that lives on a real host.
+2. **Cloudflare Pages *does* host** — but only static/Jamstack sites, not traditional PHP/WordPress.
+3. **WordPress can't run on Cloudflare alone** — use a WordPress host with Cloudflare's free CDN in front.
+4. Static site → Cloudflare Pages can be your whole host, free. Dynamic site → you still need a real host.
+5. For dynamic/Node apps, host on [Render](/hosting/render) or a [VPS](/hosting/vultr) and optionally front it with Cloudflare.
+
+Picking the right *kind* of host is what our [comparison tool](/compare) is for. If you're building static/Jamstack, see [Vercel vs Netlify](/compare/netlify-vs-vercel) or the [best free hosting](/blog/best-free-hosting-options) options.
+
+---
+
+*Last updated: July 2026*

@@ -1,0 +1,91 @@
+---
+title: "Is Vercel Actually Free? (The Honest Answer)"
+description: "Vercel's Hobby plan is free — until it isn't. Here's exactly what the free tier includes, the limits that trip people up, when a hobby project suddenly needs a paid plan, and cheaper alternatives."
+date: "2026-07-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/6.jpg"
+category: "guides"
+tags: ["vercel", "free-hosting", "nextjs", "jamstack"]
+featured: false
+---
+
+Vercel is famous for its free tier, and for good reason — you can deploy a Next.js app in minutes and pay nothing. But then you read the stories: *"my hobby project got a huge bill,"* *"is Vercel free plan really free or will I get charged?"* So which is it?
+
+The honest answer: **Vercel's Hobby plan is genuinely free and stays free — as long as your project is personal, non-commercial, and inside the usage limits.** The gotchas aren't hidden fees on the free plan; they're the specific lines that push you *off* the free plan. Here's exactly where those lines are.
+
+## What the free (Hobby) plan actually includes
+
+The Hobby tier is real and generous for what it's for:
+
+- Deploy unlimited personal projects from Git, with automatic HTTPS and a global CDN.
+- Preview deployments for every push.
+- A monthly allowance of bandwidth, serverless function execution, and build minutes.
+- Free `*.vercel.app` domains, plus custom domains.
+
+For a portfolio, a side project, a docs site, or a small Next.js app with modest traffic, you can genuinely run on it forever at $0.
+
+## The two lines that end "free"
+
+Free stops for one of two reasons — and it's worth knowing which:
+
+### 1. It's a commercial project
+
+The Hobby plan is licensed for **non-commercial, personal use.** The moment your site is for a business — a client site, a startup, anything with ads or revenue — Vercel's terms say you need the **Pro plan (around $20/user/month).** This trips up freelancers who deploy client work on Hobby and later get told to upgrade.
+
+### 2. You blow past the usage allowances
+
+Even for a personal project, the free tier has ceilings — bandwidth, function invocations/duration, build minutes, image optimizations. A project that suddenly gets popular (or has a runaway function) can exceed them. Historically this either **pauses the project** until the next cycle or **prompts an upgrade** to Pro, where overages are then billed. The "huge bill" horror stories almost always trace back to a commercial Pro account with usage-based overages — not a Hobby user quietly getting charged.
+
+> **The practical safeguard:** on Hobby, set **spend limits / usage alerts** in your dashboard, and don't put revenue-generating or client sites on the free tier. That's the whole difference between "free forever" and "surprise invoice."
+
+## When Vercel is the right free choice — and when it isn't
+
+Vercel free is excellent for **Next.js and frontend/Jamstack** projects. It's the wrong tool if you need an always-on backend, a database server, or a long-running process — that's not what the platform is.
+
+| Your project | Vercel free? | Better fit |
+|--------------|-------------|------------|
+| Personal Next.js / React site | ✅ Ideal | — |
+| Portfolio / docs / static site | ✅ Ideal | [Netlify](/hosting/netlify), [Cloudflare](/hosting/cloudflare) Pages also free |
+| **Commercial / client** site | ⚠️ Needs Pro (~$20) | A [VPS](/hosting/vultr) or [Render](/hosting/render) is often cheaper |
+| Always-on Node backend, DB, workers | ❌ Wrong tool | [Render](/hosting/render) or a [VPS](/hosting/digitalocean) |
+
+## Cheaper alternatives when you outgrow free
+
+If you're commercial and don't want the ~$20/mo Pro plan, you have options that cost less:
+
+- [Netlify](/hosting/netlify) / [Cloudflare](/hosting/cloudflare) Pages — comparable free tiers for static/Jamstack; different commercial terms worth reading.
+- [Render](/hosting/render) — runs full backends and static sites; predictable pricing, free tier to start.
+- A [VPS](/hosting/vultr) (~$2.50–4/mo) — for a commercial site with steady traffic, a small VPS is often cheaper *and* has no per-seat licensing.
+
+## FAQ
+
+### Is Vercel's free plan really free?
+
+Yes — the Hobby plan is genuinely $0 for **personal, non-commercial** projects within the usage limits. It's not a trial. The catch is the licensing (no commercial use) and the usage ceilings, not hidden fees.
+
+### Will Vercel charge me automatically on the free plan?
+
+The Hobby plan itself doesn't bill overages the way a Pro account does — exceeding limits typically pauses the project or prompts an upgrade. Surprise bills almost always come from **Pro** accounts with usage-based overages. Set spend limits to be safe.
+
+### Can I use Vercel free for a client or business site?
+
+Per Vercel's terms, no — commercial projects require the **Pro plan (~$20/user/mo)**. For a commercial site on a budget, a [VPS](/hosting/vultr) or [Render](/hosting/render) is often cheaper.
+
+### What's the cheapest way to host a Next.js site?
+
+For personal use, Vercel/Netlify free tiers. For commercial use on a budget, a small [VPS](/hosting/digitalocean) (~$4/mo) running Next.js, or [Render](/hosting/render).
+
+## Key takeaways
+
+1. Vercel's **Hobby plan is genuinely free** — and stays free — for personal, non-commercial projects within the limits.
+2. Free ends for one of two reasons: the project is **commercial** (needs Pro ~$20), or you **exceed usage allowances**.
+3. "Surprise bill" stories are almost always **Pro accounts with overages**, not Hobby users being secretly charged.
+4. Set **spend limits/alerts**, and don't host client/revenue sites on Hobby.
+5. Outgrowing free? [Netlify](/hosting/netlify)/[Cloudflare](/hosting/cloudflare) Pages (static), [Render](/hosting/render), or a [VPS](/hosting/vultr) — often cheaper than Pro.
+
+Choosing between free platforms is exactly what our [comparison tool](/compare) helps with. Also see the [best free hosting](/blog/best-free-hosting-options) roundup and [Vercel vs Netlify](/compare/netlify-vs-vercel).
+
+---
+
+*Last updated: July 2026*
