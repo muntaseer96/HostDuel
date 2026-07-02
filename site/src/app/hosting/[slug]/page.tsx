@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getCompanyById, getTableRowById, getAllCompanyIds, getAllTableRows } from '@/lib/data';
+import { getRelatedComparisons } from '@/lib/comparisons';
 import { TOP_HOSTS } from '@/lib/programmatic';
 import { Container } from '@/components/layout';
 import { DataDisclaimer } from '@/components/ui';
@@ -41,10 +42,13 @@ export async function generateMetadata({ params }: HostPageProps): Promise<Metad
   const hostingType = company.basicInfo.hostingType
     ? HOSTING_TYPES[company.basicInfo.hostingType]
     : 'Web Hosting';
-  const description = `${name} review and comparison. See pricing, features, performance ratings, and compare with alternatives. ${company.comparisonData.uniqueSellingPoint || ''}`;
+  const year = new Date().getFullYear();
+  // Front-load "<Name> <Type>" so exact queries like "bluehost shared hosting"
+  // match the title, and add the year as a freshness signal.
+  const description = `${name} ${hostingType} reviewed for ${year}: promo vs renewal pricing, real pros and cons, uptime, support, and how it compares to alternatives.`;
 
   return {
-    title: `${name} Review - ${hostingType}`,
+    title: `${name} ${hostingType} Review (${year})`,
     description,
     alternates: {
       canonical: `/hosting/${slug}`,
@@ -58,14 +62,14 @@ export async function generateMetadata({ params }: HostPageProps): Promise<Metad
       'web hosting',
     ],
     openGraph: {
-      title: `${name} Review - ${hostingType} | ${SITE_NAME}`,
+      title: `${name} ${hostingType} Review (${year}) | ${SITE_NAME}`,
       description,
       type: 'website',
       url: `${SITE_DOMAIN}/hosting/${slug}`,
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${name} Review | ${SITE_NAME}`,
+      title: `${name} ${hostingType} Review (${year}) | ${SITE_NAME}`,
       description,
     },
   };
@@ -94,6 +98,15 @@ export default async function HostPage({ params }: HostPageProps) {
     )
     .sort((a, b) => (b.overallRating ?? 0) - (a.overallRating ?? 0))
     .slice(0, 4);
+
+  // Head-to-head comparisons for this host — internal links into the /compare
+  // cluster (funnels crawl depth + link equity to those pages). Names are
+  // resolved from allHosts so this adds no extra data reads.
+  const nameById = new Map(allHosts.map((h) => [h.id, h.name] as const));
+  const hostComparisons = (await getRelatedComparisons(slug, '', 8)).map((c) => ({
+    slug: c.slug,
+    otherName: nameById.get(c.hostA === slug ? c.hostB : c.hostA) ?? null,
+  }));
 
   // Build FAQ items from faqContent
   const faqItems = buildFaqItems(company);
@@ -230,6 +243,34 @@ export default async function HostPage({ params }: HostPageProps) {
       {/* Alternative Hosts */}
       {alternatives.length > 0 && (
         <AlternativeHosts hosts={alternatives} currentHostName={company.basicInfo.companyName} />
+      )}
+
+      {/* Head-to-head comparisons — internal links into the /compare cluster */}
+      {hostComparisons.length > 0 && (
+        <section className="pb-12">
+          <Container>
+            <h2 className="text-xl font-semibold text-foreground mb-4">
+              {company.basicInfo.companyName} head-to-head comparisons
+            </h2>
+            <p className="text-sm text-text-secondary mb-5 max-w-2xl">
+              See how {company.basicInfo.companyName} stacks up against other hosts
+              on pricing, performance, and features:
+            </p>
+            <div className="flex flex-wrap gap-2.5">
+              {hostComparisons
+                .filter((c) => c.otherName)
+                .map((c) => (
+                  <Link
+                    key={c.slug}
+                    href={`/compare/${c.slug}`}
+                    className="inline-flex items-center rounded-lg border border-border-subtle bg-bg-secondary px-3.5 py-2 text-sm text-text-secondary transition-colors hover:border-accent/40 hover:text-foreground"
+                  >
+                    {company.basicInfo.companyName} vs {c.otherName}
+                  </Link>
+                ))}
+            </div>
+          </Container>
+        </section>
       )}
 
       {/* Link to the dedicated, ranked alternatives breakdown (curated hosts only) */}

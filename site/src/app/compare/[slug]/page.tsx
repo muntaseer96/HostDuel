@@ -61,6 +61,9 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
   const categoryWinners = calculateCategoryWinners(hostA, hostB);
   const overallWinner = calculateOverallWinner(hostA, hostB, categoryWinners);
 
+  // NOTE: compare/layout.tsx sets a plain-string title, which cancels the root
+  // `%s | HostDuel` template for this segment — so the brand is appended here
+  // manually (renders as a single brand, not doubled).
   const title = `${hostA.name} vs ${hostB.name}: Complete 2026 Comparison | HostDuel`;
   const description = generateCompareMetaDescription(hostA, hostB, categoryWinners, overallWinner);
 
