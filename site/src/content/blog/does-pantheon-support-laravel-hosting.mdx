@@ -1,0 +1,90 @@
+---
+title: "Does Pantheon Support Laravel Hosting?"
+description: "Thinking of deploying a Laravel app on Pantheon? Here's the honest answer — why Pantheon is built for Drupal and WordPress, not Laravel — and the hosts that actually run Laravel well."
+date: "2026-07-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/4.jpg"
+category: "guides"
+tags: ["pantheon", "laravel", "php-hosting", "paas"]
+featured: false
+---
+
+If you already use Pantheon for a Drupal or WordPress site and now have a Laravel app to deploy, the natural question is whether you can just run it on the same platform: *"does Pantheon support Laravel?"*
+
+The short, honest answer: **no — Pantheon is a purpose-built platform for Drupal and WordPress, not a general-purpose Laravel host.** It's a great PaaS, just not for this. Here's exactly why, and where Laravel actually belongs.
+
+## Why Pantheon can't run Laravel
+
+Pantheon isn't a blank server you deploy any PHP app to. It's a **managed platform tuned specifically around Drupal and WordPress** — their file structures, their caching, their database patterns, their Dev/Test/Live workflow. That specialization is the whole value, but it also means the runtime expects one of those two CMSes:
+
+- **The platform is opinionated.** Pantheon's filesystem, routing, and build pipeline assume a Drupal or WordPress codebase. A Laravel app's structure (its `public/` root, `artisan`, queues, custom migrations) doesn't map onto it.
+- **No arbitrary long-running processes.** Laravel apps often need queue workers, the scheduler (`schedule:run`), and Redis — background processes Pantheon isn't designed to host for a non-CMS app.
+- **It's not a VPS or generic PaaS.** You don't get root or an open PHP runtime to shape however you like; you get a managed Drupal/WordPress environment.
+
+So even though Laravel is PHP and Pantheon runs PHP, the platform's assumptions are built around a CMS — not a framework app.
+
+## What Laravel actually needs from a host
+
+Laravel runs beautifully — but it wants a host that gives you:
+
+- A **`public/` document root** you can set.
+- **Composer, `artisan`, and migrations** at deploy time.
+- **Queue workers + the scheduler** (a cron entry running `schedule:run` every minute).
+- Usually **Redis/Memcached** for cache/queues, and a MySQL/Postgres database.
+- Ideally a **zero-downtime deploy** flow.
+
+## Where to host Laravel instead
+
+Three good routes, easiest to most control:
+
+### 1. Managed Laravel platforms (easiest)
+
+- **Laravel Cloud / Laravel Forge + a VPS** — Forge provisions a [DigitalOcean](/hosting/digitalocean) or [Vultr](/hosting/vultr) server and wires up the `public/` root, queue workers, scheduler, and SSL for you. This is the community-standard setup.
+- [Cloudways](/hosting/cloudways) (~$14/mo) — managed cloud that supports Laravel with Redis, workers, and Git deploys, without you administering the box.
+
+### 2. A PaaS that runs any app
+
+- [Render](/hosting/render) — deploy Laravel as a web service, add a background worker for queues and a cron job for the scheduler, plus managed Redis/Postgres. Git-push deploys.
+
+### 3. A plain VPS (full control)
+
+| Provider | From | Notes |
+|----------|------|-------|
+| [Vultr](/hosting/vultr) | ~$2.50/mo | Cheapest for a small Laravel app |
+| [DigitalOcean](/hosting/digitalocean) | ~$4/mo | Pairs perfectly with Laravel Forge |
+| [Contabo](/hosting/contabo) | ~$5.50/mo | More RAM for queues + Redis |
+
+On a VPS you set the `public/` root in Nginx, run workers under systemd/Supervisor, and add the one-line scheduler cron — everything Laravel expects.
+
+## FAQ
+
+### Can I deploy a Laravel app on Pantheon?
+
+Not as a supported use case. Pantheon is built specifically for **Drupal and WordPress**; it isn't a general PHP/Laravel host. Use Laravel Forge + a VPS, [Cloudways](/hosting/cloudways), or [Render](/hosting/render) instead.
+
+### Why doesn't Pantheon work for Laravel if it runs PHP?
+
+Because Pantheon is a **managed CMS platform**, not an open PHP runtime. Its filesystem, build pipeline, and caching assume a Drupal/WordPress app, and it isn't designed for Laravel's queue workers and scheduler.
+
+### What's the easiest way to host a Laravel app?
+
+**Laravel Forge** provisioning a [DigitalOcean](/hosting/digitalocean)/[Vultr](/hosting/vultr) VPS, or [Cloudways](/hosting/cloudways) if you want managed cloud without server admin. Both handle the `public/` root, workers, and SSL.
+
+### Does Laravel need Redis and a queue worker?
+
+Not strictly, but most real apps use **Redis** (or Memcached) for cache/queues and run a **queue worker** plus the **scheduler**. Pick a host that lets you run those background processes — a VPS or a PaaS like Render.
+
+## Key takeaways
+
+1. **Pantheon does not support Laravel** — it's a managed platform for **Drupal and WordPress** specifically.
+2. Laravel being PHP doesn't help: Pantheon's runtime assumes a **CMS codebase**, not a framework app.
+3. Laravel needs a settable **`public/` root**, **queue workers**, the **scheduler**, and usually **Redis** — things Pantheon isn't built to host.
+4. Best homes for Laravel: **Laravel Forge + a VPS** ([DigitalOcean](/hosting/digitalocean)/[Vultr](/hosting/vultr)), [Cloudways](/hosting/cloudways), or [Render](/hosting/render).
+5. On a VPS you get full control of the root, workers, and cron — exactly what Laravel expects.
+
+Compare Laravel-friendly hosts in our [comparison tool](/compare), or read the [best Laravel hosting](/blog/best-laravel-hosting) guide for the full breakdown.
+
+---
+
+*Last updated: July 2026*

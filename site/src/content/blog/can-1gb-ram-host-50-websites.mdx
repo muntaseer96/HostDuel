@@ -1,0 +1,102 @@
+---
+title: "Can 1GB of RAM Really Host 50 Websites?"
+description: "Can a single 1GB VPS host 50 sites, like the hosting ads imply? Here's the honest math on RAM per site, what actually fits, and how to make one small server hold way more."
+date: "2026-07-02"
+author:
+  name: "HostDuel Team"
+image: "/images/blog/10.jpg"
+category: "guides"
+tags: ["vps", "ram", "web-server", "performance"]
+featured: false
+---
+
+It's a question that comes up whenever someone spins up a cheap VPS or reads a reseller plan promising "host unlimited sites": *"can 1GB of RAM really host 50 websites, or is that marketing nonsense?"*
+
+The honest answer is a classic *it depends* — but with real numbers behind it. **1GB can host dozens of tiny static sites, or choke on three busy WordPress sites.** The number of sites isn't the variable that matters; what each site *does* is. Here's the actual math.
+
+## RAM isn't consumed "per site" — it's consumed "per request"
+
+The mental model people get wrong: they imagine each site reserving a fixed chunk of RAM just by existing. That's not how it works. A site sitting idle uses almost nothing. RAM gets consumed when a site **handles a request** — spinning up a PHP worker, running a database query, holding a page in memory.
+
+So the real question isn't "how many sites?" — it's **"how many requests are being processed at once, and how heavy is each one?"** Fifty static sites getting one visitor a day is trivial. Three WordPress sites getting steady traffic can saturate 1GB by lunchtime.
+
+## The honest per-site math
+
+Rough memory footprints under light load:
+
+| Site type | Approx RAM per active site | Fit on 1GB |
+|-----------|---------------------------|------------|
+| Static HTML | a few MB | **100+ easily** |
+| Lightweight PHP | ~20–50 MB | dozens |
+| WordPress (cached) | ~80–150 MB active | ~5–8 comfortably |
+| WordPress (uncached, plugin-heavy) | ~150–250 MB | 2–3 before swapping |
+| WooCommerce / forum | 250 MB+ | 1–2 |
+
+You also have to leave headroom for the OS, the web server (Nginx/Apache), the database (MySQL alone wants 200–400MB warm), and PHP-FPM. On a 1GB box, MySQL + the OS already eat a big slice before your first visitor.
+
+So: **50 static sites on 1GB? Absolutely.** 50 WordPress sites on 1GB? No — you'd be swapping to disk and everything would crawl.
+
+## What actually fits on 1GB
+
+- **50+ static/HTML sites** — yes, comfortably. They barely touch RAM.
+- **A handful of low-traffic WordPress sites** (≈5–8) — yes, if cached and lightly visited.
+- **2–3 moderately active WordPress sites** — realistic ceiling.
+- **1 busy WooCommerce store** — that's about the whole box.
+
+The "50 sites" claim in ads usually assumes tiny, near-idle sites — technically true, practically misleading if you picture 50 real WordPress sites.
+
+## How to make 1GB hold far more
+
+If you want to push a small server, these matter more than adding sites:
+
+- **Full-page caching** (LiteSpeed, Nginx FastCGI cache, or Cloudflare in front) — serves ready HTML instead of booting PHP+MySQL per hit. Biggest single win.
+- **Tune PHP-FPM workers** — cap `pm.max_children` so a traffic burst can't spawn enough workers to exhaust RAM and trigger the OOM killer.
+- **Add swap** — a swap file won't make things fast, but it stops hard crashes when you briefly spike.
+- **Use a lean stack** — Nginx over Apache, object cache only where it earns its RAM, a slim MySQL config.
+- **Offload static assets to a CDN** — takes image/JS/CSS load off the box entirely.
+
+With caching, a 1GB VPS handles a surprising amount — because most requests never hit PHP or the database at all.
+
+## When to just size up
+
+RAM is cheap; your time and uptime aren't. If you're fighting the OOM killer or swapping constantly, the fix is a bigger slice, not more tuning:
+
+| Provider | Plan | Good for |
+|----------|------|----------|
+| [Vultr](/hosting/vultr) | ~$2.50/mo (small) → scale up | A few light sites |
+| [DigitalOcean](/hosting/digitalocean) | ~$4/mo (1GB) → 2GB+ | WordPress hosting, great docs |
+| [Contabo](/hosting/contabo) | ~$5.50/mo (lots of RAM) | Hosting many sites cheaply |
+
+[Contabo](/hosting/contabo) is the value pick specifically *because* it gives you far more RAM per dollar — the right lever when your real constraint is memory, not CPU.
+
+## FAQ
+
+### Can 1GB RAM host 50 WordPress sites?
+
+No — not realistically. WordPress needs ~80–250MB per active site plus MySQL and the OS. 1GB comfortably holds ~5–8 cached, low-traffic WordPress sites, not 50. Fifty **static** sites, however, is easy.
+
+### How much RAM does one WordPress site need?
+
+Roughly 80–150MB active when cached, more when uncached or plugin-heavy — plus shared overhead for MySQL (200–400MB) and the OS. Budget accordingly rather than counting "sites."
+
+### How do I host more sites on a small VPS?
+
+Enable **full-page caching**, cap **PHP-FPM workers**, add **swap**, use a lean Nginx stack, and offload static files to a **CDN**. Caching is the biggest lever — cached hits skip PHP and MySQL entirely.
+
+### Is more RAM or more CPU better for hosting many sites?
+
+For hosting *many* sites, RAM is usually the first constraint (each active request needs memory). [Contabo](/hosting/contabo) gives the most RAM per dollar; scale RAM before CPU unless your sites are compute-heavy.
+
+## Key takeaways
+
+1. RAM is consumed **per request, not per site** — idle sites cost almost nothing.
+2. **50 static sites on 1GB? Easy. 50 WordPress sites? No** — expect ~5–8 cached, low-traffic WP sites.
+3. Leave headroom: **MySQL + OS + web server** eat a big slice of 1GB before your first visitor.
+4. **Caching, PHP-FPM tuning, swap, and a CDN** let a small box hold far more than raw specs suggest.
+5. When you're swapping constantly, **size up RAM** — [Contabo](/hosting/contabo) gives the most memory per dollar.
+
+Compare RAM and pricing across VPS providers in our [comparison tool](/compare), or see the [best VPS hosting](/blog/best-vps-hosting) for hosting multiple sites.
+
+---
+
+*Last updated: July 2026*
