@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout';
-import { BlogHero, BlogCard } from '@/components/blog';
-import { getAllPosts, getFeaturedPosts, getNonEmptyCategories } from '@/lib/blog-data';
+import { BlogHero, BlogCard, BlogPagination } from '@/components/blog';
+import { getAllPosts, getFeaturedPosts, getNonEmptyCategories, BLOG_POSTS_PER_PAGE } from '@/lib/blog-data';
 import { SITE_NAME } from '@/lib/constants';
 import { ArrowRight, BookOpen } from 'lucide-react';
 
@@ -27,6 +27,10 @@ export default async function BlogPage() {
   // Get the first featured post for the hero, rest go to the grid
   const heroPost = featuredPosts[0];
   const regularPosts = allPosts.filter((post) => post.slug !== heroPost?.slug);
+
+  // Page 1 of the paginated grid; pages 2+ live at /blog/page/[page].
+  const totalPages = Math.max(1, Math.ceil(regularPosts.length / BLOG_POSTS_PER_PAGE));
+  const pagePosts = regularPosts.slice(0, BLOG_POSTS_PER_PAGE);
 
   // If no posts yet, show a "coming soon" state with newsletter signup
   if (allPosts.length === 0) {
@@ -99,13 +103,15 @@ export default async function BlogPage() {
         )}
 
         {/* Posts Grid */}
-        {regularPosts.length > 0 && (
+        {pagePosts.length > 0 && (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {regularPosts.map((post) => (
+            {pagePosts.map((post) => (
               <BlogCard key={post.slug} post={post} />
             ))}
           </div>
         )}
+
+        <BlogPagination currentPage={1} totalPages={totalPages} />
       </Container>
     </section>
   );

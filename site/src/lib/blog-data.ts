@@ -7,6 +7,9 @@ import { BLOG_CATEGORIES } from '@/types/blog';
 
 const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blog');
 
+/** Posts shown per page in the /blog grid (excludes the featured hero on page 1). */
+export const BLOG_POSTS_PER_PAGE = 12;
+
 /**
  * Get all blog post slugs
  */

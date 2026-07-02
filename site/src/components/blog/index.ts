@@ -2,6 +2,7 @@ export { AuthorCard } from './AuthorCard';
 export { BlogCard } from './BlogCard';
 export { BlogHero } from './BlogHero';
 export { BlogMeta } from './BlogMeta';
+export { BlogPagination } from './BlogPagination';
 export { NewsletterCTA } from './NewsletterCTA';
 export { RelatedPosts } from './RelatedPosts';
 export { ShareButtons } from './ShareButtons';
