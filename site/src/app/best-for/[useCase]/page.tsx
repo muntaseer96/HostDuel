@@ -4,8 +4,13 @@ import { notFound } from 'next/navigation';
 import { Container } from '@/components/layout';
 import { Card, Badge, Button } from '@/components/ui';
 import { getTopByUseCase, companyToTableRow } from '@/lib/data';
+import {
+  USE_CASE_CRITERIA,
+  generateHostReason,
+  generateBestForFaqs,
+} from '@/lib/best-for-content';
 import { SITE_NAME, SITE_DOMAIN } from '@/lib/constants';
-import { Star, PenTool, ShoppingCart, Briefcase, Code, GraduationCap, Building, ExternalLink, ChevronRight } from 'lucide-react';
+import { Star, PenTool, ShoppingCart, Briefcase, Code, GraduationCap, Building, ExternalLink, ChevronRight, CheckCircle } from 'lucide-react';
 
 type UseCase = 'blogger' | 'ecommerce' | 'agency' | 'developer' | 'beginner' | 'enterprise';
 
@@ -101,24 +106,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const config = useCaseConfig[useCase as UseCase];
+  const year = new Date().getFullYear();
+  // The metaDescriptions were written with a hardcoded "2025"; keep the year
+  // fresh automatically so the snippet never goes stale.
+  const title = `${config.title} (${year})`;
+  const description = config.metaDescription.replace(/\b20\d{2}\b/, String(year));
 
   return {
-    title: config.title,
-    description: config.metaDescription,
+    title,
+    description,
     keywords: config.keywords,
     alternates: {
       canonical: `/best-for/${useCase}`,
     },
     openGraph: {
-      title: `${config.title} | ${SITE_NAME}`,
-      description: config.metaDescription,
+      title: `${title} | ${SITE_NAME}`,
+      description,
       type: 'website',
       url: `${SITE_DOMAIN}/best-for/${useCase}`,
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${config.title} | ${SITE_NAME}`,
-      description: config.metaDescription,
+      title: `${title} | ${SITE_NAME}`,
+      description,
     },
   };
 }
@@ -132,12 +142,16 @@ export default async function BestForPage({ params }: PageProps) {
 
   const config = useCaseConfig[useCase as UseCase];
   const Icon = config.icon;
+  const year = new Date().getFullYear();
+  const criteria = USE_CASE_CRITERIA[useCase as UseCase];
 
   const topHosts = await getTopByUseCase(useCase as UseCase, 10);
   const hosts = topHosts.map(({ id, company, score }) => ({
     ...companyToTableRow(id, company),
     suitabilityScore: score,
   }));
+
+  const faqs = generateBestForFaqs(useCase as UseCase, config.name, hosts, year);
 
   // JSON-LD Structured Data - ItemList for rankings
   const itemListSchema = {
@@ -205,6 +219,17 @@ export default async function BestForPage({ params }: PageProps) {
     ],
   };
 
+  // FAQPage schema — built from the same data-driven Q&As shown on the page
+  const faqSchema = faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null;
+
   return (
     <>
       {/* JSON-LD Structured Data */}
@@ -216,6 +241,12 @@ export default async function BestForPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* Breadcrumbs */}
       <section className="border-b border-border-subtle bg-bg-secondary">
@@ -245,11 +276,28 @@ export default async function BestForPage({ params }: PageProps) {
               </div>
               <Badge variant="accent">Best For</Badge>
             </div>
-            <h1 className="text-3xl font-bold text-foreground mb-4">{config.title}</h1>
+            <h1 className="text-3xl font-bold text-foreground mb-4">{config.title} ({year})</h1>
             <p className="text-lg text-text-secondary max-w-2xl">
               {config.description}
             </p>
           </div>
+
+          {/* Buying-guide criteria — unique, substantive content per use case */}
+          <div className="mb-12 rounded-xl border border-border-subtle bg-bg-secondary/50 p-6 max-w-3xl">
+            <h2 className="text-lg font-semibold text-foreground mb-4">{criteria.heading}</h2>
+            <ul className="space-y-2.5">
+              {criteria.lookFor.map((point, i) => (
+                <li key={i} className="flex items-start gap-2.5 text-sm text-text-secondary">
+                  <CheckCircle className={`h-4 w-4 mt-0.5 shrink-0 ${config.color}`} />
+                  <span>{point.charAt(0).toUpperCase() + point.slice(1)}.</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <h2 className="text-xl font-bold text-foreground mb-4">
+            Top {hosts.length} hosts for {config.name.toLowerCase()}
+          </h2>
 
           <div className="space-y-4">
             {hosts.map((host, index) => (
@@ -286,6 +334,11 @@ export default async function BestForPage({ params }: PageProps) {
                       {host.freeMigration && <span className="text-success">Free Migration</span>}
                     </div>
 
+                    {/* Why it fits — data-derived, unique per host + use case */}
+                    <p className="text-sm text-text-secondary mb-4 leading-relaxed">
+                      {generateHostReason(host, useCase as UseCase)}
+                    </p>
+
                     <div className="flex flex-wrap gap-2">
                       <Link href={`/hosting/${host.id}`}>
                         <Button variant="outline" size="sm">
@@ -316,6 +369,27 @@ export default async function BestForPage({ params }: PageProps) {
           {hosts.length === 0 && (
             <div className="text-center py-12">
               <p className="text-text-muted">No hosting providers found for this category.</p>
+            </div>
+          )}
+
+          {/* FAQ — data-driven, unique per use case */}
+          {faqs.length > 0 && (
+            <div className="mt-16 max-w-3xl">
+              <h2 className="text-2xl font-bold text-foreground mb-6">
+                {config.title}: FAQ
+              </h2>
+              <div className="space-y-6">
+                {faqs.map((faq, i) => (
+                  <div key={i}>
+                    <h3 className="text-base font-semibold text-foreground mb-2">
+                      {faq.question}
+                    </h3>
+                    <p className="text-sm text-text-secondary leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
