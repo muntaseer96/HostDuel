@@ -5,7 +5,7 @@
     "yearFounded": 2003,
     "headquartersCountry": "Germany",
     "parentCompany": "Independent (privately held; founded by Michael Herpich and Michael Bolke as Giga-International, rebranded to Contabo 2013)",
-    "dataLastUpdated": "2026-06-02",
+    "dataLastUpdated": "2026-07-02",
     "greenHosting": null,
     "instantAccountActivation": true,
     "hostingType": "cloud-iaas",
@@ -14,8 +14,8 @@
   "pricing": {
     "sharedHostingMonthlyPromo": null,
     "sharedHostingMonthlyRenewal": null,
-    "vpsMonthlyLowest": 4.50,
-    "vpsMonthlyRenewal": 4.50,
+    "vpsMonthlyLowest": 5.5,
+    "vpsMonthlyRenewal": 5.5,
     "dedicatedMonthlyLowest": 64.99,
     "dedicatedMonthlyRenewal": 64.99,
     "wordpressHostingMonthlyPromo": null,
@@ -215,10 +215,10 @@
     "railsSupport": true
   },
   "pricingCalculated": {
-    "totalFirstYearCost": 54.00,
-    "totalSecondYearCost": 54.00,
+    "totalFirstYearCost": 66,
+    "totalSecondYearCost": 66,
     "renewalMarkupPercent": 0,
-    "effectiveMonthlyAverage": 4.50
+    "effectiveMonthlyAverage": 5.5
   },
   "comparisonData": {
     "uniqueSellingPoint": "Highest specs per dollar with 8GB RAM VPS for under $5/month and 32TB bandwidth",
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-07-02",
+      "promoMonthly": 5.5,
+      "renewalMonthly": 5.5,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }
