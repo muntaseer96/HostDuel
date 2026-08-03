@@ -48,6 +48,31 @@ function storedPrimary(id) {
 const PRICE_RE = /([$€£₹]\s?\d[\d.,]*)|(\d+(?:\.\d+)?\s*(?:\/\s?mo|per month|\/month))/i;
 const NOISE_RE = /cookie|privacy|newsletter|subscribe|©|copyright|terms of|sign in|log ?in/i;
 
+// Some hosts render prices inside a web component's shadow root (hetzner's
+// <ho-price-container>, filled from website-price-api.hetzner.com). innerText
+// skips shadow DOM, so those pages came back as "NO PRICES" even though the
+// number was on screen. Copy each shadow root's text out as a sibling node so
+// it lands in the right visual spot and the normal line extraction sees it.
+async function hoistShadowText(page) {
+  await page
+    .evaluate(() => {
+      const walk = (root) => {
+        for (const el of root.querySelectorAll('*')) {
+          if (!el.shadowRoot) continue;
+          const text = el.shadowRoot.textContent?.trim();
+          if (text && text.length < 120) {
+            const span = document.createElement('span');
+            span.textContent = ` ${text} `;
+            el.after(span);
+          }
+          walk(el.shadowRoot);
+        }
+      };
+      walk(document);
+    })
+    .catch(() => {});
+}
+
 async function scrapeOne(browser, id, url) {
   const stored = storedPrimary(id);
   const ctx = await browser.newContext({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36', viewport: { width: 1366, height: 900 } });
@@ -60,6 +85,7 @@ async function scrapeOne(browser, id, url) {
     res.finalUrl = page.url();
     res.title = await page.title();
     const is404 = /404|not found|page not found/i.test(res.title);
+    await hoistShadowText(page);
     const body = await page.innerText('body').catch(() => '');
     const lines = body
       .split('\n')

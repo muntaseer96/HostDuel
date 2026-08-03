@@ -5,15 +5,15 @@
     "yearFounded": 1997,
     "headquartersCountry": "Germany",
     "parentCompany": "Independent (privately held; founded by Martin Hetzner)",
-    "dataLastUpdated": "2026-06-02",
+    "dataLastUpdated": "2026-08-03",
     "greenHosting": true,
     "instantAccountActivation": true,
     "hostingType": "cloud-iaas",
     "notes": "Founded in 1997 by Martin Hetzner in Gunzenhausen, Bavaria, Germany. Operates own data center parks in Nuremberg and Falkenstein (Germany), Tuusula (Finland), and colocation in US (Ashburn, VA and Hillsboro, OR). Expanded to Singapore in 2024. Uses 100% green energy. Known for best price-performance ratio in industry. Won GreenIT award 2011."
   },
   "pricing": {
-    "sharedHostingMonthlyPromo": 1.90,
-    "sharedHostingMonthlyRenewal": 1.90,
+    "sharedHostingMonthlyPromo": 2.00,
+    "sharedHostingMonthlyRenewal": 2.00,
     "vpsMonthlyLowest": 3.49,
     "vpsMonthlyRenewal": 3.49,
     "dedicatedMonthlyLowest": 39.00,
@@ -250,5 +250,13 @@
     "squarespaceMigration": false,
     "webflowExport": true,
     "staticSiteSupport": true
-  }
+  },
+  "priceHistory": [
+    {
+      "date": "2026-08-03",
+      "promoMonthly": 2,
+      "renewalMonthly": 2,
+      "renewalMarkupPercent": 0
+    }
+  ]
 }
