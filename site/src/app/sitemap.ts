@@ -5,6 +5,7 @@ import { getAllPosts } from '@/lib/blog-data';
 import { USE_CASES } from '@/lib/constants';
 import { TOP_HOSTS, TOP_COUNTRIES, countrySlug } from '@/lib/programmatic';
 import { BLOG_CATEGORIES } from '@/types/blog';
+import { shouldNoindexComparison, shouldNoindexHost } from '@/config/noindex';
 
 const baseUrl = 'https://hostduel.com';
 
@@ -44,19 +45,84 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // and far better than stamping every URL with the build time.
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: dataLastUpdated, changeFrequency: 'weekly', priority: 1 },
-    { url: `${baseUrl}/compare`, lastModified: hostsLastUpdated, changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/blog`, lastModified: blogLastUpdated, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/quiz`, lastModified: hostsLastUpdated, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/about`, lastModified: dataLastUpdated, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/methodology`, lastModified: dataLastUpdated, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/research`, lastModified: hostsLastUpdated, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/research/the-renewal-trap`, lastModified: hostsLastUpdated, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/calculator`, lastModified: hostsLastUpdated, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/alternatives`, lastModified: hostsLastUpdated, changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${baseUrl}/best-hosting-in`, lastModified: hostsLastUpdated, changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${baseUrl}/contact`, lastModified: dataLastUpdated, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${baseUrl}/privacy`, lastModified: dataLastUpdated, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${baseUrl}/terms`, lastModified: dataLastUpdated, changeFrequency: 'yearly', priority: 0.3 },
+    {
+      url: `${baseUrl}/compare`,
+      lastModified: hostsLastUpdated,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: blogLastUpdated,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/quiz`,
+      lastModified: hostsLastUpdated,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: dataLastUpdated,
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/methodology`,
+      lastModified: dataLastUpdated,
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/research`,
+      lastModified: hostsLastUpdated,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/research/the-renewal-trap`,
+      lastModified: hostsLastUpdated,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/calculator`,
+      lastModified: hostsLastUpdated,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/alternatives`,
+      lastModified: hostsLastUpdated,
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/best-hosting-in`,
+      lastModified: hostsLastUpdated,
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: dataLastUpdated,
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: dataLastUpdated,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: dataLastUpdated,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
   ];
 
   // Best-for use case pages (list hosts → freshness tracks host data)
@@ -87,21 +153,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.5,
   }));
 
-  // Dynamic host pages — real per-host update date
-  const hostPages: MetadataRoute.Sitemap = [...hostDate.entries()].map(([id, date]) => ({
-    url: `${baseUrl}/hosting/${id}`,
-    lastModified: date,
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }));
+  // Dynamic host pages — real per-host update date. Noindexed out-of-niche
+  // brands are omitted: listing a noindex URL in the sitemap is a contradictory
+  // signal ("crawl this" / "don't index this").
+  const hostPages: MetadataRoute.Sitemap = [...hostDate.entries()]
+    .filter(([id]) => !shouldNoindexHost(id))
+    .map(([id, date]) => ({
+      url: `${baseUrl}/hosting/${id}`,
+      lastModified: date,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }));
 
   // Comparison pages — newer of the two hosts' update dates
-  const comparisonPages: MetadataRoute.Sitemap = comparisonPairs.map(([a, b]) => ({
-    url: `${baseUrl}/compare/${getComparisonSlug(a, b)}`,
-    lastModified: maxDate([hostDate.get(a) ?? hostsLastUpdated, hostDate.get(b) ?? hostsLastUpdated]),
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
-  }));
+  const comparisonPages: MetadataRoute.Sitemap = comparisonPairs
+    .filter(([a, b]) => !shouldNoindexComparison(a, b))
+    .map(([a, b]) => ({
+      url: `${baseUrl}/compare/${getComparisonSlug(a, b)}`,
+      lastModified: maxDate([
+        hostDate.get(a) ?? hostsLastUpdated,
+        hostDate.get(b) ?? hostsLastUpdated,
+      ]),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    }));
 
   // Blog post pages — real frontmatter date
   const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({

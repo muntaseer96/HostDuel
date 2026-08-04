@@ -7,6 +7,7 @@ import { TOP_HOSTS } from '@/lib/programmatic';
 import { Container } from '@/components/layout';
 import { DataDisclaimer } from '@/components/ui';
 import { SITE_NAME, SITE_DOMAIN, HOSTING_TYPES } from '@/lib/constants';
+import { shouldNoindexHost, NOINDEX_ROBOTS } from '@/config/noindex';
 import {
   Breadcrumbs,
   HostHero,
@@ -72,6 +73,9 @@ export async function generateMetadata({ params }: HostPageProps): Promise<Metad
       title: `${name} ${hostingType} Review (${year}) | ${SITE_NAME}`,
       description,
     },
+    // Out-of-niche brands (hyperscalers, website builders) stay live but out of
+    // the search index — see src/config/noindex.ts.
+    ...(shouldNoindexHost(slug) ? { robots: NOINDEX_ROBOTS } : {}),
   };
 }
 
@@ -79,10 +83,7 @@ export default async function HostPage({ params }: HostPageProps) {
   const { slug } = await params;
 
   // Fetch both Company (full data) and TableRow (simplified)
-  const [company, tableRow] = await Promise.all([
-    getCompanyById(slug),
-    getTableRowById(slug),
-  ]);
+  const [company, tableRow] = await Promise.all([getCompanyById(slug), getTableRowById(slug)]);
 
   if (!company || !tableRow) {
     notFound();
@@ -91,11 +92,7 @@ export default async function HostPage({ params }: HostPageProps) {
   // Get alternative hosts (same hosting type, excluding current)
   const allHosts = await getAllTableRows();
   const alternatives = allHosts
-    .filter(
-      (h) =>
-        h.id !== slug &&
-        h.hostingType === company.basicInfo.hostingType
-    )
+    .filter((h) => h.id !== slug && h.hostingType === company.basicInfo.hostingType)
     .sort((a, b) => (b.overallRating ?? 0) - (a.overallRating ?? 0))
     .slice(0, 4);
 
@@ -253,8 +250,8 @@ export default async function HostPage({ params }: HostPageProps) {
               {company.basicInfo.companyName} head-to-head comparisons
             </h2>
             <p className="text-sm text-text-secondary mb-5 max-w-2xl">
-              See how {company.basicInfo.companyName} stacks up against other hosts
-              on pricing, performance, and features:
+              See how {company.basicInfo.companyName} stacks up against other hosts on pricing,
+              performance, and features:
             </p>
             <div className="flex flex-wrap gap-2.5">
               {hostComparisons
@@ -309,7 +306,10 @@ function buildFaqItems(company: Company): Array<{ question: string; answer: stri
     items.push({ question: `Is ${name} beginner-friendly?`, answer: faq.faqIsItBeginnerFriendly });
   }
   if (faq.faqDoesItIncludeEmail) {
-    items.push({ question: `Does ${name} include email hosting?`, answer: faq.faqDoesItIncludeEmail });
+    items.push({
+      question: `Does ${name} include email hosting?`,
+      answer: faq.faqDoesItIncludeEmail,
+    });
   }
   if (faq.faqCanIHostWordPress) {
     items.push({ question: `Can I host WordPress on ${name}?`, answer: faq.faqCanIHostWordPress });
